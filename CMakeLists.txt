@@ -20,6 +20,8 @@ else()
 	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" NO)
 endif()
 
+option(USE_ULP "Use ULP?" NO)
+
 set(CBF_F90FLAGS_ENV $ENV{F90FLAGS})
 set(CBF_USE_ULP $ENV{CBF_USE_ULP})
 set(CBF_M4FLAGS_ENV $ENV{M4FLAGS})
@@ -27,11 +29,9 @@ set(CBF_HDF5REGISTER_MANUAL_ENV $ENV{CBF_HDF5REGISTER_MANUAL})
 
 enable_testing()
 
-if(CBF_USE_ULP STREQUAL "YES")
-  set(CMAKE_C_FLAGS "-Wall -g -fno-strict-aliasing -DCBF_USE_ULP")
-else(CBF_USE_ULP STREQUAL "YES")
-  set(CMAKE_C_FLAGS "-Wall -g -fno-strict-aliasing")
-endif(CBF_USE_ULP STREQUAL "YES")
+if (USE_ULP)
+	add_compile_definitions("$<$<COMPILE_LANGUAGE:C,CXX>:CBF_USE_ULP>")
+endif()
 
 #
 #  User setable parameters
