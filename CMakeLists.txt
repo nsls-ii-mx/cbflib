@@ -43,15 +43,11 @@ else(CBF_M4FLAGS_ENV)
   set(CBF_M4FLAGS "-Dfcb_bytes_in_rec=4096")
 endif(CBF_M4FLAGS_ENV)
 
-if(BUILD_FORTRAN)
-	if(CBF_F90FLAGS_ENV)
-	set(CMAKE_Fortran_FLAGS_RELEASE "${CMAKE_Fortran_FLAGS_RELEASE} ${CBF_F90FLAGS_ENV}")
-	set(CMAKE_Fortran_FLAGS_DEBUG   "${CMAKE_Fortran_FLAGS_DEBUG}   ${CBF_F90FLAGS_ENV}")
-	else(CBF_F90FLAGS_ENV)
-	set(CMAKE_Fortran_FLAGS_RELEASE "${CMAKE_Fortran_FLAGS_RELEASE} -fno-range-check")
-	set(CMAKE_Fortran_FLAGS_DEBUG   "${CMAKE_Fortran_FLAGS_DEBUG}   -fno-range-check")
-	endif(CBF_F90FLAGS_ENV)
-endif()
+# TODO: Decide if we still want to add these in cases where the user had no specific flags?
+# if(BUILD_FORTRAN)
+# set(CMAKE_Fortran_FLAGS_RELEASE "${CMAKE_Fortran_FLAGS_RELEASE} -fno-range-check")
+# set(CMAKE_Fortran_FLAGS_DEBUG   "${CMAKE_Fortran_FLAGS_DEBUG}   -fno-range-check")
+# endif()
 
 # Explicitly make "Release" the default build type
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
