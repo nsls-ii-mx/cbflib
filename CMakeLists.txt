@@ -20,13 +20,6 @@ else()
 	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" NO)
 endif()
 
-# Preserve the old language-enabling setting behaviour for now
-if (CMAKE_Fortran_COMPILER)
-	set(CBF_HDF5_ENABLE_FORTRAN "no")
-else()
-	set(CBF_HDF5_ENABLE_FORTRAN "no")
-endif()
-
 set(CBF_F90FLAGS_ENV $ENV{F90FLAGS})
 set(CBF_USE_ULP $ENV{CBF_USE_ULP})
 set(CBF_M4FLAGS_ENV $ENV{M4FLAGS})
@@ -322,7 +315,7 @@ ExternalProject_add(
 		-DHDF5_BUILD_CPP_LIB:BOOL=Off
 		-DBUILD_SHARED_LIBS:BOOL=On
 		-DHDF5_BUILD_TOOLS:BOOL=On
-        -DHDF5_ENABLE_FORTRAN=${CBF_HDF5_ENABLE_FORTRAN}
+        -DHDF5_ENABLE_FORTRAN=${BUILD_FORTRAN}
 		-DCMAKE_INSTALL_PREFIX:PATH=${HDF5_INSTALL_DIR}
 		-DCMAKE_INSTALL_RPATH:PATH=${HDF5_INSTALL_DIR}/lib
 	INSTALL_DIR ${CMAKE_BINARY_DIR}/${CBF_HDF5}
