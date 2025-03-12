@@ -1,16 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
-
-if(COMMAND cmake_policy)
-  cmake_policy(SET CMP0003 NEW)
-endif(COMMAND cmake_policy)
-
-
-# Set timestamps of extracted contents to the time of extraction.
-# Resolved by explicitly setting DOWNLOAD_EXTRACT_TIMESTAMP in
-# externalproject_add() or fetchcontent_declare(), but the option was
-# only introduced in CMake 3.24.
-cmake_policy(SET CMP0135 NEW)
-
+cmake_minimum_required(VERSION 3.24)
 
 set(CBF_USE_FORTRAN_ENV $ENV{CBF_USE_FORTRAN})
 set(CBF_F90FLAGS_ENV $ENV{F90FLAGS})
@@ -19,7 +7,7 @@ set(CBF_M4FLAGS_ENV $ENV{M4FLAGS})
 set(CBF_HDF5REGISTER_MANUAL_ENV $ENV{CBF_HDF5REGISTER_MANUAL})
 
 if (CBF_USE_FORTRAN_ENV STREQUAL "NO")
-  project (CBFlib C CXX)
+  
   set(CBF_HDF5_ENABLE_FORTRAN "no")
 else (CBF_USE_FORTRAN_ENV STREQUAL "NO")
   project (CBFlib C CXX Fortran)
