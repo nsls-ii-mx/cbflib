@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.24)
 
-project (CBFlib C CXX)
+project(CBFlib C CXX)
 
 # Decide if we want fortran
-if (DEFINED BUILD_FORTRAN AND BUILD_FORTRAN)
+if(DEFINED BUILD_FORTRAN AND BUILD_FORTRAN)
 	# We've requested fortran explicitly
 	enable_language(Fortran)
 	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" ON)
@@ -12,7 +12,7 @@ elseif(NOT DEFINED BUILD_FORTRAN)
 	include(CheckLanguage)
 	check_language(Fortran)
 	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" $CMAKE_Fortran_COMPILER)
-	if (BUILD_FORTRAN)
+	if(BUILD_FORTRAN)
 		enable_language(Fortran)
 	endif()
 else()
@@ -27,30 +27,30 @@ set(CBF_HDF5REGISTER_MANUAL_ENV $ENV{CBF_HDF5REGISTER_MANUAL})
 
 enable_testing()
 
-if (CBF_USE_ULP STREQUAL "YES")
+if(CBF_USE_ULP STREQUAL "YES")
   set(CMAKE_C_FLAGS "-Wall -g -fno-strict-aliasing -DCBF_USE_ULP")
-else (CBF_USE_ULP STREQUAL "YES")
+else(CBF_USE_ULP STREQUAL "YES")
   set(CMAKE_C_FLAGS "-Wall -g -fno-strict-aliasing")
-endif (CBF_USE_ULP STREQUAL "YES")
+endif(CBF_USE_ULP STREQUAL "YES")
 
 #
 #  User setable parameters
 #
 
-if (CBF_M4FLAGS_ENV)
+if(CBF_M4FLAGS_ENV)
   set(CBF_M4FLAGS ${CBF_M4FLAGS_ENV})
-else (CBF_M4FLAGS_ENV)
+else(CBF_M4FLAGS_ENV)
   set(CBF_M4FLAGS "-Dfcb_bytes_in_rec=4096")
-endif (CBF_M4FLAGS_ENV)
+endif(CBF_M4FLAGS_ENV)
 
-if (BUILD_FORTRAN)
-	if (CBF_F90FLAGS_ENV)
+if(BUILD_FORTRAN)
+	if(CBF_F90FLAGS_ENV)
 	set(CMAKE_Fortran_FLAGS_RELEASE "${CMAKE_Fortran_FLAGS_RELEASE} ${CBF_F90FLAGS_ENV}")
 	set(CMAKE_Fortran_FLAGS_DEBUG   "${CMAKE_Fortran_FLAGS_DEBUG}   ${CBF_F90FLAGS_ENV}")
-	else (CBF_F90FLAGS_ENV)
+	else(CBF_F90FLAGS_ENV)
 	set(CMAKE_Fortran_FLAGS_RELEASE "${CMAKE_Fortran_FLAGS_RELEASE} -fno-range-check")
 	set(CMAKE_Fortran_FLAGS_DEBUG   "${CMAKE_Fortran_FLAGS_DEBUG}   -fno-range-check")
-	endif (CBF_F90FLAGS_ENV)
+	endif(CBF_F90FLAGS_ENV)
 endif()
 
 # Explicitly make "Release" the default build type
@@ -79,10 +79,10 @@ ENDIF(WIN32)
 # CBF_REQUIRE_DIRECTORY -- require directory dir
 #
 macro(CBF_REQUIRE_DIRECTORY dir)
-  if (NOT EXISTS "${dir}")
+  if(NOT EXISTS "${dir}")
     file(MAKE_DIRECTORY "${dir}")
     message(DEBUG "Created directory ${dir}")
-  endif (NOT EXISTS "${dir}")
+  endif(NOT EXISTS "${dir}")
 endmacro(CBF_REQUIRE_DIRECTORY)
 
 #
@@ -90,7 +90,7 @@ endmacro(CBF_REQUIRE_DIRECTORY)
 #                     Use an absolute path for UNPACKED_DIRECTORY
 #
 macro(CBF_LOAD_TARBALL WORK_DIR UNPACKED_DIRECTORY TARBALL)
-if (NOT EXISTS ${UNPACKED_DIRECTORY})
+if(NOT EXISTS ${UNPACKED_DIRECTORY})
 execute_process(
   COMMAND ${WGET_EXECUTABLE} ${TARBALL}
   WORKING_DIRECTORY ${WORK_DIR}
@@ -103,7 +103,7 @@ execute_process(
   COMMAND ${CMAKE_COMMAND} -E remove ${UNPACKED_DIRECTORY}.tar.gz
   WORKING_DIRECTORY ${WORK_DIR}
 )
-endif (NOT EXISTS ${UNPACKED_DIRECTORY})
+endif(NOT EXISTS ${UNPACKED_DIRECTORY})
 endmacro(CBF_LOAD_TARBALL)
 
 
@@ -153,41 +153,41 @@ CBF_REQUIRE_DIRECTORY(${CBF__DATA})
 
 # Extract the version components
 
-file (READ ${CBFlib_SOURCE_DIR}/include/cbf.h CBFlib_cbf_h_contents)
-string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_MAJOR[ \t]+([0-9]*).*$"
+file(READ ${CBFlib_SOURCE_DIR}/include/cbf.h CBFlib_cbf_h_contents)
+string(REGEX REPLACE ".*#define[ \t]+CBF_VERS_MAJOR[ \t]+([0-9]*).*$"
     "\\1" CBF_VERS_MAJOR ${CBFlib_cbf_h_contents})
 message(DEBUG "MAJOR VERSION: ${CBF_VERS_MAJOR}")
-string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_MINOR[ \t]+([0-9]*).*$"
+string(REGEX REPLACE ".*#define[ \t]+CBF_VERS_MINOR[ \t]+([0-9]*).*$"
     "\\1" CBF_VERS_MINOR ${CBFlib_cbf_h_contents})
 message(DEBUG "MINOR VERSION: ${CBF_VERS_MINOR}")
-string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_RELEASE[ \t]+([0-9.]*).*$"
+string(REGEX REPLACE ".*#define[ \t]+CBF_VERS_RELEASE[ \t]+([0-9.]*).*$"
     "\\1" CBF_VERS_RELEASE ${CBFlib_cbf_h_contents})
 message(DEBUG "RELEASE: ${CBF_VERS_RELEASE}")
-string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_SUBRELEASE[ \t]+\"([0-9A-Za-z.]*)\".*$"
+string(REGEX REPLACE ".*#define[ \t]+CBF_VERS_SUBRELEASE[ \t]+\"([0-9A-Za-z.]*)\".*$"
     "\\1" CBF_VERS_SUBRELEASE ${CBFlib_cbf_h_contents})
 message(DEBUG "SUBRELEASE: ${CBF_VERS_SUBRELEASE}")
 
 # Extract the API version components
 
-string (REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_CUR[ \t]+([0-9]*).*$"
+string(REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_CUR[ \t]+([0-9]*).*$"
     "\\1" CBF_APIVERS_CUR ${CBFlib_cbf_h_contents})
 message(DEBUG "API VERSION: ${CBF_APIVERS_CUR}")
-string (REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_REV[ \t]+([0-9]*).*$"
+string(REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_REV[ \t]+([0-9]*).*$"
     "\\1" CBF_APIVERS_REV ${CBFlib_cbf_h_contents})
 message(DEBUG "API REVISION: ${CBF_APIVERS_REV}")
-string (REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_AGE[ \t]+([0-9]*).*$"
+string(REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_AGE[ \t]+([0-9]*).*$"
     "\\1" CBF_APIVERS_AGE ${CBFlib_cbf_h_contents})
 message(DEBUG "API AGE: ${CBF_APIVERS_AGE}")
 
 
 if(CBF_VERS_SUBRELEASE)
-  set (CBF_VERSION "${CBF_VERS_MAJOR}.${CBF_VERS_MINOR}.${CBF_VERS_RELEASE}-${CBF_VERS_SUBRELEASE}")
+  set(CBF_VERSION "${CBF_VERS_MAJOR}.${CBF_VERS_MINOR}.${CBF_VERS_RELEASE}-${CBF_VERS_SUBRELEASE}")
 else(CBF_VERS_SUBRELEASE)
-  set (CBF_VERSION "${CBF_VERS_MAJOR}.${CBF_VERS_MINOR}.${CBF_VERS_RELEASE}")
+  set(CBF_VERSION "${CBF_VERS_MAJOR}.${CBF_VERS_MINOR}.${CBF_VERS_RELEASE}")
 endif(CBF_VERS_SUBRELEASE)
 message(DEBUG "VERSION:  ${CBF_VERSION}")
 
-set (CBF_APIVERSION "${CBF_APIVERS_CUR}.${CBF_APIVERS_REV}.${CBF_APIVERS_AGE}")
+set(CBF_APIVERSION "${CBF_APIVERS_CUR}.${CBF_APIVERS_REV}.${CBF_APIVERS_AGE}")
 message(DEBUG "APIVERSION:  ${CBF_APIVERSION}")
 
 
@@ -223,11 +223,11 @@ set(CQRLIB_INSTALL_DIR "${CMAKE_BINARY_DIR}/${CBF_CQRLIB}")
 set(CBF_HDF5        "hdf5-1.14.4-2")
 set(CBF_HDF5URL  "http://downloads.sf.net/cbflib/${CBF_HDF5}.tar.gz")
 set(CBF_HDF5REGISTER_ARG "--register")
-if (CBF_HDF5REGISTER_MANUAL_ENV STREQUAL "YES")
+if(CBF_HDF5REGISTER_MANUAL_ENV STREQUAL "YES")
   set(CBF_HDF5REGISTER_VAL "manual")
-else (CBF_HDF5REGISTER_MANUAL_ENV STREQUAL "YES")
+else(CBF_HDF5REGISTER_MANUAL_ENV STREQUAL "YES")
   set(CBF_HDF5REGISTER_VAL "plugin")
-endif (CBF_HDF5REGISTER_MANUAL_ENV STREQUAL "YES")
+endif(CBF_HDF5REGISTER_MANUAL_ENV STREQUAL "YES")
 set(HDF5_EXTERNALLY_CONFIGURED  1)
 set(HDF5_INSTALL_DIR "${CMAKE_BINARY_DIR}/${CBF_HDF5}")
 set(HDF5_BINARY_DIR "${CBF_HDF5}/bin")
@@ -362,14 +362,14 @@ find_library(CBF_REGEXLIB pcreposix)
 find_path(CBF_REGEXLIB_INCLUDE_DIR NAMES pcreposix.h)
 message(STATUS "CBF_REGEXLIB_INCLUDE_DIR for pcreposix.h = '${CBF_REGEXLIB_INCLUDE_DIR}'")
 message(STATUS "CBF_REGEXLIB = '${CBF_REGEXLIB}'")
-if (NOT CBF_REGEXLIB_INCLUDE_DIR OR NOT CBF_REGEXLIB)
+if(NOT CBF_REGEXLIB_INCLUDE_DIR OR NOT CBF_REGEXLIB)
 	# PCRE not found, try for REGEX
 	message(STATUS "'pcre' library not found")
 	find_library(CBF_REGEXLIB regex)
 	find_path(CBF_REGEXLIB_INCLUDE_DIR NAMES regex.h)
 	message(STATUS "CBF_REGEXLIB_INCLUDE_DIR for regex.h = '${CBF_REGEXLIB_INCLUDE_DIR}'")
 	message(STATUS "CBF_REGEXLIB = '${CBF_REGEXLIB}'")
-	if (NOT CBF_REGEXLIB_INCLUDE_DIR OR NOT CBF_REGEXLIB)
+	if(NOT CBF_REGEXLIB_INCLUDE_DIR OR NOT CBF_REGEXLIB)
 		# Neither PCRE not REGEX found, load and build PCRE
 		message(STATUS "'regex' library not found")
 		ExternalProject_add(
@@ -385,12 +385,12 @@ if (NOT CBF_REGEXLIB_INCLUDE_DIR OR NOT CBF_REGEXLIB)
 		set(CBF_REGEXLIB_INCLUDE_DIR ${CMAKE_BINARY_DIR}/${CBF_PCRE}/include)
 		set(CBF_REGEXLIB_LIBRARY_PATH ${CBFlib_BINARY_DIR}/${CBF_PCRE}/lib/libpcre.a)
 		add_definitions(-DCBF_REGEXLIB_PCRE)
-	else ()
+	else()
 		set(CBF_RE "")
 		set(CBF_REGEXLIB_LIBRARY_PATH "${CBF_REGEXLIB}/libregex.so")
 		add_definitions(-DCBF_REGEXLIB_REGEX)
-	endif ()
-else ()
+	endif()
+else()
 	add_library(pcreposix_static STATIC IMPORTED)
 	set_target_properties(pcreposix_static PROPERTIES
 		IMPORTED_LOCATION "${CBF_REGEXLIB}"
@@ -410,7 +410,7 @@ else ()
 	target_compile_definitions(pcreposix_shared
 	  INTERFACE CBF_REGEXLIB_PCRE)
 	set(CMAKE_FIND_LIBRARY_SUFFIX "${_find_library_suffix_save}")
-endif ()
+endif()
 
 #
 # Data Directories
@@ -437,22 +437,22 @@ CBF_LOAD_TARBALL(${CBF__DATA} ${CBF_DATADIRS} ${CBF_DATAURLS})
 file(GLOB CBF_DATADIRI_FILES "${CBF_DATADIRI}/*")
 file(GLOB CBF_DATADIRO_FILES "${CBF_DATADIRO}/*")
 foreach(loop_file ${CBF_DATADIRI_FILES} )
-  if (NOT "${loop_file}" MATCHES "[*.]md5")
+  if(NOT "${loop_file}" MATCHES "[*.]md5")
     file(MD5 "${loop_file}" loop_file_md5)
     file(STRINGS "${loop_file}.md5" loop_file_md5_orig LIMIT_COUNT 1)
-    if (NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
+    if(NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
       message(WARNINH "loop_file: ${loop_file}:|${loop_file_md5}|${loop_file_md5_orig}|")
-    endif (NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
-  endif (NOT "${loop_file}" MATCHES "[*.]md5")
+    endif(NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
+  endif(NOT "${loop_file}" MATCHES "[*.]md5")
 endforeach(loop_file)
 foreach(loop_file ${CBF_DATADIRO_FILES} )
-  if (NOT "${loop_file}" MATCHES "[*.]md5")
+  if(NOT "${loop_file}" MATCHES "[*.]md5")
     file(MD5 "${loop_file}" loop_file_md5)
     file(STRINGS "${loop_file}.md5" loop_file_md5_orig LIMIT_COUNT 1)
-    if (NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
+    if(NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
       message(WARNING "loop_file: ${loop_file}:|${loop_file_md5}|${loop_file_md5_orig}|")
-    endif (NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
-  endif (NOT "${loop_file}" MATCHES "[*.]md5")
+    endif(NOT ("${loop_file_md5}" STREQUAL "${loop_file_md5_orig}"))
+  endif(NOT "${loop_file}" MATCHES "[*.]md5")
 endforeach(loop_file)
 
 
@@ -581,7 +581,7 @@ set(
 )
 
 
-if (BUILD_FORTRAN)
+if(BUILD_FORTRAN)
 	#
 	# m4 FCB library macro files
 	#
@@ -782,7 +782,7 @@ add_target(testflat "${CBF__EXAMPLES}/testflat.c" "" "cbf_static")
 add_target(testflatpacked "${CBF__EXAMPLES}/testflatpacked.c" "" "cbf_static")
 add_target(testreals "${CBF__EXAMPLES}/testreals.c" "" "cbf_static")
 
-if (BUILD_FORTRAN)
+if(BUILD_FORTRAN)
 
 	#
 	#  F90 examples
@@ -808,46 +808,46 @@ endif()
 #
 # install
 #
-install (TARGETS makecbf DESTINATION bin)
-install (TARGETS img2cif DESTINATION bin)
-install (TARGETS cif2cbf DESTINATION bin)
-install (TARGETS adscimg2cbf DESTINATION bin)
-install (TARGETS cbf2adscimg DESTINATION bin)
-install (TARGETS changtestcompression DESTINATION bin)
-install (TARGETS convert_image DESTINATION bin)
-install (TARGETS convert_minicbf DESTINATION bin)
-install (TARGETS minicbf2nexus DESTINATION bin)
-install (TARGETS cbf2nexus DESTINATION bin)
-install (TARGETS nexus2cbf DESTINATION bin)
-install (TARGETS cbf_template_t DESTINATION bin)
-install (TARGETS testcell DESTINATION bin)
-install (TARGETS sauter_test DESTINATION bin)
-install (TARGETS sequence_match DESTINATION bin)
-install (TARGETS tiff2cbf DESTINATION bin)
-install (TARGETS cbf_static DESTINATION lib)
-install (TARGETS cbf_shared DESTINATION lib)
+install(TARGETS makecbf DESTINATION bin)
+install(TARGETS img2cif DESTINATION bin)
+install(TARGETS cif2cbf DESTINATION bin)
+install(TARGETS adscimg2cbf DESTINATION bin)
+install(TARGETS cbf2adscimg DESTINATION bin)
+install(TARGETS changtestcompression DESTINATION bin)
+install(TARGETS convert_image DESTINATION bin)
+install(TARGETS convert_minicbf DESTINATION bin)
+install(TARGETS minicbf2nexus DESTINATION bin)
+install(TARGETS cbf2nexus DESTINATION bin)
+install(TARGETS nexus2cbf DESTINATION bin)
+install(TARGETS cbf_template_t DESTINATION bin)
+install(TARGETS testcell DESTINATION bin)
+install(TARGETS sauter_test DESTINATION bin)
+install(TARGETS sequence_match DESTINATION bin)
+install(TARGETS tiff2cbf DESTINATION bin)
+install(TARGETS cbf_static DESTINATION lib)
+install(TARGETS cbf_shared DESTINATION lib)
 
 if(BUILD_FORTRAN)
-  install (TARGETS fcb_static DESTINATION lib)
-  install (TARGETS fcb_shared DESTINATION lib)
+  install(TARGETS fcb_static DESTINATION lib)
+  install(TARGETS fcb_shared DESTINATION lib)
 endif()
 
-install (TARGETS img_static DESTINATION lib)
-install (TARGETS img_shared DESTINATION lib)
-install (DIRECTORY ${CBF__INCLUDE}/ DESTINATION include/cbflib FILES_MATCHING PATTERN "*.h")
-install (DIRECTORY ${CBF__BIN_INCLUDE}/* DESTINATION include/cbflib FILES_MATCHING PATTERN "*.h")
+install(TARGETS img_static DESTINATION lib)
+install(TARGETS img_shared DESTINATION lib)
+install(DIRECTORY ${CBF__INCLUDE}/ DESTINATION include/cbflib FILES_MATCHING PATTERN "*.h")
+install(DIRECTORY ${CBF__BIN_INCLUDE}/* DESTINATION include/cbflib FILES_MATCHING PATTERN "*.h")
 
 # message(STATUS "CMAKE_INSTALL_PREFIX/lib ${CMAKE_INSTALL_PREFIX}/lib")
 
 # path to the valgrind executable
 set(VALGRIND_COMMAND "")
 find_program(VALGRIND valgrind)
-if (VALGRIND)
+if(VALGRIND)
 	message(DEBUG "valgrind found at ${VALGRIND}")
 	set(VALGRIND_COMMAND ${VALGRIND} --error-exitcode=3 --leak-check=full)
-else ()
+else()
 	message(DEBUG "valgrind could not be not found")
-endif ()
+endif()
 
 #
 # tests  -- to be extended
@@ -858,8 +858,8 @@ endif ()
 #
 macro(CBF_SET_TEST_ENVIRONMENT TESTNAME)
   IF(WIN32)
-    set (xrpathname "PATH")
-    set (xrpath "${HDF5_INSTALL_DIR}/lib;$ENV{PATH}")
+    set(xrpathname "PATH")
+    set(xrpath "${HDF5_INSTALL_DIR}/lib;$ENV{PATH}")
     string(REPLACE ";" "\\;" xrpath "${xrpath}")
   ELSE(WIN32)
     IF(APPLE)
@@ -867,7 +867,7 @@ macro(CBF_SET_TEST_ENVIRONMENT TESTNAME)
     ELSE(APPLE)
       set(xrpathname "LD_LIBRARY_PATH")
     ENDIF(APPLE)
-    set (xrpath "${HDF5_INSTALL_DIR}/lib:$ENV{${xrpathname}}")
+    set(xrpath "${HDF5_INSTALL_DIR}/lib:$ENV{${xrpathname}}")
   ENDIF(WIN32)
   set_property(TEST ${TESTNAME} PROPERTY ENVIRONMENT "${xrpathname}=${xrpath}")
   message(status "${xrpathname}=${xrpath}")
@@ -875,8 +875,8 @@ endmacro(CBF_SET_TEST_ENVIRONMENT)
 
 macro(CBF_APPEND_TEST_ENVIRONMENT TESTNAME)
   IF(WIN32)
-    set (xrpathname "PATH")
-    set (xrpath "${HDF5_INSTALL_DIR}/lib;$ENV{PATH}")
+    set(xrpathname "PATH")
+    set(xrpath "${HDF5_INSTALL_DIR}/lib;$ENV{PATH}")
     string(REPLACE ";" "\\;" xrpath "${xrpath}")
   ELSE(WIN32)
     IF(APPLE)
@@ -884,7 +884,7 @@ macro(CBF_APPEND_TEST_ENVIRONMENT TESTNAME)
     ELSE(APPLE)
       set( xrpathname "LD_LIBRARY_PATH" )
     ENDIF(APPLE)
-    set (xrpath "${HDF5_INSTALL_DIR}/lib;$ENV{${xrpathname}")
+    set(xrpath "${HDF5_INSTALL_DIR}/lib;$ENV{${xrpathname}")
   ENDIF(WIN32)
   set_property(TEST ${TESTNAME} APPEND PROPERTY ENVIRONMENT "$xrpathname=${xrpath}")
 endmacro(CBF_APPEND_TEST_ENVIRONMENT TESTNAME)
