@@ -27,8 +27,6 @@ set(CBF_HDF5REGISTER_MANUAL_ENV $ENV{CBF_HDF5REGISTER_MANUAL})
 
 enable_testing()
 
-set (CBF_CMAKE_DEBUG "ON")
-
 if (CBF_USE_ULP STREQUAL "YES")
   set(CMAKE_C_FLAGS "-Wall -g -fno-strict-aliasing -DCBF_USE_ULP")
 else (CBF_USE_ULP STREQUAL "YES")
@@ -78,21 +76,12 @@ ENDIF(WIN32)
 #
 
 #
-#  CBF_DEBUG_MESSAGE if CBF_CMAKE_DEBUG issue str
-#
-macro(CBF_DEBUG_MESSAGE str)
-  if(CBF_CMAKE_DEBUG)
-    message(STATUS ${str})
-  endif(CBF_CMAKE_DEBUG)
-endmacro (CBF_DEBUG_MESSAGE)
-
-#
 # CBF_REQUIRE_DIRECTORY -- require directory dir
 #
 macro(CBF_REQUIRE_DIRECTORY dir)
   if (NOT EXISTS "${dir}")
     file(MAKE_DIRECTORY "${dir}")
-    CBF_DEBUG_MESSAGE("Created directory ${dir}")
+    message(DEBUG "Created directory ${dir}")
   endif (NOT EXISTS "${dir}")
 endmacro(CBF_REQUIRE_DIRECTORY)
 
@@ -167,28 +156,28 @@ CBF_REQUIRE_DIRECTORY(${CBF__DATA})
 file (READ ${CBFlib_SOURCE_DIR}/include/cbf.h CBFlib_cbf_h_contents)
 string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_MAJOR[ \t]+([0-9]*).*$"
     "\\1" CBF_VERS_MAJOR ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "MAJOR VERSION: ${CBF_VERS_MAJOR}")
+message(DEBUG "MAJOR VERSION: ${CBF_VERS_MAJOR}")
 string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_MINOR[ \t]+([0-9]*).*$"
     "\\1" CBF_VERS_MINOR ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "MINOR VERSION: ${CBF_VERS_MINOR}")
+message(DEBUG "MINOR VERSION: ${CBF_VERS_MINOR}")
 string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_RELEASE[ \t]+([0-9.]*).*$"
     "\\1" CBF_VERS_RELEASE ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "RELEASE: ${CBF_VERS_RELEASE}")
+message(DEBUG "RELEASE: ${CBF_VERS_RELEASE}")
 string (REGEX REPLACE ".*#define[ \t]+CBF_VERS_SUBRELEASE[ \t]+\"([0-9A-Za-z.]*)\".*$"
     "\\1" CBF_VERS_SUBRELEASE ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "SUBRELEASE: ${CBF_VERS_SUBRELEASE}")
+message(DEBUG "SUBRELEASE: ${CBF_VERS_SUBRELEASE}")
 
 # Extract the API version components
 
 string (REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_CUR[ \t]+([0-9]*).*$"
     "\\1" CBF_APIVERS_CUR ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "API VERSION: ${CBF_APIVERS_CUR}")
+message(DEBUG "API VERSION: ${CBF_APIVERS_CUR}")
 string (REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_REV[ \t]+([0-9]*).*$"
     "\\1" CBF_APIVERS_REV ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "API REVISION: ${CBF_APIVERS_REV}")
+message(DEBUG "API REVISION: ${CBF_APIVERS_REV}")
 string (REGEX REPLACE ".*#define[ \t]+CBF_APIVERS_AGE[ \t]+([0-9]*).*$"
     "\\1" CBF_APIVERS_AGE ${CBFlib_cbf_h_contents})
-CBF_DEBUG_MESSAGE( "API AGE: ${CBF_APIVERS_AGE}")
+message(DEBUG "API AGE: ${CBF_APIVERS_AGE}")
 
 
 if(CBF_VERS_SUBRELEASE)
@@ -196,12 +185,10 @@ if(CBF_VERS_SUBRELEASE)
 else(CBF_VERS_SUBRELEASE)
   set (CBF_VERSION "${CBF_VERS_MAJOR}.${CBF_VERS_MINOR}.${CBF_VERS_RELEASE}")
 endif(CBF_VERS_SUBRELEASE)
-if(CBF_CMAKE_DEBUG)
-  message (STATUS "VERSION:  ${CBF_VERSION}")
-endif(CBF_CMAKE_DEBUG)
+message(DEBUG "VERSION:  ${CBF_VERSION}")
 
 set (CBF_APIVERSION "${CBF_APIVERS_CUR}.${CBF_APIVERS_REV}.${CBF_APIVERS_AGE}")
-CBF_DEBUG_MESSAGE( "APIVERSION:  ${CBF_APIVERSION}")
+message(DEBUG "APIVERSION:  ${CBF_APIVERSION}")
 
 
 
@@ -278,7 +265,7 @@ set(CBF_HDF5URL  "http://downloads.sf.net/cbflib/${CBF_HDF5}.tar.gz")
 # Get wget
 #
 find_program(WGET_EXECUTABLE wget)
-CBF_DEBUG_MESSAGE( "WGET found at ${WGET_EXECUTABLE}")
+message(DEBUG "WGET found at ${WGET_EXECUTABLE}")
 
 
 #
@@ -856,10 +843,10 @@ install (DIRECTORY ${CBF__BIN_INCLUDE}/* DESTINATION include/cbflib FILES_MATCHI
 set(VALGRIND_COMMAND "")
 find_program(VALGRIND valgrind)
 if (VALGRIND)
-	CBF_DEBUG_MESSAGE("valgrind found at ${VALGRIND}")
+	message(DEBUG "valgrind found at ${VALGRIND}")
 	set(VALGRIND_COMMAND ${VALGRIND} --error-exitcode=3 --leak-check=full)
 else ()
-	CBF_DEBUG_MESSAGE("valgrind could not be not found")
+	message(DEBUG "valgrind could not be not found")
 endif ()
 
 #
