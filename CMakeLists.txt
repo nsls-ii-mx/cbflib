@@ -1,18 +1,38 @@
 cmake_minimum_required(VERSION 3.24)
 
+project (CBFlib C CXX)
+
+# Decide if we want fortran
+if (DEFINED BUILD_FORTRAN AND BUILD_FORTRAN)
+	# We've requested fortran explicitly
+	enable_language(Fortran)
+	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" ON)
+elseif(NOT DEFINED BUILD_FORTRAN)
+	# The user didn't explicitly indicate, enable if available
+	include(CheckLanguage)
+	check_language(Fortran)
+	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" $CMAKE_Fortran_COMPILER)
+	if (BUILD_FORTRAN)
+		enable_language(Fortran)
+	endif()
+else()
+	# The user explicitly said no fortran, record as an option anyway
+	option(BUILD_FORTRAN "Build the fortran parts of CBFlib" NO)
+endif()
+
+# Preserve the old language-enabling setting behaviour for now
+if (CMAKE_Fortran_COMPILER)
+	set(CBF_HDF5_ENABLE_FORTRAN "no")
+else()
+	set(CBF_HDF5_ENABLE_FORTRAN "no")
+endif()
+
 set(CBF_USE_FORTRAN_ENV $ENV{CBF_USE_FORTRAN})
 set(CBF_F90FLAGS_ENV $ENV{F90FLAGS})
 set(CBF_USE_ULP $ENV{CBF_USE_ULP})
 set(CBF_M4FLAGS_ENV $ENV{M4FLAGS})
 set(CBF_HDF5REGISTER_MANUAL_ENV $ENV{CBF_HDF5REGISTER_MANUAL})
 
-if (CBF_USE_FORTRAN_ENV STREQUAL "NO")
-  
-  set(CBF_HDF5_ENABLE_FORTRAN "no")
-else (CBF_USE_FORTRAN_ENV STREQUAL "NO")
-  project (CBFlib C CXX Fortran)
-  set(CBF_HDF5_ENABLE_FORTRAN "yes")
-endif (CBF_USE_FORTRAN_ENV STREQUAL "NO")
 enable_testing()
 
 set (CBF_CMAKE_DEBUG "ON")
