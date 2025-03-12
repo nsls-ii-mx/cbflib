@@ -72,16 +72,6 @@ ENDIF(WIN32)
 #
 
 #
-# CBF_REQUIRE_DIRECTORY -- require directory dir
-#
-macro(CBF_REQUIRE_DIRECTORY dir)
-  if(NOT EXISTS "${dir}")
-    file(MAKE_DIRECTORY "${dir}")
-    message(DEBUG "Created directory ${dir}")
-  endif(NOT EXISTS "${dir}")
-endmacro(CBF_REQUIRE_DIRECTORY)
-
-#
 # CBF_LOAD_TARBALL -- load TARBALL into WORK_DIR as UNPACKED_DIRECTORY
 #                     Use an absolute path for UNPACKED_DIRECTORY
 #
@@ -134,16 +124,6 @@ set(CBF__EXT_PKG   "${CBFlib_BINARY_DIR}/external_packages" )
 set(CBF__DATA      "${CBFlib_BINARY_DIR}/data_files" )
 
 set(HDF5_PLUGIN_PATH ${CBF__LIB})
-
-
-CBF_REQUIRE_DIRECTORY(${CBF__BLDSRC})
-CBF_REQUIRE_DIRECTORY(${CBF__BLDEXMP})
-CBF_REQUIRE_DIRECTORY(${CBF__BIN})
-CBF_REQUIRE_DIRECTORY(${CBF__LIB})
-CBF_REQUIRE_DIRECTORY(${CBF__BIN_INCLUDE})
-CBF_REQUIRE_DIRECTORY(${CBF__SHARE})
-CBF_REQUIRE_DIRECTORY(${CBF__EXT_PKG})
-CBF_REQUIRE_DIRECTORY(${CBF__DATA})
 
 # Version string and API version string -- obtained from cbf.h
 
