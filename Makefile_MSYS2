@@ -1508,7 +1508,10 @@ build_py3ply:   $(M4)/Makefile.m4
 	touch build_py3ply
 $(PY3PLY):      build_py3ply
 	-rm -rf $(PY3PLY)
-	git clone $(PY3PLY); \
+	git clone $(PY3PLYURL)
+	(cd $(PY3PLY); \
+	PYTHONPATH=$(PY3CIFRW_PREFIX)/lib/python:$(PY3CIFRW_PREFIX)/lib64/python; export PYTHONPATH; \
+	mkdir -p $(PY3CIFRW_PREFIX)/lib/python/site-packages; \
 	mkdir -p $(PY3CIFRW_PREFIX)/lib64/python/site-packages; \
 	$(PYTHON3) -m build --config-setting=install -C--prefix= -C--home=$(PY3CIFRW_PREFIX) )
 endif
