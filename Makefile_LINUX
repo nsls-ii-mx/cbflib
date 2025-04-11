@@ -641,7 +641,7 @@ F90SWIG = $(SWIG_FORTRAN) -fortran
 # Java SDK root directory
 #
 ifeq ($(JDKDIR),)
-	JDKDIR 	=	/etc/alternatives/java_sdk
+	JDKDIR 	?=	/usr/lib/jvm/default-java
 endif
 
 #
