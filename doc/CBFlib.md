@@ -1,48 +1,71 @@
-[![\[IUCr Home Page\]](../html_graphics/iucrhome.jpg)](http://www.iucr.org/iucr-top/welcome.html) [![\[CIF Home Page\]](../html_graphics/cifhome.jpg)](http://www.iucr.org/iucr-top/cif/home.html) [![\[CBF/imgCIF\]](../html_graphics/CBFbutton.jpg)](cbf_definition_rev.html) ![](../html_graphics/cbflibbutton.jpg)
+[![\[IUCr Home
+Page\]](../html_graphics/iucrhome.jpg)](http://www.iucr.org/iucr-top/welcome.html)
+[![\[CIF Home
+Page\]](../html_graphics/cifhome.jpg)](http://www.iucr.org/iucr-top/cif/home.html)
+[![\[CBF/imgCIF\]](../html_graphics/CBFbutton.jpg)](cbf_definition_rev.html)
+![](../html_graphics/cbflibbutton.jpg)
 
 ------------------------------------------------------------------------
 
-\| [IUCr Home Page](http://www.iucr.org/iucr-top/welcome.html) \| [CIF Home Page](http://www.iucr.org/iucr-top/cif/home.html) \| [CBF/imgCIF](cbf_definition_rev.html) \| CBFlib \|  
-\| [NOTICE](CBFlib_NOTICES.html) \| [GPL](gpl.txt) \| [LGPL](lgpl.txt) \| [imgCIF dictionary](cif_img_1.7.10.html) \|  
-\| [Click Here to Make a Donation](http://arcib.dowling.edu/donation.shtml) \|
+\| [IUCr Home Page](http://www.iucr.org/iucr-top/welcome.html) \| [CIF
+Home Page](http://www.iucr.org/iucr-top/cif/home.html) \|
+[CBF/imgCIF](cbf_definition_rev.html) \| CBFlib \|\
+\| [NOTICE](CBFlib_NOTICES.html) \| [GPL](gpl.txt) \| [LGPL](lgpl.txt)
+\| [imgCIF dictionary](cif_img_1.7.10.html) \|\
+\| [Click Here to Make a
+Donation](http://arcib.dowling.edu/donation.shtml) \|
 
 ![](../html_graphics/cbflibbig.jpg)
 
-## CBFlib
+## CBFlib {#cbflib align="CENTER"}
 
-**An API for CBF/imgCIF  
-Crystallographic Binary Files with ASCII Support**  
-Version 0.9.8  
-3 April 2025  
+**An API for CBF/imgCIF\
+Crystallographic Binary Files with ASCII Support**\
+Version 0.9.8\
+3 April 2025\
 /
 
-by  
-Paul J. Ellis  
-Stanford Synchrotron Radiation Laboratory  
+by\
+Paul J. Ellis\
+Stanford Synchrotron Radiation Laboratory\
 
-and  
-Herbert J. Bernstein  
-Information Systems Consultant  
+and\
+Herbert J. Bernstein\
+Information Systems Consultant\
 
 hbernstein **at** bnl **dot** gov
 
-© Copyright 2006, 2007, 2008, 2011, 2013, 2014, 2025 Herbert J. Bernstein
+© Copyright 2006, 2007, 2008, 2011, 2013, 2014, 2025 Herbert J.
+Bernstein
 
 ------------------------------------------------------------------------
 
-**YOU MAY REDISTRIBUTE THE CBFLIB PACKAGE UNDER THE TERMS OF THE [GPL](gpl.txt).**
+**YOU MAY REDISTRIBUTE THE CBFLIB PACKAGE UNDER THE TERMS OF THE
+[GPL](gpl.txt).**
 
-ALTERNATIVELY YOU MAY REDISTRIBUTE THE CBFLIB API UNDER THE TERMS OF THE [LGPL](lgpl.txt).
-
-------------------------------------------------------------------------
-
-### Before using this software, please read the [![NOTICE](../html_graphics/noticeButton.jpg)](CBFlib_NOTICES.html) for important disclaimers and the IUCr Policy on the Use of the Crystallographic Information File (CIF) and for other important information.
-
-Work on imgCIF and CBFlib currentlysupported in part by the the National Institutes of Health under grant R24-GM154040-01 and in the past by U. S. Department of Energy (DOE) under grants ER63601-1021466-0009501 and ER64212-1027708-0011962, by the U. S. National Science Foundation (NSF) under grants DBI-0610407, DBI-0315281 and EF-0312612, the U. S. National Institutes of Health (NIH) under grants 1R15GM078077 from NIGMS and 1R13RR023192 from NCRR and funding from the International Union for Crystallographyn (IUCr). The content is solely the responsibility of the authors and does not necessarily represent the official views of DOE, NSF, NIH, NIGMS, NCRR or IUCr. Recent work on integration among CBF, HDF5 and NeXus supported in part by Pandata ODI (EU 7th Framework Programme)
+ALTERNATIVELY YOU MAY REDISTRIBUTE THE CBFLIB API UNDER THE TERMS OF THE
+[LGPL](lgpl.txt).
 
 ------------------------------------------------------------------------
 
-## Version History
+### Before using this software, please read the [![NOTICE](../html_graphics/noticeButton.jpg)](CBFlib_NOTICES.html) for important disclaimers and the IUCr Policy on the Use of the Crystallographic Information File (CIF) and for other important information. {#before-using-this-software-please-read-the-notice-for-important-disclaimers-and-the-iucr-policy-on-the-use-of-the-crystallographic-information-file-cif-and-for-other-important-information. align="CENTER"}
+
+Work on imgCIF and CBFlib currentlysupported in part by the the National
+Institutes of Health under grant R24-GM154040-01 and in the past by U.
+S. Department of Energy (DOE) under grants ER63601-1021466-0009501 and
+ER64212-1027708-0011962, by the U. S. National Science Foundation (NSF)
+under grants DBI-0610407, DBI-0315281 and EF-0312612, the U. S. National
+Institutes of Health (NIH) under grants 1R15GM078077 from NIGMS and
+1R13RR023192 from NCRR and funding from the International Union for
+Crystallographyn (IUCr). The content is solely the responsibility of the
+authors and does not necessarily represent the official views of DOE,
+NSF, NIH, NIGMS, NCRR or IUCr. Recent work on integration among CBF,
+HDF5 and NeXus supported in part by Pandata ODI (EU 7th Framework
+Programme)
+
+------------------------------------------------------------------------
+
+## Version History {#version-history align="CENTER"}
 
 Version
 
@@ -58,7 +81,8 @@ Description
 
   PJE
 
-  This was the first CBFlib release. It supported binary CBF files using binary strings.
+  This was the first CBFlib release. It supported binary CBF files using
+binary strings.
 
   [0.2](ChangeLog.html#0.2)
 
@@ -66,7 +90,10 @@ Description
 
   HJB
 
-  This release added ascii imgCIF support using MIME-encoded binary sections, added the option of MIME headers for the binary strings was well. MIME code adapted from mpack 1.5. Added hooks needed for DDL1-style names without categories.
+  This release added ascii imgCIF support using MIME-encoded binary
+sections, added the option of MIME headers for the binary strings was
+well. MIME code adapted from mpack 1.5. Added hooks needed for
+DDL1-style names without categories.
 
   [0.3](ChangeLog.html#0.3)
 
@@ -74,7 +101,9 @@ Description
 
   PJE
 
-  This release cleaned up the changes made for version 0.2, allowing multi-threaded use of the code, and removing dependence on the mpack package.
+  This release cleaned up the changes made for version 0.2, allowing
+multi-threaded use of the code, and removing dependence on the mpack
+package.
 
   [0.4](ChangeLog.html#0.4)
 
@@ -82,7 +111,11 @@ Description
 
   HJB
 
-  This release merged much of the message digest code into the general file reading and writing to reduce the number of passes. More consistency checking between the MIME header and the binary header was introduced. The size in the MIME header was adjusted to agree with the version 0.2 documentation.
+  This release merged much of the message digest code into the general
+file reading and writing to reduce the number of passes. More
+consistency checking between the MIME header and the binary header was
+introduced. The size in the MIME header was adjusted to agree with the
+version 0.2 documentation.
 
   [0.5](ChangeLog.html#0.5)
 
@@ -90,7 +123,8 @@ Description
 
   PJE
 
-  This release greatly increased the speed of processing by allowing for deferred digest evaluation.
+  This release greatly increased the speed of processing by allowing for
+deferred digest evaluation.
 
   [0.6](ChangeLog.html#0.6)
 
@@ -98,7 +132,11 @@ Description
 
   HJB
 
-  This release removed the redundant information (binary id, size, compression id) from a binary header when there is a MIME header, removed the unused repeat argument, and made the memory allocation for buffering and tables with many rows sensitive to the current memory allocation already used.
+  This release removed the redundant information (binary id, size,
+compression id) from a binary header when there is a MIME header,
+removed the unused repeat argument, and made the memory allocation for
+buffering and tables with many rows sensitive to the current memory
+allocation already used.
 
   [0.6.1](ChangeLog.html#0.6.1)
 
@@ -106,7 +144,8 @@ Description
 
   HP (per HJB)
 
-  This release fixed a memory leak due to misallocation by size of cbf_handle instead of cbf_handle_struct
+  This release fixed a memory leak due to misallocation by size of
+cbf_handle instead of cbf_handle_struct
 
   [0.7](ChangeLog.html#0.7)
 
@@ -114,7 +153,8 @@ Description
 
   PJE
 
-  This release added high-level instructions based on the imgCIF dictionary version 1.1.
+  This release added high-level instructions based on the imgCIF
+dictionary version 1.1.
 
   [0.7.1](ChangeLog.html#0.7.1)
 
@@ -122,7 +162,8 @@ Description
 
   PJE
 
-  The high-level functions were revised to permit future expansion to files with multiple images.
+  The high-level functions were revised to permit future expansion to
+files with multiple images.
 
   [0.7.2](ChangeLog.html#0.7.2)
 
@@ -130,7 +171,8 @@ Description
 
   HJB
 
-  This release adjusted cbf_cimple.c to conform to cif_img.dic version 1.1.3
+  This release adjusted cbf_cimple.c to conform to cif_img.dic version
+1.1.3
 
   [0.7.2.1](ChangeLog.html#0.7.2.1)
 
@@ -138,7 +180,8 @@ Description
 
   PJE
 
-  This release corrected an if nesting error in the prior mod to cbf_cimple.c.
+  This release corrected an if nesting error in the prior mod to
+cbf_cimple.c.
 
   [0.7.3](ChangeLog.html#0.7.3)
 
@@ -146,7 +189,9 @@ Description
 
   PJE
 
-  This release modified cbf_simple.c to reorder image data on read so that the indices are always increasing in memory (this behavior was undefined previously).
+  This release modified cbf_simple.c to reorder image data on read so
+that the indices are always increasing in memory (this behavior was
+undefined previously).
 
   [0.7.4](ChangeLog.html#0.7.4)
 
@@ -154,7 +199,8 @@ Description
 
   HJB
 
-  This release fixes a parse error for quoted strings, adds code to get and set character string types, and removes compiler warnings
+  This release fixes a parse error for quoted strings, adds code to get
+and set character string types, and removes compiler warnings
 
   [0.7.5](ChangeLog.html#0.7.5)
 
@@ -162,7 +208,12 @@ Description
 
   HJB
 
-  This release cleans up some compiler warnings, corrects a parse error on quoted strings with a leading blank as adds the new routines for support of aliases, dictionaries and real arrays, higher level routines to get and set pixel sizes, do cell computations, and to set beam centers, improves support for conversion of images, picking up more data from headers.
+  This release cleans up some compiler warnings, corrects a parse error
+on quoted strings with a leading blank as adds the new routines for
+support of aliases, dictionaries and real arrays, higher level routines
+to get and set pixel sizes, do cell computations, and to set beam
+centers, improves support for conversion of images, picking up more data
+from headers.
 
   [0.7.6](ChangeLog.html#0.7.6)
 
@@ -170,7 +221,20 @@ Description
 
   HJB
 
-  This release reorganizes the kit into two pieces: CBFlib_0.7.6_Data_Files and CBFlib_0.7.6. An optional local copy of getopt is added. The 1.4 draft dictionary has been added. cif2cbf updated to support vcif2 validation. convert_image and cif2cbf updated to report text of error messages. convert_image updated to support tag and category aliases, default to adxv images. convert_image and img updated to support row-major images. Support added for binning. API Support added for validation, wide files and line folding. Logic changed for beam center reporting. Added new routines: cbf_validate, cbf_get_bin_sizes, cbf_set_bin_sizes, cbf_find_last_typed_child, cbf_compose_itemname, cbf_set_cbf_logfile, cbf_make_widefile, cbf_read_anyfile, cbf_read_widefile, cbf_write_local_file, cbf_write_widefile, cbf_column_number, cbf_blockitem_number, cbf_log, cbf_check_category_tags, cbf_set_beam_center
+  This release reorganizes the kit into two pieces:
+CBFlib_0.7.6_Data_Files and CBFlib_0.7.6. An optional local copy of
+getopt is added. The 1.4 draft dictionary has been added. cif2cbf
+updated to support vcif2 validation. convert_image and cif2cbf updated
+to report text of error messages. convert_image updated to support tag
+and category aliases, default to adxv images. convert_image and img
+updated to support row-major images. Support added for binning. API
+Support added for validation, wide files and line folding. Logic changed
+for beam center reporting. Added new routines: cbf_validate,
+cbf_get_bin_sizes, cbf_set_bin_sizes, cbf_find_last_typed_child,
+cbf_compose_itemname, cbf_set_cbf_logfile, cbf_make_widefile,
+cbf_read_anyfile, cbf_read_widefile, cbf_write_local_file,
+cbf_write_widefile, cbf_column_number, cbf_blockitem_number, cbf_log,
+cbf_check_category_tags, cbf_set_beam_center
 
   [0.7.7](ChangeLog.html#0.7.7)
 
@@ -178,7 +242,12 @@ Description
 
   HJB
 
-  This release reflects changes for base 32K support developed by G. Darakev, and changes for support of reals, 3d arrays, byte_offset compression and J. P. Abrahams packed compression made in consultation with (in alphabetic order) E. Eikenberry, A. Hammerley, W. Kabsch, M. Kobas, J. Wright and others at PSI and ESRF in January 2007, as well accumulated changes fixing problems in release 0.7.6.
+  This release reflects changes for base 32K support developed by G.
+Darakev, and changes for support of reals, 3d arrays, byte_offset
+compression and J. P. Abrahams packed compression made in consultation
+with (in alphabetic order) E. Eikenberry, A. Hammerley, W. Kabsch, M.
+Kobas, J. Wright and others at PSI and ESRF in January 2007, as well
+accumulated changes fixing problems in release 0.7.6.
 
   [0.7.7.1](ChangeLog.html#0.7.7.1)
 
@@ -186,7 +255,10 @@ Description
 
   HJB
 
-  This release is a patch to 0.7.7 to change the treatment of the byteorder parameter from strcpy semantics to return of a pointer to a string constant. Our thanks to E. Eikenberry for pointing out the problem.
+  This release is a patch to 0.7.7 to change the treatment of the
+byteorder parameter from strcpy semantics to return of a pointer to a
+string constant. Our thanks to E. Eikenberry for pointing out the
+problem.
 
   [0.7.7.2](ChangeLog.html#0.7.7.2)
 
@@ -194,7 +266,8 @@ Description
 
   HJB
 
-  This release is a patch to 0.7.7.1 to add testing for JPA packed compression and to respect signs declared in the MIME header.
+  This release is a patch to 0.7.7.1 to add testing for JPA packed
+compression and to respect signs declared in the MIME header.
 
   [0.7.7.3](ChangeLog.html#0.7.7.3)
 
@@ -202,7 +275,9 @@ Description
 
   HJB
 
-  This release is a patch to 0.7.7.3 to add f90 support for reading of CBF byte-offset and packed compression, to fix problems with gcc 4.4.1 and to correct errors in multidimensional packed compression.
+  This release is a patch to 0.7.7.3 to add f90 support for reading of
+CBF byte-offset and packed compression, to fix problems with gcc 4.4.1
+and to correct errors in multidimensional packed compression.
 
   [0.7.7.4](ChangeLog.html#0.7.7.4)
 
@@ -210,7 +285,8 @@ Description
 
   HJB
 
-  Corrects in handling SLS detector mincbfs and reorder dimensions versus arrays for some f90 compilers as per H. Powell.
+  Corrects in handling SLS detector mincbfs and reorder dimensions
+versus arrays for some f90 compilers as per H. Powell.
 
   [0.7.7.5](ChangeLog.html#0.7.7.5)
 
@@ -218,7 +294,8 @@ Description
 
   HJB
 
-  Fix to cbf_get_image for bug reported by F. Remacle, fixes for windows builds as per J. Wright and F. Remacle.
+  Fix to cbf_get_image for bug reported by F. Remacle, fixes for windows
+builds as per J. Wright and F. Remacle.
 
   [0.7.7.6](ChangeLog.html#0.7.7.6)
 
@@ -226,7 +303,8 @@ Description
 
   HJB
 
-  Fix to CBF byte-offset compression writes, fix to Makefiles and m4 for f90 test programs to allow adjustable record length.
+  Fix to CBF byte-offset compression writes, fix to Makefiles and m4 for
+f90 test programs to allow adjustable record length.
 
   [0.7.8](ChangeLog.html#0.7.8)
 
@@ -234,7 +312,8 @@ Description
 
   HJB
 
-  Release for full support of SLS data files with updated convert_minicbf, and support for gfortran from gcc 4.2.
+  Release for full support of SLS data files with updated
+convert_minicbf, and support for gfortran from gcc 4.2.
 
   [0.7.8.1](ChangeLog.html#0.7.8.1)
 
@@ -242,7 +321,8 @@ Description
 
   HJB
 
-  Update to 0.7.8 release to fix memory leaks reported by N. Sauter and to update validation checks for recent changes.
+  Update to 0.7.8 release to fix memory leaks reported by N. Sauter and
+to update validation checks for recent changes.
 
   [0.7.8.2](ChangeLog.html#0.7.8.2)
 
@@ -250,7 +330,8 @@ Description
 
   CN, HJB
 
-  Update to 0.7.8.1 to add ADSC jiffie by Chris Nielsen, and to add ...\_fs and ...\_sf macros.
+  Update to 0.7.8.1 to add ADSC jiffie by Chris Nielsen, and to add
+\...\_fs and \...\_sf macros.
 
   [0.7.9](ChangeLog.html#0.7.9)
 
@@ -258,7 +339,8 @@ Description
 
   CN, HJB
 
-Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_frame_data
+Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g.
+diffrn_frame_data
 
   [0.7.9.1](ChangeLog.html#0.7.9.1)
 
@@ -266,7 +348,8 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   CN, HJB
 
-  Update to 0.7.8.2 to add inverse ADSC jiffie by Chris Nielsen, to clean up problems in handling maps for RasMol.
+  Update to 0.7.8.2 to add inverse ADSC jiffie by Chris Nielsen, to
+clean up problems in handling maps for RasMol.
 
   [0.8.0](ChangeLog.html#0.8.0)
 
@@ -282,7 +365,8 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   EZ, CN, PC, GW, JH, HJB
 
-   Release with EZ's 2008 DDLm support using JH's PyCifRW, also cbff f95 wrapper code, PC's java bindings.
+   Release with EZ\'s 2008 DDLm support using JH\'s PyCifRW, also cbff
+f95 wrapper code, PC\'s java bindings.
 
   [0.9.1](ChangeLog.html#0.9.1)
 
@@ -290,7 +374,8 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   PC, EE, JLM, NS, EZ, HJB
 
-   Release with EE's Dectris template software, also with vcif3, new arvai_test, sequence_match.
+   Release with EE\'s Dectris template software, also with vcif3, new
+arvai_test, sequence_match.
 
   [0.9.2](ChangeLog.html#0.9.2)
 
@@ -298,7 +383,8 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   PC, EE, JLM, NS, EZ, HJB
 
-   New default release with updated pycbf, tiff support, removal of default use of PyCifRW to avoid Fedora license issue.
+   New default release with updated pycbf, tiff support, removal of
+default use of PyCifRW to avoid Fedora license issue.
 
   [0.9.3](ChangeLog.html#0.9.3)
 
@@ -306,7 +392,11 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   JS, HJB
 
-  Added low-level 'cbf_H5\*' functions for interacting with HDF5, higher level functions for converting CBF or miniCBF files to NeXus format, two utility programs to convert CBF or miniCBF files to NeXus format and some unit tests for the low-level 'cbf_H5\*' functions. Add initial FEL detector support.
+  Added low-level \'cbf_H5\*\' functions for interacting with HDF5,
+higher level functions for converting CBF or miniCBF files to NeXus
+format, two utility programs to convert CBF or miniCBF files to NeXus
+format and some unit tests for the low-level \'cbf_H5\*\' functions. Add
+initial FEL detector support.
 
   [0.9.4](ChangeLog.html#0.9.4)
 
@@ -314,7 +404,11 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   JS, HJB
 
-  Refactored implementation of the NXMX application defintion functional mapping with improvements to cmake support and a preliminary effort at handling Stokes polarization mapping. This release had serious issues in the functional mapping axis mapping and should not be used for production involving NeXus files.
+  Refactored implementation of the NXMX application defintion functional
+mapping with improvements to cmake support and a preliminary effort at
+handling Stokes polarization mapping. This release had serious issues in
+the functional mapping axis mapping and should not be used for
+production involving NeXus files.
 
   [0.9.5](ChangeLog.html#0.9.5)
 
@@ -322,7 +416,8 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   HJB
 
-  This is a production release for single detector module single crystal MX NeXus support.
+  This is a production release for single detector module single crystal
+MX NeXus support.
 
   [0.9.6](ChangeLog.html#0.9.6)
 
@@ -330,15 +425,21 @@ Identical to 0.7.8.2 except for a cleanup of deprecated examples, e.g. diffrn_fr
 
   HJB
 
-  This is the full release supporting the integration of CBF and NeXus, including support for the NeXus NXpdb embedding of CIF files in NeXus files. \*\*\* IMPORTANT: Because of the requirements of dynamic loading to support the compressions used by the Dectris NeXus/HDF5 format, all applications require setting of library and plugin paths. See the initialization file cbflib.ini, which should be sourced before running any applications \*\*\*.. The changes from 0.9.5 to 0.9.6 are:  
-improve error reporting in examples/cbf2nexus.c  
-improve examples/cbf_standardize_numbers.c  
-add bslz4 compression option to hdf5 in cif2cbf  
-minor cleanup in examples/convert_minicbf.c  
-minor cleanup in examples/nexus2cbf.c  
-minor cleanup in examples/sequence_match.c  
-minor cleanup in include/cbf_context.h  
-add value clipping to cbf_copy  
+  This is the full release supporting the integration of CBF and NeXus,
+including support for the NeXus NXpdb embedding of CIF files in NeXus
+files. \*\*\* IMPORTANT: Because of the requirements of dynamic loading
+to support the compressions used by the Dectris NeXus/HDF5 format, all
+applications require setting of library and plugin paths. See the
+initialization file cbflib.ini, which should be sourced before running
+any applications \*\*\*.. The changes from 0.9.5 to 0.9.6 are:\
+improve error reporting in examples/cbf2nexus.c\
+improve examples/cbf_standardize_numbers.c\
+add bslz4 compression option to hdf5 in cif2cbf\
+minor cleanup in examples/convert_minicbf.c\
+minor cleanup in examples/nexus2cbf.c\
+minor cleanup in examples/sequence_match.c\
+minor cleanup in include/cbf_context.h\
+add value clipping to cbf_copy\
 minor cleanuo in cbf_hdf5.h
 
   [0.9.7](ChangeLog.html#0.9.7)
@@ -347,21 +448,27 @@ minor cleanuo in cbf_hdf5.h
 
   HJB
 
-  This is a production release with misc minor updates. The changes from 0.9.6 to 0.9.7 are:  
-update the manual  
-cleanup minor bugs is examples/adscimg2cbf.c, adscimg2cbf_sub.c, cbf2adscimg_sub.c  
-fix examples/cbf_standardize_numbers.c  
-fix examples/testcbf.c  
-fix examples/testcbf.java  
-fix examples/testhdf5.c  
-fix include/cbf_hdf5.h  
-fix include/img.h  
-fix Java.txt  
-fix handling of hex to be int in fcblib_defines, fcb_next_binary, fcb_packed, fcb_read_bits, fcb_read_xds_i2  
-fix pycbf/cbf_autoscrolled_window.py, cbf_axis_text.py, various wrappers, bytestrings in tests, xmas/readmarheader.py, xmasheaders.py  
-fix cbf.c  
-fix cbf_context.c, cbf_copy.c, cbf_hdf5.c, cbf_hdf5_filter.c, cbf_simple.c, cbf_stx.c  
-fix fcb_atol_wcnt.f90, fcb_nblen_array.f90, fcb_read_line.f90, fcb_skip_whitespace.f90  
+  This is a production release with misc minor updates. The changes from
+0.9.6 to 0.9.7 are:\
+update the manual\
+cleanup minor bugs is examples/adscimg2cbf.c, adscimg2cbf_sub.c,
+cbf2adscimg_sub.c\
+fix examples/cbf_standardize_numbers.c\
+fix examples/testcbf.c\
+fix examples/testcbf.java\
+fix examples/testhdf5.c\
+fix include/cbf_hdf5.h\
+fix include/img.h\
+fix Java.txt\
+fix handling of hex to be int in fcblib_defines, fcb_next_binary,
+fcb_packed, fcb_read_bits, fcb_read_xds_i2\
+fix pycbf/cbf_autoscrolled_window.py, cbf_axis_text.py, various
+wrappers, bytestrings in tests, xmas/readmarheader.py, xmasheaders.py\
+fix cbf.c\
+fix cbf_context.c, cbf_copy.c, cbf_hdf5.c, cbf_hdf5_filter.c,
+cbf_simple.c, cbf_stx.c\
+fix fcb_atol_wcnt.f90, fcb_nblen_array.f90, fcb_read_line.f90,
+fcb_skip_whitespace.f90\
 fix img.c
 
   [0.9.8](ChangeLog.html#0.9.8)
@@ -370,74 +477,129 @@ fix img.c
 
   DP, JH, ND, HJB
 
-  This is a final CBFlib release prior to moving all future development under the auspices of the DIALS project. In the past the main repository for CBFlib was at <span http:="" github.com="" yayahjb="" cbflib="" target="_blank">http://github.com/yayahjb/cbflib</span>. In the future tha main repository for CBFlib will be at <span http:="" github.com="" dials="" cbflib="" target="_blank">http://github.com/dials/cbflib</span>. For the convenience of users of legacy versions of CBFlib, there will be legacy fork of the repository frozen at the 0.9.8 revision level <span http:="" github.com="" nsls-ii-mx="" cbflib="" target="_blank">http://github.com/nsls-ii-mx/cbflib</span> The changes from 0.9.7 to 0.9.8 are:  
-in cif2cbf add -I-1, -I-2, -I-4, and -I-8 options for unsigned integers, --{sum\|summing} sumrange option to sum images, and --xdsb2z\|rotate-xds-beam-to-z beamcentx,beamcenty,beamcentz assume the beam is along \[beamx, beamy, beamz\] relative to the image and rotate the image so that the beam is along \[0,0,-1\]  
-split support for languages other than C/C++ to use the 2022 swig-fortran kit for fortran and a recent swig kit for python  
-update tiff2cbf for multiple compression options  
-update cbf_copy options and fix typos  
-drop all support for python2 in favor of python3  
-fix buffer overruns in examples/dectris_cbf_template_test/cbf_template_t.c  
-fix errors in examples/testcbf.java  
-add zstd compression option for hdf5 files  
-update fcblib_defines  
-update pycbf wrappers  
-fix buffer overflow in cbf_binary.c  
-fix parens in cbf_codes.c  
-fix bug in cbf_nibble_offset.c  
-fix tab definition in fcb_skip_whitespace.f90  
-preliminary changes for move from make to cmake by J. Hattne  
-add third dimension in examples/img2cif.c, examples/makecbf.c, examples/nexus2cbf.c  
-fix bugs in examples/tiff2cbf.c examples/tif_sprint.c  
-make handling of version number changes in tests data general  
-fix typoi in test_cbf_airy_disk call  
-fix bug in pycbf_test1.py  
+  This is a final CBFlib release prior to moving all future development
+under the auspices of the DIALS project. In the past the main repository
+for CBFlib was at [http://github.com/yayahjb/cbflib]{http:=""
+github.com="" yayahjb="" cbflib="" target="_blank"}. In the future tha
+main repository for CBFlib will be at
+[http://github.com/dials/cbflib]{http:="" github.com="" dials=""
+cbflib="" target="_blank"}. For the convenience of users of legacy
+versions of CBFlib, there will be legacy fork of the repository frozen
+at the 0.9.8 revision level
+[http://github.com/nsls-ii-mx/cbflib]{http:="" github.com=""
+nsls-ii-mx="" cbflib="" target="_blank"} The changes from 0.9.7 to 0.9.8
+are:\
+in cif2cbf add -I-1, -I-2, -I-4, and -I-8 options for unsigned integers,
+\--{sum\|summing} sumrange option to sum images, and
+\--xdsb2z\|rotate-xds-beam-to-z beamcentx,beamcenty,beamcentz assume the
+beam is along \[beamx, beamy, beamz\] relative to the image and rotate
+the image so that the beam is along \[0,0,-1\]\
+split support for languages other than C/C++ to use the 2022
+swig-fortran kit for fortran and a recent swig kit for python\
+update tiff2cbf for multiple compression options\
+update cbf_copy options and fix typos\
+drop all support for python2 in favor of python3\
+fix buffer overruns in
+examples/dectris_cbf_template_test/cbf_template_t.c\
+fix errors in examples/testcbf.java\
+add zstd compression option for hdf5 files\
+update fcblib_defines\
+update pycbf wrappers\
+fix buffer overflow in cbf_binary.c\
+fix parens in cbf_codes.c\
+fix bug in cbf_nibble_offset.c\
+fix tab definition in fcb_skip_whitespace.f90\
+preliminary changes for move from make to cmake by J. Hattne\
+add third dimension in examples/img2cif.c, examples/makecbf.c,
+examples/nexus2cbf.c\
+fix bugs in examples/tiff2cbf.c examples/tif_sprint.c\
+make handling of version number changes in tests data general\
+fix typoi in test_cbf_airy_disk call\
+fix bug in pycbf_test1.py\
 fix regex dependency handling in cbf_hdf5.c
 
 ------------------------------------------------------------------------
 
-## Known Problems
+## Known Problems {#known-problems align="CENTER"}
 
-## Foreword
+## Foreword {#foreword align="CENTER"}
 
-In order to work with CBFlib, you need: the source code from github by downloadng a release or the lastest code from <a href="http://github.com/dials/cbflib" target="_blank">http://github.com/dials/cbflib</a>
+In order to work with CBFlib, you need: the source code from github by
+downloadng a release or the lastest code from
+[http://github.com/dials/cbflib](http://github.com/dials/cbflib){target="_blank"}
 
 **Be careful about space. A full build and test can use 2GB or more.**
 
-To run the test programs, you will also need Paul Ellis's sample MAR345 image, example.mar2300, Chris Nielsen's sample ADSC Quantum 315 image, mb_LP_1_001.img, and Eric Eikenberry's SLS sample Pilatus 6m image, insulin_pilatus6m, as sample data. In addition there are is a PDB mmCIF file, 9ins.cif, and 3 special test files testflatin.cbf, testflatpackedin.cbf and testrealin.cbf. All these files will be dowloaded and extracted by the Makefile from CBFlib_0.9.8_Data_Files_Input. Do not download copies into the top level directory.
+To run the test programs, you will also need Paul Ellis\'s sample MAR345
+image, example.mar2300, Chris Nielsen\'s sample ADSC Quantum 315 image,
+mb_LP_1_001.img, and Eric Eikenberry\'s SLS sample Pilatus 6m image,
+insulin_pilatus6m, as sample data. In addition there are is a PDB mmCIF
+file, 9ins.cif, and 3 special test files testflatin.cbf,
+testflatpackedin.cbf and testrealin.cbf. All these files will be
+dowloaded and extracted by the Makefile from
+CBFlib_0.9.8_Data_Files_Input. Do not download copies into the top level
+directory.
 
 In addition, the kit will need tiff and hdf5 libraries.
 
-Future versions of CBFlib will use the cmake build system. Version 0.9.8 is the last Makefile build,
+Future versions of CBFlib will use the cmake build system. Version 0.9.8
+is the last Makefile build,
 
-**The Makefiles use GNU make constructs, such as ifeq and ifneq. If you need to use a different version of make, you will need to edit out the conditionals**
+**The Makefiles use GNU make constructs, such as ifeq and ifneq. If you
+need to use a different version of make, you will need to edit out the
+conditionals**
 
-The operation of the Makefiles is sensitive to the following environment variables:
+The operation of the Makefiles is sensitive to the following environment
+variables:
 
-- **CBFLIB_USE_PYCIFRW** If you define this environment variable, you may rebuild the Makefiles to include James Hester's PyCifRW. The process under bash is:
+- **CBFLIB_USE_PYCIFRW** If you define this environment variable, you
+  may rebuild the Makefiles to include James Hester\'s PyCifRW. The
+  process under bash is:
 
       export CBFLIB_USE_PYCIFRW=yes
       cd CBFlib_0.9.5
       touch m4/Makefile.m4
       make Makefiles
 
-- **CBF_DONT_USE_LONG_LONG** If you define this environment variable, use of the `long long` data type in CBFlib is replaced by use of a struct. The Makefiles do not need to be rebuilt. Makefile_MINGW does not use the `long long` data type even without defining this variable.
+- **CBF_DONT_USE_LONG_LONG** If you define this environment variable,
+  use of the `long long` data type in CBFlib is replaced by use of a
+  struct. The Makefiles do not need to be rebuilt. Makefile_MINGW does
+  not use the `long long` data type even without defining this variable.
 
-- **NOFORTRAN** If you define this environment variable, use of the fortran compiler is suppressed.
+- **NOFORTRAN** If you define this environment variable, use of the
+  fortran compiler is suppressed.
 
-If necessary, adjust the definition of CC and C++ and other defintions in Makefile to point to your compilers. Set the definition of CFLAGS to an appropriate value for your C and C++ compilers, the definition of F90C to point to your Fortan-90/95 compiler, and the definitions of F90FLAGS and F90LDFLAGS to approriate values for your Fortan-90/95 compilers, and then
+If necessary, adjust the definition of CC and C++ and other defintions
+in Makefile to point to your compilers. Set the definition of CFLAGS to
+an appropriate value for your C and C++ compilers, the definition of
+F90C to point to your Fortan-90/95 compiler, and the definitions of
+F90FLAGS and F90LDFLAGS to approriate values for your Fortan-90/95
+compilers, and then
 
-**make all**  
+**make all**\
 **make tests**
 
-If you do not have a fortran compiler, you will need edit the Makefile or to define the variable NOFORTRAN, either in the Makefile or in the environment
+If you do not have a fortran compiler, you will need edit the Makefile
+or to define the variable NOFORTRAN, either in the Makefile or in the
+environment
 
-We have included examples of CBF/imgCIF files produced by CBFlib in the test data [CBFlib_0.9.5_Data_Files_Output.tar.gz](http://downloads.sf.net/cbflib/CBFlib_0.9.5_Data_Files_Output.tar.gz), the current best draft of the [CBF Extensions Dictionary](cif_img_1.7.10.html), and of Andy Hammersley's CBF definition, updated to become a [DRAFT CBF/ImgCIF DEFINITION](cbf_definition_rev.html).
+We have included examples of CBF/imgCIF files produced by CBFlib in the
+test data
+[CBFlib_0.9.5_Data_Files_Output.tar.gz](http://downloads.sf.net/cbflib/CBFlib_0.9.5_Data_Files_Output.tar.gz),
+the current best draft of the [CBF Extensions
+Dictionary](cif_img_1.7.10.html), and of Andy Hammersley\'s CBF
+definition, updated to become a [DRAFT CBF/ImgCIF
+DEFINITION](cbf_definition_rev.html).
 
-CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF files, that requires an augmented version of tiff-3.9.4 called tiff-3.9.4-rev-6Feb11, that installs into the CBFlib_0.9.2.11 directory. If a system copy is desired, download and install <http://downloads.sf.net/cbflib/tiff-3.9.4-rev-6Feb11.tar.gz>
+CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to
+CBF files, that requires an augmented version of tiff-3.9.4 called
+tiff-3.9.4-rev-6Feb11, that installs into the CBFlib_0.9.2.11 directory.
+If a system copy is desired, download and install
+<http://downloads.sf.net/cbflib/tiff-3.9.4-rev-6Feb11.tar.gz>
 
 ------------------------------------------------------------------------
 
-## Contents
+## Contents {#contents align="CENTER"}
 
 - [1. Introduction](#1.%20Introduction)
 - [2. Function descriptions](#2.)
@@ -450,7 +612,8 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
   - [2.2 Reading and writing files containing binary sections](#2.2)
     - [2.2.1 Reading binary sections](#2.2.1)
     - [2.2.2 Writing binary sections](#2.2.2)
-    - [2.2.3 Summary of reading and writing files containing binary sections](#2.2.3)
+    - [2.2.3 Summary of reading and writing files containing binary
+      sections](#2.2.3)
     - [2.2.4 Ordering of array indices](#2.2.4)
   - [2.3 Low-level function prototypes](#2.3)
     - [2.3.1 cbf_make_handle](#2.3.1)
@@ -474,24 +637,28 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
     - [2.3.19 cbf_remove_column](#2.3.19)
     - [2.3.20 cbf_remove_row](#2.3.20)
     - [2.3.21 cbf_rewind_datablock](#2.3.21)
-    - [2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)
+    - [2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+      cbf_rewind_blockitem](#2.3.22)
     - [2.3.23 cbf_rewind_column](#2.3.23)
     - [2.3.24 cbf_rewind_row](#2.3.24)
     - [2.3.25 cbf_next_datablock](#2.3.25)
-    - [2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)
+    - [2.3.26 cbf_next_category, cbf_next_saveframe,
+      cbf_next_blockitem](#2.3.26)
     - [2.3.27 cbf_next_column](#2.3.27)
     - [2.3.28 cbf_next_row](#2.3.28)
     - [2.3.29 cbf_find_datablock](#2.3.29)
-    - [2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)
+    - [2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)
     - [2.3.31 cbf_find_column](#2.3.31)
     - [2.3.32 cbf_find_row](#2.3.32)
     - [2.3.33 cbf_find_nextrow](#2.3.33)
     - [2.3.34 cbf_count_datablocks](#2.3.34)
-    - [2.3.35 cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems](#2.3.35)
+    - [2.3.35 cbf_count_categories, cbf_count_saveframes,
+      cbf_count_blockitems](#2.3.35)
     - [2.3.36 cbf_count_columns](#2.3.36)
     - [2.3.37 cbf_count_rows](#2.3.37)
     - [2.3.38 cbf_select_datablock](#2.3.38)
-    - [2.3.39 cbf_select_category, cbf_select_saveframe, cbf_select_blockitem](#2.3.39)
+    - [2.3.39 cbf_select_category, cbf_select_saveframe,
+      cbf_select_blockitem](#2.3.39)
     - [2.3.40 cbf_select_column](#2.3.40)
     - [2.3.41 cbf_select_row](#2.3.41)
     - [2.3.42 cbf_datablock_name](#2.3.42)
@@ -506,15 +673,21 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
     - [2.3.51 cbf_set_integervalue](#2.3.51)
     - [2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)
     - [2.3.53 cbf_set_doublevalue](#2.3.53)
-    - [2.3.54 cbf_get_integerarrayparameters,](#2.3.54)  
-            [cbf_get_integerarrayparameters_wdims, cbf_get_integerarrayparameters_wdims_fs, cbf_get_integerarrayparameters_wdims_sf](#2.3.54)  
-            [cbf_get_realarrayparameters,](#2.3.54)  
-            [cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs, cbf_get_realarrayparameters_wdims_sf](#2.3.54)
+    - [2.3.54 cbf_get_integerarrayparameters,](#2.3.54)\
+            [cbf_get_integerarrayparameters_wdims,
+      cbf_get_integerarrayparameters_wdims_fs,
+      cbf_get_integerarrayparameters_wdims_sf](#2.3.54)\
+            [cbf_get_realarrayparameters,](#2.3.54)\
+            [cbf_get_realarrayparameters_wdims,
+      cbf_get_realarrayparameters_wdims_fs,
+      cbf_get_realarrayparameters_wdims_sf](#2.3.54)
     - [2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)
-    - [2.3.56 cbf_set_integerarray,](#2.3.56)  
-            [cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf,](#2.3.56)  
-            [cbf_set_realarray,](#2.3.56)  
-            [cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs, cbf_set_realarray_wdims_sf](#2.3.56)
+    - [2.3.56 cbf_set_integerarray,](#2.3.56)\
+            [cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs,
+      cbf_set_integerarray_wdims_sf,](#2.3.56)\
+            [cbf_set_realarray,](#2.3.56)\
+            [cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs,
+      cbf_set_realarray_wdims_sf](#2.3.56)
     - [2.3.57 cbf_failnez](#2.3.57)
     - [2.3.58 cbf_onfailnez](#2.3.58)
     - [2.3.59 cbf_require_datablock](#2.3.59)
@@ -523,12 +696,16 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
     - [2.3.62 cbf_require_column_value](#2.3.62)
     - [2.3.63 cbf_require_column_integervalue](#2.3.63)
     - [2.3.64 cbf_require_column_doublevalue](#2.3.64)
-    - [2.3.65 cbf_get_local_integer_byte_order, cbf_get_local_real_byte_order, cbf_get_local_real_format](#2.3.65)
-    - [2.3.66 cbf_get_dictionary, cbf_set_dictionary, cbf_require_dictionary](#2.3.66)
+    - [2.3.65 cbf_get_local_integer_byte_order,
+      cbf_get_local_real_byte_order, cbf_get_local_real_format](#2.3.65)
+    - [2.3.66 cbf_get_dictionary, cbf_set_dictionary,
+      cbf_require_dictionary](#2.3.66)
     - [2.3.67 cbf_convert_dictionary](#2.3.67)
     - [2.3.68 cbf_find_tag, cbf_find_local_tag](#2.3.68)
-    - [2.3.69 cbf_find_category_root, cbf_set_category_root, cbf_require_category_root](#2.3.69)
-    - [2.3.70 cbf_find_tag_root, cbf_set_tag_root, cbf_require_tag_root](#2.3.70)
+    - [2.3.69 cbf_find_category_root, cbf_set_category_root,
+      cbf_require_category_root](#2.3.69)
+    - [2.3.70 cbf_find_tag_root, cbf_set_tag_root,
+      cbf_require_tag_root](#2.3.70)
     - [2.3.71 cbf_find_tag_category, cbf_set_tag_category](#2.3.71)
   - [2.4 High-level function prototypes (new for version 0.7)](#2.4)
     - [2.4.1 cbf_read_template](#2.4.1)
@@ -555,17 +732,31 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
     - [2.4.22 cbf_get_date](#2.4.22)
     - [2.4.23 cbf_set_date](#2.4.23)
     - [2.4.24 cbf_set_current_time](#2.4.24)
-    - [2.4.25 cbf_get_image_size, cbf_get_image_size_fs, cbf_get_image_size_fs,](#2.4.25)  
-            [cbf_get_3d_image_size, cbf_get_3d_image_size_fs, cbf_get_3d_image_size_sf](#2.4.25)
-    - [2.4.26 cbf_get_image, cbf_get_image_fs, cbf_get_image_sf,](#2.4.26)  
-            [cbf_get_real_image, cbf_get_real_image_fs, cbf_get_real_image_sf,](#2.4.26)  
-            [cbf_get_3d_image, cbf_get_3d_image_fs, cbf_get_3d_image_sf,](#2.4.26)  
-            [cbf_get_real_3d_image, cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf](#2.4.26)
-    - [2.4.27 cbf_set_image, cbf_set_image_fs, cbf_set_image_sf,](#2.4.27)  
-            [cbf_set_real_image, cbf_set_real_image_fs, cbf_set_real_image_sf,](#2.4.27)  
-            [cbf_set_3d_image, cbf_set_3d_image, cbf_set_3d_image,](#2.4.27)  
-            [cbf_set_real_3d_image, cbf_set_real_3d_image_fs, cbf_set_real_3d_image_sf](#2.4.27)
-    - [2.4.28 cbf_get_axis_ancestor, cbf_get_axis_depends_on, cbf_get_axis_equipment, cbf_get_axis_equipment_component, cbf_get_axis_offset, cbf_get_axis_rotation, cbf_get_axis_rotation_axis, cbf_get_axis_setting, cbf_get_axis_type, cbf_get_axis_vector](#2.4.28)
+    - [2.4.25 cbf_get_image_size, cbf_get_image_size_fs,
+      cbf_get_image_size_fs,](#2.4.25)\
+            [cbf_get_3d_image_size, cbf_get_3d_image_size_fs,
+      cbf_get_3d_image_size_sf](#2.4.25)
+    - [2.4.26 cbf_get_image, cbf_get_image_fs,
+      cbf_get_image_sf,](#2.4.26)\
+            [cbf_get_real_image, cbf_get_real_image_fs,
+      cbf_get_real_image_sf,](#2.4.26)\
+            [cbf_get_3d_image, cbf_get_3d_image_fs,
+      cbf_get_3d_image_sf,](#2.4.26)\
+            [cbf_get_real_3d_image, cbf_get_real_3d_image_fs,
+      cbf_get_real_3d_image_sf](#2.4.26)
+    - [2.4.27 cbf_set_image, cbf_set_image_fs,
+      cbf_set_image_sf,](#2.4.27)\
+            [cbf_set_real_image, cbf_set_real_image_fs,
+      cbf_set_real_image_sf,](#2.4.27)\
+            [cbf_set_3d_image, cbf_set_3d_image,
+      cbf_set_3d_image,](#2.4.27)\
+            [cbf_set_real_3d_image, cbf_set_real_3d_image_fs,
+      cbf_set_real_3d_image_sf](#2.4.27)
+    - [2.4.28 cbf_get_axis_ancestor, cbf_get_axis_depends_on,
+      cbf_get_axis_equipment, cbf_get_axis_equipment_component,
+      cbf_get_axis_offset, cbf_get_axis_rotation,
+      cbf_get_axis_rotation_axis, cbf_get_axis_setting,
+      cbf_get_axis_type, cbf_get_axis_vector](#2.4.28)
     - [2.4.29 cbf_set_axis_setting](#2.4.29)
     - [2.4.30 cbf_construct_goniometer](#2.4.30)
     - [2.4.31 cbf_free_goniometer](#2.4.31)
@@ -573,46 +764,69 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
     - [2.4.33 cbf_get_rotation_range](#2.4.33)
     - [2.4.34 cbf_rotate_vector](#2.4.34)
     - [2.4.35 cbf_get_reciprocal](#2.4.35)
-    - [2.4.36 cbf_construct_detector, cbf_construct_reference_detector, cbf_require_reference_detector](#2.4.36)
+    - [2.4.36 cbf_construct_detector, cbf_construct_reference_detector,
+      cbf_require_reference_detector](#2.4.36)
     - [2.4.37 cbf_free_detector](#2.4.37)
-    - [2.4.38 cbf_construct_positioner, cbf_construct_reference_positioner](#2.4.38)
+    - [2.4.38 cbf_construct_positioner,
+      cbf_construct_reference_positioner](#2.4.38)
     - [2.4.39 cbf_free_positioner](#2.4.39)
-    - [2.4.40 cbf_get_beam_center, cbf_get_beam_center_fs, cbf_get_beam_center_sf,](#2.4.40)  
-            [cbf_set_beam_center, cbf_set_beam_center_fs, cbf_set_beam_center_sf,](#2.4.40)  
-            [cbf_set_reference_beam_center, cbf_set_reference_beam_center_fs, cbf_set_reference_beam_center_sf](#2.4.40)
+    - [2.4.40 cbf_get_beam_center, cbf_get_beam_center_fs,
+      cbf_get_beam_center_sf,](#2.4.40)\
+            [cbf_set_beam_center, cbf_set_beam_center_fs,
+      cbf_set_beam_center_sf,](#2.4.40)\
+            [cbf_set_reference_beam_center,
+      cbf_set_reference_beam_center_fs,
+      cbf_set_reference_beam_center_sf](#2.4.40)
     - [2.4.41 cbf_get_detector_distance](#2.4.41)
     - [2.4.42 cbf_get_detector_normal](#2.4.42)
-    - [2.4.43 cbf_get_detector_axis_slow, cbf_get_detector_axis_fast, cbf_get_detector_axes, cbf_get_detector_axes_fs, cbf_get_detector_axes_sf, cbf_get_detector_surface_axes](#2.4.43)
-    - [2.4.44 cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs, cbf_get_pixel_coordinates_sf](#2.4.44)
-    - [2.4.45 cbf_get_pixel_normal, cbf_get_pixel_normal_fs, cbf_get_pixel_normal_sf](#2.4.45)
-    - [2.4.46 cbf_get_pixel_area, cbf_get_pixel_area_fs, cbf_get_pixel_area_sf](#2.4.46)
-    - [2.4.47 cbf_get_pixel_size, cbf_get_pixel_size_fs, cbf_get_pixel_size_sf](#2.4.47)
-    - [2.4.48 cbf_set_pixel_size, cbf_set_pixel_size_fs, cbf_set_pixel_size_sf](#2.4.48)
-    - [2.4.49 cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_fs, cbf_get_inferred_pixel_size_sf](#2.4.49)
+    - [2.4.43 cbf_get_detector_axis_slow, cbf_get_detector_axis_fast,
+      cbf_get_detector_axes, cbf_get_detector_axes_fs,
+      cbf_get_detector_axes_sf, cbf_get_detector_surface_axes](#2.4.43)
+    - [2.4.44 cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs,
+      cbf_get_pixel_coordinates_sf](#2.4.44)
+    - [2.4.45 cbf_get_pixel_normal, cbf_get_pixel_normal_fs,
+      cbf_get_pixel_normal_sf](#2.4.45)
+    - [2.4.46 cbf_get_pixel_area, cbf_get_pixel_area_fs,
+      cbf_get_pixel_area_sf](#2.4.46)
+    - [2.4.47 cbf_get_pixel_size, cbf_get_pixel_size_fs,
+      cbf_get_pixel_size_sf](#2.4.47)
+    - [2.4.48 cbf_set_pixel_size, cbf_set_pixel_size_fs,
+      cbf_set_pixel_size_sf](#2.4.48)
+    - [2.4.49 cbf_get_inferred_pixel_size,
+      cbf_get_inferred_pixel_size_fs,
+      cbf_get_inferred_pixel_size_sf](#2.4.49)
     - [2.4.50 cbf_get_unit_cell](#2.4.50)
     - [2.4.51 cbf_set_unit_cell](#2.4.51)
     - [2.4.52 cbf_get_reciprocal_cell](#2.4.52)
     - [2.4.53 cbf_set_reciprocal_cell](#2.4.53)
     - [2.4.54 cbf_compute_cell_volume](#2.4.54)
     - [2.4.55 cbf_compute_reciprocal_cell](#2.4.55)
-    - [2.4.56 cbf_get_orientation_matrix, cbf_set_orientation_matrix](#2.4.56)
+    - [2.4.56 cbf_get_orientation_matrix,
+      cbf_set_orientation_matrix](#2.4.56)
     - [2.4.57 cbf_get_bin_sizes, cbf_set_bin_sizes](#2.4.57)
-    - [2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise, cbf_get_axis_reference_poise](#2.4.58)
+    - [2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise,
+      cbf_get_axis_reference_poise](#2.4.58)
     - [2.4.59 cbf_airy_disk, cbf_airy_disk_volume](#2.4.59)
-  - [2.5 F90 function interfaces](#2.5)
+  - [2.5 F90, Python and Java function interfaces](#2.5)
     - [2.5.1 FCB_ATOL_WCNT](#2.5.1)
     - [2.5.2 FCB_CI_STRNCMPARR](#2.5.2)
     - [2.5.3 FCB_EXIT_BINARY](#2.5.3)
     - [2.5.4 FCB_NBLEN_ARRAY](#2.5.4)
     - [2.5.5 FCB_NEXT_BINARY](#2.5.5)
     - [2.5.6 FCB_OPEN_CIFIN](#2.5.6)
-    - [2.5.7 FCB_PACKED: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)
+    - [2.5.7 FCB_PACKED: FCB_DECOMPRESS_PACKED_I2,
+      FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2,
+      FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)
     - [2.5.8 FCB_READ_BITS](#2.5.8)
     - [2.5.9 FCB_READ_BYTE](#2.5.9)
-    - [2.5.10 FCB_READ_IMAGE_I2, FCB_READ_IMAGE_I4, FCB_READ_IMAGE_3D_I2, FCB_READ_IMAGE_3D_I4](#2.5.10)
+    - [2.5.10 FCB_READ_IMAGE_I2, FCB_READ_IMAGE_I4,
+      FCB_READ_IMAGE_3D_I2, FCB_READ_IMAGE_3D_I4](#2.5.10)
     - [2.5.11 FCB_READ_LINE](#2.5.11)
     - [2.5.12 FCB_READ_XDS_I2](#2.5.12)
     - [2.5.13 FCB_SKIP_WHITESPACE](#2.5.13)
+    - [2.5.14 f90cbf SWIG interface](#2.5.14)
+    - [2.5.15 pycbf SWIG interface](#2.5.15)
+    - [2.5.16 jcbf SWIG interface](#2.5.16)
   - [2.6 HDF5 abstraction layer and convenience functions](#2.6)
     - [2.6.1 cbf_H5Acreate](#2.6.1)
     - [2.6.2 cbf_H5Afind](#2.6.2)
@@ -701,57 +915,103 @@ CBFlib 0.9.5 includes a program, tiff2cbf, to convert from tiff files to CBF fil
 - [4. Installation](#4.)
 - [5. Example programs](#5.)
 
-### <span id="1.">1. Introduction</span>
+::: {#1.}
+### 1. Introduction
 
-CBFlib (Crystallographic Binary File library) is a library of ANSI-C functions providing a simple mechanism for accessing Crystallographic Binary Files (CBF files) and Image-supporting CIF (imgCIF) files. The CBFlib API is loosely based on the CIFPARSE API for mmCIF files. Like CIFPARSE, CBFlib does not perform any semantic integrity checks; rather it simply provides functions to create, read, modify and write CBF binary data files and imgCIF ASCII data files.
+CBFlib (Crystallographic Binary File library) is a library of ANSI-C
+functions providing a simple mechanism for accessing Crystallographic
+Binary Files (CBF files) and Image-supporting CIF (imgCIF) files. The
+CBFlib API is loosely based on the CIFPARSE API for mmCIF files. Like
+CIFPARSE, CBFlib does not perform any semantic integrity checks; rather
+it simply provides functions to create, read, modify and write CBF
+binary data files and imgCIF ASCII data files.
 
-Starting with version 0.7.7, an envolving FCBlib (Fortran Crystallographic Binary library) has been added. As of this release it includes code for reading byte-offset and packed compression image files created by CBFlib.
+Starting with version 0.7.7, an envolving FCBlib (Fortran
+Crystallographic Binary library) has been added. As of this release it
+includes code for reading byte-offset and packed compression image files
+created by CBFlib.
+:::
 
-### <span id="2.">2. Function descriptions</span>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.}
+### 2. Function descriptions
 
-#### <span id="2.1">2.1 General description</span>
+:::::::: {#2.1}
+#### 2.1 General description
 
-Almost all of the CBFlib functions receive a value of type cbf_handle (a CBF handle) as the first argument. Several of the high-level CBFlib functions dealing with geometry receive a value of type cbf_goniometer (a handle for a CBF goniometer object) or cbf_detector (a handle for a CBF detector object).
+Almost all of the CBFlib functions receive a value of type cbf_handle (a
+CBF handle) as the first argument. Several of the high-level CBFlib
+functions dealing with geometry receive a value of type cbf_goniometer
+(a handle for a CBF goniometer object) or cbf_detector (a handle for a
+CBF detector object).
 
-All functions return an integer equal to 0 for success or an error code for failure.  
+All functions return an integer equal to 0 for success or an error code
+for failure.\
 
-#### <span id="2.1.1">2.1.1 CBF handles</span>
+::: {#2.1.1}
+#### 2.1.1 CBF handles
 
-CBFlib permits a program to use multiple CBF objects simultaneously. To identify the CBF object on which a function will operate, CBFlib uses a value of type cbf_handle.
+CBFlib permits a program to use multiple CBF objects simultaneously. To
+identify the CBF object on which a function will operate, CBFlib uses a
+value of type cbf_handle.
 
-All functions in the library except cbf_make_handle expect a value of type cbf_handle as the first argument.
+All functions in the library except cbf_make_handle expect a value of
+type cbf_handle as the first argument.
 
-The function **cbf_make_handle** creates and initializes a new CBF handle.
+The function **cbf_make_handle** creates and initializes a new CBF
+handle.
 
-The function **cbf_free_handle** destroys a handle and frees all memory associated with the corresponding CBF object.  
+The function **cbf_free_handle** destroys a handle and frees all memory
+associated with the corresponding CBF object.\
+:::
 
-#### <span id="2.1.2">2.1.2 CBF goniometer handles</span>
+::: {#2.1.2}
+#### 2.1.2 CBF goniometer handles
 
-To represent the goniometer used to orient a sample, CBFlib uses a value of type cbf_goniometer.
+To represent the goniometer used to orient a sample, CBFlib uses a value
+of type cbf_goniometer.
 
-A goniometer object is created and initialized from a CBF object using the function **cbf_construct_goniometer**.
+A goniometer object is created and initialized from a CBF object using
+the function **cbf_construct_goniometer**.
 
-The function **cbf_free_goniometer** destroys a goniometer handle and frees all memory associated with the corresponding object.
+The function **cbf_free_goniometer** destroys a goniometer handle and
+frees all memory associated with the corresponding object.
+:::
 
-#### <span id="2.1.3">2.1.3 CBF detector handles</span>
+::: {#2.1.3}
+#### 2.1.3 CBF detector handles
 
-To represent a detector surface mounted on a positioning system, CBFlib uses a value of type cbf_detector.
+To represent a detector surface mounted on a positioning system, CBFlib
+uses a value of type cbf_detector.
 
-A goniometer object is created and initialized from a CBF object using one of the functions **cbf_construct_detector**, **cbf_construct_reference_detector** or **cbf_require_reference_detector**.
+A goniometer object is created and initialized from a CBF object using
+one of the functions **cbf_construct_detector**,
+**cbf_construct_reference_detector** or
+**cbf_require_reference_detector**.
 
-The function **cbf_free_detector** destroys a detector handle and frees all memory associated with the corresponding object.
+The function **cbf_free_detector** destroys a detector handle and frees
+all memory associated with the corresponding object.
+:::
 
-#### <span id="2.1.4">2.1.4 CBF positioner handles</span>
+::: {#2.1.4}
+#### 2.1.4 CBF positioner handles
 
-To represent an arbitrary positioning system designated by the terminal axis, CBFlib uses a value of type cbf_positioner.
+To represent an arbitrary positioning system designated by the terminal
+axis, CBFlib uses a value of type cbf_positioner.
 
-A positioner object is created and initialized from a CBF object using one of the functions **cbf_construct_positioner**, **cbf_construct_reference_positioner** or **cbf_require_reference_positioner**.
+A positioner object is created and initialized from a CBF object using
+one of the functions **cbf_construct_positioner**,
+**cbf_construct_reference_positioner** or
+**cbf_require_reference_positioner**.
 
-The function **cbf_free_positioner** destroys a positioner handle and frees all memory associated with the corresponding object.
+The function **cbf_free_positioner** destroys a positioner handle and
+frees all memory associated with the corresponding object.
+:::
 
-#### <span id="2.1.5">2.1.5 Return values</span>
+::: {#2.1.5}
+#### 2.1.5 Return values
 
-All of the CBFlib functions return 0 on success and an error code on failure. The error codes are:
+All of the CBFlib functions return 0 on success and an error code on
+failure. The error codes are:
 
   CBF_FORMAT
 
@@ -775,12 +1035,12 @@ All of the CBFlib functions return 0 on success and an error code on failure. Th
 
   CBF_BITCOUNT
 
-  The expected number of bits does  
+  The expected number of bits does\
 not match the actual number written
 
   CBF_ENDOFDATA
 
-  The end of the data was reached  
+  The end of the data was reached\
 before the end of the array
 
   CBF_FILECLOSE
@@ -809,18 +1069,18 @@ before the end of the array
 
   CBF_IDENTICAL
 
-  A data block with the new name  
+  A data block with the new name\
 already exists
 
   CBF_NOTFOUND
 
-  The data block, category, column or  
+  The data block, category, column or\
 row does not exist
 
   CBF_OVERFLOW
 
-  The number read cannot fit into the  
-destination argument. The destination has  
+  The number read cannot fit into the\
+destination argument. The destination has\
 been set to the nearest value.
 
   CBF_UNDEFINED
@@ -829,78 +1089,131 @@ been set to the nearest value.
 
   CBF_NOTIMPLEMENTED
 
-  The requested functionality is not yet implemented (New for version 0.7).
+  The requested functionality is not yet implemented (New for version
+0.7).
 
-If more than one error has occurred, the error code is the logical OR of the individual error codes.  
+If more than one error has occurred, the error code is the logical OR of
+the individual error codes.\
+:::
+::::::::
 
-#### <span id="2.2">2.2 Reading and writing files containing binary sections</span>
+::::::: {#2.2}
+#### 2.2 Reading and writing files containing binary sections
 
-#### <span id="2.2.1">2.2.1 Reading binary sections</span>
+::: {#2.2.1}
+#### 2.2.1 Reading binary sections
 
-The current version of CBFlib only decompresses a binary section from disk when requested by the program.
+The current version of CBFlib only decompresses a binary section from
+disk when requested by the program.
 
-When a file containing one or more binary sections is read, CBFlib saves the file pointer and the position of the binary section within the file and then jumps past the binary section. When the program attempts to access the binary data, CBFlib sets the file position back to the start of the binary section and then reads the data.
+When a file containing one or more binary sections is read, CBFlib saves
+the file pointer and the position of the binary section within the file
+and then jumps past the binary section. When the program attempts to
+access the binary data, CBFlib sets the file position back to the start
+of the binary section and then reads the data.
 
 For this scheme to work:
 
-1\. The file must be a random-access file opened in binary mode (fopen ( ," rb")).  
-2. The program *must not* close the file. CBFlib will close the file using fclose ( ) when it is no longer needed.
+1\. The file must be a random-access file opened in binary mode (fopen (
+,\" rb\")).\
+2. The program *must not* close the file. CBFlib will close the file
+using fclose ( ) when it is no longer needed.
 
-At present, this also means that a program cant read a file and then write back to the same file. This restriction will be eliminated in a future version.
+At present, this also means that a program cant read a file and then
+write back to the same file. This restriction will be eliminated in a
+future version.
 
-When reading an imgCIF vs a CBF, the difference is detected automatically.
+When reading an imgCIF vs a CBF, the difference is detected
+automatically.
+:::
 
-#### <span id="2.2.2">2.2.2 Writing binary sections</span>
+::: {#2.2.2}
+#### 2.2.2 Writing binary sections
 
-When a program passes CBFlib a binary value, the data is compressed to a temporary file. If the CBF object is subsequently written to a file, the data is simply copied from the temporary file to the output file.
+When a program passes CBFlib a binary value, the data is compressed to a
+temporary file. If the CBF object is subsequently written to a file, the
+data is simply copied from the temporary file to the output file.
 
-The output file can be of any type. If the program indicates to CBFlib that the file is a random-access and readable, CBFlib will conserve disk space by closing the temporary file and using the output file as the location at which the binary value is stored.
+The output file can be of any type. If the program indicates to CBFlib
+that the file is a random-access and readable, CBFlib will conserve disk
+space by closing the temporary file and using the output file as the
+location at which the binary value is stored.
 
 For this option to work:
 
-1\. The file must be a random-access file opened in binary update mode (fopen ( , "w+b")).  
-2. The program *must not* close the file. CBFlib will close the file using fclose ( ) when it is no longer needed.
+1\. The file must be a random-access file opened in binary update mode
+(fopen ( , \"w+b\")).\
+2. The program *must not* close the file. CBFlib will close the file
+using fclose ( ) when it is no longer needed.
 
 If this option is not used:
 
-1\. CBFlib will continue using the temporary file.  
-2. CBFlib *will not* close the file. This is the responsibility of the main program.
+1\. CBFlib will continue using the temporary file.\
+2. CBFlib *will not* close the file. This is the responsibility of the
+main program.
+:::
 
-#### <span id="2.2.3">2.2.3 Summary of reading and writing files containing binary sections</span>
+::: {#2.2.3}
+#### 2.2.3 Summary of reading and writing files containing binary sections
 
-1\. Open disk files to read using the mode "rb".  
-2. If possible, open disk files to write using the mode "w+b" and tell CBFlib that it can use the file as a buffer.  
-3. Do *not* close any files read by CBFlib or written by CBFlib with buffering turned on.  
-4. Do *not* attempt to read from a file, then write to the same file.  
+1\. Open disk files to read using the mode \"rb\".\
+2. If possible, open disk files to write using the mode \"w+b\" and tell
+CBFlib that it can use the file as a buffer.\
+3. Do *not* close any files read by CBFlib or written by CBFlib with
+buffering turned on.\
+4. Do *not* attempt to read from a file, then write to the same file.\
+:::
 
-#### <span id="2.2.4">2.2.4 Ordering of array indices</span>
+::: {#2.2.4}
+#### 2.2.4 Ordering of array indices
 
 There are two major conventions in the ordering of array indices:
 
-- **fs**: Fast to slow. The first array index (the one numbered "1") is the one for which the values of that index change "fastest". That is, as we move forward in memory, the value of this index changes more rapidly than any other.
-- **sf**: Slow to fast. The first array index (the one numbered "1") is the one for which the values of that index change "slowest". That is as we move forward in memory, the value of this index changes more slowly than any other.
+- **fs**: Fast to slow. The first array index (the one numbered \"1\")
+  is the one for which the values of that index change \"fastest\". That
+  is, as we move forward in memory, the value of this index changes more
+  rapidly than any other.
+- **sf**: Slow to fast. The first array index (the one numbered \"1\")
+  is the one for which the values of that index change \"slowest\". That
+  is as we move forward in memory, the value of this index changes more
+  slowly than any other.
 
-During the development of CBFlib, both conventions have been used. In order to avoid confusion, the functions for which array indices are used are available in three forms: a default version which may used either one convention or the other, a form in which the name of the function has an "\_fs" suffix for the fast to slow convention and a form in which the name of the function has a "\_sf" suffix for the slow to fast convention. Designers of applications are advised to use one of the two suffix conventions. There is no burden on performance for using one convention or the other. The differences are resolved at compile time by use of preprocessor macros.
+During the development of CBFlib, both conventions have been used. In
+order to avoid confusion, the functions for which array indices are used
+are available in three forms: a default version which may used either
+one convention or the other, a form in which the name of the function
+has an \"\_fs\" suffix for the fast to slow convention and a form in
+which the name of the function has a \"\_sf\" suffix for the slow to
+fast convention. Designers of applications are advised to use one of the
+two suffix conventions. There is no burden on performance for using one
+convention or the other. The differences are resolved at compile time by
+use of preprocessor macros.
 
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
+:::
+:::::::
 
-#### <span id="2.3">2.3 Low-level function prototypes</span>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.3}
+#### 2.3 Low-level function prototypes
 
-#### <span id="2.3.1">2.3.1 cbf_make_handle</span>
+::: {#2.3.1}
+#### 2.3.1 cbf_make_handle
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_make_handle (cbf_handle \**handle*);
 
 **DESCRIPTION**
 
-cbf_make_handle creates and initializes a new internal CBF object. All other CBFlib functions operating on this object receive the CBF handle as the first argument.
+cbf_make_handle creates and initializes a new internal CBF object. All
+other CBFlib functions operating on this object receive the CBF handle
+as the first argument.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -912,23 +1225,26 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.2 cbf_free_handle](#2.3.2)  
+[2.3.2 cbf_free_handle](#2.3.2)\
 
 ------------------------------------------------------------------------
+:::
 
-#### <span id="2.3.2">2.3.2 cbf_free_handle</span>
+::: {#2.3.2}
+#### 2.3.2 cbf_free_handle
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_free_handle (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_free_handle destroys the CBF object specified by the *handle* and frees all associated memory.
+cbf_free_handle destroys the CBF object specified by the *handle* and
+frees all associated memory.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -940,38 +1256,66 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.1 cbf_make_handle](#2.3.1)  
+[2.3.1 cbf_make_handle](#2.3.1)\
 
 ------------------------------------------------------------------------
+:::
 
-#### <span id="2.3.3">2.3.3 cbf_read_file, cbf_read_widefile</span>
+::: {#2.3.3}
+#### 2.3.3 cbf_read_file, cbf_read_widefile
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_read_file (cbf_handle *handle*, FILE \**file*, int *flags*);  
+int cbf_read_file (cbf_handle *handle*, FILE \**file*, int *flags*);\
 int cbf_read_widefile (cbf_handle *handle*, FILE \**file*, int *flags*);
 
 **DESCRIPTION**
 
-cbf_read_file reads the CBF or CIF file *file* into the CBF object specified by *handle*, using the CIF 1.0 convention of 80 character lines. cbf_read_widefile reads the CBF or CIF file *file* into the CBF object specified by *handle*, using the CIF 1.1 convention of 2048 character lines. A warning is issued to stderr for ascii lines over the limit. No test is performed on binary sections.
+cbf_read_file reads the CBF or CIF file *file* into the CBF object
+specified by *handle*, using the CIF 1.0 convention of 80 character
+lines. cbf_read_widefile reads the CBF or CIF file *file* into the CBF
+object specified by *handle*, using the CIF 1.1 convention of 2048
+character lines. A warning is issued to stderr for ascii lines over the
+limit. No test is performed on binary sections.
 
-Validation is performed in three ways levels: during the lexical scan, during the parse, and, if a dictionary was converted, against the value types, value enumerations, categories and parent-child relationships specified in the dictionary.
+Validation is performed in three ways levels: during the lexical scan,
+during the parse, and, if a dictionary was converted, against the value
+types, value enumerations, categories and parent-child relationships
+specified in the dictionary.
 
-*flags* controls the interpretation of binary section headers, the parsing of brackets constructs and the parsing of treble-quoted strings.
+*flags* controls the interpretation of binary section headers, the
+parsing of brackets constructs and the parsing of treble-quoted strings.
 
   MSG_DIGEST:
 
-  Instructs CBFlib to check that the digest of the binary section matches any header digest value. If the digests do not match, the call will return CBF_FORMAT. This evaluation and comparison is delayed (a "lazy" evaluation) to ensure maximal processing efficiency. If an immediately evaluation is required, see MSG_DIGESTNOW, below.
+  Instructs CBFlib to check that the digest of the binary section
+matches any header digest value. If the digests do not match, the call
+will return CBF_FORMAT. This evaluation and comparison is delayed (a
+\"lazy\" evaluation) to ensure maximal processing efficiency. If an
+immediately evaluation is required, see MSG_DIGESTNOW, below.
 
   MSG_DIGESTNOW:
 
-  Instructs CBFlib to check that the digest of the binary section matches any header digeste value. If the digests do not match, the call will return CBF_FORMAT. This evaluation and comparison is performed during initial parsing of the section to ensure timely error reporting at the expense of processing efficiency. If a more efficient delayed ("lazy") evaluation is required, see MSG_DIGEST, above.
+  Instructs CBFlib to check that the digest of the binary section
+matches any header digeste value. If the digests do not match, the call
+will return CBF_FORMAT. This evaluation and comparison is performed
+during initial parsing of the section to ensure timely error reporting
+at the expense of processing efficiency. If a more efficient delayed
+(\"lazy\") evaluation is required, see MSG_DIGEST, above.
 
   MSG_DIGESTWARN:
 
-  Instructs CBFlib to check that the digest of the binary section matches any header digeste value. If the digests do not match, a warning message will be sent to stderr, but processing will attempt to continue. This evaluation and comparison is first performed during initial parsing of the section to ensure timely error reporting at the expense of processing efficiency. An mismatch of the message digest usually indicates a serious error, but it is sometimes worth continuing processing to try to isolate the cause of the error. **Use this option with caution.**
+  Instructs CBFlib to check that the digest of the binary section
+matches any header digeste value. If the digests do not match, a warning
+message will be sent to stderr, but processing will attempt to continue.
+This evaluation and comparison is first performed during initial parsing
+of the section to ensure timely error reporting at the expense of
+processing efficiency. An mismatch of the message digest usually
+indicates a serious error, but it is sometimes worth continuing
+processing to try to isolate the cause of the error. **Use this option
+with caution.**
 
   MSG_NODIGEST:
 
@@ -979,40 +1323,62 @@ Validation is performed in three ways levels: during the lexical scan, during th
 
   PARSE_BRACKETS:
 
-  Accept DDLm bracket-delimited **\[item,item,...item\]** or **{item,item,...item}** or **(item,item,...item)** constructs as valid, stripping non-quoted embedded whitespace and comments. These constructs may span multiple lines.
+  Accept DDLm bracket-delimited **\[item,item,\...item\]** or
+**{item,item,\...item}** or **(item,item,\...item)** constructs as
+valid, stripping non-quoted embedded whitespace and comments. These
+constructs may span multiple lines.
 
   PARSE_LIBERAL_BRACKETS:
 
-  Accept DDLm bracket-delimited **\[item,item,...item\]** or **{item,item,...item}** or **(item,item,...item)** constructs as valid, stripping embedded non-quoted, non-separating whitespace and comments. These constructs may span multiple lines. In this case, whitespace may be used as an alternative to the comma.
+  Accept DDLm bracket-delimited **\[item,item,\...item\]** or
+**{item,item,\...item}** or **(item,item,\...item)** constructs as
+valid, stripping embedded non-quoted, non-separating whitespace and
+comments. These constructs may span multiple lines. In this case,
+whitespace may be used as an alternative to the comma.
 
   PARSE_TRIPLE_QUOTES:
 
-  Accept DDLm triple-quoted **"""item,item,...item"""** or **'''item,item,...item'''** constructs as valid, stripping embedded whitespace and comments. These constructs may span multiple lines. If this flag is set, then ''' will **not** be interpreted as a quoted apoptrophe and """ will **not** be interpreted as a quoted double quote mark and
+  Accept DDLm triple-quoted **\"\"\"item,item,\...item\"\"\"** or
+**\'\'\'item,item,\...item\'\'\'** constructs as valid, stripping
+embedded whitespace and comments. These constructs may span multiple
+lines. If this flag is set, then \'\'\' will **not** be interpreted as a
+quoted apoptrophe and \"\"\" will **not** be interpreted as a quoted
+double quote mark and
 
   PARSE_NOBRACKETS:
 
-  Do not accept DDLm bracket-delimited **\[item,item,...item\]** or **{item,item,...item}** or **(item,item,...item)** constructs as valid, stripping non-quoted embedded whitespace and comments. These constructs may span multiple lines.
+  Do not accept DDLm bracket-delimited **\[item,item,\...item\]** or
+**{item,item,\...item}** or **(item,item,\...item)** constructs as
+valid, stripping non-quoted embedded whitespace and comments. These
+constructs may span multiple lines.
 
   PARSE_NOTRIPLE_QUOTES:
 
-  No not accept DDLm triple-quoted **"""item,item,...item"""** or **'''item,item,...item'''** constructs as valid, stripping embedded whitespace and comments. These constructs may span multiple lines. If this flag is set, then ''' will be interpreted as a quoted apostrophe and """ will be interpreted as a quoted double quote mark.
+  No not accept DDLm triple-quoted **\"\"\"item,item,\...item\"\"\"** or
+**\'\'\'item,item,\...item\'\'\'** constructs as valid, stripping
+embedded whitespace and comments. These constructs may span multiple
+lines. If this flag is set, then \'\'\' will be interpreted as a quoted
+apostrophe and \"\"\" will be interpreted as a quoted double quote mark.
 
-CBFlib defers reading binary sections as long as possible. In the current version of CBFlib, this means that:
+CBFlib defers reading binary sections as long as possible. In the
+current version of CBFlib, this means that:
 
-1\. The file must be a random-access file opened in binary mode (fopen ( , "rb")).  
-2. The program *must not* close the file. CBFlib will close the file using fclose ( ) when it is no longer needed.
+1\. The file must be a random-access file opened in binary mode (fopen (
+, \"rb\")).\
+2. The program *must not* close the file. CBFlib will close the file
+using fclose ( ) when it is no longer needed.
 
 These restrictions may change in a future release.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *file*
 
-  Pointer to a file descriptor.  
+  Pointer to a file descriptor.\
 
   *flags*
 
@@ -1024,30 +1390,44 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.4 cbf_write_file](#2.3.4)  
+[2.3.4 cbf_write_file](#2.3.4)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.4">2.3.4 cbf_write_file, cbf_write_widefile</span>
+::: {#2.3.4}
+#### 2.3.4 cbf_write_file, cbf_write_widefile
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_write_file (cbf_handle *handle*, FILE \**file*, int *readable*, int *ciforcbf*, int *flags*, int *encoding*);  
-int cbf_write_widefile (cbf_handle *handle*, FILE \**file*, int *readable*, int *ciforcbf*, int *flags*, int *encoding*);
+int cbf_write_file (cbf_handle *handle*, FILE \**file*, int *readable*,
+int *ciforcbf*, int *flags*, int *encoding*);\
+int cbf_write_widefile (cbf_handle *handle*, FILE \**file*, int
+*readable*, int *ciforcbf*, int *flags*, int *encoding*);
 
 **DESCRIPTION**
 
-cbf_write_file writes the CBF object specified by *handle* into the file *file*, following CIF 1.0 conventions of 80 character lines. cbf_write_widefile writes the CBF object specified by *handle* into the file *file*, following CIF 1.1 conventions of 2048 character lines. A warning is issued to stderr for ascii lines over the limit, and an attempt is made to fold lines to fit. No test is performed on binary sections.
+cbf_write_file writes the CBF object specified by *handle* into the file
+*file*, following CIF 1.0 conventions of 80 character lines.
+cbf_write_widefile writes the CBF object specified by *handle* into the
+file *file*, following CIF 1.1 conventions of 2048 character lines. A
+warning is issued to stderr for ascii lines over the limit, and an
+attempt is made to fold lines to fit. No test is performed on binary
+sections.
 
 If a dictionary has been provided, aliases will be applied on output.
 
 Unlike cbf_read_file, the *file* does not have to be random-access.
 
-If the file is random-access and readable, *readable* can be set to non-0 to indicate to CBFlib that the file can be used as a buffer to conserve disk space. If the file is not random-access or not readable, *readable* must be 0.
+If the file is random-access and readable, *readable* can be set to
+non-0 to indicate to CBFlib that the file can be used as a buffer to
+conserve disk space. If the file is not random-access or not readable,
+*readable* must be 0.
 
-If *readable* is non-0, CBFlib will close the file when it is no longer required, otherwise this is the responsibility of the program.
+If *readable* is non-0, CBFlib will close the file when it is no longer
+required, otherwise this is the responsibility of the program.
 
 *ciforcbf* selects the format in which the binary sections are written:
 
@@ -1059,7 +1439,9 @@ If *readable* is non-0, CBFlib will close the file when it is no longer required
 
   Write a CBF file (default).
 
-*flags* selects the type of header used in CBF binary sections, selects whether message digests are generated, and controls the style of output. The value of *flags* can be a logical OR of any of:
+*flags* selects the type of header used in CBF binary sections, selects
+whether message digests are generated, and controls the style of output.
+The value of *flags* can be a logical OR of any of:
 
   MIME_HEADERS
 
@@ -1109,9 +1491,17 @@ If *readable* is non-0, CBFlib will close the file when it is no longer required
 
   Pad binary sections with 4095 nulls.
 
-Note that on output, the types "prns&, "brcs" and "bkts" will be converted to "text" fields if PARSE_NOBRACKETS has been set *flags*, and that the types "tsqs" and "tdqs" will be converted to "text" fields if the flag PARSE_NOTRIPLE_QUOTES has been set in the *flags*. It is an error to set PARSE_NOBRACKETS and to set either PARSE_BRACKETS or PARSE_LIBERAL_BRACKETS. It is an error to set both PARSE_NOTRIPLE_QUOTES and PARSE_TRIPLE_QUOTES.
+Note that on output, the types \"prns&, \"brcs\" and \"bkts\" will be
+converted to \"text\" fields if PARSE_NOBRACKETS has been set *flags*,
+and that the types \"tsqs\" and \"tdqs\" will be converted to \"text\"
+fields if the flag PARSE_NOTRIPLE_QUOTES has been set in the *flags*. It
+is an error to set PARSE_NOBRACKETS and to set either PARSE_BRACKETS or
+PARSE_LIBERAL_BRACKETS. It is an error to set both PARSE_NOTRIPLE_QUOTES
+and PARSE_TRIPLE_QUOTES.
 
-*encoding* selects the type of encoding used for binary sections and the type of line-termination in imgCIF files. The value can be a logical OR of any of:
+*encoding* selects the type of encoding used for binary sections and the
+type of line-termination in imgCIF files. The value can be a logical OR
+of any of:
 
   ENC_BASE64
 
@@ -1135,7 +1525,8 @@ Note that on output, the types "prns&, "brcs" and "bkts" will be converted to "t
 
   ENC_FORWARD
 
-  For BASE8, BASE10 or BASE16 encoding, map bytes to words forward (1234) (default on little-endian machines).
+  For BASE8, BASE10 or BASE16 encoding, map bytes to words forward
+(1234) (default on little-endian machines).
 
   ENC_BACKWARD
 
@@ -1149,19 +1540,20 @@ Note that on output, the types "prns&, "brcs" and "bkts" will be converted to "t
 
   Terminate lines with LF (default).
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *file*
 
-  Pointer to a file descriptor.  
+  Pointer to a file descriptor.\
 
   *readable*
 
-  If non-0: this file is random-access and readable and can be used as a buffer.
+  If non-0: this file is random-access and readable and can be used as a
+buffer.
 
   *ciforcbf*
 
@@ -1169,11 +1561,13 @@ Note that on output, the types "prns&, "brcs" and "bkts" will be converted to "t
 
   *flags*
 
-  Selects the type of header in CBF binary sections and message digest generation.
+  Selects the type of header in CBF binary sections and message digest
+generation.
 
   *encoding*
 
-  Selects the type of encoding used for binary sections and the type of line-termination in imgCIF files.
+  Selects the type of encoding used for binary sections and the type of
+line-termination in imgCIF files.
 
 **RETURN VALUE**
 
@@ -1181,30 +1575,39 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.3 cbf_read_file](#2.3.3)  
+[2.3.3 cbf_read_file](#2.3.3)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.5">2.3.5 cbf_new_datablock, cbf_new_saveframe</span>
+::: {#2.3.5}
+#### 2.3.5 cbf_new_datablock, cbf_new_saveframe
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_new_datablock (cbf_handle *handle*, const char \**datablockname*);  
-int cbf_new_saveframe (cbf_handle *handle*, const char \**saveframename*);
+int cbf_new_datablock (cbf_handle *handle*, const char
+\**datablockname*);\
+int cbf_new_saveframe (cbf_handle *handle*, const char
+\**saveframename*);
 
 **DESCRIPTION**
 
-cbf_new_datablock creates a new data block with name *datablockname* and makes it the current data block. cbf_new_saveframe creates a new save frame with name *saveframename* within the current data block and makes the new save frame the current save frame.
+cbf_new_datablock creates a new data block with name *datablockname* and
+makes it the current data block. cbf_new_saveframe creates a new save
+frame with name *saveframename* within the current data block and makes
+the new save frame the current save frame.
 
-If a data block or save frame with this name already exists, the existing data block or save frame becomes the current data block or save frame.
+If a data block or save frame with this name already exists, the
+existing data block or save frame becomes the current data block or save
+frame.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablockname*
 
@@ -1220,40 +1623,49 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.12 cbf_set_datablockname, cbf_set_saveframename](#2.3.12)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.12 cbf_set_datablockname, cbf_set_saveframename](#2.3.12)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.6">2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe</span>
+::: {#2.3.6}
+#### 2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_force_new_datablock (cbf_handle *handle*, const char \**datablockname*);  
-int cbf_force_new_saveframe (cbf_handle *handle*, const char \**saveframename*);
+int cbf_force_new_datablock (cbf_handle *handle*, const char
+\**datablockname*);\
+int cbf_force_new_saveframe (cbf_handle *handle*, const char
+\**saveframename*);
 
 **DESCRIPTION**
 
-cbf_force_new_datablock creates a new data block with name *datablockname* and makes it the current data block. Duplicate data block names are allowed. cbf_force_new_saveframe creates a new savew frame with name *saveframename* and makes it the current save frame. Duplicate save frame names are allowed.
+cbf_force_new_datablock creates a new data block with name
+*datablockname* and makes it the current data block. Duplicate data
+block names are allowed. cbf_force_new_saveframe creates a new savew
+frame with name *saveframename* and makes it the current save frame.
+Duplicate save frame names are allowed.
 
-Even if a save frame with this name already exists, a new save frame is created and becomes the current save frame.
+Even if a save frame with this name already exists, a new save frame is
+created and becomes the current save frame.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablockname*
 
@@ -1269,39 +1681,43 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.12 cbf_set_datablockname, cbf_set_saveframename](#2.3.12)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.12 cbf_set_datablockname, cbf_set_saveframename](#2.3.12)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.7">2.3.7 cbf_new_category</span>
+::: {#2.3.7}
+#### 2.3.7 cbf_new_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_new_category (cbf_handle *handle*, const char \**categoryname*);
 
 **DESCRIPTION**
 
-cbf_new_category creates a new category in the current data block with name *categoryname* and makes it the current category.
+cbf_new_category creates a new category in the current data block with
+name *categoryname* and makes it the current category.
 
-If a category with this name already exists, the existing category becomes the current category.
+If a category with this name already exists, the existing category
+becomes the current category.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categoryname*
 
@@ -1313,38 +1729,45 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.18 cbf_remove_category](#2.3.18)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.8">2.3.8 cbf_force_new_category</span>
+::: {#2.3.8}
+#### 2.3.8 cbf_force_new_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_force_new_category (cbf_handle *handle*, const char \**categoryname*);
+int cbf_force_new_category (cbf_handle *handle*, const char
+\**categoryname*);
 
 **DESCRIPTION**
 
-cbf_force_new_category creates a new category in the current data block with name *categoryname* and makes it the current category. Duplicate category names are allowed.
+cbf_force_new_category creates a new category in the current data block
+with name *categoryname* and makes it the current category. Duplicate
+category names are allowed.
 
-Even if a category with this name already exists, a new category of the same name is created and becomes the current category. The allows for the creation of unlooped tag/value lists drawn from the same category.
+Even if a category with this name already exists, a new category of the
+same name is created and becomes the current category. The allows for
+the creation of unlooped tag/value lists drawn from the same category.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categoryname*
 
@@ -1356,42 +1779,46 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.18 cbf_remove_category](#2.3.18)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.9">2.3.9 cbf_new_column</span>
+::: {#2.3.9}
+#### 2.3.9 cbf_new_column
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_new_column (cbf_handle *handle*, const char \**columnname*);
 
 **DESCRIPTION**
 
-cbf_new_column creates a new column in the current category with name *columnname* and makes it the current column.
+cbf_new_column creates a new column in the current category with name
+*columnname* and makes it the current column.
 
-If a column with this name already exists, the existing column becomes the current category.
+If a column with this name already exists, the existing column becomes
+the current category.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  The name of the new column.  
+  The name of the new column.\
 
 **RETURN VALUE**
 
@@ -1399,36 +1826,39 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.19 cbf_remove_column](#2.3.19)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.19 cbf_remove_column](#2.3.19)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.10">2.3.10 cbf_new_row</span>
+::: {#2.3.10}
+#### 2.3.10 cbf_new_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_new_row (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_new_row adds a new row to the current category and makes it the current row.
+cbf_new_row adds a new row to the current category and makes it the
+current row.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1436,45 +1866,50 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.12 cbf_delete_row](#2.3.12)  
-[2.3.20 cbf_remove_row](#2.3.20)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.12 cbf_delete_row](#2.3.12)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.11">2.3.11 cbf_insert_row</span>
+::: {#2.3.11}
+#### 2.3.11 cbf_insert_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_insert_row (cbf_handle *handle*, unsigned int *rownumber*);
 
 **DESCRIPTION**
 
-cbf_insert_row adds a new row to the current category. The new row is inserted as row *rownumber* and existing rows starting from *rownumber* are moved up by 1. The new row becomes the current row.
+cbf_insert_row adds a new row to the current category. The new row is
+inserted as row *rownumber* and existing rows starting from *rownumber*
+are moved up by 1. The new row becomes the current row.
 
-If the category has fewer than *rownumber* rows, the function returns CBF_NOTFOUND.
+If the category has fewer than *rownumber* rows, the function returns
+CBF_NOTFOUND.
 
 The row numbers start from 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *rownumber*
 
-  The row number of the new row.  
+  The row number of the new row.\
 
 **RETURN VALUE**
 
@@ -1482,43 +1917,48 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.12 cbf_delete_row](#2.3.12)  
-[2.3.20 cbf_remove_row](#2.3.20)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.12 cbf_delete_row](#2.3.12)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.12">2.3.12 cbf_delete_row</span>
+::: {#2.3.12}
+#### 2.3.12 cbf_delete_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_delete_row (cbf_handle *handle*, unsigned int *rownumber*);
 
 **DESCRIPTION**
 
-cbf_delete_row deletes a row from the current category. Rows starting from *rownumber* +1 are moved down by 1. If the current row was higher than *rownumber*, or if the current row is the last row, it will also move down by 1.
+cbf_delete_row deletes a row from the current category. Rows starting
+from *rownumber* +1 are moved down by 1. If the current row was higher
+than *rownumber*, or if the current row is the last row, it will also
+move down by 1.
 
 The row numbers start from 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *rownumber*
 
-  The number of the row to delete.  
+  The number of the row to delete.\
 
 **RETURN VALUE**
 
@@ -1526,46 +1966,53 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.18 cbf_remove_category](#2.3.18)  
-[2.3.19 cbf_remove_column](#2.3.19)  
-[2.3.20 cbf_remove_row](#2.3.20)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+[2.3.19 cbf_remove_column](#2.3.19)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.13">2.3.13 cbf_set_datablockname, cbf_set_saveframename</span>
+::: {#2.3.13}
+#### 2.3.13 cbf_set_datablockname, cbf_set_saveframename
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_set_datablockname (cbf_handle *handle*, const char \**datablockname*);  
-int cbf_set_saveframename (cbf_handle *handle*, const char \**saveframename*);
+int cbf_set_datablockname (cbf_handle *handle*, const char
+\**datablockname*);\
+int cbf_set_saveframename (cbf_handle *handle*, const char
+\**saveframename*);
 
 **DESCRIPTION**
 
-cbf_set_datablockname changes the name of the current data block to *datablockname*. cbf_set_saveframename changes the name of the current save frame to *saveframename*.
+cbf_set_datablockname changes the name of the current data block to
+*datablockname*. cbf_set_saveframename changes the name of the current
+save frame to *saveframename*.
 
-If a data block or save frame with this name already exists (comparison is case-insensitive), the function returns CBF_IDENTICAL.
+If a data block or save frame with this name already exists (comparison
+is case-insensitive), the function returns CBF_IDENTICAL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablockname*
 
-  The new data block name.  
+  The new data block name.\
 
   *saveframename*
 
-  The new save frame name.  
+  The new save frame name.\
 
 **RETURN VALUE**
 
@@ -1573,19 +2020,21 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.14 cbf_reset_datablocks](#2.3.14)  
-[2.3.15 cbf_reset_datablock, cbf_reset_saveframe](#2.3.15)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.42 cbf_datablock_name](#2.3.42)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.14 cbf_reset_datablocks](#2.3.14)\
+[2.3.15 cbf_reset_datablock, cbf_reset_saveframe](#2.3.15)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.42 cbf_datablock_name](#2.3.42)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.14">2.3.14 cbf_reset_datablocks</span>
+::: {#2.3.14}
+#### 2.3.14 cbf_reset_datablocks
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_reset_datablocks (cbf_handle *handle*);
 
@@ -1595,11 +2044,11 @@ cbf_reset_datablocks deletes all categories from all data blocks.
 
 The current data block does not change.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1607,29 +2056,32 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.15 cbf_reset_datablock, cbf_reset_saveframe](#2.3.15)  
-[2.3.18 cbf_remove_category](#2.3.18)  
+[2.3.15 cbf_reset_datablock, cbf_reset_saveframe](#2.3.15)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.15">2.3.15 cbf_reset_datablock, cbf_reset_saveframe</span>
+::: {#2.3.15}
+#### 2.3.15 cbf_reset_datablock, cbf_reset_saveframe
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_reset_datablock (cbf_handle *handle*);  
+int cbf_reset_datablock (cbf_handle *handle*);\
 int cbf_reset_saveframe (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_reset_datablock deletes all categories from the current data block. cbf_reset_saveframe deletes all categories from the current save frame.
+cbf_reset_datablock deletes all categories from the current data block.
+cbf_reset_saveframe deletes all categories from the current save frame.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1637,16 +2089,18 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.14 cbf_reset_datablocks](#2.3.14)  
-[2.3.18 cbf_remove_category](#2.3.18)  
+[2.3.14 cbf_reset_datablocks](#2.3.14)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.16">2.3.16 cbf_reset_category</span>
+::: {#2.3.16}
+#### 2.3.16 cbf_reset_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_reset_category (cbf_handle *handle*);
 
@@ -1654,11 +2108,11 @@ int cbf_reset_category (cbf_handle *handle*);
 
 cbf_reset_category deletes all columns and rows from current category.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1666,32 +2120,35 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.16 cbf_reset_category](#2.3.16)  
-[2.3.19 cbf_remove_column](#2.3.19)  
-[2.3.20 cbf_remove_row](#2.3.20)  
+[2.3.16 cbf_reset_category](#2.3.16)\
+[2.3.19 cbf_remove_column](#2.3.19)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.17">2.3.17 cbf_remove_datablock, cbf_remove_saveframe</span>
+::: {#2.3.17}
+#### 2.3.17 cbf_remove_datablock, cbf_remove_saveframe\>
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_remove_datablock (cbf_handle *handle*);  
+int cbf_remove_datablock (cbf_handle *handle*);\
 int cbf_remove_saveframe (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_remove_datablock deletes the current data block. cbf_remove_saveframe deletes the current save frame.
+cbf_remove_datablock deletes the current data block.
+cbf_remove_saveframe deletes the current save frame.
 
 The current data block becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1699,22 +2156,24 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)  
-[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)  
-[2.3.18 cbf_remove_category](#2.3.18)  
-[2.3.19 cbf_remove_column](#2.3.19)  
-[2.3.20 cbf_remove_row](#2.3.20)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.5 cbf_new_datablock, cbf_new_saveframe](#2.3.5)\
+[2.3.6 cbf_force_new_datablock, cbf_force_new_saveframe](#2.3.6)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+[2.3.19 cbf_remove_column](#2.3.19)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.18">2.3.18 cbf_remove_category</span>
+::: {#2.3.18}
+#### 2.3.18 cbf_remove_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_remove_category (cbf_handle *handle*);
 
@@ -1724,11 +2183,11 @@ cbf_remove_category deletes the current category.
 
 The current category becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1736,22 +2195,24 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.7 cbf_new_category](#2.3.7)  
-[2.3.8 cbf_force_new_category](#2.3.8)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.19 cbf_remove_column](#2.3.19)  
-[2.3.20 cbf_remove_row](#2.3.20)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.7 cbf_new_category](#2.3.7)\
+[2.3.8 cbf_force_new_category](#2.3.8)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.19 cbf_remove_column](#2.3.19)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.19">2.3.19 cbf_remove_column</span>
+::: {#2.3.19}
+#### 2.3.19 cbf_remove_column
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_remove_column (cbf_handle *handle*);
 
@@ -1761,11 +2222,11 @@ cbf_remove_column deletes the current column.
 
 The current column becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1773,21 +2234,23 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.9 cbf_new_column](#2.3.9)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.18 cbf_remove_category](#2.3.18)  
-[2.3.20 cbf_remove_row](#2.3.20)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.9 cbf_new_column](#2.3.9)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+[2.3.20 cbf_remove_row](#2.3.20)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.20">2.3.20 cbf_remove_row</span>
+::: {#2.3.20}
+#### 2.3.20 cbf_remove_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_remove_row (cbf_handle *handle*);
 
@@ -1795,13 +2258,14 @@ int cbf_remove_row (cbf_handle *handle*);
 
 cbf_remove_row deletes the current row in the current category.
 
-If the current row was the last row, it will move down by 1, otherwise, it will remain the same.
+If the current row was the last row, it will move down by 1, otherwise,
+it will remain the same.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1809,23 +2273,25 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.10 cbf_new_row](#2.3.10)  
-[2.3.11 cbf_insert_row](#2.3.11)  
-[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)  
-[2.3.18 cbf_remove_category](#2.3.18)  
-[2.3.19 cbf_remove_column](#2.3.19)  
-[2.3.12 cbf_delete_row](#2.3.12)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.10 cbf_new_row](#2.3.10)\
+[2.3.11 cbf_insert_row](#2.3.11)\
+[2.3.17 cbf_remove_datablock, cbf_remove_saveframe](#2.3.17)\
+[2.3.18 cbf_remove_category](#2.3.18)\
+[2.3.19 cbf_remove_column](#2.3.19)\
+[2.3.12 cbf_delete_row](#2.3.12)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.21">2.3.21 cbf_rewind_datablock</span>
+::: {#2.3.21}
+#### 2.3.21 cbf_rewind_datablock
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_rewind_datablock (cbf_handle *handle*);
 
@@ -1837,11 +2303,11 @@ If there are no data blocks, the function returns CBF_NOTFOUND.
 
 The current category becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1849,40 +2315,49 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)  
-[2.3.19 cbf_rewind_column](#2.3.19)  
-[2.3.24 cbf_rewind_row](#2.3.24)  
-[2.3.25 cbf_next_datablock](#2.3.25)  
+[2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+cbf_rewind_blockitem](#2.3.22)\
+[2.3.19 cbf_rewind_column](#2.3.19)\
+[2.3.24 cbf_rewind_row](#2.3.24)\
+[2.3.25 cbf_next_datablock](#2.3.25)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.22">2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem</span>
+::: {#2.3.22}
+#### 2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_rewind_category (cbf_handle *handle*);  
-int cbf_rewind_saveframe (cbf_handle *handle*);  
+int cbf_rewind_category (cbf_handle *handle*);\
+int cbf_rewind_saveframe (cbf_handle *handle*);\
 int cbf_rewind_blockitem (cbf_handle *handle*, *CBF_NODETYPE \* type*);
 
 **DESCRIPTION**
 
-cbf_rewind_category makes the first category in the current data block the current category. cbf_rewind_saveframe makes the first saveframe in the current data block the current saveframe. cbf_rewind_blockitem makes the first blockitem (category or saveframe) in the current data block the current blockitem. The type of the blockitem (CBF_CATEGORY or CBF_SAVEFRAME) is returned in *type*.
+cbf_rewind_category makes the first category in the current data block
+the current category. cbf_rewind_saveframe makes the first saveframe in
+the current data block the current saveframe. cbf_rewind_blockitem makes
+the first blockitem (category or saveframe) in the current data block
+the current blockitem. The type of the blockitem (CBF_CATEGORY or
+CBF_SAVEFRAME) is returned in *type*.
 
-If there are no categories, saveframes or blockitems the function returns CBF_NOTFOUND.
+If there are no categories, saveframes or blockitems the function
+returns CBF_NOTFOUND.
 
 The current column and row become undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *type*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1890,34 +2365,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.21 cbf_rewind_datablock](#2.3.21)  
-[2.3.19 cbf_rewind_column](#2.3.19)  
-[2.3.24 cbf_rewind_row](#2.3.24)  
-[2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)  
+[2.3.21 cbf_rewind_datablock](#2.3.21)\
+[2.3.19 cbf_rewind_column](#2.3.19)\
+[2.3.24 cbf_rewind_row](#2.3.24)\
+[2.3.26 cbf_next_category, cbf_next_saveframe,
+cbf_next_blockitem](#2.3.26)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.23">2.3.23 cbf_rewind_column</span>
+::: {#2.3.23}
+#### 2.3.23 cbf_rewind_column
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_rewind_column (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_rewind_column makes the first column in the current category the current column.
+cbf_rewind_column makes the first column in the current category the
+current column.
 
 If there are no columns, the function returns CBF_NOTFOUND.
 
 The current row is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1925,34 +2404,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.21 cbf_rewind_datablock](#2.3.21)  
-[2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)  
-[2.3.24 cbf_rewind_row](#2.3.24)  
-[2.3.27 cbf_next_column](#2.3.27)  
+[2.3.21 cbf_rewind_datablock](#2.3.21)\
+[2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+cbf_rewind_blockitem](#2.3.22)\
+[2.3.24 cbf_rewind_row](#2.3.24)\
+[2.3.27 cbf_next_column](#2.3.27)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.24">2.3.24 cbf_rewind_row</span>
+::: {#2.3.24}
+#### 2.3.24 cbf_rewind_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_rewind_row (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_rewind_row makes the first row in the current category the current row.
+cbf_rewind_row makes the first row in the current category the current
+row.
 
 If there are no rows, the function returns CBF_NOTFOUND.
 
 The current column is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1960,34 +2443,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.21 cbf_rewind_datablock](#2.3.21)  
-[2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)  
-[2.3.19 cbf_rewind_column](#2.3.19)  
-[2.3.28 cbf_next_row](#2.3.28)  
+[2.3.21 cbf_rewind_datablock](#2.3.21)\
+[2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+cbf_rewind_blockitem](#2.3.22)\
+[2.3.19 cbf_rewind_column](#2.3.19)\
+[2.3.28 cbf_next_row](#2.3.28)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.25">2.3.25 cbf_next_datablock</span>
+::: {#2.3.25}
+#### 2.3.25 cbf_next_datablock
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_next_datablock (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_next_datablock makes the data block following the current data block the current data block.
+cbf_next_datablock makes the data block following the current data block
+the current data block.
 
 If there are no more data blocks, the function returns CBF_NOTFOUND.
 
 The current category becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -1995,34 +2482,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.21 cbf_rewind_datablock](#2.3.21)  
-[2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)  
-[2.3.27 cbf_next_column](#2.3.27)  
-[2.3.28 cbf_next_row](#2.3.28)  
+[2.3.21 cbf_rewind_datablock](#2.3.21)\
+[2.3.26 cbf_next_category, cbf_next_saveframe,
+cbf_next_blockitem](#2.3.26)\
+[2.3.27 cbf_next_column](#2.3.27)\
+[2.3.28 cbf_next_row](#2.3.28)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.26">2.3.26 cbf_next_category</span>
+::: {#2.3.26}
+#### 2.3.26 cbf_next_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_next_category (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_next_category makes the category following the current category in the current data block the current category.
+cbf_next_category makes the category following the current category in
+the current data block the current category.
 
 If there are no more categories, the function returns CBF_NOTFOUND.
 
 The current column and row become undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -2030,34 +2521,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)  
-[2.3.25 cbf_next_datablock](#2.3.25)  
-[2.3.27 cbf_next_column](#2.3.27)  
-[2.3.27 cbf_next_row](#2.3.28)  
+[2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+cbf_rewind_blockitem](#2.3.22)\
+[2.3.25 cbf_next_datablock](#2.3.25)\
+[2.3.27 cbf_next_column](#2.3.27)\
+[2.3.27 cbf_next_row](#2.3.28)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.27">2.3.27 cbf_next_column</span>
+::: {#2.3.27}
+#### 2.3.27 cbf_next_column
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_next_column (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_next_column makes the column following the current column in the current category the current column.
+cbf_next_column makes the column following the current column in the
+current category the current column.
 
 If there are no more columns, the function returns CBF_NOTFOUND.
 
 The current row is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -2065,34 +2560,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.19 cbf_rewind_column](#2.3.19)  
-[2.3.25 cbf_next_datablock](#2.3.25)  
-[2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)  
-[2.3.28 cbf_next_row](#2.3.28)  
+[2.3.19 cbf_rewind_column](#2.3.19)\
+[2.3.25 cbf_next_datablock](#2.3.25)\
+[2.3.26 cbf_next_category, cbf_next_saveframe,
+cbf_next_blockitem](#2.3.26)\
+[2.3.28 cbf_next_row](#2.3.28)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.28">2.3.28 cbf_next_row</span>
+::: {#2.3.28}
+#### 2.3.28 cbf_next_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_next_row (cbf_handle *handle*);
 
 **DESCRIPTION**
 
-cbf_next_row makes the row following the current row in the current category the current row.
+cbf_next_row makes the row following the current row in the current
+category the current row.
 
 If there are no more rows, the function returns CBF_NOTFOUND.
 
 The current column is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
 **RETURN VALUE**
 
@@ -2100,24 +2599,29 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.24 cbf_rewind_row](#2.3.24)  
-[2.3.25 cbf_next_datablock](#2.3.25)  
-[2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)  
-[2.3.27 cbf_next_column](#2.3.27)  
+[2.3.24 cbf_rewind_row](#2.3.24)\
+[2.3.25 cbf_next_datablock](#2.3.25)\
+[2.3.26 cbf_next_category, cbf_next_saveframe,
+cbf_next_blockitem](#2.3.26)\
+[2.3.27 cbf_next_column](#2.3.27)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.29">2.3.29 cbf_find_datablock</span>
+::: {#2.3.29}
+#### 2.3.29 cbf_find_datablock
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_find_datablock (cbf_handle *handle*, const char \**datablockname*);
+int cbf_find_datablock (cbf_handle *handle*, const char
+\**datablockname*);
 
 **DESCRIPTION**
 
-cbf_find_datablock makes the data block with name *datablockname* the current data block.
+cbf_find_datablock makes the data block with name *datablockname* the
+current data block.
 
 The comparison is case-insensitive.
 
@@ -2125,15 +2629,15 @@ If the data block does not exist, the function returns CBF_NOTFOUND.
 
 The current category becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablockname*
 
-  The name of the data block to find.  
+  The name of the data block to find.\
 
 **RETURN VALUE**
 
@@ -2141,45 +2645,58 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.21 cbf_rewind_datablock](#2.3.21)  
-[2.3.25 cbf_next_datablock](#2.3.25)  
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
-[2.3.31 cbf_find_column](#2.3.31)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.42 cbf_datablock_name](#2.3.42)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.21 cbf_rewind_datablock](#2.3.21)\
+[2.3.25 cbf_next_datablock](#2.3.25)\
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+[2.3.31 cbf_find_column](#2.3.31)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.42 cbf_datablock_name](#2.3.42)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.30">2.3.30 cbf_find_category</span>
+::: {#2.3.30}
+#### 2.3.30 cbf_find_category, cbf_find_saveframe
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_find_category (cbf_handle *handle*, const char \**categoryname*);
+int cbf_find_category (cbf_handle *handle*, const char
+\**categoryname*);\
+int cbf_find_saveframe (cbf_handle *handle*, const char
+\**saveframename*);\
 
 **DESCRIPTION**
 
-cbf_find_category makes the category in the current data block with name *categoryname* the current category.
+cbf_find_category makes the category in the current data block with name
+*categoryname* the current category. cbf_find_saveframe makes the
+saveframe in the current data block with name *saveframename* the
+current saveframe.
 
 The comparison is case-insensitive.
 
-If the category does not exist, the function returns CBF_NOTFOUND.
+If the category or saveframe does not exist, the function returns
+CBF_NOTFOUND.
 
 The current column and row become undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categoryname*
 
-  The name of the category to find.  
+  The name of the category to find.\
+
+  *saveframename*
+
+  The name of the saveframe to find.\
 
 **RETURN VALUE**
 
@@ -2187,29 +2704,34 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)  
-[2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)  
-[2.3.29 cbf_find_datablock](#2.3.29)  
-[2.3.31 cbf_find_column](#2.3.31)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.43 cbf_category_name](#2.3.43)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+cbf_rewind_blockitem](#2.3.22)\
+[2.3.26 cbf_next_category, cbf_next_saveframe,
+cbf_next_blockitem](#2.3.26)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.31 cbf_find_column](#2.3.31)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.43 cbf_category_name](#2.3.43)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.31">2.3.31 cbf_find_column</span>
+::: {#2.3.31}
+#### 2.3.31 cbf_find_column
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_find_column (cbf_handle *handle*, const char \**columnname*);
 
 **DESCRIPTION**
 
-cbf_find_column makes the columns in the current category with name *columnname* the current column.
+cbf_find_column makes the columns in the current category with name
+*columnname* the current column.
 
 The comparison is case-insensitive.
 
@@ -2217,15 +2739,15 @@ If the column does not exist, the function returns CBF_NOTFOUND.
 
 The current row is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  The name of column to find.  
+  The name of column to find.\
 
 **RETURN VALUE**
 
@@ -2233,29 +2755,32 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.19 cbf_rewind_column](#2.3.19)  
-[2.3.27 cbf_next_column](#2.3.27)  
-[2.3.29 cbf_find_datablock](#2.3.29)  
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.44 cbf_column_name](#2.3.44)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.19 cbf_rewind_column](#2.3.19)\
+[2.3.27 cbf_next_column](#2.3.27)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.44 cbf_column_name](#2.3.44)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.32">2.3.32 cbf_find_row</span>
+::: {#2.3.32}
+#### 2.3.32 cbf_find_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include\"2.3.32\" \"cbf.h\"
 
 int cbf_find_row (cbf_handle *handle*, const char \**value*);
 
 **DESCRIPTION**
 
-cbf_find_row makes the first row in the current column with value *value* the current row.
+cbf_find_row makes the first row in the current column with value
+*value* the current row.
 
 The comparison is case-sensitive.
 
@@ -2263,15 +2788,15 @@ If a matching row does not exist, the function returns CBF_NOTFOUND.
 
 The current column is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *value*
 
-  The value of the row to find.  
+  The value of the row to find.\
 
 **RETURN VALUE**
 
@@ -2279,26 +2804,33 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.24 cbf_rewind_row](#2.3.24)  
-[2.3.28 cbf_next_row](#2.3.28)  
-[2.3.29 cbf_find_datablock](#2.3.29)  
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
-[2.3.31 cbf_find_column](#2.3.31)  
-[2.3.33 cbf_find_nextrow](#2.3.33)  
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
+[2.3.24 cbf_rewind_row](#2.3.24)\
+[2.3.28 cbf_next_row](#2.3.28)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+[2.3.31 cbf_find_column](#2.3.31)\
+[2.3.33 cbf_find_nextrow](#2.3.33)\
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+:::
 
-#### <span id="2.3.33">2.3.33 cbf_find_nextrow</span>
+------------------------------------------------------------------------
+
+::: {#2.3.33}
+#### 2.3.33 cbf_find_nextrow
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_find_nextrow (cbf_handle *handle*, const char \**value*);
 
 **DESCRIPTION**
 
-cbf_find_nextrow makes the makes the next row in the current column with value *value* the current row. The search starts from the row following the last row found with cbf_find_row or cbf_find_nextrow, or from the current row if the current row was defined using any other function.
+cbf_find_nextrow makes the makes the next row in the current column with
+value *value* the current row. The search starts from the row following
+the last row found with cbf_find_row or cbf_find_nextrow, or from the
+current row if the current row was defined using any other function.
 
 The comparison is case-sensitive.
 
@@ -2306,15 +2838,15 @@ If no more matching rows exist, the function returns CBF_NOTFOUND.
 
 The current column is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *value*
 
-  the value to search for.  
+  the value to search for.\
 
 **RETURN VALUE**
 
@@ -2322,38 +2854,41 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.24 cbf_rewind_row](#2.3.24)  
-[2.3.28 cbf_next_row](#2.3.28)  
-[2.3.29 cbf_find_datablock](#2.3.29)  
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
-[2.3.31 cbf_find_column](#2.3.31)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
+[2.3.24 cbf_rewind_row](#2.3.24)\
+[2.3.28 cbf_next_row](#2.3.28)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+[2.3.31 cbf_find_column](#2.3.31)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.34">2.3.34 cbf_count_datablocks</span>
+::: {#2.3.34}
+#### 2.3.34 cbf_count_datablocks
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_count_datablocks (cbf_handle *handle*, unsigned int \**datablocks*);
+int cbf_count_datablocks (cbf_handle *handle*, unsigned int
+\**datablocks*);
 
 **DESCRIPTION**
 
 cbf_count_datablocks puts the number of data blocks in \**datablocks* .
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablocks*
 
-  Pointer to the destination data block count.  
+  Pointer to the destination data block count.\
 
 **RETURN VALUE**
 
@@ -2361,34 +2896,39 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.35 cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems](#2.3.35)  
-[2.3.36 cbf_count_columns](#2.3.36)  
-[2.3.37 cbf_count_rows](#2.3.37)  
-[2.3.38 cbf_select_datablock](#2.3.38)  
+[2.3.35 cbf_count_categories, cbf_count_saveframes,
+cbf_count_blockitems](#2.3.35)\
+[2.3.36 cbf_count_columns](#2.3.36)\
+[2.3.37 cbf_count_rows](#2.3.37)\
+[2.3.38 cbf_select_datablock](#2.3.38)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.35">2.3.35 cbf_count_categories</span>
+::: {#2.3.35}
+#### 2.3.35 cbf_count_categories
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_count_categories (cbf_handle *handle*, unsigned int \**categories*);
+int cbf_count_categories (cbf_handle *handle*, unsigned int
+\**categories*);
 
 **DESCRIPTION**
 
-cbf_count_categories puts the number of categories in the current data block in \**categories*.
+cbf_count_categories puts the number of categories in the current data
+block in \**categories*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categories*
 
-  Pointer to the destination category count.  
+  Pointer to the destination category count.\
 
 **RETURN VALUE**
 
@@ -2396,34 +2936,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.34 cbf_count_datablocks](#2.3.34)  
-[2.3.36 cbf_count_columns](#2.3.36)  
-[2.3.37 cbf_count_rows](#2.3.37)  
-[2.3.39 cbf_select_category, cbf_select_saveframe, cbf_select_blockitem](#2.3.39)  
+[2.3.34 cbf_count_datablocks](#2.3.34)\
+[2.3.36 cbf_count_columns](#2.3.36)\
+[2.3.37 cbf_count_rows](#2.3.37)\
+[2.3.39 cbf_select_category, cbf_select_saveframe,
+cbf_select_blockitem](#2.3.39)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.36">2.3.36 cbf_count_columns</span>
+::: {#2.3.36}
+#### 2.3.36 cbf_count_columns
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_count_columns (cbf_handle *handle*, unsigned int \**columns*);
 
 **DESCRIPTION**
 
-cbf_count_columns puts the number of columns in the current category in \**columns*.
+cbf_count_columns puts the number of columns in the current category in
+\**columns*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columns*
 
-  Pointer to the destination column count.  
+  Pointer to the destination column count.\
 
 **RETURN VALUE**
 
@@ -2431,34 +2975,38 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.34 cbf_count_datablocks](#2.3.34)  
-[2.3.35 cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems](#2.3.35)  
-[2.3.37 cbf_count_rows](#2.3.37)  
-[2.3.40 cbf_select_column](#2.3.40)  
+[2.3.34 cbf_count_datablocks](#2.3.34)\
+[2.3.35 cbf_count_categories, cbf_count_saveframes,
+cbf_count_blockitems](#2.3.35)\
+[2.3.37 cbf_count_rows](#2.3.37)\
+[2.3.40 cbf_select_column](#2.3.40)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.37">2.3.37 cbf_count_rows</span>
+::: {#2.3.37}
+#### 2.3.37 cbf_count_rows
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_count_rows (cbf_handle *handle*, unsigned int \**rows*);
 
 **DESCRIPTION**
 
-cbf_count_rows puts the number of rows in the current category in \**rows* .
+cbf_count_rows puts the number of rows in the current category in
+\**rows* .
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *rows*
 
-  Pointer to the destination row count.  
+  Pointer to the destination row count.\
 
 **RETURN VALUE**
 
@@ -2466,38 +3014,43 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.34 cbf_count_datablocks](#2.3.34)  
-[2.3.35 cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems](#2.3.35)  
-[2.3.36 cbf_count_columns](#2.3.36)  
-[2.3.41 cbf_select_row](#2.3.41)  
+[2.3.34 cbf_count_datablocks](#2.3.34)\
+[2.3.35 cbf_count_categories, cbf_count_saveframes,
+cbf_count_blockitems](#2.3.35)\
+[2.3.36 cbf_count_columns](#2.3.36)\
+[2.3.41 cbf_select_row](#2.3.41)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.38">2.3.38 cbf_select_datablock</span>
+::: {#2.3.38}
+#### 2.3.38 cbf_select_aaaaaaaadatablock
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_select_datablock (cbf_handle *handle*, unsigned int *datablock*);
+int cbf_select_datablock (cbf_handle *handle*, unsigned int
+*datablock*);
 
 **DESCRIPTION**
 
-cbf_select_datablock selects data block number *datablock* as the current data block.
+cbf_select_datablock selects data block number *datablock* as the
+current data block.
 
 The first data block is number 0.
 
 If the data block does not exist, the function returns CBF_NOTFOUND.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablock*
 
-  Number of the data block to select.  
+  Number of the data block to select.\
 
 **RETURN VALUE**
 
@@ -2505,24 +3058,28 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.34 cbf_count_datablocks](#2.3.34)  
-[2.3.39 cbf_select_category, cbf_select_saveframe, cbf_select_blockitem](#2.3.39)  
-[2.3.40 cbf_select_column](#2.3.40)  
+[2.3.34 cbf_count_datablocks](#2.3.34)\
+[2.3.39 cbf_select_category, cbf_select_saveframe,
+cbf_select_blockitem](#2.3.39)\
+[2.3.40 cbf_select_column](#2.3.40)\
 [2.3.41 cbf_select_row](#2.3.41)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.39">2.3.39 cbf_select_category</span>
+::: {#2.3.39}
+#### 2.3.39 cbf_select_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_select_category (cbf_handle *handle*, unsigned int *category*);
 
 **DESCRIPTION**
 
-cbf_select_category selects category number *category* in the current data block as the current category.
+cbf_select_category selects category number *category* in the current
+data block as the current category.
 
 The first category is number 0.
 
@@ -2530,15 +3087,15 @@ The current column and row become undefined.
 
 If the category does not exist, the function returns CBF_NOTFOUND.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *category*
 
-  Number of the category to select.  
+  Number of the category to select.\
 
 **RETURN VALUE**
 
@@ -2546,24 +3103,30 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.35 cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems](#2.3.35)  
-[2.3.38 cbf_select_datablock](#2.3.38)  
-[2.3.40 cbf_select_column](#2.3.40)  
-[2.3.41 cbf_select_row](#2.3.41)  
+[2.3.35 cbf_count_categories, cbf_count_saveframes,
+cbf_count_blockitems](#2.3.35)\
+[2.3.38 cbf_select_datablock](#2.3.38)\
+[2.3.40 cbf_select_column](#2.3.40)\
+[2.3.41 cbf_select_row](#2.3.41)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.40">2.3.40 cbf_select_column</span>
+\]
+
+::: {#2.3.40}
+#### 2.3.40 cbf_select_column
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_select_column (cbf_handle *handle*, unsigned int *column*);
 
 **DESCRIPTION**
 
-cbf_select_column selects column number *column* in the current category as the current column.
+cbf_select_column selects column number *column* in the current category
+as the current column.
 
 The first column is number 0.
 
@@ -2571,15 +3134,15 @@ The current row is not affected
 
 If the column does not exist, the function returns CBF_NOTFOUND.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *column*
 
-  Number of the column to select.  
+  Number of the column to select.\
 
 **RETURN VALUE**
 
@@ -2587,24 +3150,28 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.36 cbf_count_columns](#2.3.36)  
-[2.3.38 cbf_select_datablock](#2.3.38)  
-[2.3.39 cbf_select_category, cbf_select_saveframe, cbf_select_blockitem](#2.3.39)  
-[2.3.41 cbf_select_row](#2.3.41)  
+[2.3.36 cbf_count_columns](#2.3.36)\
+[2.3.38 cbf_select_datablock](#2.3.38)\
+[2.3.39 cbf_select_category, cbf_select_saveframe,
+cbf_select_blockitem](#2.3.39)\
+[2.3.41 cbf_select_row](#2.3.41)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.41">2.3.41 cbf_select_row</span>
+::: {#2.3.41}
+#### 2.3.41 cbf_select_row
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_select_row (cbf_handle *handle*, unsigned int *row*);
 
 **DESCRIPTION**
 
-cbf_select_row selects row number *row* in the current category as the current row.
+cbf_select_row selects row number *row* in the current category as the
+current row.
 
 The first row is number 0.
 
@@ -2612,15 +3179,15 @@ The current column is not affected
 
 If the row does not exist, the function returns CBF_NOTFOUND.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *row*
 
-  Number of the row to select.  
+  Number of the row to select.\
 
 **RETURN VALUE**
 
@@ -2628,38 +3195,44 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.37 cbf_count_rows](#2.3.37)  
-[2.3.38 cbf_select_datablock](#2.3.38)  
-[2.3.39 cbf_select_category, cbf_select_saveframe, cbf_select_blockitem](#2.3.39)  
-[2.3.40 cbf_select_column](#2.3.40)  
+[2.3.37 cbf_count_rows](#2.3.37)\
+[2.3.38 cbf_select_datablock](#2.3.38)\
+[2.3.39 cbf_select_category, cbf_select_saveframe,
+cbf_select_blockitem](#2.3.39)\
+[2.3.40 cbf_select_column](#2.3.40)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.42">2.3.42 cbf_datablock_name</span>
+::: {#2.3.42}
+#### 2.3.42 cbf_datablock_name\<
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_datablock_name (cbf_handle *handle*, const char \*\**datablockname*);
+int cbf_datablock_name (cbf_handle *handle*, const char
+\*\**datablockname*);
 
 **DESCRIPTION**
 
-cbf_datablock_name sets \**datablockname* to point to the name of the current data block.
+cbf_datablock_name sets \**datablockname* to point to the name of the
+current data block.
 
-The data block name will be valid as long as the data block exists and has not been renamed.
+The data block name will be valid as long as the data block exists and
+has not been renamed.
 
 The name must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablockname*
 
-  Pointer to the destination data block name pointer.  
+  Pointer to the destination data block name pointer.\
 
 **RETURN VALUE**
 
@@ -2667,35 +3240,39 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.29 cbf_find_datablock](#2.3.29)  
+[2.3.29 cbf_find_datablock](#2.3.29)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.43">2.3.43 cbf_category_name</span>
+::: {#2.3.43}
+#### 2.3.43 cbf_category_name
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_category_name (cbf_handle *handle*, const char \*\**categoryname*);
+int cbf_category_name (cbf_handle *handle*, const char
+\*\**categoryname*);
 
 **DESCRIPTION**
 
-cbf_category_name sets \**categoryname* to point to the name of the current category of the current data block.
+cbf_category_name sets \**categoryname* to point to the name of the
+current category of the current data block.
 
 The category name will be valid as long as the category exists.
 
 The name must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categoryname*
 
-  Pointer to the destination category name pointer.  
+  Pointer to the destination category name pointer.\
 
 **RETURN VALUE**
 
@@ -2703,42 +3280,47 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.44">2.3.44 cbf_column_name, cbf_set_column_name</span>
+::: {#2.3.44}
+#### 2.3.44 cbf_column_name, cbf_set_column_name
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_column_name (cbf_handle *handle*, const char \*\**columnname*);  
-int cbf_set_column_name (cbf_handle *handle*, const char \**newcolumnname*)
+int cbf_column_name (cbf_handle *handle*, const char \*\**columnname*);\
+int cbf_set_column_name (cbf_handle *handle*, const char
+\**newcolumnname*)
 
 **DESCRIPTION**
 
-cbf_column_name sets \**columnname* to point to the name of the current column of the current category.
+cbf_column_name sets \**columnname* to point to the name of the current
+column of the current category.
 
 The column name will be valid as long as the column exists.
 
 The name must not be modified by the program in any way.
 
-cbf_set_column_name sets the name of the current column to *newcolumnname*
+cbf_set_column_name sets the name of the current column to
+*newcolumnname*
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  Pointer to the destination column name pointer.  
+  Pointer to the destination column name pointer.\
 
   *newcolumnname*
 
-  New column name pointer.  
+  New column name pointer.\
 
 **RETURN VALUE**
 
@@ -2746,31 +3328,34 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.31 cbf_find_column](#2.3.31)  
+[2.3.31 cbf_find_column](#2.3.31)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.45">2.3.45 cbf_row_number</span>
+::: {#2.3.45}
+#### 2.3.45 cbf_row_number
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_row_number (cbf_handle *handle*, unsigned int \**row*);
 
 **DESCRIPTION**
 
-cbf_row_number sets \**row* to the number of the current row of the current category.
+cbf_row_number sets \**row* to the number of the current row of the
+current category.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *row*
 
-  Pointer to the destination row number.  
+  Pointer to the destination row number.\
 
 **RETURN VALUE**
 
@@ -2778,42 +3363,49 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.41 cbf_select_row](#2.3.41)  
+[2.3.41 cbf_select_row](#2.3.41)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.46">2.3.46 cbf_get_value, cbf_require_value</span>
+::: {#2.3.46}
+#### 2.3.46 cbf_get_value, cbf_require_value
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_value (cbf_handle *handle*, const char \*\**value*);  
-int cbf_require_value (cbf_handle *handle*, const char \*\**value*, const char \**defaultvalue* );
+int cbf_get_value (cbf_handle *handle*, const char \*\**value*);\
+int cbf_require_value (cbf_handle *handle*, const char \*\**value*,
+const char \**defaultvalue* );
 
 **DESCRIPTION**
 
-cbf_get_value sets \**value* to point to the ASCII value of the item at the current column and row. cbf_require_value sets \**value* to point to the ASCII value of the item at the current column and row, creating the data item if necessary and initializing it to a copy of *defaultvalue*.
+cbf_get_value sets \**value* to point to the ASCII value of the item at
+the current column and row. cbf_require_value sets \**value* to point to
+the ASCII value of the item at the current column and row, creating the
+data item if necessary and initializing it to a copy of *defaultvalue*.
 
 If the value is not ASCII, the function returns CBF_BINARY.
 
-The value will be valid as long as the item exists and has not been set to a new value.
+The value will be valid as long as the item exists and has not been set
+to a new value.
 
 The value must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *value*
 
-  Pointer to the destination value pointer.  
+  Pointer to the destination value pointer.\
 
   *defaultvalue*
 
-  Default value character string.  
+  Default value character string.\
 
 **RETURN VALUE**
 
@@ -2821,40 +3413,45 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.54 cbf_get_integerarrayparameters, cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters, cbf_get_realarrayparameters_wdims](#2.3.54)  
-[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.54 cbf_get_integerarrayparameters,
+cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters,
+cbf_get_realarrayparameters_wdims](#2.3.54)\
+[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.47">2.3.47 cbf_set_value</span>
+::: {#2.3.47}
+#### 2.3.47 cbf_set_value
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_set_value (cbf_handle *handle*, const char \**value*);
 
 **DESCRIPTION**
 
-cbf_set_value sets the item at the current column and row to the ASCII value *value*.
+cbf_set_value sets the item at the current column and row to the ASCII
+value *value*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *value*
 
-  ASCII value.  
+  ASCII value.\
 
 **RETURN VALUE**
 
@@ -2862,57 +3459,67 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.53 cbf_set_doublevalue](#2.3.53)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.53 cbf_set_doublevalue](#2.3.53)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.48">2.3.48 cbf_get_typeofvalue</span>
+::: {#2.3.48}
+#### 2.3.48 cbf_get_typeofvalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_typeofvalue (cbf_handle *handle*, const char \*\**typeofvalue*);
+int cbf_get_typeofvalue (cbf_handle *handle*, const char
+\*\**typeofvalue*);
 
 **DESCRIPTION**
 
-cbf_get_value sets \**typeofvalue* to point an ASCII descriptor of the value of the item at the current column and row. The strings that may be returned are:
+cbf_get_value sets \**typeofvalue* to point an ASCII descriptor of the
+value of the item at the current column and row. The strings that may be
+returned are:
 
-|        |                                                                |
-|--------|----------------------------------------------------------------|
-| "null" | for a null value indicated by a "." or a "?"                   |
-| "bnry" | for a binary value                                             |
-| "word" | for an unquoted string                                         |
-| "dblq" | for a double-quoted string                                     |
-| "sglq" | for a single-quoted string                                     |
-| "text" | for a semicolon-quoted string (multiline text field)           |
-| "prns" | for a parenthesis-bracketed string (multiline text field)      |
-| "brcs" | for a brace-bracketed string (multiline text field)            |
-| "bkts" | for a square-bracket-bracketed string (multiline text field)   |
-| "tsqs" | for a treble-single-quote quoted string (multiline text field) |
-| "tdqs" | for a treble-double-quote quoted string (multiline text field) |
+  ---------- ----------------------------------------------------------------
+  \"null\"   for a null value indicated by a \".\" or a \"?\"
+  \"bnry\"   for a binary value
+  \"word\"   for an unquoted string
+  \"dblq\"   for a double-quoted string
+  \"sglq\"   for a single-quoted string
+  \"text\"   for a semicolon-quoted string (multiline text field)
+  \"prns\"   for a parenthesis-bracketed string (multiline text field)
+  \"brcs\"   for a brace-bracketed string (multiline text field)
+  \"bkts\"   for a square-bracket-bracketed string (multiline text field)
+  \"tsqs\"   for a treble-single-quote quoted string (multiline text field)
+  \"tdqs\"   for a treble-double-quote quoted string (multiline text field)
+  ---------- ----------------------------------------------------------------
 
-Not all types are valid for all type of CIF files. In partcular the types "prns", "brcs", "bkts" were introduced with DDLm and are not valid in DDL1 or DDL2 CIFS. The types "tsqs" and "tdqs" are not formally part of the CIF syntax. A field for which no value has been set sets \**typeofvalue* to NULL rather than to the string "null".
+Not all types are valid for all type of CIF files. In partcular the
+types \"prns\", \"brcs\", \"bkts\" were introduced with DDLm and are not
+valid in DDL1 or DDL2 CIFS. The types \"tsqs\" and \"tdqs\" are not
+formally part of the CIF syntax. A field for which no value has been set
+sets \**typeofvalue* to NULL rather than to the string \"null\".
 
 The *typeofvalue* must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *typeofvalue*
 
-  Pointer to the destination type-of-value string pointer.  
+  Pointer to the destination type-of-value string pointer.\
 
 **RETURN VALUE**
 
@@ -2920,56 +3527,71 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.54 cbf_get_integerarrayparameters, cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters, cbf_get_realarrayparameters_wdims](#2.3.54)  
-[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.54 cbf_get_integerarrayparameters,
+cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters,
+cbf_get_realarrayparameters_wdims](#2.3.54)\
+[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.49">2.3.49 cbf_set_typeofvalue</span>
+::: {#2.3.49}
+#### 2.3.49 cbf_set_typeofvalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_set_typeofvalue (cbf_handle *handle*, const char \**typeofvalue*);
+int cbf_set_typeofvalue (cbf_handle *handle*, const char
+\**typeofvalue*);
 
 **DESCRIPTION**
 
-cbf_set_typeofvalue sets the type of the item at the current column and row to the type specified by the ASCII character string given by *typeofvalue*. The strings that may be used are:
+cbf_set_typeofvalue sets the type of the item at the current column and
+row to the type specified by the ASCII character string given by
+*typeofvalue*. The strings that may be used are:
 
-|        |                                                                |
-|--------|----------------------------------------------------------------|
-| "null" | for a null value indicated by a "." or a "?"                   |
-| "bnry" | for a binary value                                             |
-| "word" | for an unquoted string                                         |
-| "dblq" | for a double-quoted string                                     |
-| "sglq" | for a single-quoted string                                     |
-| "text" | for a semicolon-quoted string (multiline text field)           |
-| "prns" | for a parenthesis-bracketed string (multiline text field)      |
-| "brcs" | for a brace-bracketed string (multiline text field)            |
-| "bkts" | for a square-bracket-bracketed string (multiline text field)   |
-| "tsqs" | for a treble-single-quote quoted string (multiline text field) |
-| "tdqs" | for a treble-double-quote quoted string (multiline text field) |
+  ---------- ----------------------------------------------------------------
+  \"null\"   for a null value indicated by a \".\" or a \"?\"
+  \"bnry\"   for a binary value
+  \"word\"   for an unquoted string
+  \"dblq\"   for a double-quoted string
+  \"sglq\"   for a single-quoted string
+  \"text\"   for a semicolon-quoted string (multiline text field)
+  \"prns\"   for a parenthesis-bracketed string (multiline text field)
+  \"brcs\"   for a brace-bracketed string (multiline text field)
+  \"bkts\"   for a square-bracket-bracketed string (multiline text field)
+  \"tsqs\"   for a treble-single-quote quoted string (multiline text field)
+  \"tdqs\"   for a treble-double-quote quoted string (multiline text field)
+  ---------- ----------------------------------------------------------------
 
-Not all types may be used for all values. Not all types are valid for all type of CIF files. In partcular the types "prns", "brcs", "bkts" were introduced with DDLm and are not valid in DDL1 or DDL2 CIFS. The types "tsqs" and "tdqs" are not formally part of the CIF syntax. No changes may be made to the type of binary values. You may not set the type of a string that contains a single quote followed by a blank or a tab or which contains multiple lines to "sglq". You may not set the type of a string that contains a double quote followed by a blank or a tab or which contains multiple lines to "dblq".
+Not all types may be used for all values. Not all types are valid for
+all types of CIF files. In partcular the types \"prns\", \"brcs\",
+\"bkts\" were introduced with DDLm and are not valid in DDL1 or DDL2
+CIFS. The types \"tsqs\" and \"tdqs\" are not formally part of the CIF
+syntax. No changes may be made to the type of binary values. You may not
+set the type of a string that contains a single quote followed by a
+blank or a tab or which contains multiple lines to \"sglq\". You may not
+set the type of a string that contains a double quote followed by a
+blank or a tab or which contains multiple lines to \"dblq\".
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *typeofvalue*
 
-  ASCII string for desired type of value.  
+  ASCII string for desired type of value.\
 
 **RETURN VALUE**
 
@@ -2977,46 +3599,54 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.53 cbf_set_doublevalue](#2.3.53)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.53 cbf_set_doublevalue](#2.3.53)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.50">2.3.50 cbf_get_integervalue, cbf_require_integervalue</span>
+::: {#2.3.50}
+#### 2.3.50 cbf_get_integervalue, cbf_require_integervalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_integervalue (cbf_handle *handle*, int \**number*);  
-int cbf_require_integervalue (cbf_handle *handle*, int \**number*, int *defaultvalue*);
+int cbf_get_integervalue (cbf_handle *handle*, int \**number*);\
+int cbf_require_integervalue (cbf_handle *handle*, int \**number*, int
+*defaultvalue*);
 
 **DESCRIPTION**
 
-cbf_get_integervalue sets \**number* to the value of the ASCII item at the current column and row interpreted as a decimal integer. cbf_require_integervalue sets \**number* to the value of the ASCII item at the current column and row interpreted as a decimal integer, setting it to *defaultvalue* if necessary.
+cbf_get_integervalue sets \**number* to the value of the ASCII item at
+the current column and row interpreted as a decimal integer.
+cbf_require_integervalue sets \**number* to the value of the ASCII item
+at the current column and row interpreted as a decimal integer, setting
+it to *defaultvalue* if necessary.
 
 If the value is not ASCII, the function returns CBF_BINARY.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *number*
 
-  pointer to the number.  
+  pointer to the number.\
 
   *defaultvalue*
 
-  default number value.  
+  default number value.\
 
 **RETURN VALUE**
 
@@ -3024,35 +3654,40 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.54 cbf_get_integerarrayparameters, cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters, cbf_get_realarrayparameters_wdims](#2.3.54)  
-[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.54 cbf_get_integerarrayparameters,
+cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters,
+cbf_get_realarrayparameters_wdims](#2.3.54)\
+[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.51">2.3.51 cbf_set_integervalue</span>
+::: {#2.3.51}
+#### 2.3.51 cbf_set_integervalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_set_integervalue (cbf_handle *handle*, int *number*);
 
 **DESCRIPTION**
 
-cbf_set_integervalue sets the item at the current column and row to the integer value *number* written as a decimal ASCII string.
+cbf_set_integervalue sets the item at the current column and row to the
+integer value *number* written as a decimal ASCII string.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *number*
 
@@ -3064,48 +3699,56 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.53 cbf_set_doublevalue](#2.3.53)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.53 cbf_set_doublevalue](#2.3.53)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.52">2.3.52 cbf_get_doublevalue, cbf_require_doublevalue</span>
+::: {#2.3.52}
+#### 2.3.52 cbf_get_doublevalue, cbf_require_doublevalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_doublevalue (cbf_handle *handle*, double \**number*);  
-int cbf_require_doublevalue (cbf_handle *handle*, double \**number*, double *defaultvalue*);
+int cbf_get_doublevalue (cbf_handle *handle*, double \**number*);\
+int cbf_require_doublevalue (cbf_handle *handle*, double \**number*,
+double *defaultvalue*);
 
 **DESCRIPTION**
 
-cbf_get_doublevalue sets \**number* to the value of the ASCII item at the current column and row interpreted as a decimal floating-point number. cbf_require_doublevalue sets \**number* to the value of the ASCII item at the current column and row interpreted as a decimal floating-point number, setting it to *defaultvalue* if necessary.
+cbf_get_doublevalue sets \**number* to the value of the ASCII item at
+the current column and row interpreted as a decimal floating-point
+number. cbf_require_doublevalue sets \**number* to the value of the
+ASCII item at the current column and row interpreted as a decimal
+floating-point number, setting it to *defaultvalue* if necessary.
 
 If the value is not ASCII, the function returns CBF_BINARY.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *number*
 
-  Pointer to the destination number.  
+  Pointer to the destination number.\
 
   *defaultvalue*
 
-  default number value.  
+  default number value.\
 
 **RETURN VALUE**
 
@@ -3113,44 +3756,51 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)  
-[2.3.53 cbf_set_doublevalue](#2.3.53)  
-[2.3.54 cbf_get_integerarrayparameters, cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters, cbf_get_realarrayparameters_wdims](#2.3.54)  
-[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)\
+[2.3.53 cbf_set_doublevalue](#2.3.53)\
+[2.3.54 cbf_get_integerarrayparameters,
+cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters,
+cbf_get_realarrayparameters_wdims](#2.3.54)\
+[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.53">2.3.53 cbf_set_doublevalue</span>
+::: {#2.3.53}
+#### 2.3.53 cbf_set_doublevalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_set_doublevalue (cbf_handle *handle*, const char \**format*, double *number*);
+int cbf_set_doublevalue (cbf_handle *handle*, const char \**format*,
+double *number*);
 
 **DESCRIPTION**
 
-cbf_set_doublevalue sets the item at the current column and row to the floating-point value *number* written as an ASCII string with the format specified by *format* as appropriate for the printf function.
+cbf_set_doublevalue sets the item at the current column and row to the
+floating-point value *number* written as an ASCII string with the format
+specified by *format* as appropriate for the printf function.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *format*
 
-  Format for the number.  
+  Format for the number.\
 
   *number*
 
-  Floating-point value.  
+  Floating-point value.\
 
 **RETURN VALUE**
 
@@ -3158,108 +3808,168 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.54">2.3.54 cbf_get_integerarrayparameters,       cbf_get_integerarrayparameters_wdims, cbf_get_integerarrayparameters_wdims_fs, cbf_get_integerarrayparameters_wdims_sf,       cbf_get_realarrayparameters,       cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs, cbf_get_realarrayparameters_wdims_sf</span>
+::: {#2.3.54}
+#### 2.3.54 cbf_get_integerarrayparameters,       cbf_get_integerarrayparameters_wdims, cbf_get_integerarrayparameters_wdims_fs, cbf_get_integerarrayparameters_wdims_sf,       cbf_get_realarrayparameters,       cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs, cbf_get_realarrayparameters_wdims_sf
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_integerarrayparameters (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, int \**elsigned*, int \**elunsigned*, size_t \**elements*, int \**minelement*, int \**maxelement*);  
-   
-int cbf_get_integerarrayparameters_wdims (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, int \**elsigned*, int \**elunsigned*, size_t \**elements*, int \**minelement*, int \**maxelement*, const char \*\**byteorder*, size_t \**dimfast*, size_t \**dimmid*, size_t \**dimslow*, size_t \**padding*);  
-int cbf_get_integerarrayparameters_wdims_fs (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, int \**elsigned*, int \**elunsigned*, size_t \**elements*, int \**minelement*, int \**maxelement*, const char \*\**byteorder*, size_t \**dimfast*, size_t \**dimmid*, size_t \**dimslow*, size_t \**padding*);  
-int cbf_get_integerarrayparameters_wdims_sf (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, int \**elsigned*, int \**elunsigned*, size_t \**elements*, int \**minelement*, int \**maxelement*, const char \*\**byteorder*, size_t \**dimslow*, size_t \**dimmid*, size_t \**dimfast*, size_t \**padding*);  
-   
-int cbf_get_realarrayparameters (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, size_t \**elements*);  
-   
-int cbf_get_realarrayparameters_wdims (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, size_t \**elements*, const char \*\**byteorder*, size_t \**dimfast*, size_t \**dimmid*, size_t \**dimslow*, size_t \**padding*);  
-int cbf_get_realarrayparameters_wdims_fs (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, size_t \**elements*, const char \*\**byteorder*, size_t \**dimfast*, size_t \**dimmid*, size_t \**dimslow*, size_t \**padding*);  
-int cbf_get_realarrayparameters_wdims_sf (cbf_handle *handle*, unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, size_t \**elements*, const char \*\**byteorder*, size_t \**dimslow*, size_t \**dimmid*, size_t \**dimfast*, size_t \**padding*);
+int cbf_get_integerarrayparameters (cbf_handle *handle*, unsigned int
+\**compression*, int \**binary_id*, size_t \**elsize*, int \**elsigned*,
+int \**elunsigned*, size_t \**elements*, int \**minelement*, int
+\**maxelement*);\
+ \
+int cbf_get_integerarrayparameters_wdims (cbf_handle *handle*, unsigned
+int \**compression*, int \**binary_id*, size_t \**elsize*, int
+\**elsigned*, int \**elunsigned*, size_t \**elements*, int
+\**minelement*, int \**maxelement*, const char \*\**byteorder*, size_t
+\**dimfast*, size_t \**dimmid*, size_t \**dimslow*, size_t
+\**padding*);\
+int cbf_get_integerarrayparameters_wdims_fs (cbf_handle *handle*,
+unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, int
+\**elsigned*, int \**elunsigned*, size_t \**elements*, int
+\**minelement*, int \**maxelement*, const char \*\**byteorder*, size_t
+\**dimfast*, size_t \**dimmid*, size_t \**dimslow*, size_t
+\**padding*);\
+int cbf_get_integerarrayparameters_wdims_sf (cbf_handle *handle*,
+unsigned int \**compression*, int \**binary_id*, size_t \**elsize*, int
+\**elsigned*, int \**elunsigned*, size_t \**elements*, int
+\**minelement*, int \**maxelement*, const char \*\**byteorder*, size_t
+\**dimslow*, size_t \**dimmid*, size_t \**dimfast*, size_t
+\**padding*);\
+ \
+int cbf_get_realarrayparameters (cbf_handle *handle*, unsigned int
+\**compression*, int \**binary_id*, size_t \**elsize*, size_t
+\**elements*);\
+ \
+int cbf_get_realarrayparameters_wdims (cbf_handle *handle*, unsigned int
+\**compression*, int \**binary_id*, size_t \**elsize*, size_t
+\**elements*, const char \*\**byteorder*, size_t \**dimfast*, size_t
+\**dimmid*, size_t \**dimslow*, size_t \**padding*);\
+int cbf_get_realarrayparameters_wdims_fs (cbf_handle *handle*, unsigned
+int \**compression*, int \**binary_id*, size_t \**elsize*, size_t
+\**elements*, const char \*\**byteorder*, size_t \**dimfast*, size_t
+\**dimmid*, size_t \**dimslow*, size_t \**padding*);\
+int cbf_get_realarrayparameters_wdims_sf (cbf_handle *handle*, unsigned
+int \**compression*, int \**binary_id*, size_t \**elsize*, size_t
+\**elements*, const char \*\**byteorder*, size_t \**dimslow*, size_t
+\**dimmid*, size_t \**dimfast*, size_t \**padding*);
 
 **DESCRIPTION**
 
-cbf_get_integerarrayparameters sets \**compression*, \**binary_id*, \**elsize*, \**elsigned*, \**elunsigned*, \**elements*, \**minelement* and \**maxelement* to values read from the binary value of the item at the current column and row. This provides all the arguments needed for a subsequent call to cbf_set_integerarray, if a copy of the array is to be made into another CIF or CBF. cbf_get_realarrayparameters sets \**compression*, \**binary_id*, \**elsize*, \**elements* to values read from the binary value of the item at the current column and row. This provides all the arguments needed for a subsequent call to cbf_set_realarray, if a copy of the arry is to be made into another CIF or CBF.
+cbf_get_integerarrayparameters sets \**compression*, \**binary_id*,
+\**elsize*, \**elsigned*, \**elunsigned*, \**elements*, \**minelement*
+and \**maxelement* to values read from the binary value of the item at
+the current column and row. This provides all the arguments needed for a
+subsequent call to cbf_set_integerarray, if a copy of the array is to be
+made into another CIF or CBF. cbf_get_realarrayparameters sets
+\**compression*, \**binary_id*, \**elsize*, \**elements* to values read
+from the binary value of the item at the current column and row. This
+provides all the arguments needed for a subsequent call to
+cbf_set_realarray, if a copy of the arry is to be made into another CIF
+or CBF.
 
-The variants cbf_get_integerarrayparameters_wdims, cbf_get_integerarrayparameters_wdims_fs, cbf_get_integerarrayparameters_wdims_sf, cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs, cbf_get_realarrayparameters_wdims_sf set \*\**byteorder*, \**dimfast*, \**dimmid*, \**dimslow*, and \**padding* as well, providing the additional parameters needed for a subsequent call to cbf_set_integerarray_wdims or cbf_set_realarray_wdims.
+The variants cbf_get_integerarrayparameters_wdims,
+cbf_get_integerarrayparameters_wdims_fs,
+cbf_get_integerarrayparameters_wdims_sf,
+cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs,
+cbf_get_realarrayparameters_wdims_sf set \*\**byteorder*, \**dimfast*,
+\**dimmid*, \**dimslow*, and \**padding* as well, providing the
+additional parameters needed for a subsequent call to
+cbf_set_integerarray_wdims or cbf_set_realarray_wdims.
 
-The value returned in \**byteorder* is a pointer either to the string "little_endian" or to the string "big_endian". This should be the byte order of the data, not necessarily of the host machine. No attempt should be made to modify this string. At this time only "little_endian" will be returned.
+The value returned in \**byteorder* is a pointer either to the string
+\"little_endian\" or to the string \"big_endian\". This should be the
+byte order of the data, not necessarily of the host machine. No attempt
+should be made to modify this string. At this time only
+\"little_endian\" will be returned.
 
-The values returned in \**dimfast*, \**dimmid* and \**dimslow* are the sizes of the fastest changing, second fastest changing and third fastest changing dimensions of the array, if specified, or zero, if not specified.
+The values returned in \**dimfast*, \**dimmid* and \**dimslow* are the
+sizes of the fastest changing, second fastest changing and third fastest
+changing dimensions of the array, if specified, or zero, if not
+specified.
 
-The value returned in \**padding* is the size of the post-data padding, if any and if specified in the data header. The value is given as a count of octets.
+The value returned in \**padding* is the size of the post-data padding,
+if any and if specified in the data header. The value is given as a
+count of octets.
 
 If the value is not binary, the function returns CBF_ASCII.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *compression*
 
-  Compression method used.  
+  Compression method used.\
 
   *elsize*
 
-  Size in bytes of each array element.  
+  Size in bytes of each array element.\
 
   *binary_id*
 
-  Pointer to the destination integer binary identifier.  
+  Pointer to the destination integer binary identifier.\
 
   *elsigned*
 
-  Pointer to an integer. Set to 1 if the elements can be read as signed integers.  
+  Pointer to an integer. Set to 1 if the elements can be read as signed
+integers.\
 
   *elunsigned*
 
-  Pointer to an integer. Set to 1 if the elements can be read as unsigned integers.  
+  Pointer to an integer. Set to 1 if the elements can be read as
+unsigned integers.\
 
   *elements*
 
-  Pointer to the destination number of elements.  
+  Pointer to the destination number of elements.\
 
   *minelement*
 
-  Pointer to the destination smallest element.  
+  Pointer to the destination smallest element.\
 
   *maxelement*
 
-  Pointer to the destination largest element.  
+  Pointer to the destination largest element.\
 
   *byteorder*
 
-  Pointer to the destination byte order.  
+  Pointer to the destination byte order.\
 
   *dimfast*
 
-  Pointer to the destination fastest dimension.  
+  Pointer to the destination fastest dimension.\
 
   *dimmid*
 
-  Pointer to the destination second fastest dimension.  
+  Pointer to the destination second fastest dimension.\
 
   *dimslow*
 
-  Pointer to the destination third fastest dimension.  
+  Pointer to the destination third fastest dimension.\
 
   *padding*
 
-  Pointer to the destination padding size.  
+  Pointer to the destination padding size.\
 
 **RETURN VALUE**
 
@@ -3267,119 +3977,187 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.55">2.3.55 cbf_get_integerarray, cbf_get_realarray</span>
+::: {#2.3.55}
+#### 2.3.55 cbf_get_integerarray, cbf_get_realarray
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_integerarray (cbf_handle *handle*, int \**binary_id*, void \**array*, size_t *elsize*, int *elsigned*, size_t *elements*, size_t \**elements_read*);  
-int cbf_get_realarray (cbf_handle *handle*, int \**binary_id*, void \**array*, size_t *elsize*, size_t *elements*, size_t \**elements_read*);
+int cbf_get_integerarray (cbf_handle *handle*, int \**binary_id*, void
+\**array*, size_t *elsize*, int *elsigned*, size_t *elements*, size_t
+\**elements_read*);\
+int cbf_get_realarray (cbf_handle *handle*, int \**binary_id*, void
+\**array*, size_t *elsize*, size_t *elements*, size_t
+\**elements_read*);
 
 **DESCRIPTION**
 
-cbf_get_integerarray reads the binary value of the item at the current column and row into an integer array. The array consists of *elements* elements of *elsize* bytes each, starting at *array*. The elements are signed if *elsigned* is non-0 and unsigned otherwise. \**binary_id* is set to the binary section identifier and \**elements_read* to the number of elements actually read. cbf_get_realarray reads the binary value of the item at the current column and row into a real array. The array consists of *elements* elements of *elsize* bytes each, starting at *array*. \**binary_id* is set to the binary section identifier and \**elements_read* to the number of elements actually read.
+cbf_get_integerarray reads the binary value of the item at the current
+column and row into an integer array. The array consists of *elements*
+elements of *elsize* bytes each, starting at *array*. The elements are
+signed if *elsigned* is non-0 and unsigned otherwise. \**binary_id* is
+set to the binary section identifier and \**elements_read* to the number
+of elements actually read. cbf_get_realarray reads the binary value of
+the item at the current column and row into a real array. The array
+consists of *elements* elements of *elsize* bytes each, starting at
+*array*. \**binary_id* is set to the binary section identifier and
+\**elements_read* to the number of elements actually read.
 
-If any element in the integer binary data cant fit into the destination element, the destination is set the nearest possible value.
+If any element in the integer binary data cant fit into the destination
+element, the destination is set the nearest possible value.
 
 If the value is not binary, the function returns CBF_ASCII.
 
-If the requested number of elements cant be read, the function will read as many as it can and then return CBF_ENDOFDATA.
+If the requested number of elements cant be read, the function will read
+as many as it can and then return CBF_ENDOFDATA.
 
-Currently, the destination array must consist of chars, shorts or ints (signed or unsigned). If *elsize* is not equal to sizeof (char), sizeof (short) or sizeof (int), for cbf_get_integerarray, or sizeof(double) or sizeof(float), for cbf_get_realarray the function returns CBF_ARGUMENT.
+Currently, the destination array must consist of chars, shorts or ints
+(signed or unsigned). If *elsize* is not equal to sizeof (char), sizeof
+(short) or sizeof (int), for cbf_get_integerarray, or sizeof(double) or
+sizeof(float), for cbf_get_realarray the function returns CBF_ARGUMENT.
 
-An additional restriction in the current version of CBFlib is that values too large to fit in an int are not correctly decompressed. As an example, if the machine with 32-bit ints is reading an array containing a value outside the range 0 .. 2^<sup>32</sup>-1 (unsigned) or -2^<sup>31</sup> .. 2^<sup>31</sup>-1 (signed), the array will not be correctly decompressed. This restriction will be removed in a future release. For cbf_get_realarray, only IEEE format is supported. No conversion to other floating point formats is done at this time.
+An additional restriction in the current version of CBFlib is that
+values too large to fit in an int are not correctly decompressed. As an
+example, if the machine with 32-bit ints is reading an array containing
+a value outside the range 0 .. 2\^^32^-1 (unsigned) or -2\^^31^ ..
+2\^^31^-1 (signed), the array will not be correctly decompressed. This
+restriction will be removed in a future release. For cbf_get_realarray,
+only IEEE format is supported. No conversion to other floating point
+formats is done at this time.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *binary_id*
 
-  Pointer to the destination integer binary identifier.  
+  Pointer to the destination integer binary identifier.\
 
   *array*
 
-  Pointer to the destination array.  
+  Pointer to the destination array.\
 
   *elsize*
 
-  Size in bytes of each destination array element.  
+  Size in bytes of each destination array element.\
 
   *elsigned*
 
-  Set to non-0 if the destination array elements are signed.  
+  Set to non-0 if the destination array elements are signed.\
 
   *elements*
 
-  The number of elements to read.  
+  The number of elements to read.\
 
   *elements_read*
 
-  Pointer to the destination number of elements actually read.  
+  Pointer to the destination number of elements actually read.\
 
 **RETURN VALUE**
 
-Returns an error code on failure or 0 for success.  
+Returns an error code on failure or 0 for success.\
 SEE ALSO
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.54 cbf_get_integerarrayparameters, cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters, cbf_get_realarrayparameters_wdims](#2.3.54)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.50 cbf_get_integervalue, cbf_require_integervalue](#2.3.50)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.54 cbf_get_integerarrayparameters,
+cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters,
+cbf_get_realarrayparameters_wdims](#2.3.54)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.56">2.3.56 cbf_set_integerarray,       cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf,       cbf_set_realarray,       cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs, cbf_set_realarray_wdims_sf</span>
+::: {#2.3.56}
+#### 2.3.56 cbf_set_integerarray,       cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf,       cbf_set_realarray,       cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs, cbf_set_realarray_wdims_sf
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_set_integerarray (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, int *elsigned*, size_t *elements*);  
-   
-int cbf_set_integerarray_wdims (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, int *elsigned*, size_t *elements*, const char \**byteorder*, size_t *dimfast*, size_t *dimmid*, size_t *dimslow*, size_t *padding*);  
-int cbf_set_integerarray_wdims_fs (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, int *elsigned*, size_t *elements*, const char \**byteorder*, size_t *dimfast*, size_t *dimmid*, size_t *dimslow*, size_t *padding*);  
-int cbf_set_integerarray_wdims_sf (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, int *elsigned*, size_t *elements*, const char \**byteorder*, size_t *dimslow*, size_t *dimmid*, size_t *dimfast*, size_t *padding*);  
-   
-int cbf_set_realarray (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t *elements*);  
-   
-int cbf_set_realarray_wdims (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t *elements*, const char \**byteorder*, size_t *dimfast*, size_t *dimmid*, size_t *dimslow*, size_t *padding*);  
-int cbf_set_realarray_wdims_fs (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t *elements*, const char \**byteorder*, size_t *dimfast*, size_t *dimmid*, size_t *dimslow*, size_t *padding*);  
-int cbf_set_realarray_wdims_sf (cbf_handle *handle*, unsigned int *compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t *elements*, const char \**byteorder*, size_t *dimslow*, size_t *dimmid*, size_t *dimfast*, size_t *padding*);  
+int cbf_set_integerarray (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, int
+*elsigned*, size_t *elements*);\
+ \
+int cbf_set_integerarray_wdims (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, int
+*elsigned*, size_t *elements*, const char \**byteorder*, size_t
+*dimfast*, size_t *dimmid*, size_t *dimslow*, size_t *padding*);\
+int cbf_set_integerarray_wdims_fs (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, int
+*elsigned*, size_t *elements*, const char \**byteorder*, size_t
+*dimfast*, size_t *dimmid*, size_t *dimslow*, size_t *padding*);\
+int cbf_set_integerarray_wdims_sf (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, int
+*elsigned*, size_t *elements*, const char \**byteorder*, size_t
+*dimslow*, size_t *dimmid*, size_t *dimfast*, size_t *padding*);\
+ \
+int cbf_set_realarray (cbf_handle *handle*, unsigned int *compression*,
+int *binary_id*, void \**array*, size_t *elsize*, size_t *elements*);\
+ \
+int cbf_set_realarray_wdims (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t
+*elements*, const char \**byteorder*, size_t *dimfast*, size_t *dimmid*,
+size_t *dimslow*, size_t *padding*);\
+int cbf_set_realarray_wdims_fs (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t
+*elements*, const char \**byteorder*, size_t *dimfast*, size_t *dimmid*,
+size_t *dimslow*, size_t *padding*);\
+int cbf_set_realarray_wdims_sf (cbf_handle *handle*, unsigned int
+*compression*, int *binary_id*, void \**array*, size_t *elsize*, size_t
+*elements*, const char \**byteorder*, size_t *dimslow*, size_t *dimmid*,
+size_t *dimfast*, size_t *padding*);\
 
 **DESCRIPTION**
 
-cbf_set_integerarray sets the binary value of the item at the current column and row to an integer *array*. The array consists of *elements* elements of *elsize* bytes each, starting at *array*. The elements are signed if *elsigned* is non-0 and unsigned otherwise. *binary_id* is the binary section identifier. cbf_set_realarray sets the binary value of the item at the current column and row to an integer *array*. The array consists of *elements* elements of *elsize* bytes each, starting at *array*. *binary_id* is the binary section identifier.
+cbf_set_integerarray sets the binary value of the item at the current
+column and row to an integer *array*. The array consists of *elements*
+elements of *elsize* bytes each, starting at *array*. The elements are
+signed if *elsigned* is non-0 and unsigned otherwise. *binary_id* is the
+binary section identifier. cbf_set_realarray sets the binary value of
+the item at the current column and row to an integer *array*. The array
+consists of *elements* elements of *elsize* bytes each, starting at
+*array*. *binary_id* is the binary section identifier.
 
-The cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf, cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs and cbf_set_realarray_wdims_sf variants allow the data header values of *byteorder*, *dimfast*, *dimmid*, *dimslow* and *padding* to be set to the data byte order, the fastest, second fastest and third fastest array dimensions and the size in byte of the post data padding to be used.
+The cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs,
+cbf_set_integerarray_wdims_sf, cbf_set_realarray_wdims,
+cbf_set_realarray_wdims_fs and cbf_set_realarray_wdims_sf variants allow
+the data header values of *byteorder*, *dimfast*, *dimmid*, *dimslow*
+and *padding* to be set to the data byte order, the fastest, second
+fastest and third fastest array dimensions and the size in byte of the
+post data padding to be used.
 
-The array will be compressed using the compression scheme specifed by *compression*. Currently, the available schemes are:
+The array will be compressed using the compression scheme specifed by
+*compression*. Currently, the available schemes are:
 
   CBF_CANONICAL
 
-  Canonical-code compression (section 3.3.1)  
+  Canonical-code compression (section 3.3.1)\
 
   CBF_PACKED
 
@@ -3391,49 +4169,57 @@ The array will be compressed using the compression scheme specifed by *compressi
 
   CBF_BYTE_OFFSET
 
-  Simple "byte_offset" compression.
+  Simple \"byte_offset\" compression.
 
   CBF_NIBBLE_OFFSET
 
-  Simple "nibble_offset" compression.
+  Simple \"nibble_offset\" compression.
 
   CBF_NONE
 
-  No compression. NOTE: This scheme is by far the slowest of the four and uses much more disk space. It is intended for routine use with small arrays only. With large arrays (like images) it should be used only for debugging.
+  No compression. NOTE: This scheme is by far the slowest of the four
+and uses much more disk space. It is intended for routine use with small
+arrays only. With large arrays (like images) it should be used only for
+debugging.
 
-The values compressed are limited to 64 bits. If any element in the array is larger than 64 bits, the value compressed is the nearest 64-bit value.
+The values compressed are limited to 64 bits. If any element in the
+array is larger than 64 bits, the value compressed is the nearest 64-bit
+value.
 
-Currently, the source array must consist of chars, shorts or ints (signed or unsigned), for cbf_set_integerarray, or IEEE doubles or floats for cbf_set_realarray. If *elsize* is not equal to sizeof (char), sizeof (short) or sizeof (int), the function returns CBF_ARGUMENT.
+Currently, the source array must consist of chars, shorts or ints
+(signed or unsigned), for cbf_set_integerarray, or IEEE doubles or
+floats for cbf_set_realarray. If *elsize* is not equal to sizeof (char),
+sizeof (short) or sizeof (int), the function returns CBF_ARGUMENT.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *compression*
 
-  Compression method to use.  
+  Compression method to use.\
 
   *binary_id*
 
-  Integer binary identifier.  
+  Integer binary identifier.\
 
   *array*
 
-  Pointer to the source array.  
+  Pointer to the source array.\
 
   *elsize*
 
-  Size in bytes of each source array element.  
+  Size in bytes of each source array element.\
 
   *elsigned*
 
-  Set to non-0 if the source array elements are signed.  
+  Set to non-0 if the source array elements are signed.\
 
   *elements*
 
-  The number of elements in the array  
+  The number of elements in the array\
 
 **RETURN VALUE**
 
@@ -3441,104 +4227,127 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.53 cbf_set_doublevalue](#2.3.53)  
-[2.3.54 cbf_get_integerarrayparameters, cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters, cbf_get_realarrayparameters_wdims](#2.3.54)  
-[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.64)  
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.53 cbf_set_doublevalue](#2.3.53)\
+[2.3.54 cbf_get_integerarrayparameters,
+cbf_get_integerarrayparameters_wdims, cbf_get_realarrayparameters,
+cbf_get_realarrayparameters_wdims](#2.3.54)\
+[2.3.55 cbf_get_integerarray, cbf_get_realarray](#2.3.55)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.64)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.57">2.3.57 cbf_failnez</span>
+::: {#2.3.57}
+#### 2.3.57 cbf_failnez
 
 **DEFINITION**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 #define cbf_failnez(f) {int err; err = (f); if (err) return err; }
 
 **DESCRIPTION**
 
-cbf_failnez is a macro used for error propagation throughout CBFlib. cbf_failnez executes the function *f* and saves the returned error value. If the error value is non-0, cbf_failnez executes a return with the error value as argument. If CBFDEBUG is defined, then a report of the error is also printed to the standard error stream, stderr, in the form
+cbf_failnez is a macro used for error propagation throughout CBFlib.
+cbf_failnez executes the function *f* and saves the returned error
+value. If the error value is non-0, cbf_failnez executes a return with
+the error value as argument. If CBFDEBUG is defined, then a report of
+the error is also printed to the standard error stream, stderr, in the
+form
 
-CBFlib error *f* in "*symbol*"
+CBFlib error *f* in \"*symbol*\"
 
-where *f* is the decimal value of the error and *symbol* is the symbolic form.
+where *f* is the decimal value of the error and *symbol* is the symbolic
+form.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *f*
 
-  Integer error value.  
+  Integer error value.\
 
 **SEE ALSO**
 
-[2.3.58 cbf_onfailnez](#2.3.58)  
+[2.3.58 cbf_onfailnez](#2.3.58)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.58">2.3.58 cbf_onfailnez</span>
+::: {#2.3.58}
+#### 2.3.58 cbf_onfailnez
 
 **DEFINITION**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-#define cbf_onfailnez(f,c) {int err; err = (f); if (err) {{c; }return err; }}
+#define cbf_onfailnez(f,c) {int err; err = (f); if (err) {{c; }return
+err; }}
 
 **DESCRIPTION**
 
-cbf_onfailnez is a macro used for error propagation throughout CBFlib. cbf_onfailnez executes the function *f* and saves the returned error value. If the error value is non-0, cbf_failnez executes first the statement *c* and then a return with the error value as argument. If CBFDEBUG is defined, then a report of the error is also printed to the standard error stream, stderr, in the form
+cbf_onfailnez is a macro used for error propagation throughout CBFlib.
+cbf_onfailnez executes the function *f* and saves the returned error
+value. If the error value is non-0, cbf_failnez executes first the
+statement *c* and then a return with the error value as argument. If
+CBFDEBUG is defined, then a report of the error is also printed to the
+standard error stream, stderr, in the form
 
-CBFlib error *f* in "*symbol*"
+CBFlib error *f* in \"*symbol*\"
 
-where *f* is the decimal value of the error and *symbol* is the symbolic form.
+where *f* is the decimal value of the error and *symbol* is the symbolic
+form.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *f*
 
-  integer function to execute.  
+  integer function to execute.\
 
   *c*
 
-  statement to execute on failure.  
+  statement to execute on failure.\
 
 **SEE ALSO**
 
 [2.3.57 cbf_failnez](#2.3.57)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.59">2.3.59 cbf_require_datablock</span>
+::: {#2.3.59}
+#### 2.3.59 cbf_require_datablock
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_require_datablock (cbf_handle *handle*, const char \**datablockname*);
+int cbf_require_datablock (cbf_handle *handle*, const char
+\**datablockname*);
 
 **DESCRIPTION**
 
-cbf_require_datablock makes the data block with name *datablockname* the current data block, if it exists, or creates it if it does not.
+cbf_require_datablock makes the data block with name *datablockname* the
+current data block, if it exists, or creates it if it does not.
 
 The comparison is case-insensitive.
 
 The current category becomes undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *datablockname*
 
-  The name of the data block to find or create.  
+  The name of the data block to find or create.\
 
 **RETURN VALUE**
 
@@ -3546,43 +4355,48 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.21 cbf_rewind_datablock](#2.3.21)  
-[2.3.25 cbf_next_datablock](#2.3.25)  
-[2.3.29 cbf_find_datablock](#2.3.30)  
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
-[2.3.31 cbf_find_column](#2.3.31)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.42 cbf_datablock_name](#2.3.42)  
-[2.3.60 cbf_require_category](#2.3.60)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.21 cbf_rewind_datablock](#2.3.21)\
+[2.3.25 cbf_next_datablock](#2.3.25)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+[2.3.31 cbf_find_column](#2.3.31)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.42 cbf_datablock_name](#2.3.42)\
+[2.3.60 cbf_require_category](#2.3.60)\
+[2.3.61 cbf_require_column](#2.3.61)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.60">2.3.60 cbf_require_category</span>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.3.60}
+#### 2.3.60 cbf_require_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_require_category (cbf_handle *handle*, const char \**categoryname*);
+int cbf_require_category (cbf_handle *handle*, const char
+\**categoryname*);
 
 **DESCRIPTION**
 
-cbf_rewuire_category makes the category in the current data block with name *categoryname* the current category, if it exists, or creates the catagory if it does not exist.
+cbf_rewuire_category makes the category in the current data block with
+name *categoryname* the current category, if it exists, or creates the
+catagory if it does not exist.
 
 The comparison is case-insensitive.
 
 The current column and row become undefined.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categoryname*
 
-  The name of the category to find.  
+  The name of the category to find.\
 
 **RETURN VALUE**
 
@@ -3590,42 +4404,47 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.22 cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem](#2.3.22)  
-[2.3.26 cbf_next_category, cbf_next_saveframe, cbf_next_blockitem](#2.3.26)  
-[2.3.29 cbf_find_datablock](#2.3.29)  
-[2.3.31 cbf_find_column](#2.3.31)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.43 cbf_category_name](#2.3.43)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.61 cbf_require_column](#2.3.61)  
+[2.3.22 cbf_rewind_category, cbf_rewind_saveframe,
+cbf_rewind_blockitem](#2.3.22)\
+[2.3.26 cbf_next_category, cbf_next_saveframe,
+cbf_next_blockitem](#2.3.26)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.31 cbf_find_column](#2.3.31)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.43 cbf_category_name](#2.3.43)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.61 cbf_require_column](#2.3.61)\
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.61">2.3.61 cbf_require_column</span>
+::: {#2.3.61}
+#### 2.3.61 cbf_require_column\<
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
 int cbf_require_column (cbf_handle *handle*, const char \**columnname*);
 
 **DESCRIPTION**
 
-cbf_require_column makes the columns in the current category with name *columnname* the current column, if it exists, or creates it if it does not.
+cbf_require_column makes the columns in the current category with name
+*columnname* the current column, if it exists, or creates it if it does
+not.
 
 The comparison is case-insensitive.
 
 The current row is not affected.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  The name of column to find.  
+  The name of column to find.\
 
 **RETURN VALUE**
 
@@ -3633,42 +4452,47 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.19 cbf_rewind_column](#2.3.19)  
-[2.3.27 cbf_next_column](#2.3.27)  
-[2.3.29 cbf_find_datablock](#2.3.29)  
-[2.3.30 cbf_find_category, cbf_find_saveframe, cbf_find_blockitem](#2.3.30)  
-[2.3.32 cbf_find_row](#2.3.32)  
-[2.3.44 cbf_column_name, cbf_set_column_name](#2.3.44)  
-[2.3.59 cbf_require_datablock](#2.3.59)  
-[2.3.60 cbf_require_category](#2.3.60)  
+[2.3.19 cbf_rewind_column](#2.3.19)\
+[2.3.27 cbf_next_column](#2.3.27)\
+[2.3.29 cbf_find_datablock](#2.3.29)\
+[2.3.30 cbf_find_category, cbf_find_saveframe](#2.3.30)\
+[2.3.32 cbf_find_row](#2.3.32)\
+[2.3.44 cbf_column_name, cbf_set_column_name](#2.3.44)\
+[2.3.59 cbf_require_datablock](#2.3.59)\
+[2.3.60 cbf_require_category](#2.3.60)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.62">2.3.62 cbf_require_column_value</span>
+::: {#2.3.62}
+#### 2.3.62 cbf_require_column_value
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_require_column_value (cbf_handle *handle*, const char \**columnname*, const char \*\**value*, const char \**defaultvalue*);
+int cbf_require_column_value (cbf_handle *handle*, const char
+\**columnname*, const char \*\**value*, const char \**defaultvalue*);
 
 **DESCRIPTION**
 
-cbf_require_column_doublevalue sets \**value* to the ASCII item at the current row for the column given with the name given by \**columnname*, or to the string given by *defaultvalue* if the item cannot be found.
+cbf_require_column_doublevalue sets \**value* to the ASCII item at the
+current row for the column given with the name given by \**columnname*,
+or to the string given by *defaultvalue* if the item cannot be found.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  Name of the column containing the number.  
+  Name of the column containing the number.\
 
   *value*
 
-  pointer to the location to receive the value.  
+  pointer to the location to receive the value.\
 
   *defaultvalue*
 
@@ -3680,43 +4504,50 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.63 cbf_require_column_integervalue](#2.3.62)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.63)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.63 cbf_require_column_integervalue](#2.3.62)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.63)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.63">2.3.63 cbf_require_column_integervalue</span>
+::: {#2.3.63}
+#### 2.3.63 cbf_require_column_integervalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_require_column_integervalue (cbf_handle *handle*, const char \**columnname*, int \**number*, const int *defaultvalue*);
+int cbf_require_column_integervalue (cbf_handle *handle*, const char
+\**columnname*, int \**number*, const int *defaultvalue*);
 
 **DESCRIPTION**
 
-cbf_require_column_doublevalue sets \**number* to the value of the ASCII item at the current row for the column given with the name given by \**columnname*, with the value interpreted as an integer number, or to the number given by *defaultvalue* if the item cannot be found.
+cbf_require_column_doublevalue sets \**number* to the value of the ASCII
+item at the current row for the column given with the name given by
+\**columnname*, with the value interpreted as an integer number, or to
+the number given by *defaultvalue* if the item cannot be found.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  Name of the column containing the number.  
+  Name of the column containing the number.\
 
   *number*
 
-  pointer to the location to receive the integer value.  
+  pointer to the location to receive the integer value.\
 
   *defaultvalue*
 
@@ -3728,43 +4559,51 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.64 cbf_require_column_doublevalue](#2.3.63)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.64 cbf_require_column_doublevalue](#2.3.63)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.64">2.3.64 cbf_require_column_doublevalue</span>
+::: {#2.3.64}
+#### 2.3.64 cbf_require_column_doublevalue
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_require_column_doublevalue (cbf_handle *handle*, const char \**columnname*, double \**number*, const double *defaultvalue*);
+int cbf_require_column_doublevalue (cbf_handle *handle*, const char
+\**columnname*, double \**number*, const double *defaultvalue*);
 
 **DESCRIPTION**
 
-cbf_require_column_doublevalue sets \**number* to the value of the ASCII item at the current row for the column given with the name given by \**columnname*, with the value interpreted as a decimal floating-point number, or to the number given by *defaultvalue* if the item cannot be found.
+cbf_require_column_doublevalue sets \**number* to the value of the ASCII
+item at the current row for the column given with the name given by
+\**columnname*, with the value interpreted as a decimal floating-point
+number, or to the number given by *defaultvalue* if the item cannot be
+found.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *columnname*
 
-  Name of the column containing the number.  
+  Name of the column containing the number.\
 
   *number*
 
-  pointer to the location to receive the floating-point value.  
+  pointer to the location to receive the floating-point value.\
 
   *defaultvalue*
 
@@ -3776,428 +4615,527 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)  
-[2.3.47 cbf_set_value](#2.3.47)  
-[2.3.48 cbf_get_typeofvalue](#2.3.48)  
-[2.3.49 cbf_set_typeofvalue](#2.3.49)  
-[2.3.51 cbf_set_integervalue](#2.3.51)  
-[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)  
-[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)  
-[2.3.62 cbf_require_column_value](#2.3.62)  
-[2.3.63 cbf_require_column_integervalue](#2.3.63)  
+[2.3.46 cbf_get_value, cbf_require_value](#2.3.46)\
+[2.3.47 cbf_set_value](#2.3.47)\
+[2.3.48 cbf_get_typeofvalue](#2.3.48)\
+[2.3.49 cbf_set_typeofvalue](#2.3.49)\
+[2.3.51 cbf_set_integervalue](#2.3.51)\
+[2.3.52 cbf_get_doublevalue, cbf_require_doublevalue](#2.3.52)\
+[2.3.56 cbf_set_integerarray, cbf_set_integerarray_wdims,
+cbf_set_realarray, cbf_set_realarray_wdims](#2.3.56)\
+[2.3.62 cbf_require_column_value](#2.3.62)\
+[2.3.63 cbf_require_column_integervalue](#2.3.63)\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.65">2.3.65 cbf_get_local_integer_byte_order, cbf_get_local_real_byte_order, cbf_get_local_real_format</span>
+::: {#2.3.65}
+#### 2.3.65 cbf_get_local_integer_byte_order, cbf_get_local_real_byte_order, cbf_get_local_real_format
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_local_integer_byte_order (char \*\* *byte_order*);  
-int cbf_get_local_real_byte_order (char \*\* *byte_order*);  
+int cbf_get_local_integer_byte_order (char \*\* *byte_order*);\
+int cbf_get_local_real_byte_order (char \*\* *byte_order*);\
 int cbf_get_local_real_format (char \*\* *real_format* );
 
 **DESCRIPTION**
 
-cbf_get_local_integer_byte_order returns the byte order of integers on the machine on which the API is being run in the form of a character string returned as the value pointed to by *byte_order*. cbf_get_local_real_byte_order returns the byte order of reals on the machine on which the API is being run in the form of a character string returned as the value pointed to by *byte_order*. cbf_get_local_real_format returns the format of floats on the machine on which the API is being run in the form of a character string returned as the value pointed to by *real_format*. The strings returned must not be modified in any way.
+cbf_get_local_integer_byte_order returns the byte order of integers on
+the machine on which the API is being run in the form of a character
+string returned as the value pointed to by *byte_order*.
+cbf_get_local_real_byte_order returns the byte order of reals on the
+machine on which the API is being run in the form of a character string
+returned as the value pointed to by *byte_order*.
+cbf_get_local_real_format returns the format of floats on the machine on
+which the API is being run in the form of a character string returned as
+the value pointed to by *real_format*. The strings returned must not be
+modified in any way.
 
-The values returned in *byte_order* may be the strings "little_endian" or "big-endian". The values returned in *real_format* may be the strings "ieee 754-1985" or "other". Additional values may be returned by future versions of the API.
+The values returned in *byte_order* may be the strings \"little_endian\"
+or \"big-endian\". The values returned in *real_format* may be the
+strings \"ieee 754-1985\" or \"other\". Additional values may be
+returned by future versions of the API.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *byte_order*
 
-  pointer to the returned string  
+  pointer to the returned string\
 
   *real_format*
 
-  pointer to the returned string  
+  pointer to the returned string\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.66">2.3.66 cbf_get_dictionary, cbf_set_dictionary, cbf_require_dictionary</span>
+::: {#2.3.66}
+#### 2.3.66 cbf_get_dictionary, cbf_set_dictionary, cbf_require_dictionary
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_get_dictionary (cbf_handle *handle*, cbf_handle \* *dictionary*);  
-int cbf_set_dictionary (cbf_handle *handle*, cbf_handle *dictionary_in*);  
-int cbf_require_dictionary (cbf_handle *handle*, cbf_handle \* *dictionary*)
+int cbf_get_dictionary (cbf_handle *handle*, cbf_handle \*
+*dictionary*);\
+int cbf_set_dictionary (cbf_handle *handle*, cbf_handle
+*dictionary_in*);\
+int cbf_require_dictionary (cbf_handle *handle*, cbf_handle \*
+*dictionary*)
 
 **DESCRIPTION**
 
-cbf_get_dictionary sets \**dictionary* to the handle of a CBF which has been associated with the CBF *handle* by cbf_set_dictionary. cbf_set_dictionary associates the CBF handle *dictionary_in* with *handle* as its dictionary. cbf_require_dictionary sets \**dictionary* to the handle of a CBF which has been associated with the CBF *handle* by cbf_set_dictionary or creates a new empty CBF and associates it with *handle*, returning the new handle in \**dictionary*.
+cbf_get_dictionary sets \**dictionary* to the handle of a CBF which has
+been associated with the CBF *handle* by cbf_set_dictionary.
+cbf_set_dictionary associates the CBF handle *dictionary_in* with
+*handle* as its dictionary. cbf_require_dictionary sets \**dictionary*
+to the handle of a CBF which has been associated with the CBF *handle*
+by cbf_set_dictionary or creates a new empty CBF and associates it with
+*handle*, returning the new handle in \**dictionary*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *dictionary*
 
-  Pointer to CBF handle of dictionary.  
+  Pointer to CBF handle of dictionary.\
 
   *dictionary_in*
 
-  CBF handle of dcitionary.  
+  CBF handle of dcitionary.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.67">2.3.67 cbf_convert_dictionary</span>
+::: {#2.3.67}
+#### 2.3.67 cbf_convert_dictionary
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_convert_dictionary (cbf_handle *handle*, cbf_handle *dictionary* )
+int cbf_convert_dictionary (cbf_handle *handle*, cbf_handle *dictionary*
+)
 
 **DESCRIPTION**
 
-cbf_convert_dictionary converts *dictionary* as a DDL1 or DDL2 dictionary to a CBF dictionary of category and item properties for *handle*, creating a new dictionary if none exists or layering the definitions in *dictionary* onto the existing dictionary of *handle* if one exists.
+cbf_convert_dictionary converts *dictionary* as a DDL1 or DDL2
+dictionary to a CBF dictionary of category and item properties for
+*handle*, creating a new dictionary if none exists or layering the
+definitions in *dictionary* onto the existing dictionary of *handle* if
+one exists.
 
-If a CBF is read into *handle* after calling cbf_convert_dictionary, then the dictionary will be used for validation of the CBF as it is read.
+If a CBF is read into *handle* after calling cbf_convert_dictionary,
+then the dictionary will be used for validation of the CBF as it is
+read.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *dictionary*
 
-  CBF handle of dictionary.  
+  CBF handle of dictionary.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.68">2.3.68 cbf_find_tag, cbf_find_local_tag</span>
+::: {#2.3.68}
+#### 2.3.68 cbf_find_tag, cbf_find_local_tag
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_find_tag (cbf_handle *handle*, const char \**tag*)  
+int cbf_find_tag (cbf_handle *handle*, const char \**tag*)\
 int cbf_find_local_tag (cbf_handle *handle*, const char \**tag*)
 
 **DESCRIPTION**
 
-cbf_find_tag searches all of the CBF *handle* for the CIF tag given by the string *tag* and makes it the current tag. The search does not include the dictionary, but does include save frames as well as categories.
+cbf_find_tag searches all of the CBF *handle* for the CIF tag given by
+the string *tag* and makes it the current tag. The search does not
+include the dictionary, but does include save frames as well as
+categories.
 
-The string *tag* is the complete tag in either DDL1 or DDL2 format, starting with the leading underscore, not just a category or column.
+The string *tag* is the complete tag in either DDL1 or DDL2 format,
+starting with the leading underscore, not just a category or column.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *tag*
 
-  CIF tag.  
+  CIF tag.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.69">2.3.69 cbf_find_category_root, cbf_set_category_root, cbf_require_category_root</span>
+::: {#2.3.69}
+#### 2.3.69 cbf_find_category_root, cbf_set_category_root, cbf_require_category_root
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_find_category_root (cbf_handle *handle*, const char\* *categoryname*, const char\*\* *categoryroot*);  
-int cbf_set_category_root (cbf_handle *handle*, const char\* *categoryname_in*, const char\**categoryroot*);  
-int cbf_require_category_root (cbf_handle handle, const char\* *categoryname*, const char\*\* *categoryroot*);
+int cbf_find_category_root (cbf_handle *handle*, const char\*
+*categoryname*, const char\*\* *categoryroot*);\
+int cbf_set_category_root (cbf_handle *handle*, const char\*
+*categoryname_in*, const char\**categoryroot*);\
+int cbf_require_category_root (cbf_handle handle, const char\*
+*categoryname*, const char\*\* *categoryroot*);
 
 **DESCRIPTION**
 
-cbf_find_category_root sets \**categoryroot* to the root category of which *categoryname* is an alias. cbf_set_category_root sets *categoryname_in* as an alias of *categoryroot* in the dictionary associated with *handle*, creating the dictionary if necessary. cbf_require_category_root sets \**categoryroot* to the root category of which *categoryname* is an alias, if there is one, or to the value of *categoryname*, if *categoryname* is not an alias.
+cbf_find_category_root sets \**categoryroot* to the root category of
+which *categoryname* is an alias. cbf_set_category_root sets
+*categoryname_in* as an alias of *categoryroot* in the dictionary
+associated with *handle*, creating the dictionary if necessary.
+cbf_require_category_root sets \**categoryroot* to the root category of
+which *categoryname* is an alias, if there is one, or to the value of
+*categoryname*, if *categoryname* is not an alias.
 
 A returned *categoryroot* string must not be modified in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *categoryname*
 
-  category name which may be an alias.  
+  category name which may be an alias.\
 
   *categoryroot*
 
-  pointer to a returned category root name.  
+  pointer to a returned category root name.\
 
   *categoryroot_in*
 
-  input category root name.  
+  input category root name.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.70">2.3.70 cbf_find_tag_root, cbf_set_tag_root, cbf_require_tag_root</span>
+::: {#2.3.70}
+#### 2.3.70 cbf_find_tag_root, cbf_set_tag_root, cbf_require_tag_root
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_find_tag_root (cbf_handle *handle*, const char\* *tagname*, const char\*\* *tagroot*);  
-int cbf_set_tag_root (cbf_handle *handle*, const char\* *tagname*, const char\**tagroot_in*);  
-int cbf_require_tag_root (cbf_handle handle, const char\* *tagname*, const char\*\* *tagroot*);
+int cbf_find_tag_root (cbf_handle *handle*, const char\* *tagname*,
+const char\*\* *tagroot*);\
+int cbf_set_tag_root (cbf_handle *handle*, const char\* *tagname*, const
+char\**tagroot_in*);\
+int cbf_require_tag_root (cbf_handle handle, const char\* *tagname*,
+const char\*\* *tagroot*);
 
 **DESCRIPTION**
 
-cbf_find_tag_root sets \**tagroot* to the root tag of which *tagname* is an alias. cbf_set_tag_root sets *tagname* as an alias of *tagroot_in* in the dictionary associated with *handle*, creating the dictionary if necessary. cbf_require_tag_root sets \**tagroot* to the root tag of which *tagname* is an alias, if there is one, or to the value of *tagname*, if *tagname* is not an alias.
+cbf_find_tag_root sets \**tagroot* to the root tag of which *tagname* is
+an alias. cbf_set_tag_root sets *tagname* as an alias of *tagroot_in* in
+the dictionary associated with *handle*, creating the dictionary if
+necessary. cbf_require_tag_root sets \**tagroot* to the root tag of
+which *tagname* is an alias, if there is one, or to the value of
+*tagname*, if *tagname* is not an alias.
 
 A returned *tagroot* string must not be modified in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *tagname*
 
-  tag name which may be an alias.  
+  tag name which may be an alias.\
 
   *tagroot*
 
-  pointer to a returned tag root name.  
+  pointer to a returned tag root name.\
 
   *tagroot_in*
 
-  input tag root name.  
+  input tag root name.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.3.71">2.3.71 cbf_find_tag_category, cbf_set_tag_category</span>
+::: {#2.3.71}
+#### 2.3.71 cbf_find_tag_category, cbf_set_tag_category
 
 **PROTOTYPE**
 
-#include "cbf.h"
+#include \"cbf.h\"
 
-int cbf_find_tag_category (cbf_handle *handle*, const char\* *tagname*, const char\*\* *categoryname*);  
-int cbf_set_tag_category (cbf_handle *handle*, const char\* tagname, const char\* *categoryname_in*);
+int cbf_find_tag_category (cbf_handle *handle*, const char\* *tagname*,
+const char\*\* *categoryname*);\
+int cbf_set_tag_category (cbf_handle *handle*, const char\* tagname,
+const char\* *categoryname_in*);
 
 **DESCRIPTION**
 
-cbf_find_tag_category sets *categoryname* to the category associated with *tagname* in the dictionary associated with *handle*. cbf_set_tag_category upddates the dictionary associated with *handle* to indicated that *tagname* is in category *categoryname_in*.
+cbf_find_tag_category sets *categoryname* to the category associated
+with *tagname* in the dictionary associated with *handle*.
+cbf_set_tag_category upddates the dictionary associated with *handle* to
+indicated that *tagname* is in category *categoryname_in*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *tagname*
 
-  tag name.  
+  tag name.\
 
   *categoryname*
 
-  pointer to a returned category name.  
+  pointer to a returned category name.\
 
   *categoryname_in*
 
-  input category name.  
+  input category name.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4">2.4 High-level function prototypes</span>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.4}
+#### 2.4 High-level function prototypes
 
-#### <span id="2.4.1">2.4.1 cbf_read_template</span>
+::: {#2.4.1}
+#### 2.4.1 cbf_read_template
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_read_template (cbf_handle *handle*, FILE *\*file*);
 
 **DESCRIPTION**
 
-cbf_read_template reads the CBF or CIF file *file* into the CBF object specified by *handle* and selects the first datablock as the current datablock.
+cbf_read_template reads the CBF or CIF file *file* into the CBF object
+specified by *handle* and selects the first datablock as the current
+datablock.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  Pointer to a CBF handle.  
+  Pointer to a CBF handle.\
 
   *file*
 
-  Pointer to a file descriptor.  
+  Pointer to a file descriptor.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.2">2.4.2 cbf_get_diffrn_id, cbf_require_diffrn_id</span>
+::: {#2.4.2}
+#### 2.4.2 cbf_get_diffrn_id, cbf_require_diffrn_id
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_diffrn_id (cbf_handle *handle*, const char \*\**diffrn_id*);  
-int cbf_require_diffrn_id (cbf_handle *handle*, const char \*\**diffrn_id*, const char \**default_id*)
+int cbf_get_diffrn_id (cbf_handle *handle*, const char
+\*\**diffrn_id*);\
+int cbf_require_diffrn_id (cbf_handle *handle*, const char
+\*\**diffrn_id*, const char \**default_id*)
 
 **DESCRIPTION**
 
-cbf_get_diffrn_id sets \**diffrn_id* to point to the ASCII value of the "diffrn.id" entry. cbf_require_diffrn_id also sets \**diffrn_id* to point to the ASCII value of the "diffrn.id" entry, but, if the "diffrn.id" entry does not exist, it sets the value in the CBF and in\**diffrn_id* to the character string given by *default_id*, creating the category and column is necessary.
+cbf_get_diffrn_id sets \**diffrn_id* to point to the ASCII value of the
+\"diffrn.id\" entry. cbf_require_diffrn_id also sets \**diffrn_id* to
+point to the ASCII value of the \"diffrn.id\" entry, but, if the
+\"diffrn.id\" entry does not exist, it sets the value in the CBF and
+in\**diffrn_id* to the character string given by *default_id*, creating
+the category and column is necessary.
 
-The *diffrn_id* will be valid as long as the item exists and has not been set to a new value.
+The *diffrn_id* will be valid as long as the item exists and has not
+been set to a new value.
 
 The *diffrn_id* must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *diffrn_id*
 
-  Pointer to the destination value pointer.  
+  Pointer to the destination value pointer.\
 
   *default_id*
 
-  Character string default value.  
+  Character string default value.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.3">2.4.3 cbf_set_diffrn_id</span>
+::: {#2.4.3}
+#### 2.4.3 cbf_set_diffrn_id
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_set_diffrn_id (cbf_handle *handle*, const char \**diffrn_id*);
 
 **DESCRIPTION**
 
-cbf_set_diffrn_id sets the "diffrn.id" entry of the current datablock to the ASCII value *diffrn_id*.
+cbf_set_diffrn_id sets the \"diffrn.id\" entry of the current datablock
+to the ASCII value *diffrn_id*.
 
-This function also changes corresponding "diffrn_id" entries in the "diffrn_source", "diffrn_radiation", "diffrn_detector" and "diffrn_measurement" categories.
+This function also changes corresponding \"diffrn_id\" entries in the
+\"diffrn_source\", \"diffrn_radiation\", \"diffrn_detector\" and
+\"diffrn_measurement\" categories.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *diffrn_id*
 
-  ASCII value.  
+  ASCII value.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.4">2.4.4 cbf_get_crystal_id</span>
+::: {#2.4.4}
+#### 2.4.4 cbf_get_crystal_id
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_crystal_id (cbf_handle *handle*, const char \*\**crystal_id*);
+int cbf_get_crystal_id (cbf_handle *handle*, const char
+\*\**crystal_id*);
 
 **DESCRIPTION**
 
-cbf_get_crystal_id sets \**crystal_id* to point to the ASCII value of the "diffrn.crystal_id" entry.
+cbf_get_crystal_id sets \**crystal_id* to point to the ASCII value of
+the \"diffrn.crystal_id\" entry.
 
 If the value is not ASCII, the function returns CBF_BINARY.
 
-The value will be valid as long as the item exists and has not been set to a new value.
+The value will be valid as long as the item exists and has not been set
+to a new value.
 
 The value must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *crystal_id*
 
-  Pointer to the destination value pointer.  
+  Pointer to the destination value pointer.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.5">2.4.5 cbf_set_crystal_id</span>
+::: {#2.4.5}
+#### 2.4.5 cbf_set_crystal_id
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_set_crystal_id (cbf_handle *handle*, const char \**crystal_id*);
 
 **DESCRIPTION**
 
-cbf_set_crystal_id sets the "diffrn.crystal_id" entry to the ASCII value *crystal_id*.
+cbf_set_crystal_id sets the \"diffrn.crystal_id\" entry to the ASCII
+value *crystal_id*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *crystal_id*
 
-  ASCII value.  
+  ASCII value.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.6">2.4.6 cbf_get_wavelength</span>
+::: {#2.4.6}
+#### 2.4.6 cbf_get_wavelength
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_get_wavelength (cbf_handle *handle*, double \**wavelength*);
 
@@ -4205,27 +5143,29 @@ int cbf_get_wavelength (cbf_handle *handle*, double \**wavelength*);
 
 cbf_get_wavelength sets \**wavelength* to the current wavelength in Å.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *wavelength*
 
-  Pointer to the destination.  
+  Pointer to the destination.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.7">2.4.7 cbf_set_wavelength</span>
+::: {#2.4.7}
+#### 2.4.7 cbf_set_wavelength
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_set_wavelength (cbf_handle *handle*, double *wavelength*);
 
@@ -4233,37 +5173,42 @@ int cbf_set_wavelength (cbf_handle *handle*, double *wavelength*);
 
 cbf_set_wavelength sets the current wavelength in Å to *wavelength*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *wavelength*
 
-  Wavelength in Å.  
+  Wavelength in Å.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.8">2.4.8 cbf_get_polarization</span>
+::: {#2.4.8}
+#### 2.4.8 cbf_get_polarization
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_polarization (cbf_handle *handle*, double \**polarizn_source_ratio*, double \**polarizn_source_norm*);
+int cbf_get_polarization (cbf_handle *handle*, double
+\**polarizn_source_ratio*, double \**polarizn_source_norm*);
 
 **DESCRIPTION**
 
-cbf_get_polarization sets \**polarizn_source_ratio* and \**polarizn_source_norm* to the corresponding source polarization parameters.
+cbf_get_polarization sets \**polarizn_source_ratio* and
+\**polarizn_source_norm* to the corresponding source polarization
+parameters.
 
 Either destination pointer may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4280,22 +5225,26 @@ Either destination pointer may be NULL.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.9">2.4.9 cbf_set_polarization</span>
+::: {#2.4.9}
+#### 2.4.9 cbf_set_polarization
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_polarization (cbf_handle *handle*, double *polarizn_source_ratio*, double *polarizn_source_norm*);
+int cbf_set_polarization (cbf_handle *handle*, double
+*polarizn_source_ratio*, double *polarizn_source_norm*);
 
 **DESCRIPTION**
 
-cbf_set_polarization sets the source polarization to the values specified by *polarizn_source_ratio* and *polarizn_source_norm*.
+cbf_set_polarization sets the source polarization to the values
+specified by *polarizn_source_ratio* and *polarizn_source_norm*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4312,24 +5261,28 @@ cbf_set_polarization sets the source polarization to the values specified by *po
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.10">2.4.10 cbf_get_divergence</span>
+::: {#2.4.10}
+#### 2.4.10 cbf_get_divergence
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_divergence (cbf_handle *handle*, double \**div_x_source*, double \**div_y_source*, double \**div_x_y_source*);
+int cbf_get_divergence (cbf_handle *handle*, double \**div_x_source*,
+double \**div_y_source*, double \**div_x_y_source*);
 
 **DESCRIPTION**
 
-cbf_get_divergence sets \**div_x_source*, \**div_y_source* and \**div_x_y_source* to the corresponding source divergence parameters.
+cbf_get_divergence sets \**div_x_source*, \**div_y_source* and
+\**div_x_y_source* to the corresponding source divergence parameters.
 
 Any of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4350,22 +5303,26 @@ Any of the destination pointers may be NULL.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.11">2.4.11 cbf_set_divergence</span>
+::: {#2.4.11}
+#### 2.4.11 cbf_set_divergence
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_divergence (cbf_handle *handle*, double *div_x_source*, double *div_y_source*, double *div_x_y_source*);
+int cbf_set_divergence (cbf_handle *handle*, double *div_x_source*,
+double *div_y_source*, double *div_x_y_source*);
 
 **DESCRIPTION**
 
-cbf_set_divergence sets the source divergence parameters to the values specified by *div_x_source*, *div_y_source* and *div_x_y_source*.
+cbf_set_divergence sets the source divergence parameters to the values
+specified by *div_x_source*, *div_y_source* and *div_x_y_source*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4386,14 +5343,16 @@ cbf_set_divergence sets the source divergence parameters to the values specified
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.12">2.4.12 cbf_count_elements</span>
+::: {#2.4.12}
+#### 2.4.12 cbf_count_elements
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_count_elements (cbf_handle *handle*, unsigned int \**elements*);
 
@@ -4401,7 +5360,7 @@ int cbf_count_elements (cbf_handle *handle*, unsigned int \**elements*);
 
 cbf_count_elements sets \**elements* to the number of detector elements.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4414,29 +5373,47 @@ cbf_count_elements sets \**elements* to the number of detector elements.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.13">2.4.13 cbf_get_element_number, cbf_get_element_id</span>
+::: {#2.4.13}
+#### 2.4.13 cbf_get_element_number, cbf_get_element_id
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_element_number(cbf_handle *handle*, const char *\*element_id*, const char *\*array_id*, const char *\*array_section_id*, unsigned int *\*element_number*);  
-int cbf_get_element_id (cbf_handle *handle*, unsigned int *element_number*, const char \*\**element_id*);
+int cbf_get_element_number(cbf_handle *handle*, const char
+*\*element_id*, const char *\*array_id*, const char
+*\*array_section_id*, unsigned int *\*element_number*);\
+int cbf_get_element_id (cbf_handle *handle*, unsigned int
+*element_number*, const char \*\**element_id*);
 
 **DESCRIPTION**
 
-cbf_get_element_number sets *element_number* to a number that can be used in other cbf_simple calls to identify the detector element *element_id* and optionally the specific *array_id\> and *array_section_id*. cbf_get_element_id sets \**element_id* to point to the ASCII value of the *element_number*'th "diffrn_data_frame.detector_element_id" entry, counting from 0. The *element_number* is the ordinal of the detector element in the DIFFRN_DETECTOR_ELEMENT category. If an *array_section_id is specified (i.e. is not NULL), the *element_number* is the sum of the ordinal of the detector element plus the number of detector elements multiplied by the ordinal of *array_section_id* for the specified *array_id\> in the ARRAY_STRUCTURE_LIST_SECTION category.***
+cbf_get_element_number sets *element_number* to a number that can be
+used in other cbf_simple calls to identify the detector element
+*element_id* and optionally the specific *array_id\> and
+*array_section_id*. cbf_get_element_id sets \**element_id* to point to
+the ASCII value of the *element_number*\'th
+\"diffrn_data_frame.detector_element_id\" entry, counting from 0. The
+*element_number* is the ordinal of the detector element in the
+DIFFRN_DETECTOR_ELEMENT category. If an *array_section_id is specified
+(i.e. is not NULL), the *element_number* is the sum of the ordinal of
+the detector element plus the number of detector elements multiplied by
+the ordinal of *array_section_id* for the specified *array_id\> in the
+ARRAY_STRUCTURE_LIST_SECTION category.***
 
-If the detector element does not exist, the function returns CBF_NOTFOUND.
+If the detector element does not exist, the function returns
+CBF_NOTFOUND.
 
-The *element_id* will be valid as long as the item exists and has not been set to a new value.
+The *element_id* will be valid as long as the item exists and has not
+been set to a new value.
 
 The *element_id* must not be modified by the program in any way.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4444,11 +5421,13 @@ The *element_id* must not be modified by the program in any way.
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *element_id*
 
-  Pointer to the destination string for cbf_get_element_id, but the string itself for cbf_get_element_number.
+  Pointer to the destination string for cbf_get_element_id, but the
+string itself for cbf_get_element_number.
 
   *array_id*
 
@@ -4461,24 +5440,28 @@ The *element_id* must not be modified by the program in any way.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.14">2.4.14 cbf_get_gain</span>
+::: {#2.4.14}
+#### 2.4.14 cbf_get_gain
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_gain (cbf_handle *handle*, unsigned int *element_number*, double \**gain*, double \**gain_esd*);
+int cbf_get_gain (cbf_handle *handle*, unsigned int *element_number*,
+double \**gain*, double \**gain_esd*);
 
 **DESCRIPTION**
 
-cbf_get_gain sets \**gain* and \**gain_esd* to the corresponding gain parameters for element number *element_number*.
+cbf_get_gain sets \**gain* and \**gain_esd* to the corresponding gain
+parameters for element number *element_number*.
 
 Either of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4486,7 +5469,8 @@ Either of the destination pointers may be NULL.
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *gain*
 
@@ -4499,22 +5483,26 @@ Either of the destination pointers may be NULL.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.15">2.4.15 cbf_set_gain</span>
+::: {#2.4.15}
+#### 2.4.15 cbf_set_gain
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_gain (cbf_handle *handle*, unsigned int *element_number*, double *gain*, double *gain_esd*);
+int cbf_set_gain (cbf_handle *handle*, unsigned int *element_number*,
+double *gain*, double *gain_esd*);
 
 **DESCRIPTION**
 
-cbf_set_gain sets the gain of element number *element_number* to the values specified by *gain* and *gain_esd*.
+cbf_set_gain sets the gain of element number *element_number* to the
+values specified by *gain* and *gain_esd*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4522,7 +5510,8 @@ cbf_set_gain sets the gain of element number *element_number* to the values spec
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *gain*
 
@@ -4535,22 +5524,26 @@ cbf_set_gain sets the gain of element number *element_number* to the values spec
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.16">2.4.16 cbf_get_overload</span>
+::: {#2.4.16}
+#### 2.4.16 cbf_get_overload
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_overload (cbf_handle *handle*, unsigned int *element_number*, double \**overload*);
+int cbf_get_overload (cbf_handle *handle*, unsigned int
+*element_number*, double \**overload*);
 
 **DESCRIPTION**
 
-cbf_get_overload sets \**overload* to the overload value for element number *element_number*.
+cbf_get_overload sets \**overload* to the overload value for element
+number *element_number*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4558,7 +5551,8 @@ cbf_get_overload sets \**overload* to the overload value for element number *ele
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *overload*
 
@@ -4567,22 +5561,26 @@ cbf_get_overload sets \**overload* to the overload value for element number *ele
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.17">2.4.17 cbf_set_overload</span>
+::: {#2.4.17}
+#### 2.4.17 cbf_set_overload
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_overload (cbf_handle *handle*, unsigned int *element_number*, double *overload*);
+int cbf_set_overload (cbf_handle *handle*, unsigned int
+*element_number*, double *overload*);
 
 **DESCRIPTION**
 
-cbf_set_overload sets the overload value of element number *element_number* to *overload*.
+cbf_set_overload sets the overload value of element number
+*element_number* to *overload*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4590,7 +5588,8 @@ cbf_set_overload sets the overload value of element number *element_number* to *
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *overload*
 
@@ -4599,22 +5598,27 @@ cbf_set_overload sets the overload value of element number *element_number* to *
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.18">2.4.18 cbf_get_integration_time</span>
+::: {#2.4.18}
+#### 2.4.18 cbf_get_integration_time
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_integration_time (cbf_handle *handle*, unsigned int *reserved*, double \**time*);
+int cbf_get_integration_time (cbf_handle *handle*, unsigned int
+*reserved*, double \**time*);
 
 **DESCRIPTION**
 
-cbf_get_integration_time sets \**time* to the integration time in seconds. The parameter *reserved* is presently unused and should be set to 0.
+cbf_get_integration_time sets \**time* to the integration time in
+seconds. The parameter *reserved* is presently unused and should be set
+to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4631,22 +5635,27 @@ cbf_get_integration_time sets \**time* to the integration time in seconds. The p
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.19">2.4.19 cbf_set_integration_time</span>
+::: {#2.4.19 <h4=""}
+2.4.19 cbf_set_integration_time
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_integration_time (cbf_handle *handle*, unsigned int *reserved*, double *time*);
+int cbf_set_integration_time (cbf_handle *handle*, unsigned int
+*reserved*, double *time*);
 
 **DESCRIPTION**
 
-cbf_set_integration_time sets the integration time in seconds to the value specified by *time*. The parameter *reserved* is presently unused and should be set to 0.
+cbf_set_integration_time sets the integration time in seconds to the
+value specified by *time*. The parameter *reserved* is presently unused
+and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4663,24 +5672,30 @@ cbf_set_integration_time sets the integration time in seconds to the value speci
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.20">2.4.20 cbf_get_timestamp</span>
+::: {#2.4.20}
+#### 2.4.20 cbf_get_timestamp
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_timestamp (cbf_handle *handle*, unsigned int *reserved*, double \**time*, int \**timezone*);
+int cbf_get_timestamp (cbf_handle *handle*, unsigned int *reserved*,
+double \**time*, int \**timezone*);
 
 **DESCRIPTION**
 
-cbf_get_timestamp sets \**time* to the collection timestamp in seconds since January 1 1970. \**timezone* is set to timezone difference from UTC in minutes. The parameter *reserved* is presently unused and should be set to 0.
+cbf_get_timestamp sets \**time* to the collection timestamp in seconds
+since January 1 1970. \**timezone* is set to timezone difference from
+UTC in minutes. The parameter *reserved* is presently unused and should
+be set to 0.
 
 Either of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4701,24 +5716,33 @@ Either of the destination pointers may be NULL.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.21">2.4.21 cbf_set_timestamp</span>
+::: {#2.4.21}
+#### 2.4.21 cbf_set_timestamp
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_timestamp (cbf_handle *handle*, unsigned int *reserved*, double *time*, int *timezone*, double *precision*);
+int cbf_set_timestamp (cbf_handle *handle*, unsigned int *reserved*,
+double *time*, int *timezone*, double *precision*);
 
 **DESCRIPTION**
 
-cbf_set_timestamp sets the collection timestamp in seconds since January 1 1970 to the value specified by *time*. The timezone difference from UTC in minutes is set to *timezone*. If no timezone is desired, *timezone* should be CBF_NOTIM EZONE. The parameter *reserved* is presently unused and should be set to 0.
+cbf_set_timestamp sets the collection timestamp in seconds since January
+1 1970 to the value specified by *time*. The timezone difference from
+UTC in minutes is set to *timezone*. If no timezone is desired,
+*timezone* should be CBF_NOTIM EZONE. The parameter *reserved* is
+presently unused and should be set to 0.
 
-The precision of the new timestamp is specified by the value *precision* in seconds. If *precision* is 0, the saved timestamp is assumed accurate to 1 second.
+The precision of the new timestamp is specified by the value *precision*
+in seconds. If *precision* is 0, the saved timestamp is assumed accurate
+to 1 second.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4743,24 +5767,32 @@ The precision of the new timestamp is specified by the value *precision* in seco
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.22">2.4.22 cbf_get_datestamp</span>
+::: {#2.4.22}
+#### 2.4.22 cbf_get_datestamp
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_datestamp (cbf_handle *handle*, unsigned int *reserved*, int \**year*, int \**month*, int \**day*, int \**hour*, int \**minute*, double \**second*, int \**timezone*);
+int cbf_get_datestamp (cbf_handle *handle*, unsigned int *reserved*, int
+\**year*, int \**month*, int \**day*, int \**hour*, int \**minute*,
+double \**second*, int \**timezone*);
 
 **DESCRIPTION**
 
-cbf_get_datestamp sets \**year*, \**month*, \**day*, \**hour*, \**minute* and \**second* to the corresponding values of the collection timestamp. \**timezone* is set to timezone difference from UTC in minutes. The parameter \< i\>reserved is presently unused and should be set to 0.
+cbf_get_datestamp sets \**year*, \**month*, \**day*, \**hour*,
+\**minute* and \**second* to the corresponding values of the collection
+timestamp. \**timezone* is set to timezone difference from UTC in
+minutes. The parameter \< i\>reserved is presently unused and should be
+set to 0.
 
 Any of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4801,24 +5833,34 @@ Any of the destination pointers may be NULL.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.23">2.4.23 cbf_set_datestamp</span>
+::: {#2.4.23}
+#### 2.4.23 cbf_set_datestamp
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_datestamp (cbf_handle *handle*, unsigned int *reserved*, int *year*, int *month*, int *day*, int *hour*, int *minute*, double *second*, int *timezone*, double *precision*);
+int cbf_set_datestamp (cbf_handle *handle*, unsigned int *reserved*, int
+*year*, int *month*, int *day*, int *hour*, int *minute*, double
+*second*, int *timezone*, double *precision*);
 
 **DESCRIPTION**
 
-cbf_set_datestamp sets the collection timestamp in seconds since January 1 1970 to the value specified by *time*. The timezone difference from UTC in minutes is set to *timezone*. If no timezone is desired, *timezone* should be CBF_NOTIM EZONE. The parameter *reserved* is presently unused and should be set to 0.
+cbf_set_datestamp sets the collection timestamp in seconds since January
+1 1970 to the value specified by *time*. The timezone difference from
+UTC in minutes is set to *timezone*. If no timezone is desired,
+*timezone* should be CBF_NOTIM EZONE. The parameter *reserved* is
+presently unused and should be set to 0.
 
-The precision of the new timestamp is specified by the value *precision* in seconds. If *precision* is 0, the saved timestamp is assumed accurate to 1 second.
+The precision of the new timestamp is specified by the value *precision*
+in seconds. If *precision* is 0, the saved timestamp is assumed accurate
+to 1 second.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4843,24 +5885,31 @@ Timestamp precision in seconds.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.24">2.4.24 cbf_set_current_timestamp</span>
+::: {#2.4.24}
+#### 2.4.24 cbf_set_current_timestamp
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_current_timestamp (cbf_handle *handle*, unsigned int *reserved*, int *timezone*);
+int cbf_set_current_timestamp (cbf_handle *handle*, unsigned int
+*reserved*, int *timezone*);
 
 **DESCRIPTION**
 
-cbf_set_current_timestamp sets the collection timestamp to the current time. The timezone difference from UTC in minutes is set to *timezone*. If no timezone is desired, *timezone* should be CBF_NOTIMEZONE. If no timezone is used, the timest amp will be UTC. The parameter *reserved* is presently unused and should be set to 0.
+cbf_set_current_timestamp sets the collection timestamp to the current
+time. The timezone difference from UTC in minutes is set to *timezone*.
+If no timezone is desired, *timezone* should be CBF_NOTIMEZONE. If no
+timezone is used, the timest amp will be UTC. The parameter *reserved*
+is presently unused and should be set to 0.
 
 The new timestamp will have a precision of 1 second.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4877,36 +5926,68 @@ The new timestamp will have a precision of 1 second.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.25">2.4.25 cbf_get_image_size, cbf_get_image_size_fs, cbf_get_image_size_sf,       cbf_get_3d_image_size, cbf_get_3d_image_size_fs, cbf_get_3d_image_size_sf</span>
+::: {#2.4.26}
+#### 2.4.25 cbf_get_image_size, cbf_get_image_size_fs, cbf_get_image_size_sf,       cbf_get_3d_image_size, cbf_get_3d_image_size_fs, cbf_get_3d_image_size_s
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_image_size (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, size_t \**ndimslow*, size_t \**ndimfast*);  
-int cbf_get_image_size_fs (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, size_t \**ndimfast*, size_t \**ndimslow*);  
-int cbf_get_image_size_sf (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, size_t \**ndimslow*, size_t \**ndimfast*);  
-   
-int cbf_get_3d_image_size (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, size_t \**ndimslow*, size_t \**ndimmid*, size_t \**ndimfast*);  
-int cbf_get_3d_image_size_fs (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, size_t \**ndimfast*, size_t \**ndimmid*, size_t \**ndimslow*);  
-int cbf_get_3d_image_size_sf (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, size_t \**ndimslow*, size_t \**ndimmid*, size_t \**ndimfast*);
+int cbf_get_image_size (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, size_t \**ndimslow*, size_t
+\**ndimfast*);\
+int cbf_get_image_size_fs (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, size_t \**ndimfast*, size_t
+\**ndimslow*);\
+int cbf_get_image_size_sf (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, size_t \**ndimslow*, size_t
+\**ndimfast*);\
+ \
+int cbf_get_3d_image_size (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, size_t \**ndimslow*, size_t \**ndimmid*,
+size_t \**ndimfast*);\
+int cbf_get_3d_image_size_fs (cbf_handle *handle*, unsigned int
+*reserved*, unsigned int *element_number*, size_t \**ndimfast*, size_t
+\**ndimmid*, size_t \**ndimslow*);\
+int cbf_get_3d_image_size_sf (cbf_handle *handle*, unsigned int
+*reserved*, unsigned int *element_number*, size_t \**ndimslow*, size_t
+\**ndimmid*, size_t \**ndimfast*);
 
 **DESCRIPTION**
 
-cbf_get_image_size, cbf_get_image_size_fs and cbf_get_image_size_sf set \**ndimslow* and \**ndimfast* to the slow and fast dimensions of the image array for element number *element_number*. If the array is 1-dimensional, \**ndimslow* will be set to the array size and \**ndimfast* will be set to 1. If the array is 3-dimensional an error code will be returned. cbf_get_3d_image_size, cbf_get_3d_image_size_fs and cbf_get_3d_image_size_sf set \**ndimslow*, \**ndimmid* and \**ndimfast* to the slowest, next fastest and fastest dimensions, respectively, of the 3D image array for element number *element_number*. If the array is 1-dimensional, \**ndimslow* will be set to the array size and \**ndimmid* and \**ndimfast* will be set to 1. If the array is 2-dimensional \**ndimslow* and \**ndimmid* will be set as for a call to cbf_get_image_size and \**ndimfast* will be set to 1.
+cbf_get_image_size, cbf_get_image_size_fs and cbf_get_image_size_sf set
+\**ndimslow* and \**ndimfast* to the slow and fast dimensions of the
+image array for element number *element_number*. If the array is
+1-dimensional, \**ndimslow* will be set to the array size and
+\**ndimfast* will be set to 1. If the array is 3-dimensional an error
+code will be returned. cbf_get_3d_image_size, cbf_get_3d_image_size_fs
+and cbf_get_3d_image_size_sf set \**ndimslow*, \**ndimmid* and
+\**ndimfast* to the slowest, next fastest and fastest dimensions,
+respectively, of the 3D image array for element number *element_number*.
+If the array is 1-dimensional, \**ndimslow* will be set to the array
+size and \**ndimmid* and \**ndimfast* will be set to 1. If the array is
+2-dimensional \**ndimslow* and \**ndimmid* will be set as for a call to
+cbf_get_image_size and \**ndimfast* will be set to 1.
 
-The \_fs calls give the dimensions in a fast-to-slow order. The calls with no suffix and the calls \_sf calls give the dimensions in slow-to-fast order
+The \_fs calls give the dimensions in a fast-to-slow order. The calls
+with no suffix and the calls \_sf calls give the dimensions in
+slow-to-fast order
 
-Note that the ordering of dimensions is specified by values of the tag \_array_structure_list.precedence with a precedence of 1 for the fastest dimension, 2 for the next slower, etc., which is opposite to the ordering of the dimension arguments for these functions, except for the ones with the \_fs suffix..
+Note that the ordering of dimensions is specified by values of the tag
+\_array_structure_list.precedence with a precedence of 1 for the fastest
+dimension, 2 for the next slower, etc., which is opposite to the
+ordering of the dimension arguments for these functions, except for the
+ones with the \_fs suffix..
 
 Any of the destination pointers may be NULL.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4918,7 +5999,8 @@ The parameter *reserved* is presently unused and should be set to 0.
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *ndimslow*
 
@@ -4935,50 +6017,105 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.26">2.4.26 cbf_get_image, cbf_get_image_fs, cbf_get_image_sf,       cbf_get_real_image, cbf_get_real_image_fs, cbf_get_real_image_sf,       cbf_get_3d_image, cbf_get_3d_image_fs, cbf_get_3d_image_sf,       cbf_get_real_3d_image, cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf</span>
+::: {#2.4.26}
+#### 2.4.26 cbf_get_image, cbf_get_image_fs, cbf_get_image_sf,       cbf_get_real_image, cbf_get_real_image_fs, cbf_get_real_image_sf,       cbf_get_3d_image, cbf_get_3d_image_fs, cbf_get_3d_image_sf,       cbf_get_real_3d_image, cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimfast*);  
-int cbf_get_image_fs (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimfast*, size_t *ndimslow*);  
-int cbf_get_image_sf (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimfast*);  
-   
-int cbf_get_real_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, size_t *ndimslow*, size_t *ndimfast*);  
-int cbf_get_real_image_fs (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, size_t *ndimfast*, size_t *ndimslow*);  
-int cbf_get_real_image_sf (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, size_t *ndimslow*, size_t *ndimfast*);  
-   
-int cbf_get_3d_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
-int cbf_get_3d_image_fs (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimfast*, size_t *ndimmid*, size_t *ndimslow*);  
-int cbf_get_3d_image_sf (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
-   
-int cbf_get_real_3d_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
-int cbf_get_real_3d_image_fs (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, size_t *ndimfast*, size_t *ndimmid*, size_t *ndimslow*);  
-int cbf_get_real_3d_image_sf (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, void \**array*, size_t *elsize*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
+int cbf_get_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, int
+*elsign*, size_t *ndimslow*, size_t *ndimfast*);\
+int cbf_get_image_fs (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, int
+*elsign*, size_t *ndimfast*, size_t *ndimslow*);\
+int cbf_get_image_sf (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, int
+*elsign*, size_t *ndimslow*, size_t *ndimfast*);\
+ \
+int cbf_get_real_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, size_t
+*ndimslow*, size_t *ndimfast*);\
+int cbf_get_real_image_fs (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, size_t
+*ndimfast*, size_t *ndimslow*);\
+int cbf_get_real_image_sf (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, size_t
+*ndimslow*, size_t *ndimfast*);\
+ \
+int cbf_get_3d_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, int
+*elsign*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);\
+int cbf_get_3d_image_fs (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, int
+*elsign*, size_t *ndimfast*, size_t *ndimmid*, size_t *ndimslow*);\
+int cbf_get_3d_image_sf (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, int
+*elsign*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);\
+ \
+int cbf_get_real_3d_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, void \**array*, size_t *elsize*, size_t
+*ndimslow*, size_t *ndimmid*, size_t *ndimfast*);\
+int cbf_get_real_3d_image_fs (cbf_handle *handle*, unsigned int
+*reserved*, unsigned int *element_number*, void \**array*, size_t
+*elsize*, size_t *ndimfast*, size_t *ndimmid*, size_t *ndimslow*);\
+int cbf_get_real_3d_image_sf (cbf_handle *handle*, unsigned int
+*reserved*, unsigned int *element_number*, void \**array*, size_t
+*elsize*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);\
 
 **DESCRIPTION**
 
-cbf_get_image, cbf_get_image_fs and cbf_get_image_sf read the image array for element number *element_number* into an *array*. The array consists of *ndimslow*×*ndimfast* elements of *elsize* bytes each, starting at *array*. The elements are signed if *elsign* is non-0 and unsigned otherwise. cbf_get_real_image, cbf_get_real_image_fs and cbf_get_real_image_sf read the image array of IEEE doubles or floats for element number *element_number* into an *array*. A real array is always signed. cbf_get_3d_image, cbf_get_3d_image_fs and cbf_get_3d_image_sf read the 3D image array for element number *element_number* into an *array*. The array consists of *ndimslow*×*ndimmid*×*ndimfast* elements of *elsize* bytes each, starting at *array*. The elements are signed if *elsign* is non-0 and unsigned otherwise. cbf_get_real_3d_image, cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf reads the 3D image array of IEEE doubles or floats for element number *element_number* into an *array*. A real array is always signed.
+cbf_get_image, cbf_get_image_fs and cbf_get_image_sf read the image
+array for element number *element_number* into an *array*. The array
+consists of *ndimslow*×*ndimfast* elements of *elsize* bytes each,
+starting at *array*. The elements are signed if *elsign* is non-0 and
+unsigned otherwise. cbf_get_real_image, cbf_get_real_image_fs and
+cbf_get_real_image_sf read the image array of IEEE doubles or floats for
+element number *element_number* into an *array*. A real array is always
+signed. cbf_get_3d_image, cbf_get_3d_image_fs and cbf_get_3d_image_sf
+read the 3D image array for element number *element_number* into an
+*array*. The array consists of *ndimslow*×*ndimmid*×*ndimfast* elements
+of *elsize* bytes each, starting at *array*. The elements are signed if
+*elsign* is non-0 and unsigned otherwise. cbf_get_real_3d_image,
+cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf reads the 3D image
+array of IEEE doubles or floats for element number *element_number* into
+an *array*. A real array is always signed.
 
-The \_fs calls give the dimensions in a fast-to-slow order. The calls with no suffix and the calls \_sf calls give the dimensions in slow-to-fast order
+The \_fs calls give the dimensions in a fast-to-slow order. The calls
+with no suffix and the calls \_sf calls give the dimensions in
+slow-to-fast order
 
-The structure of the array as a 1-, 2- or 3-dimensional array should agree with the structure of the array given in the ARRAY_STRUCTURE_LIST category. If the array is 1-dimensional, *ndimslow* should be the array size and *ndimfast* and, for the 3D calls, *ndimmid*, should be set to 1 both in the call and in the imgCIF data being processed. If the array is 2-dimensional and a 3D call is used, *ndimslow* and *ndimmid* should be the array dimensions and *ndimfast* should be set to 1 both in the call and in the imgCIF data being processed.
+The structure of the array as a 1-, 2- or 3-dimensional array should
+agree with the structure of the array given in the ARRAY_STRUCTURE_LIST
+category. If the array is 1-dimensional, *ndimslow* should be the array
+size and *ndimfast* and, for the 3D calls, *ndimmid*, should be set to 1
+both in the call and in the imgCIF data being processed. If the array is
+2-dimensional and a 3D call is used, *ndimslow* and *ndimmid* should be
+the array dimensions and *ndimfast* should be set to 1 both in the call
+and in the imgCIF data being processed.
 
-If any element in the binary data can't fit into the destination element, the destination is set the nearest possible value.
+If any element in the binary data can\'t fit into the destination
+element, the destination is set the nearest possible value.
 
 If the value is not binary, the function returns CBF_ASCII.
 
-If the requested number of elements can't be read, the function will read as many as it can and then return CBF_ENDOFDATA.
+If the requested number of elements can\'t be read, the function will
+read as many as it can and then return CBF_ENDOFDATA.
 
-Currently, the destination *array* must consist of chars, shorts or ints (signed or unsigned) for cbf_get_image, or IEEE doubles or floats for cbf_get_real_image. If *elsize* is not equal to sizeof (char), sizeof (short), sizeof (int), sizeof(double) or sizeof(float), the function returns CBF_ARGUMENT.
+Currently, the destination *array* must consist of chars, shorts or ints
+(signed or unsigned) for cbf_get_image, or IEEE doubles or floats for
+cbf_get_real_image. If *elsize* is not equal to sizeof (char), sizeof
+(short), sizeof (int), sizeof(double) or sizeof(float), the function
+returns CBF_ARGUMENT.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -4990,7 +6127,8 @@ The parameter *reserved* is presently unused and should be set to 0.
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *array*
 
@@ -5019,40 +6157,95 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.27">2.4.27 cbf_set_image, cbf_set_image_fs, cbf_set_image_sf,</span>       cbf_set_real_image, cbf_set_real_image_fs, cbf_set_real_image_sf,       cbf_set_3d_image, cbf_set_3d_image_fs, cbf_set_3d_image_sf,       cbf_set_real_3d_image, cbf_set_real_3d_image_fs, cbf_set_real_3d_image_sf
+::: {#2.4.27}
+#### 2.4.27 cbf_set_image, cbf_set_image_fs, cbf_set_image_sf,       cbf_set_real_image, cbf_set_real_image_fs, cbf_set_real_image_sf,       cbf_set_3d_image, cbf_set_3d_image_fs, cbf_set_3d_image_sf,       cbf_set_real_3d_image, cbf_set_real_3d_image_fs, cbf_set_real_3d_image_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimfast*);  
-int cbf_set_image_fs(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimfast*, size_t *ndimslow*);  
-int cbf_set_image_sf(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimfast*);  
-   
-int cbf_set_real_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimfast*);  
-int cbf_set_real_image_fs(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*,size_t *elsize*, size_t *ndimfast*, size_t *ndimslow*);  
-int cbf_set_real_image_sf(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimfast*);  
-   
-int cbf_set_3d_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
-int cbf_set_3d_image_fs(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimfast*, size_t *ndimmid*, size_t *ndimslow*);  
-int cbf_set_3d_image_sf(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*, size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
-   
-int cbf_set_real_3d_image (cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
-int cbf_set_real_3d_image_fs(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*,size_t *elsize*, size_t *ndimfast*, size_t *ndimmid*, size_t *ndimslow*);  
-int cbf_set_real_3d_image_sf(cbf_handle *handle*, unsigned int *reserved*, unsigned int *element_number*, unsigned int compression, void \**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimmid*, size_t *ndimfast*);  
+int cbf_set_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void \**array*,
+size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimfast*);\
+int cbf_set_image_fs(cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void \**array*,
+size_t *elsize*, int *elsign*, size_t *ndimfast*, size_t *ndimslow*);\
+int cbf_set_image_sf(cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void \**array*,
+size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimfast*);\
+ \
+int cbf_set_real_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void
+\**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimfast*);\
+int cbf_set_real_image_fs(cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void
+\**array*,size_t *elsize*, size_t *ndimfast*, size_t *ndimslow*);\
+int cbf_set_real_image_sf(cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void
+\**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimfast*);\
+ \
+int cbf_set_3d_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void \**array*,
+size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimmid*,
+size_t *ndimfast*);\
+int cbf_set_3d_image_fs(cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void \**array*,
+size_t *elsize*, int *elsign*, size_t *ndimfast*, size_t *ndimmid*,
+size_t *ndimslow*);\
+int cbf_set_3d_image_sf(cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void \**array*,
+size_t *elsize*, int *elsign*, size_t *ndimslow*, size_t *ndimmid*,
+size_t *ndimfast*);\
+ \
+int cbf_set_real_3d_image (cbf_handle *handle*, unsigned int *reserved*,
+unsigned int *element_number*, unsigned int compression, void
+\**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimmid*, size_t
+*ndimfast*);\
+int cbf_set_real_3d_image_fs(cbf_handle *handle*, unsigned int
+*reserved*, unsigned int *element_number*, unsigned int compression,
+void \**array*,size_t *elsize*, size_t *ndimfast*, size_t *ndimmid*,
+size_t *ndimslow*);\
+int cbf_set_real_3d_image_sf(cbf_handle *handle*, unsigned int
+*reserved*, unsigned int *element_number*, unsigned int compression,
+void \**array*,size_t *elsize*, size_t *ndimslow*, size_t *ndimmid*,
+size_t *ndimfast*);\
 
 **DESCRIPTION**
 
-cbf_set_image, cbf_set_image_fs and cbf_set_image_sf write the image array for element number *element_number*. The *array* consists of *ndimfast*×*ndimslow* elements of *elsize* bytes each, starting at *array*. The elements are signed if *elsign* is non-zero and unsigned otherwise. cbf_set_real_image, cbf_set_real_image_fs and cbf_set_real_image_sf write the image array for element number *element_number*. The *array* consists of *ndimfast*×*ndimslow* IEEE double or float elements of *elsize* bytes each, starting at *array*. cbf_set_3d_image, cbf_set_3d_image_fs and cbf_set_3d_image_sf write the 3D image array for element number *element_number*. The *array* consists of *ndimfast*×*ndimmid*×*ndimslow* elements of *elsize* bytes each, starting at *array*. The elements are signed if *elsign* is non-0 and unsigned otherwise. cbf_set_real_3d_image, cbf_set_real_3d_image_fs and cbf_set_real_3d_image_sf writes the 3D image array for element number *element_number*. The *array* consists of *ndimfast*×*ndimmid*×*ndimslow* IEEE double or float elements of *elsize* bytes each, starting at *array*.
+cbf_set_image, cbf_set_image_fs and cbf_set_image_sf write the image
+array for element number *element_number*. The *array* consists of
+*ndimfast*×*ndimslow* elements of *elsize* bytes each, starting at
+*array*. The elements are signed if *elsign* is non-zero and unsigned
+otherwise. cbf_set_real_image, cbf_set_real_image_fs and
+cbf_set_real_image_sf write the image array for element number
+*element_number*. The *array* consists of *ndimfast*×*ndimslow* IEEE
+double or float elements of *elsize* bytes each, starting at *array*.
+cbf_set_3d_image, cbf_set_3d_image_fs and cbf_set_3d_image_sf write the
+3D image array for element number *element_number*. The *array* consists
+of *ndimfast*×*ndimmid*×*ndimslow* elements of *elsize* bytes each,
+starting at *array*. The elements are signed if *elsign* is non-0 and
+unsigned otherwise. cbf_set_real_3d_image, cbf_set_real_3d_image_fs and
+cbf_set_real_3d_image_sf writes the 3D image array for element number
+*element_number*. The *array* consists of
+*ndimfast*×*ndimmid*×*ndimslow* IEEE double or float elements of
+*elsize* bytes each, starting at *array*.
 
-The \_fs calls give the dimensions in a fast-to-slow order. The calls with no suffix and the calls \_sf calls give the dimensions in slow-to-fast order
+The \_fs calls give the dimensions in a fast-to-slow order. The calls
+with no suffix and the calls \_sf calls give the dimensions in
+slow-to-fast order
 
-If the array is 1-dimensional, *ndimslow* should be the array size and *ndimfast* and, for the 3D calls, *ndimmid*, should be set to 1. If the array is 2-dimensional and the 3D calls are used, *ndimslow* and *ndimmid* should be used for the array dimensions and *ndimfast* should be set to 1.
+If the array is 1-dimensional, *ndimslow* should be the array size and
+*ndimfast* and, for the 3D calls, *ndimmid*, should be set to 1. If the
+array is 2-dimensional and the 3D calls are used, *ndimslow* and
+*ndimmid* should be used for the array dimensions and *ndimfast* should
+be set to 1.
 
-The array will be compressed using the compression scheme specifed by compression. Currently, the available schemes are:
+The array will be compressed using the compression scheme specifed by
+compression. Currently, the available schemes are:
 
 CBF_CANONICAL
 
@@ -5068,23 +6261,29 @@ CBF_PACKED_V2
 
 CBF_BYTE_OFFSET
 
-  Simple "byte_offset" compression.
+  Simple \"byte_offset\" compression.
 
 CBF_NIBBLE_OFFSET
 
-  Simple "nibble_offset" compression.
+  Simple \"nibble_offset\" compression.
 
 CBF_NONE
 
 No compression.
 
-The values compressed are limited to 64 bits. If any element in the array is larger than 64 bits, the value compressed is the nearest 64-bit value.
+The values compressed are limited to 64 bits. If any element in the
+array is larger than 64 bits, the value compressed is the nearest 64-bit
+value.
 
-Currently, the source *array* must consist of chars, shorts or ints (signed or unsigned)for cbf_set_image, or IEEE doubles or floats for cbf_set_real_image. If *elsize* is not equal to sizeof (short), sizeof (int), sizeof(double) or sizeof(float), the function returns CBF_ARGUMENT.
+Currently, the source *array* must consist of chars, shorts or ints
+(signed or unsigned)for cbf_set_image, or IEEE doubles or floats for
+cbf_set_real_image. If *elsize* is not equal to sizeof (short), sizeof
+(int), sizeof(double) or sizeof(float), the function returns
+CBF_ARGUMENT.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -5096,7 +6295,8 @@ The parameter *reserved* is presently unused and should be set to 0.
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *compression*
 
@@ -5129,56 +6329,85 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.28">2.4.28 cbf_count_axis_ancestors, cbf_get_axis_ancestor, cbf_get_axis_depends_on, cbf_get_axis_equipment, cbf_get_axis_equipment_component, cbf_get_axis_offset, cbf_get_axis_rotation, cbf_get_axis_rotation_axis, cbf_get_axis_setting, cbf_get_axis_type, cbf_get_axis_vector</span>
+::: {#2.4.28}
+#### 2.4.28 cbf_count_axis_ancestors, cbf_get_axis_ancestor, cbf_get_axis_depends_on, cbf_get_axis_equipment, cbf_get_axis_equipment_component, cbf_get_axis_offset, cbf_get_axis_rotation, cbf_get_axis_rotation_axis, cbf_get_axis_setting, cbf_get_axis_type, cbf_get_axis_vector
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_count_axis_ancestors (cbf_handle *handle*, const char \**axis_id*, unsigned int \**ancestors*);  
+int cbf_count_axis_ancestors (cbf_handle *handle*, const char
+\**axis_id*, unsigned int \**ancestors*);\
 
-int cbf_get_axis_ancestor (cbf_handle *handle*, const char \**axis_id*, const unsigned int *ancestor_index*, const char \* \**ancestor*);  
+int cbf_get_axis_ancestor (cbf_handle *handle*, const char \**axis_id*,
+const unsigned int *ancestor_index*, const char \* \**ancestor*);\
 
-int cbf_get_axis_depends_on (cbf_handle *handle*, const char \**axis_id*, const char \* \**depends_on*);  
+int cbf_get_axis_depends_on (cbf_handle *handle*, const char
+\**axis_id*, const char \* \**depends_on*);\
 
-int cbf_get_axis_equipment (cbf_handle *handle*, const char \**axis_id*, const char \* \**equipment*);  
+int cbf_get_axis_equipment (cbf_handle *handle*, const char \**axis_id*,
+const char \* \**equipment*);\
 
-int cbf_get_axis_equipment_component (cbf_handle *handle*, const char \**axis_id*, const char \* \**equipment_component*);  
+int cbf_get_axis_equipment_component (cbf_handle *handle*, const char
+\**axis_id*, const char \* \**equipment_component*);\
 
-int cbf_get_axis_offset (cbf_handle *handle*, const char \**axis_id*, double \**offset1*, double \**offset2*, double \**offset3*);  
+int cbf_get_axis_offset (cbf_handle *handle*, const char \**axis_id*,
+double \**offset1*, double \**offset2*, double \**offset3*);\
 
-int cbf_get_axis_rotation (cbf_handle *handle*, const char \**axis_id*, double \**rotation*);  
+int cbf_get_axis_rotation (cbf_handle *handle*, const char \**axis_id*,
+double \**rotation*);\
 
-int cbf_get_axis_rotation_axis (cbf_handle *handle*, const char \**axis_id*, const char \* \**rotation_axis*);  
+int cbf_get_axis_rotation_axis (cbf_handle *handle*, const char
+\**axis_id*, const char \* \**rotation_axis*);\
 
-int cbf_get_axis_setting (cbf_handle *handle*, unsigned int *reserved*, const char \**axis_id*, double \**start*, double \**increment*);  
+int cbf_get_axis_setting (cbf_handle *handle*, unsigned int *reserved*,
+const char \**axis_id*, double \**start*, double \**increment*);\
 
-int cbf_get_axis_type (cbf_handle *handle*, const char \**axis_id*, cbf_axis_type \**axis_type*);  
+int cbf_get_axis_type (cbf_handle *handle*, const char \**axis_id*,
+cbf_axis_type \**axis_type*);\
 
-int cbf_get_axis_vector (cbf_handle *handle*, const char \**axis_id*, double \**vector1*, double \**vector2*, double \**vector3*);  
+int cbf_get_axis_vector (cbf_handle *handle*, const char \**axis_id*,
+double \**vector1*, double \**vector2*, double \**vector3*);\
 
 **DESCRIPTION**
 
-cbf_count_axis_ancestors sets *ancestors* to the number of ancestors of axis *axis_id*. cbf_get_axis_ancestor sets \**ancestor* to the ancestor axis of index *ancestor_index* of axis *axis_id*, starting with *axis_id* for *ancestor_index* 0.
+cbf_count_axis_ancestors sets *ancestors* to the number of ancestors of
+axis *axis_id*. cbf_get_axis_ancestor sets \**ancestor* to the ancestor
+axis of index *ancestor_index* of axis *axis_id*, starting with
+*axis_id* for *ancestor_index* 0.
 
-cbf_get_axis_depends_on sets \**depends_on* to the immediate ancestor of *axis_id* or to "." if there is no such ancestor. cbf_get_axis_equipment sets \**equipment* to the equipment of *axis_id* or to "." if there is no such equipment. cbf_get_axis_equipment_component sets \**equipment_component* to the equipment_component of *axis_id* or to "." if there is no such equipment_component.
+cbf_get_axis_depends_on sets \**depends_on* to the immediate ancestor of
+*axis_id* or to \".\" if there is no such ancestor.
+cbf_get_axis_equipment sets \**equipment* to the equipment of *axis_id*
+or to \".\" if there is no such equipment.
+cbf_get_axis_equipment_component sets \**equipment_component* to the
+equipment_component of *axis_id* or to \".\" if there is no such
+equipment_component.
 
-cbf_get_axis_offset sets \**offset1*, \**offset2* and \**offset3* to the components of the ofset of *axis_id*.
+cbf_get_axis_offset sets \**offset1*, \**offset2* and \**offset3* to the
+components of the ofset of *axis_id*.
 
-cbf_get_axis_rotation sets *rotation* to the rotation of *axis_id* or to 0 if there is no such rotation. cbf_get_axis_rotation_axis sets \**rotation_axis* to the rotation_axis of *axis_id* or to "." if there is no such rotation_axis.
+cbf_get_axis_rotation sets *rotation* to the rotation of *axis_id* or to
+0 if there is no such rotation. cbf_get_axis_rotation_axis sets
+\**rotation_axis* to the rotation_axis of *axis_id* or to \".\" if there
+is no such rotation_axis.
 
-cbf_get_axis_setting sets \**start* and \**increment* to the corresponding values of the axis *axis_id*. Any of the destination pointers may be NULL.
+cbf_get_axis_setting sets \**start* and \**increment* to the
+corresponding values of the axis *axis_id*. Any of the destination
+pointers may be NULL.
 
 cbf_get_axis_type sets *axis_type* to the type of *axis_id*.
 
-cbf_get_axis_vector sets \**vector1*, \**vector2* and \**vector3* to the components of the vector of *axis_id*.
+cbf_get_axis_vector sets \**vector1*, \**vector2* and \**vector3* to the
+components of the vector of *axis_id*.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -5194,7 +6423,8 @@ The parameter *reserved* is presently unused and should be set to 0.
 
   *ancestor_index*
 
-  Integer index of the desired ancestor, starting with 0 for the current *axis_id*.
+  Integer index of the desired ancestor, starting with 0 for the current
+*axis_id*.
 
   *ancestor*
 
@@ -5259,24 +6489,28 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.29">2.4.29 cbf_set_axis_setting</span>
+::: {#2.4.29}
+#### 2.4.29 cbf_set_axis_setting
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_axis_setting (cbf_handle *handle*, unsigned int *reserved*, const char \**axis_id*, double *start*, double *increment*);
+int cbf_set_axis_setting (cbf_handle *handle*, unsigned int *reserved*,
+const char \**axis_id*, double *start*, double *increment*);
 
 **DESCRIPTION**
 
-cbf_set_axis_setting sets the starting and increment values of the axis *axis_id* to *start* and *increment*.
+cbf_set_axis_setting sets the starting and increment values of the axis
+*axis_id* to *start* and *increment*.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -5301,22 +6535,27 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.30">2.4.30 cbf_construct_goniometer</span>
+::: {#2.4.30}
+#### 2.4.30 cbf_construct_goniometer
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_construct_goniometer (cbf_handle *handle*, cbf_goniometer \**goniometer*);
+int cbf_construct_goniometer (cbf_handle *handle*, cbf_goniometer
+\**goniometer*);
 
 **DESCRIPTION**
 
-cbf_construct_goniometer constructs a goniometer object using the description in the CBF object handle and initialises the goniometer handle \**goniometer*.
+cbf_construct_goniometer constructs a goniometer object using the
+description in the CBF object handle and initialises the goniometer
+handle \**goniometer*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -5329,22 +6568,25 @@ cbf_construct_goniometer constructs a goniometer object using the description in
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.31">2.4.31 cbf_free_goniometer</span>
+::: {#2.4.31}
+#### 2.4.31 cbf_free_goniometer
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_free_goniometer (cbf_goniometer *goniometer*);
 
 **DESCRIPTION**
 
-cbf_free_goniometer destroys the goniometer object specified by *goniometer* and frees all associated memory.
+cbf_free_goniometer destroys the goniometer object specified by
+*goniometer* and frees all associated memory.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *goniometer*
 
@@ -5353,26 +6595,30 @@ cbf_free_goniometer destroys the goniometer object specified by *goniometer* and
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.32">2.4.32 cbf_get_rotation_axis</span>
+::: {#2.4.32}
+#### 2.4.32 cbf_get_rotation_axis
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_rotation_axis (cbf_goniometer *goniometer*, unsigned int *reserved*, double \**vector1*, double \**vector2*, double \**vector3*);
+int cbf_get_rotation_axis (cbf_goniometer *goniometer*, unsigned int
+*reserved*, double \**vector1*, double \**vector2*, double \**vector3*);
 
 **DESCRIPTION**
 
-cbf_get_rotation_axis sets \**vector1*, \**vector2*, and \**vector3* to the 3 components of the goniometer rotation axis used for the exposure.
+cbf_get_rotation_axis sets \**vector1*, \**vector2*, and \**vector3* to
+the 3 components of the goniometer rotation axis used for the exposure.
 
 Any of the destination pointers may be NULL.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *goniometer*
 
@@ -5397,26 +6643,31 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.33">2.4.33 cbf_get_rotation_range</span>
+::: {#2.4.33}
+#### 2.4.33 cbf_get_rotation_range
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_rotation_range (cbf_goniometer *goniometer*, unsigned int *reserved*, double \**start*, double \**increment*);
+int cbf_get_rotation_range (cbf_goniometer *goniometer*, unsigned int
+*reserved*, double \**start*, double \**increment*);
 
 **DESCRIPTION**
 
-cbf_get_rotation_range sets \**start* and \**increment* to the corresponding values of the goniometer rotation axis used for the exposure.
+cbf_get_rotation_range sets \**start* and \**increment* to the
+corresponding values of the goniometer rotation axis used for the
+exposure.
 
 Either of the destination pointers may be NULL.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *goniometer*
 
@@ -5437,26 +6688,35 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.34">2.4.34 cbf_rotate_vector</span>
+::: {#2.4.34}
+#### 2.4.34 cbf_rotate_vector
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_rotate_vector (cbf_goniometer *goniometer*, unsigned int *reserved*, double *ratio*, double *initial1*, double *initial2*, double *initial3*, double \**final1*, double \**final2*, double \**final3*);
+int cbf_rotate_vector (cbf_goniometer *goniometer*, unsigned int
+*reserved*, double *ratio*, double *initial1*, double *initial2*, double
+*initial3*, double \**final1*, double \**final2*, double \**final3*);
 
 **DESCRIPTION**
 
-cbf_rotate_vector sets \**final1*, \**final2*, and \**final3* to the 3 components of the of the vector (*initial1*, *initial2*, *initial3*) after reorientation by applying the goniometer rotations. The value *ratio* specif ies the goniometer setting and varies from 0.0 at the beginning of the exposure to 1.0 at the end, irrespective of the actual rotation range.
+cbf_rotate_vector sets \**final1*, \**final2*, and \**final3* to the 3
+components of the of the vector (*initial1*, *initial2*, *initial3*)
+after reorientation by applying the goniometer rotations. The value
+*ratio* specif ies the goniometer setting and varies from 0.0 at the
+beginning of the exposure to 1.0 at the end, irrespective of the actual
+rotation range.
 
 Any of the destination pointers may be NULL.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *goniometer*
 
@@ -5497,38 +6757,50 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.35">2.4.35 cbf_get_reciprocal</span>
+::: {#2.4.35}
+#### 2.4.35 cbf_get_reciprocal
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_reciprocal (cbf_goniometer *goniometer*, unsigned int *reserved*, double *ratio*, double *wavelength*, double *real1*, double *real2*, double *real3*, double \**reciprocal1*, double \**reciprocal2*, double \**reciprocal3*);
+int cbf_get_reciprocal (cbf_goniometer *goniometer*, unsigned int
+*reserved*, double *ratio*, double *wavelength*, double *real1*, double
+*real2*, double *real3*, double \**reciprocal1*, double \**reciprocal2*,
+double \**reciprocal3*);
 
 **DESCRIPTION**
 
-cbf_get_reciprocal sets \**reciprocal1*, \* *reciprocal2*, and \* *reciprocal3* to the 3 components of the of the reciprocal-space vector corresponding to the real-space vector (*real1*, *real2*, *real3*). The reciprocal-space vector is oriented to correspond to the goniometer setting with all axes at 0. The value *wavelength* is the wavlength in Å and the value *ratio* specifies the current goniometer setting and varies from 0.0 at the beginning of the exposur e to 1.0 at the end, irrespective of the actual rotation range.
+cbf_get_reciprocal sets \**reciprocal1*, \* *reciprocal2*, and \*
+*reciprocal3* to the 3 components of the of the reciprocal-space vector
+corresponding to the real-space vector (*real1*, *real2*, *real3*). The
+reciprocal-space vector is oriented to correspond to the goniometer
+setting with all axes at 0. The value *wavelength* is the wavlength in Å
+and the value *ratio* specifies the current goniometer setting and
+varies from 0.0 at the beginning of the exposur e to 1.0 at the end,
+irrespective of the actual rotation range.
 
 Any of the destination pointers may be NULL.
 
 The parameter *reserved* is presently unused and should be set to 0.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *goniometer*
 
-  Goniometer handle.  
+  Goniometer handle.\
 
   *reserved*
 
-  Unused. Any value other than 0 is invalid.  
+  Unused. Any value other than 0 is invalid.\
 
   *ratio*
 
-  Goniometer setting. 0 = beginning of exposure, 1 = end.  
+  Goniometer setting. 0 = beginning of exposure, 1 = end.\
 
   *wavelength*
 
@@ -5561,279 +6833,390 @@ The parameter *reserved* is presently unused and should be set to 0.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.36">2.4.36 cbf_construct_detector, cbf_construct_reference_detector, cbf_require_reference_detector</span>
+::: {#2.4.36}
+#### 2.4.36 cbf_construct_detector, cbf_construct_reference_detector, cbf_require_reference_detector
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_construct_detector (cbf_handle *handle*, cbf_detector \**detector*, unsigned int *element_number*);
+int cbf_construct_detector (cbf_handle *handle*, cbf_detector
+\**detector*, unsigned int *element_number*);
 
-int cbf_construct_reference_detector (cbf_handle *handle*, cbf_detector \**detector*, unsigned int *element_number*);
+int cbf_construct_reference_detector (cbf_handle *handle*, cbf_detector
+\**detector*, unsigned int *element_number*);
 
-int cbf_require_reference_detector (cbf_handle *handle*, cbf_detector \**detector*, unsigned int *element_number*);
+int cbf_require_reference_detector (cbf_handle *handle*, cbf_detector
+\**detector*, unsigned int *element_number*);
 
 **DESCRIPTION**
 
-cbf_construct_detector constructs a detector object for detector element number *element_number* using the description in the CBF object handle and initialises the detector handle \**detector*.
+cbf_construct_detector constructs a detector object for detector element
+number *element_number* using the description in the CBF object handle
+and initialises the detector handle \**detector*.
 
-cbf_construct_reference_detector constructs a detector object for detector element number *element_number* using the description in the CBF object handle and initialises the detector handle \**detector* using the reference settings of the axes. cbf_require_reference_detector is similar, but try to force the creations of missing intermediate categories needed to construct a detector object.
+cbf_construct_reference_detector constructs a detector object for
+detector element number *element_number* using the description in the
+CBF object handle and initialises the detector handle \**detector* using
+the reference settings of the axes. cbf_require_reference_detector is
+similar, but try to force the creations of missing intermediate
+categories needed to construct a detector object.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *detector*
 
-  Pointer to the destination detector handle.  
+  Pointer to the destination detector handle.\
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.  
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.37">2.4.37 cbf_free_detector</span>
+::: {#2.4.37}
+#### 2.4.37 cbf_free_detector
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_free_detector (cbf_detector *detector*);
 
 **DESCRIPTION**
 
-cbf_free_detector destroys the detector object specified by *detector* and frees all associated memory.
+cbf_free_detector destroys the detector object specified by *detector*
+and frees all associated memory.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle to free.  
+  Detector handle to free.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.38">2.4.38 cbf_construct_positioner, cbf_construct_reference_positioner,</span>
+::: {#2.4.38}
+#### 2.4.38 cbf_construct_positioner, cbf_construct_reference_positioner
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_construct_positioner (cbf_handle *handle*, cbf_positioner \**positioner*, const char \**axis_id*);
+int cbf_construct_positioner (cbf_handle *handle*, cbf_positioner
+\**positioner*, const char \**axis_id*);
 
-int cbf_construct_reference_positioner (cbf_handle *handle*, cbf_positioner \**positioner*, const char \**axis_id*);
+int cbf_construct_reference_positioner (cbf_handle *handle*,
+cbf_positioner \**positioner*, const char \**axis_id*);
 
 **DESCRIPTION**
 
-cbf_construct_positioner constructs a positioner object for the axis given by *axis_id* using the description in the CBF object handle and initialises the positioner handle \**positioner*.
+cbf_construct_positioner constructs a positioner object for the axis
+given by *axis_id* using the description in the CBF object handle and
+initialises the positioner handle \**positioner*.
 
-cbf_construct_reference positioner constructs a positioner object for the axis given by *axis_id* using the description in the CBF object handle and initialises the detector handle \**detector* using the reference settings of the axes.
+cbf_construct_reference positioner constructs a positioner object for
+the axis given by *axis_id* using the description in the CBF object
+handle and initialises the detector handle \**detector* using the
+reference settings of the axes.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *positioner*
 
-  Pointer to the destination positioner handle.  
+  Pointer to the destination positioner handle.\
 
   *axis_id*
 
-  The identifier of the axis in the "axis" category.  
+  The identifier of the axis in the \"axis\" category.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.39">2.4.39 cbf_free_positioner</span>
+::: {#2.4.39}
+#### 2.4.39 cbf_free_positioner
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_free_positioner (cbf_positioner *positioner*);
 
 **DESCRIPTION**
 
-cbf_free_positioner destroys the positioner object specified by *positioner* and frees all associated memory.
+cbf_free_positioner destroys the positioner object specified by
+*positioner* and frees all associated memory.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *positioner*
 
-  Positioner handle to free.  
+  Positioner handle to free.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.40">2.4.40 cbf_get_beam_center, cbf_get_beam_center_fs, cbf_get_beam_center_sf,       cbf_set_beam_center, cbf_set_beam_center_fs, cbf_set_beam_center_sf,       cbf_set_reference_beam_center, cbf_set_reference_beam_center_fs, cbf_set_reference_beam_center_sf</span>
+::: {#2.4.40}
+#### 2.4.40 cbf_get_beam_center, cbf_get_beam_center_fs, cbf_get_beam_center_sf,       cbf_set_beam_center, cbf_set_beam_center_fs, cbf_set_beam_center_sf,       cbf_set_reference_beam_center, cbf_set_reference_beam_center_fs, cbf_set_reference_beam_center_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_beam_center (cbf_detector *detector*, double \**indexslow*, double \**indexfast*, double \**centerslow*, double \**centerfast*);  
-int cbf_get_beam_center_fs (cbf_detector *detector*, double \**indexfast*, double \**indexslow*, double \**centerfast*, double \**centerslow*);  
-int cbf_get_beam_center_sf (cbf_detector *detector*, double \**indexslow*, double \**indexfast*, double \**centerslow*, double \**centerfast*);
+int cbf_get_beam_center (cbf_detector *detector*, double \**indexslow*,
+double \**indexfast*, double \**centerslow*, double \**centerfast*);\
+int cbf_get_beam_center_fs (cbf_detector *detector*, double
+\**indexfast*, double \**indexslow*, double \**centerfast*, double
+\**centerslow*);\
+int cbf_get_beam_center_sf (cbf_detector *detector*, double
+\**indexslow*, double \**indexfast*, double \**centerslow*, double
+\**centerfast*);
 
-int cbf_set_beam_center (cbf_detector *detector*, double \**indexslow*, double \**indexfast*, double \**centerslow*, double \**centerfast*);  
-int cbf_set_beam_center_fs (cbf_detector *detector*, double \**indexfast*, double \**indexslow*, double \**centerfast*, double \**centerslow*);  
-int cbf_set_beam_center_sf (cbf_detector *detector*, double \**indexslow*, double \**indexfast*, double \**centerslow*, double \**centerfast*);
+int cbf_set_beam_center (cbf_detector *detector*, double \**indexslow*,
+double \**indexfast*, double \**centerslow*, double \**centerfast*);\
+int cbf_set_beam_center_fs (cbf_detector *detector*, double
+\**indexfast*, double \**indexslow*, double \**centerfast*, double
+\**centerslow*);\
+int cbf_set_beam_center_sf (cbf_detector *detector*, double
+\**indexslow*, double \**indexfast*, double \**centerslow*, double
+\**centerfast*);
 
-int cbf_set_reference_beam_center (cbf_detector *detector*, double \**indexslow*, double \**indexfast*, double \**centerslow*, double \**centerfast*);  
-int cbf_set_reference_beam_center_fs (cbf_detector *detector*, double \**indexfast*, double \**indexslow*, double \**centerfast*, double \**centerslow*);  
-int cbf_set_reference_beam_center_sf (cbf_detector *detector*, double \**indexslow*, double \**indexfast*, double \**centerslow*, double \**centerfast*);
+int cbf_set_reference_beam_center (cbf_detector *detector*, double
+\**indexslow*, double \**indexfast*, double \**centerslow*, double
+\**centerfast*);\
+int cbf_set_reference_beam_center_fs (cbf_detector *detector*, double
+\**indexfast*, double \**indexslow*, double \**centerfast*, double
+\**centerslow*);\
+int cbf_set_reference_beam_center_sf (cbf_detector *detector*, double
+\**indexslow*, double \**indexfast*, double \**centerslow*, double
+\**centerfast*);
 
 **DESCRIPTION**
 
-cbf_get_beam_center sets \**centerfast* and \**centerslow* to the displacements in mm along the detector axes from pixel (0, 0) to the point at which the beam intersects the detector and \**indexfast* and \**indexslow* to the corresponding indices. cbf_set_beam_center sets the offsets in the axis category for the detector element axis with precedence 1 to place the beam center at the position given in mm by \**centerfast* and \**centerslow* as the displacements in mm along the detector axes from pixel (0, 0) to the point at which the beam intersects the detector at the indices given \**indexfast* and \**indexslow*. cbf_set_reference_beam_center sets the displacments in the array_structure_list_axis category to place the beam center at the position given in mm by \**centerfast* and \**centerslow* as the displacements in mm along the detector axes from pixel (0, 0) to the point at which the beam intersects the detector at the indices given by \**indexfast* and \**indexslow*. In order to achieve consistent results, a reference detector should be used for *detector* to have all axes at their reference settings.
+cbf_get_beam_center sets \**centerfast* and \**centerslow* to the
+displacements in mm along the detector axes from pixel (0, 0) to the
+point at which the beam intersects the detector and \**indexfast* and
+\**indexslow* to the corresponding indices. cbf_set_beam_center sets the
+offsets in the axis category for the detector element axis with
+precedence 1 to place the beam center at the position given in mm by
+\**centerfast* and \**centerslow* as the displacements in mm along the
+detector axes from pixel (0, 0) to the point at which the beam
+intersects the detector at the indices given \**indexfast* and
+\**indexslow*. cbf_set_reference_beam_center sets the displacments in
+the array_structure_list_axis category to place the beam center at the
+position given in mm by \**centerfast* and \**centerslow* as the
+displacements in mm along the detector axes from pixel (0, 0) to the
+point at which the beam intersects the detector at the indices given by
+\**indexfast* and \**indexslow*. In order to achieve consistent results,
+a reference detector should be used for *detector* to have all axes at
+their reference settings.
 
-Note that the precedence 1 axis is the fastest axis, so that \**centerfast* and \**indexfast* are the fast axis components of the center and \**centerslow* and \**indexslow* are the slow axis components of the center.
+Note that the precedence 1 axis is the fastest axis, so that
+\**centerfast* and \**indexfast* are the fast axis components of the
+center and \**centerslow* and \**indexslow* are the slow axis components
+of the center.
 
-The \_fs calls give the displacments in a fast-to-slow order. The calls with no suffix and the calls \_sf calls give the displacements in slow-to-fast order
+The \_fs calls give the displacments in a fast-to-slow order. The calls
+with no suffix and the calls \_sf calls give the displacements in
+slow-to-fast order
 
-Any of the destination pointers may be NULL for getting the beam center. For setting the beam axis, either the indices of the center must not be NULL.
+Any of the destination pointers may be NULL for getting the beam center.
+For setting the beam axis, either the indices of the center must not be
+NULL.
 
-The indices are non-negative for beam centers within the detector surface, but the center for an axis with a negative increment will be negative for a beam center within the detector surface.
+The indices are non-negative for beam centers within the detector
+surface, but the center for an axis with a negative increment will be
+negative for a beam center within the detector surface.
 
-For cbf_set_beam_center if the diffrn_data_frame category exists with a row for the corresponding element id, the values will be set for \_diffrn_data_frame.center_fast and \_diffrn_data_frame.center_slow in millimetres and the value of \_diffrn_data_frame.center_units will be set to 'mm'.
+For cbf_set_beam_center if the diffrn_data_frame category exists with a
+row for the corresponding element id, the values will be set for
+\_diffrn_data_frame.center_fast and \_diffrn_data_frame.center_slow in
+millimetres and the value of \_diffrn_data_frame.center_units will be
+set to \'mm\'.
 
-For cbf_set_reference_beam_center if the diffrn_detector_element category exists with a row for the corresponding element id, the values will be set for \_diffrn_detector_element.reference_center_fast and \_diffrn_detector_element.reference_center_slow in millimetres and the value of \_diffrn_detector_element.reference_units will be set to 'mm'.
+For cbf_set_reference_beam_center if the diffrn_detector_element
+category exists with a row for the corresponding element id, the values
+will be set for \_diffrn_detector_element.reference_center_fast and
+\_diffrn_detector_element.reference_center_slow in millimetres and the
+value of \_diffrn_detector_element.reference_units will be set to
+\'mm\'.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *indexfast*
 
-  Pointer to the destination fast index.  
+  Pointer to the destination fast index.\
 
   *indexslow*
 
-  Pointer to the destination slow index.  
+  Pointer to the destination slow index.\
 
   *centerfast*
 
-  Pointer to the destination displacement along the fast axis.  
+  Pointer to the destination displacement along the fast axis.\
 
   *centerslow*
 
-  Pointer to the destination displacement along the slow axis.  
+  Pointer to the destination displacement along the slow axis.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.41">2.4.41 cbf_get_detector_distance</span>
+::: {#2.4.41}
+#### 2.4.41 cbf_get_detector_distance
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_detector_distance (cbf_detector *detector*, double \**distance*);
+int cbf_get_detector_distance (cbf_detector *detector*, double
+\**distance*);
 
 **DESCRIPTION**
 
-cbf_get_detector_distance sets \**distance* to the nearest distance from the sample position to the detector plane.
+cbf_get_detector_distance sets \**distance* to the nearest distance from
+the sample position to the detector plane.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *distance*
 
-  Pointer to the destination distance.  
+  Pointer to the destination distance.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.42">2.4.42 cbf_get_detector_normal</span>
+::: {#2.4.42}
+#### 2.4.42 cbf_get_detector_normal
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_detector_normal (cbf_detector *detector*, double \**normal1*, double \**normal2*, double \**normal3*);
+int cbf_get_detector_normal (cbf_detector *detector*, double
+\**normal1*, double \**normal2*, double \**normal3*);
 
 **DESCRIPTION**
 
-cbf_get_detector_normal sets \**normal1*, \**normal2*, and \**normal3* to the 3 components of the of the normal vector to the detector plane. The vector is normalized.
+cbf_get_detector_normal sets \**normal1*, \**normal2*, and \**normal3*
+to the 3 components of the of the normal vector to the detector plane.
+The vector is normalized.
 
 Any of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *normal1*
 
-  Pointer to the destination x component of the normal vector.  
+  Pointer to the destination x component of the normal vector.\
 
   *normal2*
 
-  Pointer to the destination y component of the normal vector.  
+  Pointer to the destination y component of the normal vector.\
 
   *normal3*
 
-  Pointer to the destination z component of the normal vector.  
+  Pointer to the destination z component of the normal vector.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.43">2.4.43 cbf_get_detector_axis_slow, cbf_get_detector_axis_fast, cbf_get_detector_axes, cbf_get_detector_axes_fs, cbf_get_detector_axes_sf, cbf_get_detector_surface_axes</span>
+::: {#2.4.43}
+#### 2.4.43 cbf_get_detector_axis_slow, cbf_get_detector_axis_fast, cbf_get_detector_axes, cbf_get_detector_axes_fs, cbf_get_detector_axes_sf, cbf_get_detector_surface_axes
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_detector_axis_slow (cbf_detector *detector*, double \**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*);  
-int cbf_get_detector_axis_fast (cbf_detector *detector*, double \**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*);  
-int cbf_get_detector_axes (cbf_detector *detector*, double \**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*, double \**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*);  
-int cbf_get_detector_axes_fs (cbf_detector *detector*, double \**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*, double \**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*);  
-int cbf_get_detector_axes_sf (cbf_detector *detector*, double \**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*, double \**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*);  
-int cbf_get_detector_surface_axes(cbf_detector *detector*, const char \* \* *axis_id1*, const char \* \* *axis_id2*);  
+int cbf_get_detector_axis_slow (cbf_detector *detector*, double
+\**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*);\
+int cbf_get_detector_axis_fast (cbf_detector *detector*, double
+\**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*);\
+int cbf_get_detector_axes (cbf_detector *detector*, double
+\**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*, double
+\**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*);\
+int cbf_get_detector_axes_fs (cbf_detector *detector*, double
+\**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*, double
+\**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*);\
+int cbf_get_detector_axes_sf (cbf_detector *detector*, double
+\**slowaxis1*, double \**slowaxis2*, double \**slowaxis3*, double
+\**fastaxis1*, double \**fastaxis2*, double \**fastaxis3*);\
+int cbf_get_detector_surface_axes(cbf_detector *detector*, const char \*
+\* *axis_id1*, const char \* \* *axis_id2*);\
 
 **DESCRIPTION**
 
-cbf_get_detector_axis_slow sets \**slowaxis1*, \**slowaxis2*, and \**slowaxis3* to the 3 components of the slow axis of the specified detector at the current settings of all axes. cbf_get_detector_axis_slow sets \**fastaxis1*, \**fastaxis2*, and \**fastaxis3* to the 3 components of the fast axis of the specified detector at the current settings of all axes. cbf_get_detector_axes, cbf_get_detector_axes_fs and int cbf_get_detector_axes_sf set \**slowaxis1*, \**slowaxis2*, and \**slowaxis3* to the 3 components of the slow axis and \**fastaxis1*, \**fastaxis2*, and \**fastaxis3* to the 3 components of the fast axis of the specified detector at the current settings of all axes. cbf_get_detector_surface_axes sets \**axis_id1* and \**axis_id2* to the names of the two surface axes of the detector or ".",
+cbf_get_detector_axis_slow sets \**slowaxis1*, \**slowaxis2*, and
+\**slowaxis3* to the 3 components of the slow axis of the specified
+detector at the current settings of all axes. cbf_get_detector_axis_slow
+sets \**fastaxis1*, \**fastaxis2*, and \**fastaxis3* to the 3 components
+of the fast axis of the specified detector at the current settings of
+all axes. cbf_get_detector_axes, cbf_get_detector_axes_fs and int
+cbf_get_detector_axes_sf set \**slowaxis1*, \**slowaxis2*, and
+\**slowaxis3* to the 3 components of the slow axis and \**fastaxis1*,
+\**fastaxis2*, and \**fastaxis3* to the 3 components of the fast axis of
+the specified detector at the current settings of all axes.
+cbf_get_detector_surface_axes sets \**axis_id1* and \**axis_id2* to the
+names of the two surface axes of the detector or \".\",
 
 Any of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
@@ -5878,168 +7261,214 @@ Any of the destination pointers may be NULL.
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.44">2.4.44 cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs, cbf_get_pixel_coordinates_sf</span>
+::: {#2.4.44}
+#### 2.4.44 cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs, cbf_get_pixel_coordinates_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_pixel_coordinates (cbf_detector *detector*, double *indexslow*, double *indexfast*, double \**coordinate1*, double \**coordinate2*, double \**coordinate3*);  
-int cbf_get_pixel_coordinates_fs (cbf_detector *detector*, double *indexfast*, double *indexslow*, double \**coordinate1*, double \**coordinate2*, double \**coordinate3*);  
-int cbf_get_pixel_coordinates_sf (cbf_detector *detector*, double *indexslow*, double *indexfast*, double \**coordinate1*, double \**coordinate2*, double \**coordinate3*);
+int cbf_get_pixel_coordinates (cbf_detector *detector*, double
+*indexslow*, double *indexfast*, double \**coordinate1*, double
+\**coordinate2*, double \**coordinate3*);\
+int cbf_get_pixel_coordinates_fs (cbf_detector *detector*, double
+*indexfast*, double *indexslow*, double \**coordinate1*, double
+\**coordinate2*, double \**coordinate3*);\
+int cbf_get_pixel_coordinates_sf (cbf_detector *detector*, double
+*indexslow*, double *indexfast*, double \**coordinate1*, double
+\**coordinate2*, double \**coordinate3*);
 
 **DESCRIPTION**
 
-cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs and cbf_get_pixel_coordinates_sf ses \**coordinate1*, \**coordinate2*, and \**coordinate3* to the vector position of pixel (*indexfast*, *indexslow*) on the detector surface. If *indexslow* and *indexfast* are integers then the coordinates correspond to the center of a pixel.
+cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs and
+cbf_get_pixel_coordinates_sf ses \**coordinate1*, \**coordinate2*, and
+\**coordinate3* to the vector position of pixel (*indexfast*,
+*indexslow*) on the detector surface. If *indexslow* and *indexfast* are
+integers then the coordinates correspond to the center of a pixel.
 
 Any of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *indexslow*
 
-  Slow index.  
+  Slow index.\
 
   *indexfast*
 
-  Fast index.  
+  Fast index.\
 
   *coordinate1*
 
-  Pointer to the destination x component.  
+  Pointer to the destination x component.\
 
   *coordinate2*
 
-  Pointer to the destination y component.  
+  Pointer to the destination y component.\
 
   *coordinate3*
 
-  Pointer to the destination z component.  
+  Pointer to the destination z component.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.45">2.4.45 cbf_get_pixel_normal, cbf_get_pixel_normal_fs, cbf_get_pixel_normal_sf</span>
+::: {#2.4.45}
+#### 2.4.45 cbf_get_pixel_normal, cbf_get_pixel_normal_fs, cbf_get_pixel_normal_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_pixel_normal (cbf_detector *detector*, double *indexslow*, double *indexfast*, double \**normal1*, double \**normal2*, double \**normal3*);  
-int cbf_get_pixel_normal_fs (cbf_detector *detector*, double *indexfast*, double *indexslow*, double \**normal1*, double \**normal2*, double \**normal3*);  
-int cbf_get_pixel_normal (cbf_detector *detector*, double *indexslow*, double *indexfast*, double \**normal1*, double \**normal2*, double \**normal3*);
+int cbf_get_pixel_normal (cbf_detector *detector*, double *indexslow*,
+double *indexfast*, double \**normal1*, double \**normal2*, double
+\**normal3*);\
+int cbf_get_pixel_normal_fs (cbf_detector *detector*, double
+*indexfast*, double *indexslow*, double \**normal1*, double \**normal2*,
+double \**normal3*);\
+int cbf_get_pixel_normal (cbf_detector *detector*, double *indexslow*,
+double *indexfast*, double \**normal1*, double \**normal2*, double
+\**normal3*);
 
 **DESCRIPTION**
 
-cbf_get_detector_normal, cbf_get_pixel_normal_fs and cbf_get_pixel_normal_sf set \**normal1*, \**normal2*, and \**normal3* to the 3 components of the of the normal vector to the pixel at (*indexfast*, *indexslow*). The vector is normalized.
+cbf_get_detector_normal, cbf_get_pixel_normal_fs and
+cbf_get_pixel_normal_sf set \**normal1*, \**normal2*, and \**normal3* to
+the 3 components of the of the normal vector to the pixel at
+(*indexfast*, *indexslow*). The vector is normalized.
 
 Any of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *indexslow*
 
-  Slow index.  
+  Slow index.\
 
   *indexfast*
 
-  Fast index.  
+  Fast index.\
 
   *normal1*
 
-  Pointer to the destination x component of the normal vector.  
+  Pointer to the destination x component of the normal vector.\
 
   *normal2*
 
-  Pointer to the destination y component of the normal vector.  
+  Pointer to the destination y component of the normal vector.\
 
   *normal3*
 
-  Pointer to the destination z component of the normal vector.  
+  Pointer to the destination z component of the normal vector.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.46">2.4.46 cbf_get_pixel_area, cbf_get_pixel_area_fs, cbf_get_pixel_area_sf</span>
+::: {#2.4.46}
+#### 2.4.46 cbf_get_pixel_area, cbf_get_pixel_area_fs, cbf_get_pixel_area_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_pixel_area (cbf_detector *detector*, double *indexslow*, double *indexfast*, double \**area*, double \**projected_area*);  
-int cbf_get_pixel_area_fs(cbf_detector *detector*, double *indexfast*, double *indexslow*, double \**area*, double \**projected_area*);  
-int cbf_get_pixel_area_sf(cbf_detector *detector*, double *indexslow*, double *indexfast*, double \**area*, double \**projected_area*);  
+int cbf_get_pixel_area (cbf_detector *detector*, double *indexslow*,
+double *indexfast*, double \**area*, double \**projected_area*);\
+int cbf_get_pixel_area_fs(cbf_detector *detector*, double *indexfast*,
+double *indexslow*, double \**area*, double \**projected_area*);\
+int cbf_get_pixel_area_sf(cbf_detector *detector*, double *indexslow*,
+double *indexfast*, double \**area*, double \**projected_area*);\
 
 **DESCRIPTION**
 
-cbf_get_pixel_area, cbf_get_pixel_area_fs and cbf_get_pixel_area_sf set \**area* to the area of the pixel at (*indexfast*, *indexslow*) on the detector surface and \**projected_area* to the apparent area of the pixel as viewed from the sample position, with *indexslow* being the slow axis and *indexfast* being the fast axis.
+cbf_get_pixel_area, cbf_get_pixel_area_fs and cbf_get_pixel_area_sf set
+\**area* to the area of the pixel at (*indexfast*, *indexslow*) on the
+detector surface and \**projected_area* to the apparent area of the
+pixel as viewed from the sample position, with *indexslow* being the
+slow axis and *indexfast* being the fast axis.
 
 Either of the destination pointers may be NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *indexfast*
 
-  Fast index.  
+  Fast index.\
 
   *indexslow*
 
-  Slow index.  
+  Slow index.\
 
   *area*
 
-  Pointer to the destination area in mm2.  
+  Pointer to the destination area in mm2.\
 
   *projected_area*
 
-  Pointer to the destination apparent area in mm2.  
+  Pointer to the destination apparent area in mm2.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.47">2.4.47 cbf_get_pixel_size, cbf_get_pixel_size_fs, cbf_get_pixel_size_sf</span>
+::: {#2.4.47}
+#### 2.4.47 cbf_get_pixel_size, cbf_get_pixel_size_fs, cbf_get_pixel_size_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_pixel_size (cbf_handle *handle*, unsigned int *element_number*, int *axis_number*, double \**psize*);  
-int cbf_get_pixel_size_fs(cbf_handle *handle*, unsigned int *element_number*, int *axis_number*, double \**psize*);  
-int cbf_get_pixel_size_sf(cbf_handle *handle*, unsigned int *element_number*, int *axis_number*, double \**psize*);
+int cbf_get_pixel_size (cbf_handle *handle*, unsigned int
+*element_number*, int *axis_number*, double \**psize*);\
+int cbf_get_pixel_size_fs(cbf_handle *handle*, unsigned int
+*element_number*, int *axis_number*, double \**psize*);\
+int cbf_get_pixel_size_sf(cbf_handle *handle*, unsigned int
+*element_number*, int *axis_number*, double \**psize*);
 
 **DESCRIPTION**
 
-cbf_get_pixel_size and cbf_get_pixel_size_sf set \**psize* to point to the double value in millimeters of the axis *axis_number* of the detector element *element_number*. The *axis_number* is numbered from 1, starting with the slowest axis. cbf_get_pixel_size_fs sets \**psize* to point to the double value in millimeters of the axis *axis_number* of the detector element *element_number*. The *axis_number* is numbered from 1, starting with the fastest axis.
+cbf_get_pixel_size and cbf_get_pixel_size_sf set \**psize* to point to
+the double value in millimeters of the axis *axis_number* of the
+detector element *element_number*. The *axis_number* is numbered from 1,
+starting with the slowest axis. cbf_get_pixel_size_fs sets \**psize* to
+point to the double value in millimeters of the axis *axis_number* of
+the detector element *element_number*. The *axis_number* is numbered
+from 1, starting with the fastest axis.
 
-If a negative axis number is given, the order of axes is reversed, so that -1 specifies the slowest axis for cbf_get_pixel_size_fs and the fastest axis for cbf_get_pixel_size_sf.
+If a negative axis number is given, the order of axes is reversed, so
+that -1 specifies the slowest axis for cbf_get_pixel_size_fs and the
+fastest axis for cbf_get_pixel_size_sf.
 
-If the pixel size is not given explcitly in the "array_element_size" category, the function returns CBF_NOTFOUND.
+If the pixel size is not given explcitly in the \"array_element_size\"
+category, the function returns CBF_NOTFOUND.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -6047,11 +7476,14 @@ If the pixel size is not given explcitly in the "array_element_size" category, t
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *axis_number*
 
-  The number of the axis, starting from 1 for the fastest for cbf_get_pixel_size and cbf_get_pixel_size_fs and the slowest for cbf_get_pixel_size_sf.
+  The number of the axis, starting from 1 for the fastest for
+cbf_get_pixel_size and cbf_get_pixel_size_fs and the slowest for
+cbf_get_pixel_size_sf.
 
   *psize*
 
@@ -6060,32 +7492,55 @@ If the pixel size is not given explcitly in the "array_element_size" category, t
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.48">2.4.48 cbf_set_pixel_size, cbf_set_pixel_size_fs, cbf_set_pixel_size_sf</span>
+::: {#2.4.48}
+#### 2.4.48 cbf_set_pixel_size, cbf_set_pixel_size_fs, cbf_set_pixel_size_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_pixel_size (cbf_handle *handle*, unsigned int *element_number*, int *axis_number*, double *psize*);  
-int cbf_set_pixel_size_fs(cbf_handle *handle*, unsigned int *element_number*, int *axis_number*, double *psize*);  
-int cbf_set_pixel_size_sf(cbf_handle *handle*, unsigned int *element_number*, int *axis_number*, double *psize*);  
+int cbf_set_pixel_size (cbf_handle *handle*, unsigned int
+*element_number*, int *axis_number*, double *psize*);\
+int cbf_set_pixel_size_fs(cbf_handle *handle*, unsigned int
+*element_number*, int *axis_number*, double *psize*);\
+int cbf_set_pixel_size_sf(cbf_handle *handle*, unsigned int
+*element_number*, int *axis_number*, double *psize*);\
 
 **DESCRIPTION**
 
-cbf_set_pixel_size and cbf_set_pixel_size_sf set the item in the &quote;size&quote; column of the "array_structure_list" category at the row which matches axis *axis_number* of the detector element *element_number* converting the double pixel size *psize* from meters to millimeters in storing it in the "size" column for the axis *axis_number* of the detector element *element_number*. The *axis_number* is numbered from 1, starting with the slowest axis. cbf_set_pixel_size_fs sets the item in the &quote;size&quote; column of the "array_structure_list" category at the row which matches axis *axis_number* of the detector element *element_number* converting the double pixel size *psize* from meters to millimeters in storing it in the "size" column for the axis *axis_number* of the detector element *element_number*. The *axis_number* is numbered from 1, starting with the fastest axis.
+cbf_set_pixel_size and cbf_set_pixel_size_sf set the item in the
+&quote;size&quote; column of the \"array_structure_list\" category at
+the row which matches axis *axis_number* of the detector element
+*element_number* converting the double pixel size *psize* from meters to
+millimeters in storing it in the \"size\" column for the axis
+*axis_number* of the detector element *element_number*. The
+*axis_number* is numbered from 1, starting with the slowest axis.
+cbf_set_pixel_size_fs sets the item in the &quote;size&quote; column of
+the \"array_structure_list\" category at the row which matches axis
+*axis_number* of the detector element *element_number* converting the
+double pixel size *psize* from meters to millimeters in storing it in
+the \"size\" column for the axis *axis_number* of the detector element
+*element_number*. The *axis_number* is numbered from 1, starting with
+the fastest axis.
 
-If a negative axis number is given, the order of axes is reversed, so that -1 specifies the slowest axis for cbf_get_pixel_size_fs and the fastest axis for cbf_get_pixel_size_sf.
+If a negative axis number is given, the order of axes is reversed, so
+that -1 specifies the slowest axis for cbf_get_pixel_size_fs and the
+fastest axis for cbf_get_pixel_size_sf.
 
-If the "array_structure_list" category does not already exist, it is created.
+If the \"array_structure_list\" category does not already exist, it is
+created.
 
-If the appropriate row in the "array_structure_list" catgeory does not already exist, it is created.
+If the appropriate row in the \"array_structure_list\" catgeory does not
+already exist, it is created.
 
-If the pixel size is not given explcitly in the "array_element_size category", the function returns CBF_NOTFOUND.
+If the pixel size is not given explcitly in the \"array_element_size
+category\", the function returns CBF_NOTFOUND.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -6093,7 +7548,8 @@ If the pixel size is not given explcitly in the "array_element_size category", t
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *axis_number*
 
@@ -6106,30 +7562,45 @@ If the pixel size is not given explcitly in the "array_element_size category", t
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.49">2.4.49 cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_fs, cbf_get_inferred_pixel_size_sf</span>
+::: {#2.4.49}
+#### 2.4.49 cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_fs, cbf_get_inferred_pixel_size_sf
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_inferred_pixel_size (cbf_detector *detector*, int *axis_number*, double \**psize*);  
-int cbf_get_inferred_pixel_size_fs(cbf_detector *detector*, int *axis_number*, double \**psize*);  
-int cbf_get_inferred_pixel_size_sf(cbf_detector *detector*, int *axis_number*, double \**psize*);
+int cbf_get_inferred_pixel_size (cbf_detector *detector*, int
+*axis_number*, double \**psize*);\
+int cbf_get_inferred_pixel_size_fs(cbf_detector *detector*, int
+*axis_number*, double \**psize*);\
+int cbf_get_inferred_pixel_size_sf(cbf_detector *detector*, int
+*axis_number*, double \**psize*);
 
 **DESCRIPTION**
 
-cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_sf set \**psize* to point to the double value in millimeters of the pixel size for the axis *axis_number* value. The slow index is treated as axis 1 and the next faster index is treated as axis 2. cbf_get_inferred_pixel_size_fs sets \**psize* to point to the double value in millimeters of the pixel size for the axis *axis_number* value. The fast index is treated as axis 1 and the next slower index is treated as axis 2.
+cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_sf set
+\**psize* to point to the double value in millimeters of the pixel size
+for the axis *axis_number* value. The slow index is treated as axis 1
+and the next faster index is treated as axis 2.
+cbf_get_inferred_pixel_size_fs sets \**psize* to point to the double
+value in millimeters of the pixel size for the axis *axis_number* value.
+The fast index is treated as axis 1 and the next slower index is treated
+as axis 2.
 
-If the axis number is negative, the axes are used in the reverse order so that an *axis_number* of -1 indicates the fast axes in a call to cbf_get_inferred_pixel_size or cbf_get_inferred_pixel_size_sf and indicates the fast axis in a call to cbf_get_inferred_pixel_size_fs.
+If the axis number is negative, the axes are used in the reverse order
+so that an *axis_number* of -1 indicates the fast axes in a call to
+cbf_get_inferred_pixel_size or cbf_get_inferred_pixel_size_sf and
+indicates the fast axis in a call to cbf_get_inferred_pixel_size_fs.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *detector*
 
-  Detector handle.  
+  Detector handle.\
 
   *axis_number*
 
@@ -6137,27 +7608,37 @@ If the axis number is negative, the axes are used in the reverse order so that a
 
   *psize*
 
-  Pointer to the destination pizel size in mm.  
+  Pointer to the destination pizel size in mm.\
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.50">2.4.50 cbf_get_unit_cell</span>
+::: {#2.4.50}
+#### 2.4.50 cbf_get_unit_cell
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_unit_cell (cbf_handle *handle*, double *cell*\[6\], double *cell_esd*\[6\] );
+int cbf_get_unit_cell (cbf_handle *handle*, double *cell*\[6\], double
+*cell_esd*\[6\] );
 
 **DESCRIPTION**
 
-cbf_get_unit_cell sets *cell*\[0:2\] to the double values of the cell edge lengths a, b and c in Ångstroms, *cell*\[3:5\] to the double values of the cell angles α, β and γ in degrees, *cell_esd*\[0:2\] to the double values of the estimated strandard deviations of the cell edge lengths a, b and c in Ångstroms, *cell_esd*\[3:5\] to the double values of the estimated standard deviations of the the cell angles α, β and γ in degrees.
+cbf_get_unit_cell sets *cell*\[0:2\] to the double values of the cell
+edge lengths a, b and c in Ångstroms, *cell*\[3:5\] to the double values
+of the cell angles α, β and γ in degrees, *cell_esd*\[0:2\] to the
+double values of the estimated strandard deviations of the cell edge
+lengths a, b and c in Ångstroms, *cell_esd*\[3:5\] to the double values
+of the estimated standard deviations of the the cell angles α, β and γ
+in degrees.
 
-The values returned are retrieved from the first row of the "cell" category. The value of "\_cell.entry_id" is ignored.
+The values returned are retrieved from the first row of the \"cell\"
+category. The value of \"\_cell.entry_id\" is ignored.
 
 *cell* or *cell_esd* may be NULL.
 
@@ -6165,13 +7646,14 @@ If *cell* is NULL, the cell parameters are not retrieved.
 
 If *cell_esd* is NULL, the cell parameter esds are not retrieved.
 
-If the "cell" category is present, but some of the values are missing, zeros are returned for the missing values.
+If the \"cell\" category is present, but some of the values are missing,
+zeros are returned for the missing values.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *cell*
 
@@ -6179,36 +7661,50 @@ If the "cell" category is present, but some of the values are missing, zeros are
 
   *cell_esd*
 
-  Pointer to the destination array of 6 doubles for the cell parameter esds.  
+  Pointer to the destination array of 6 doubles for the cell parameter
+esds.\
 
 **RETURN VALUE**
 
-Returns an error code on failure or 0 for success. No errors is returned for missing values if the "cell" category exists.
+Returns an error code on failure or 0 for success. No errors is returned
+for missing values if the \"cell\" category exists.
 
 **SEE ALSO**
 
-[2.4.51 cbf_set_unit_cell  
-](#2.4.51)[2.4.52 cbf_get_reciprocal_cell  
-](#2.4.52)[2.4.53 cbf_set_reciprocal_cell  
-](#2.4.53)[2.4.54 cbf_compute_cell_volume  
-](#2.4.54)[2.4.55 cbf_compute_reciprocal_cell  
-](#2.4.55)
+[2.4.51 cbf_set_unit_cell\
+](#2.4.51)[2.4.52 cbf_get_reciprocal_cell\
+](#2.4.52)[2.4.53 cbf_set_reciprocal_cell\
+](#2.4.53)[2.4.54 cbf_compute_cell_volume\
+](#2.4.54)
+
+2.4.55 cbf_compute_reciprocal_cell\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.51">2.4.51 cbf_set_unit_cell</span>
+::: {#2.4.51}
+#### 2.4.51 cbf_set_unit_cell
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_unit_cell (cbf_handle *handle*, double *cell*\[6\], double *cell_esd*\[6\] );
+int cbf_set_unit_cell (cbf_handle *handle*, double *cell*\[6\], double
+*cell_esd*\[6\] );
 
 **DESCRIPTION**
 
-cbf_set_unit_cell sets the cell parameters to the double values given in *cell*\[0:2\] for the cell edge lengths a, b and c in Ångstroms, the double values given in *cell*\[3:5\] for the cell angles α, β and γ in degrees, the double values given in *cell_esd*\[0:2\] for the estimated strandard deviations of the cell edge lengths a, b and c in Ångstroms, and the double values given in *cell_esd*\[3:5\] for the estimated standard deviations of the the cell angles α, β and γ in degrees.
+cbf_set_unit_cell sets the cell parameters to the double values given in
+*cell*\[0:2\] for the cell edge lengths a, b and c in Ångstroms, the
+double values given in *cell*\[3:5\] for the cell angles α, β and γ in
+degrees, the double values given in *cell_esd*\[0:2\] for the estimated
+strandard deviations of the cell edge lengths a, b and c in Ångstroms,
+and the double values given in *cell_esd*\[3:5\] for the estimated
+standard deviations of the the cell angles α, β and γ in degrees.
 
-The values are placed in the first row of the "cell" category. If no value has been given for "\_cell.entry_id", it is set to the value of the "diffrn.id" entry of the current data block.
+The values are placed in the first row of the \"cell\" category. If no
+value has been given for \"\_cell.entry_id\", it is set to the value of
+the \"diffrn.id\" entry of the current data block.
 
 *cell* or *cell_esd* may be NULL.
 
@@ -6216,13 +7712,14 @@ If *cell* is NULL, the cell parameters are not set.
 
 If *cell_esd* is NULL, the cell parameter esds are not set.
 
-If the "cell" category is not present, it is created. If any of the necessary columns are not present, they are created.
+If the \"cell\" category is not present, it is created. If any of the
+necessary columns are not present, they are created.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *cell*
 
@@ -6230,7 +7727,7 @@ If the "cell" category is not present, it is created. If any of the necessary co
 
   *cell_esd*
 
-  Pointer to the array of 6 doubles for the cell parameter esds.  
+  Pointer to the array of 6 doubles for the cell parameter esds.\
 
 **RETURN VALUE**
 
@@ -6238,81 +7735,110 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.4.50 cbf_get_unit_cell  
-](#2.4.50)[2.4.52 cbf_get_reciprocal_cell  
-](#2.4.52)[2.4.53 cbf_set_reciprocal_cell  
-](#2.4.53)[2.4.54 cbf_compute_cell_volume  
-](#2.4.54)[2.4.55 cbf_compute_reciprocal_cell  
-](#2.4.55)
+[2.4.50 cbf_get_unit_cell\
+](#2.4.50)[2.4.52 cbf_get_reciprocal_cell\
+](#2.4.52)[2.4.53 cbf_set_reciprocal_cell\
+](#2.4.53)[2.4.54 cbf_compute_cell_volume\
+](#2.4.54)
+
+2.4.55 cbf_compute_reciprocal_cell\
+:::
 
 ------------------------------------------------------------------------
 
-**SEE ALSO**
-
-#### <span id="2.4.52">2.4.52 cbf_get_reciprocal_cell</span>
+::: {#2.4.52}
+#### 2.4.52 cbf_get_reciprocal_cell
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_reciprocal_cell (cbf_handle *handle*, double *cell*\[6\], double *cell_esd*\[6\] );
+int cbf_get_reciprocal_cell (cbf_handle *handle*, double *cell*\[6\],
+double *cell_esd*\[6\] );
 
 **DESCRIPTION**
 
-cbf_get_reciprocal_cell sets *cell*\[0:2\] to the double values of the reciprocal cell edge lengths a<sup>\*</sup>, b<sup>\*</sup> and c<sup>\*</sup> in Ångstroms<sup>-1</sup>, *cell*\[3:5\] to the double values of the reciprocal cell angles α<sup>\*</sup>, β<sup>\*</sup> and γ<sup>\*</sup> in degrees, *cell_esd*\[0:2\] to the double values of the estimated strandard deviations of the reciprocal cell edge lengths a<sup>\*</sup>, b<sup>\*</sup> and c<sup>\*</sup> in Ångstroms<sup>-1</sup>, *cell_esd*\[3:5\] to the double values of the estimated standard deviations of the the reciprocal cell angles α<sup>\*</sup>, β<sup>\*</sup> and γ<sup>\*</sup> in degrees.
+cbf_get_reciprocal_cell sets *cell*\[0:2\] to the double values of the
+reciprocal cell edge lengths a^\*^, b^\*^ and c^\*^ in Ångstroms^-1^,
+*cell*\[3:5\] to the double values of the reciprocal cell angles α^\*^,
+β^\*^ and γ^\*^ in degrees, *cell_esd*\[0:2\] to the double values of
+the estimated strandard deviations of the reciprocal cell edge lengths
+a^\*^, b^\*^ and c^\*^ in Ångstroms^-1^, *cell_esd*\[3:5\] to the double
+values of the estimated standard deviations of the the reciprocal cell
+angles α^\*^, β^\*^ and γ^\*^ in degrees.
 
-The values returned are retrieved from the first row of the "cell" category. The value of "\_cell.entry_id" is ignored.
+The values returned are retrieved from the first row of the \"cell\"
+category. The value of \"\_cell.entry_id\" is ignored.
 
 *cell* or *cell_esd* may be NULL.
 
 If *cell* is NULL, the reciprocal cell parameters are not retrieved.
 
-If *cell_esd* is NULL, the reciprocal cell parameter esds are not retrieved.
+If *cell_esd* is NULL, the reciprocal cell parameter esds are not
+retrieved.
 
-If the "cell" category is present, but some of the values are missing, zeros are returned for the missing values.
+If the \"cell\" category is present, but some of the values are missing,
+zeros are returned for the missing values.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *cell*
 
-  Pointer to the destination array of 6 doubles for the reciprocal cell parameters.
+  Pointer to the destination array of 6 doubles for the reciprocal cell
+parameters.
 
   *cell_esd*
 
-  Pointer to the destination array of 6 doubles for the reciprocal cell parameter esds.  
+  Pointer to the destination array of 6 doubles for the reciprocal cell
+parameter esds.\
 
 **RETURN VALUE**
 
-Returns an error code on failure or 0 for success. No errors is returned for missing values if the "cell" category exists.
+Returns an error code on failure or 0 for success. No errors is returned
+for missing values if the \"cell\" category exists.
 
 **SEE ALSO**
 
-[2.4.50 cbf_get_unit_cell  
-](#2.4.50)[2.4.51 cbf_set_unit_cell  
-](#2.4.51)[2.4.53 cbf_set_reciprocal_cell  
-](#2.4.53)[2.4.54 cbf_compute_cell_volume  
-](#2.4.54)[2.4.55 cbf_compute_reciprocal_cell  
-](#2.4.55)
+[2.4.50 cbf_get_unit_cell\
+](#2.4.50)[2.4.51 cbf_set_unit_cell\
+](#2.4.51)[2.4.53 cbf_set_reciprocal_cell\
+](#2.4.53)[2.4.54 cbf_compute_cell_volume\
+](#2.4.54)
+
+2.4.55 cbf_compute_reciprocal_cell\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.53">2.4.53 cbf_set_reciprocal_cell</span>
+::: {#2.4.53}
+#### 2.4.53 cbf_set_reciprocal_cell
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_set_reciprocal_cell (cbf_handle *handle*, double *cell*\[6\], double *cell_esd*\[6\] );
+int cbf_set_reciprocal_cell (cbf_handle *handle*, double *cell*\[6\],
+double *cell_esd*\[6\] );
 
 **DESCRIPTION**
 
-cbf_set_reciprocal_cell sets the reciprocal cell parameters to the double values given in *cell*\[0:2\] for the reciprocal cell edge lengths a<sup>\*</sup>, b<sup>\*</sup> and c<sup>\*</sup> in Ångstroms<sup>-1</sup>, the double values given in *cell*\[3:5\] for the reciprocal cell angles α<sup>\*</sup>, β<sup>\*</sup> and γ<sup>\*</sup> in degrees, the double values given in *cell_esd*\[0:2\] for the estimated strandard deviations of the reciprocal cell edge lengths a<sup>\*</sup>, b<sup>\*</sup> and c<sup>\*</sup> in Ångstroms, and the double values given in *cell_esd*\[3:5\] for the estimated standard deviations of the reciprocal cell angles α<sup>\*</sup>, β<sup>\*</sup> and γ<sup>\*</sup> in degrees.
+cbf_set_reciprocal_cell sets the reciprocal cell parameters to the
+double values given in *cell*\[0:2\] for the reciprocal cell edge
+lengths a^\*^, b^\*^ and c^\*^ in Ångstroms^-1^, the double values given
+in *cell*\[3:5\] for the reciprocal cell angles α^\*^, β^\*^ and γ^\*^
+in degrees, the double values given in *cell_esd*\[0:2\] for the
+estimated strandard deviations of the reciprocal cell edge lengths
+a^\*^, b^\*^ and c^\*^ in Ångstroms, and the double values given in
+*cell_esd*\[3:5\] for the estimated standard deviations of the
+reciprocal cell angles α^\*^, β^\*^ and γ^\*^ in degrees.
 
-The values are placed in the first row of the "cell" category. If no value has been given for "\_cell.entry_id", it is set to the value of the "diffrn.id" entry of the current data block.
+The values are placed in the first row of the \"cell\" category. If no
+value has been given for \"\_cell.entry_id\", it is set to the value of
+the \"diffrn.id\" entry of the current data block.
 
 *cell* or *cell_esd* may be NULL.
 
@@ -6320,13 +7846,14 @@ If *cell* is NULL, the reciprocal cell parameters are not set.
 
 If *cell_esd* is NULL, the reciprocal cell parameter esds are not set.
 
-If the "cell" category is not present, it is created. If any of the necessary columns are not present, they are created.
+If the \"cell\" category is not present, it is created. If any of the
+necessary columns are not present, they are created.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
-  CBF handle.  
+  CBF handle.\
 
   *cell*
 
@@ -6334,7 +7861,8 @@ If the "cell" category is not present, it is created. If any of the necessary co
 
   *cell_esd*
 
-  Pointer to the array of 6 doubles for the reciprocal cell parameter esds.  
+  Pointer to the array of 6 doubles for the reciprocal cell parameter
+esds.\
 
 **RETURN VALUE**
 
@@ -6342,28 +7870,34 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.4.50 cbf_get_unit_cell  
-](#2.4.50)[2.4.51 cbf_set_unit_cell  
-](#2.4.51)[2.4.52 cbf_get_reciprocal_cell  
-](#2.4.52)[2.4.54 cbf_compute_cell_volume  
-](#2.4.54)[2.4.55 cbf_compute_reciprocal_cell  
-](#2.4.55)
+[2.4.50 cbf_get_unit_cell\
+](#2.4.50)[2.4.51 cbf_set_unit_cell\
+](#2.4.51)[2.4.52 cbf_get_reciprocal_cell\
+](#2.4.52)[2.4.54 cbf_compute_cell_volume\
+](#2.4.54)
+
+2.4.55 cbf_compute_reciprocal_cell\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.54">2.4.54 cbf_compute_cell_volume</span>
+::: {#2.4.54}
+#### 2.4.54 cbf_compute_cell_volume
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
 int cbf_compute_cell_volume ( double *cell*\[6\], double \**volume* );
 
 **DESCRIPTION**
 
-cbf_compute_cell_volume sets \**volume* to point to the volume of the unit cell computed from the double values in *cell*\[0:2\] for the cell edge lengths a, b and c in Ångstroms and the double values given in *cell*\[3:5\] for the cell angles α, β and γ in degrees.
+cbf_compute_cell_volume sets \**volume* to point to the volume of the
+unit cell computed from the double values in *cell*\[0:2\] for the cell
+edge lengths a, b and c in Ångstroms and the double values given in
+*cell*\[3:5\] for the cell angles α, β and γ in degrees.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *cell*
 
@@ -6379,28 +7913,39 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.4.50 cbf_get_unit_cell  
-](#2.4.50)[2.4.51 cbf_set_unit_cell  
-](#2.4.51)[2.4.52 cbf_get_reciprocal_cell  
-](#2.4.52)[2.4.53 cbf_set_reciprocal_cell  
-](#2.4.53)[2.4.55 cbf_compute_reciprocal_cell  
-](#2.4.55)
+[2.4.50 cbf_get_unit_cell\
+](#2.4.50)[2.4.51 cbf_set_unit_cell\
+](#2.4.51)[2.4.52 cbf_get_reciprocal_cell\
+](#2.4.52)[2.4.53 cbf_set_reciprocal_cell\
+](#2.4.53)
+
+2.4.55 cbf_compute_reciprocal_cell\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.55">2.4.55 cbf_compute_reciprocal_cell</span>
+::: {#2.4.55}
+#### 2.4.55 cbf_compute_reciprocal_cell
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_compute_reciprocal_cell ( double *cell*\[6\], double *rcell*\[6\] );
+int cbf_compute_reciprocal_cell ( double *cell*\[6\], double
+*rcell*\[6\] );
 
 **DESCRIPTION**
 
-cbf_compute_reciprocal_cell sets *rcell* to point to the array of reciprocal cell parameters computed from the double values *cell*\[0:2\] giving the cell edge lengths a, b and c in Ångstroms, and the double values *cell*\[3:5\] giving the cell angles α, β and γ in degrees. The double values *rcell*\[0:2\] will be set to the reciprocal cell lengths a<sup>\*</sup>, b<sup>\*</sup> and c<sup>\*</sup> in Ångstroms<sup>-1</sup> and the double values *rcell*\[3:5\] will be set to the reciprocal cell angles α<sup>\*</sup>, β<sup>\*</sup> and γ<sup>\*</sup> in degrees.
+cbf_compute_reciprocal_cell sets *rcell* to point to the array of
+reciprocal cell parameters computed from the double values *cell*\[0:2\]
+giving the cell edge lengths a, b and c in Ångstroms, and the double
+values *cell*\[3:5\] giving the cell angles α, β and γ in degrees. The
+double values *rcell*\[0:2\] will be set to the reciprocal cell lengths
+a^\*^, b^\*^ and c^\*^ in Ångstroms^-1^ and the double values
+*rcell*\[3:5\] will be set to the reciprocal cell angles α^\*^, β^\*^
+and γ^\*^ in degrees.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *cell*
 
@@ -6408,7 +7953,8 @@ cbf_compute_reciprocal_cell sets *rcell* to point to the array of reciprocal cel
 
   *rcell*
 
-  Pointer to the destination array of 6 doubles giving the reciprocal cell parameters.
+  Pointer to the destination array of 6 doubles giving the reciprocal
+cell parameters.
 
   *volume*
 
@@ -6420,35 +7966,43 @@ Returns an error code on failure or 0 for success.
 
 **SEE ALSO**
 
-[2.4.50 cbf_get_unit_cell  
-](#2.4.50)[2.4.51 cbf_set_unit_cell  
-](#2.4.51)[2.4.52 cbf_get_reciprocal_cell  
-](#2.4.52)[2.4.53 cbf_set_reciprocal_cell  
-](#2.4.53)[2.4.54 cbf_compute_cell_volume  
-](#2.4.54)
+[2.4.50 cbf_get_unit_cell\
+](#2.4.50)[2.4.51 cbf_set_unit_cell\
+](#2.4.51)[2.4.52 cbf_get_reciprocal_cell\
+](#2.4.52)[2.4.53 cbf_set_reciprocal_cell\
+](#2.4.53)
+
+2.4.54 cbf_compute_cell_volume\
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.56">2.4.56 cbf_get_orientation_matrix, cbf_set_orientation_matrix</span>
+::: {#2.4.56}
+#### 2.4.56 cbf_get_orientation_matrix, cbf_set_orientation_matrix
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_orientation_matrix (cbf_handle *handle*, double *ub_matrix*\[9\]);  
-int cbf_set_orientation_matrix (cbf_handle *handle*, double *ub_matrix*\[9\]);
+int cbf_get_orientation_matrix (cbf_handle *handle*, double
+*ub_matrix*\[9\]);\
+int cbf_set_orientation_matrix (cbf_handle *handle*, double
+*ub_matrix*\[9\]);
 
 **DESCRIPTION**
 
-cbf_get_orientation_matrix sets *ub_matrix* to point to the array of orientation matrix entries in the "diffrn" category in the order of columns:
+cbf_get_orientation_matrix sets *ub_matrix* to point to the array of
+orientation matrix entries in the \"diffrn\" category in the order of
+columns:
 
-"UB\[1\]\[1\]" "UB\[1\]\[2\]" "UB\[1\]\[3\]"  
-"UB\[2\]\[1\]" "UB\[2\]\[2\]" "UB\[2\]\[3\]"  
-"UB\[3\]\[1\]" "UB\[3\]\[2\]" "UB\[3\]\[3\]"
+\"UB\[1\]\[1\]\" \"UB\[1\]\[2\]\" \"UB\[1\]\[3\]\"\
+\"UB\[2\]\[1\]\" \"UB\[2\]\[2\]\" \"UB\[2\]\[3\]\"\
+\"UB\[3\]\[1\]\" \"UB\[3\]\[2\]\" \"UB\[3\]\[3\]\"
 
-cbf_set_orientation_matrix sets the values in the "diffrn" category to the values pointed to by *ub_matrix*.
+cbf_set_orientation_matrix sets the values in the \"diffrn\" category to
+the values pointed to by *ub_matrix*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -6456,30 +8010,47 @@ cbf_set_orientation_matrix sets the values in the "diffrn" category to the value
 
   *ub_matrix*
 
-  Source or destination array of 9 doubles giving the orientation matrix parameters.
+  Source or destination array of 9 doubles giving the orientation matrix
+parameters.
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.57">2.4.57 cbf_get_bin_sizes, cbf_set_bin_sizes</span>
+::: {#2.4.57}
+#### 2.4.57 cbf_get_bin_sizes, cbf_set_bin_sizes
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_bin_sizes(cbf_handle *handle*, unsigned int *element_number*, double \* *slowbinsize*, double \* *fastbinsize*);  
-int cbf_set_bin_sizes(cbf_handle *handle*, unsigned int element_number, double *slowbinsize_in*,double *fastbinsize_in*);
+int cbf_get_bin_sizes(cbf_handle *handle*, unsigned int
+*element_number*, double \* *slowbinsize*, double \* *fastbinsize*);\
+int cbf_set_bin_sizes(cbf_handle *handle*, unsigned int element_number,
+double *slowbinsize_in*,double *fastbinsize_in*);
 
 **DESCRIPTION**
 
-cbf_get_bin_sizes sets *slowbinsize* to point to the value of the number of pixels composing one array element in the dimension that changes at the second-fastest rate and *fastbinsize* to point to the value of the number of pixels composing one array element in the dimension that changes at the fastest rate for the dectector element with the ordinal *element_number*. cbf_set_bin_sizes sets the the pixel bin sizes in the "array_intensities" category to the values of *slowbinsize_in* for the number of pixels composing one array element in the dimension that changes at the second-fastest rate and *fastbinsize_in* for the number of pixels composing one array element in the dimension that changes at the fastest rate for the dectector element with the ordinal *element_number*.
+cbf_get_bin_sizes sets *slowbinsize* to point to the value of the number
+of pixels composing one array element in the dimension that changes at
+the second-fastest rate and *fastbinsize* to point to the value of the
+number of pixels composing one array element in the dimension that
+changes at the fastest rate for the dectector element with the ordinal
+*element_number*. cbf_set_bin_sizes sets the the pixel bin sizes in the
+\"array_intensities\" category to the values of *slowbinsize_in* for the
+number of pixels composing one array element in the dimension that
+changes at the second-fastest rate and *fastbinsize_in* for the number
+of pixels composing one array element in the dimension that changes at
+the fastest rate for the dectector element with the ordinal
+*element_number*.
 
-In order to allow for software binning involving fractions of pixels, the bin sizes are doubles rather than ints.
+In order to allow for software binning involving fractions of pixels,
+the bin sizes are doubles rather than ints.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -6487,49 +8058,88 @@ In order to allow for software binning involving fractions of pixels, the bin si
 
   *element_number*
 
-  The number of the detector element counting from 0 by order of appearance in the "diffrn_data_frame" category.
+  The number of the detector element counting from 0 by order of
+appearance in the \"diffrn_data_frame\" category.
 
   *slowbinsize*
 
-  Pointer to the returned number of pixels composing one array element in the dimension that changes at the second-fastest rate.
+  Pointer to the returned number of pixels composing one array element
+in the dimension that changes at the second-fastest rate.
 
   *fastbinsize*
 
-  Pointer to the returned number of pixels composing one array element in the dimension that changes at the fastest rate.
+  Pointer to the returned number of pixels composing one array element
+in the dimension that changes at the fastest rate.
 
   *slowbinsize_in*
 
-  The number of pixels composing one array element in the dimension that changes at the second-fastest rate.
+  The number of pixels composing one array element in the dimension that
+changes at the second-fastest rate.
 
   *fastbinsize_in*
 
-  The number of pixels composing one array element in the dimension that changes at the fastest rate.
+  The number of pixels composing one array element in the dimension that
+changes at the fastest rate.
 
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.4.58">2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise, cbf_get_axis_reference_poise</span>
+::: {#2.4.58}
+#### 2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise, cbf_get_axis_reference_poise
 
 **PROTOTYPE**
 
-#include "cbf_simple.h"
+#include \"cbf_simple.h\"
 
-int cbf_get_axis_poise(cbf_handle *handle*, double *ratio*, double \* *vector1*, double \* *vector2*, double \* *vector3*, double \* *offset1*, double \* *offset2*, double \* *offset3*, double \* *angle*, const char \* *axis_id*, const char \* *frame_id*);  
-int cbf_get_goniometer_poise(cbf_goniometer *goniometer*, double *ratio*, double \* *vector1*, double \* *vector2*, double \* *vector3*, double \* *offset1*, double \* *offset2*, double \* *offset3*, double \* *angle*);  
-int cbf_get_axis_reference_poise(cbf_handle *handle*, double \* *vector1*, double \* *vector2*, double \* *vector3*, double \* *offset1*, double \* *offset2*, double \* *offset3*, const char \* *axis_id*);
+int cbf_get_axis_poise(cbf_handle *handle*, double *ratio*, double \*
+*vector1*, double \* *vector2*, double \* *vector3*, double \*
+*offset1*, double \* *offset2*, double \* *offset3*, double \* *angle*,
+const char \* *axis_id*, const char \* *frame_id*);\
+int cbf_get_goniometer_poise(cbf_goniometer *goniometer*, double
+*ratio*, double \* *vector1*, double \* *vector2*, double \* *vector3*,
+double \* *offset1*, double \* *offset2*, double \* *offset3*, double \*
+*angle*);\
+int cbf_get_axis_reference_poise(cbf_handle *handle*, double \*
+*vector1*, double \* *vector2*, double \* *vector3*, double \*
+*offset1*, double \* *offset2*, double \* *offset3*, const char \*
+*axis_id*);
 
 **DESCRIPTION**
 
-cbf_get_axis_poise sets *vector1*, *vector2*, *vector3* to point to the components of the axis vector for axis *axis_id*, *offset1*, *offset2*, *offset3* to point to the components of the axis base offset vector for axis *axis_id*, and *angle* to point to the angle of rotation of axis *axis_id* after application of the axis settings for frame *frame_id*, using *ratio*, a value between 0 and 1, indicating how far into the internal motion in the frame to go. If *frame_id* is the string ".", the first frame found is used. If there is more than one frame, which frame will be found is indeterminate. If *frame_id* is NULL, the overall setting for the scan are used, rather than those for any particular frame. The vector and offset reported are the reference vector and offset of the axis *axis_id* transformed by application of all motions of the axes on which *axis_id* depends.
+cbf_get_axis_poise sets *vector1*, *vector2*, *vector3* to point to the
+components of the axis vector for axis *axis_id*, *offset1*, *offset2*,
+*offset3* to point to the components of the axis base offset vector for
+axis *axis_id*, and *angle* to point to the angle of rotation of axis
+*axis_id* after application of the axis settings for frame *frame_id*,
+using *ratio*, a value between 0 and 1, indicating how far into the
+internal motion in the frame to go. If *frame_id* is the string \".\",
+the first frame found is used. If there is more than one frame, which
+frame will be found is indeterminate. If *frame_id* is NULL, the overall
+setting for the scan are used, rather than those for any particular
+frame. The vector and offset reported are the reference vector and
+offset of the axis *axis_id* transformed by application of all motions
+of the axes on which *axis_id* depends.
 
-cbf_get_goniometer_poise *vector1*, *vector2*, *vector3* to point to the components of the axis vector for the goniometer axis, *offset1*, *offset2*, *offset3* to point to the components of the axis base offset vector for the goniometer axis, and *angle* to point to the angle of rotation of the goniometer axis after application of **all** axis settings in the *goniometer* deriving the vector, offset and angle from the resulting matrix. Calculation of the vector is indeterminate if the angle is zero.
+cbf_get_goniometer_poise *vector1*, *vector2*, *vector3* to point to the
+components of the axis vector for the goniometer axis, *offset1*,
+*offset2*, *offset3* to point to the components of the axis base offset
+vector for the goniometer axis, and *angle* to point to the angle of
+rotation of the goniometer axis after application of **all** axis
+settings in the *goniometer* deriving the vector, offset and angle from
+the resulting matrix. Calculation of the vector is indeterminate if the
+angle is zero.
 
-cbf_get_axis_reference_poise sets *vector1*, *vector2*, *vector3* to point to the components of the axis vector for axis *axis_id*, *offset1*, *offset2*, *offset3* to point to the components of the axis base offset vector for axis *axis_id* unmodified by axis rotations. Any of the pointers may be specified as NULL.
+cbf_get_axis_reference_poise sets *vector1*, *vector2*, *vector3* to
+point to the components of the axis vector for axis *axis_id*,
+*offset1*, *offset2*, *offset3* to point to the components of the axis
+base offset vector for axis *axis_id* unmodified by axis rotations. Any
+of the pointers may be specified as NULL.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *handle*
 
@@ -6582,27 +8192,41 @@ cbf_get_axis_reference_poise sets *vector1*, *vector2*, *vector3* to point to th
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="#2.4.59">2.4.59 cbf_airy_disk, cbf_airy_disk_volume</span>
+::: {#2.4.59}
+#### 2.4.59 cbf_airy_disk, cbf_airy_disk_volume
 
 **PROTOTYPE**
 
-#include "cbf_airy_disk.h"
+#include \"cbf_airy_disk.h\"
 
-int cbf_airy_disk(double *x*, double *y*, double *cenx*, double *ceny*, double *volume*, double *fwhm*, double \* *value*);  
-int cbf_airy_disk_volume(double *xlo*, double *ylo*, double *xhi*, double *yhi*, double *cenx*, double *ceny*, double *volume*, double *fwhm*, double \* *volumeout*);
+int cbf_airy_disk(double *x*, double *y*, double *cenx*, double *ceny*,
+double *volume*, double *fwhm*, double \* *value*);\
+int cbf_airy_disk_volume(double *xlo*, double *ylo*, double *xhi*,
+double *yhi*, double *cenx*, double *ceny*, double *volume*, double
+*fwhm*, double \* *volumeout*);
 
 **DESCRIPTION**
 
-cbf_airy_disk sets *value* to point to the value taken at (*x*,*y*) of an truncated Airy function approximation to a point-spread function of total included volume *volume* and full width at half max *fwhm* centered on (*cenx*, *ceny*).
+cbf_airy_disk sets *value* to point to the value taken at (*x*,*y*) of
+an truncated Airy function approximation to a point-spread function of
+total included volume *volume* and full width at half max *fwhm*
+centered on (*cenx*, *ceny*).
 
-cbf_airy_disk_volume sets to point to the integral in the box with diagonal corners (*xlo*, *ylo*) and of (*xhi*, *yhi*) of a truncated Airy function approximation to a point-spread function of total included volume *volume* and full width at half max *fwhm* centered on (*cenx*, *ceny*).
+cbf_airy_disk_volume sets to point to the integral in the box with
+diagonal corners (*xlo*, *ylo*) and of (*xhi*, *yhi*) of a truncated
+Airy function approximation to a point-spread function of total included
+volume *volume* and full width at half max *fwhm* centered on (*cenx*,
+*ceny*).
 
-The Airy function used is an 8-digit approximation up to the first minimum, after which it is forced to zero, so it cannot be used to simulate diffraction rings.
+The Airy function used is an 8-digit approximation up to the first
+minimum, after which it is forced to zero, so it cannot be used to
+simulate diffraction rings.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *x*
 
@@ -6614,19 +8238,23 @@ The Airy function used is an 8-digit approximation up to the first minimum, afte
 
   *xlo*
 
-  the x-coordinate of a point in the real plane marking the left bound of integration
+  the x-coordinate of a point in the real plane marking the left bound
+of integration
 
   *ylo*
 
-  the y-coordinate of a point in the real plane marking the bottom bound of integration
+  the y-coordinate of a point in the real plane marking the bottom bound
+of integration
 
   *xhi*
 
-  the x-coordinate of a point in the real plane marking the right bound of integration
+  the x-coordinate of a point in the real plane marking the right bound
+of integration
 
   *yhi*
 
-  the y-coordinate of a point in the real plane marking the top bound of integration
+  the y-coordinate of a point in the real plane marking the top bound of
+integration
 
   *cenx*
 
@@ -6655,34 +8283,124 @@ The Airy function used is an 8-digit approximation up to the first minimum, afte
 **RETURN VALUE**
 
 Returns an error code on failure or 0 for success.
+:::
 
 ------------------------------------------------------------------------
 
-### <span id="2.5">2.5 F90 function interfaces</span>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.5}
+### 2.5 F90, Python and Java function interfaces
 
-At the suggestion of W. Kabsch, Fortran 90/95 routines have been added to CBFlib. As of this writing code has been written to allow the reading of CBF_BYTE_OFFSET, CBF_PACKED and CBF_PACKED_V2 binary images. This code has been gather into FCBlib (Fortran Crystallographic Binary library) as lib/libfcb.
+CBFlib directly supports C and C++ applications. Various wrappers and
+interfaces have been added over the years to also support Fortan, Python
+and Java applications.
 
-In general, most of the FCBlib functions return 0 for normal completion and a non-zero value in case of an error. In a few cases, such as FCB_ATOL_WCNT and FCB_NBLEN_ARRAY in order to conform to the conventions for commonly used C-equivalent functions, the function return is the value being computed.
+A small number of pure Fortran-90 were added to CBFlib in 2007 at the
+request of W. Kabsch to assist in the support of XDS for reading CBF
+files. As of this writing code has been written to allow the reading of
+CBF_BYTE_OFFSET, CBF_PACKED and CBF_PACKED_V2 binary images. This code
+has been gathered into into FCBlib (Fortran Crystallographic Binary
+library) as lib/libfcb.
 
-For each function, an interface is given to be included in the declarations of your Fortran 90/95 code. Some functions in FCBlIB are not intended for external use and are subject to change: FCB_UPDATE_JPA_POINTERS_I2, FCB_UPDATE_JPA_POINTERS_I4, FCB_UPDATE_JPA_POINTERS_3D_I2, FCB_UPDATE_JPA_POINTERS_3D_I4 and CNT2PIX. These names should not be used for user routines.
+In late 2005 Jonathan P. Wright of ESRF used SWIG to add a Python
+wrapper to the CBFlib providing access to all the C CBFlib functions as
+Python functions. At that time Python 2.7 was supported, As of this
+time, support for Python 2 has been dropped from CBFlib, and the SWIG
+wrapper in the pycbf folder now supports Python 3. This kit uses the
+literate programming package nuweb \\cite{nuweb2024} to extract the C
+function signatures from the CBFlib manual and generate the wrapper for
+Python.
 
-The functions involving reading of a CBF have been done strictly in Fortran without the use of C code. This has required some compromises and the use of direct access I/O. Rather than putting the buffer and its control variables into COMMON these are passed as local arguments to make the routines inherently 'threadsafe' in a parallel programming environment. Note also, that a reading error could occur for the last record if it does not fill a full block. The code is written to recover from end-of-record and end-of-file errors, if possible. On many modern system, no special action is required, but on some systems it may be necessary to make use of the padding between the end of binary data and the terminal MIME boundary marker in binary sections. To ensure maximum portability of CBF files, a padding of 4095 bytes is recommended. Existing files without padding can be converted to files with padding by use of the new -p4 option for cif2cbf.
+In 2009, Peter Chang of Diamond Light Source contributed a SWIG wrapper
+for CBFlib to allow Java applications to access most C CBFlib functions,
+\"An initial set of Java wrapper classes for CBFlib-0.8.0 has been
+implemented using SWIG. A pair of example programs (testcbf.c and
+testcbf.java) are included that show the similarities and differences of
+using CBFlib in C and Java.
 
-#### <span id="2.5.1">2.5.1 FCB_ATOL_WCNT</span>
+\"This has been tested using Red Hat EL 4.7 WS for i568 and Red Hat EL
+5.3 WS for x86_64 with Sun\'s JDK. It was also tested using Microsoft
+Windows XP with MinGW and MSYS.
+
+\"In addition to the static methods in org.iucr.cbflib.cbf, six helper
+classes are included: four wrapper classes for C pointers that point to
+size_t (sizetP), int (intP), unsigned int (uintP) and double (doubleP);
+two wrapper classes for C arrays that hold int (intArray) and double
+(doubleArray). Also, some helper functions for a pointer to pointer to
+char (charPP\_\*) aid the output of strings, and pointer casts to void
+(int_void and double_void). CBF_NODETYPE is supported too as mapped to
+ints. Finally, a constructor and a destructor has been added to the
+cbf_handle_struct class.\"
+
+He updated the kit in 2020, \"Switched to faster data access using Java
+NIO direct buffers so the methods cbf_get_realarray and cbf_get_intarray
+have changed to use NIO byte buffers instead of arrays. The array
+wrapper classes have been removed.
+
+\"Tests have been extended to demonstrate the reading of data.\"
+
+------------------------------------------------------------------------
+
+In general, most of the FCBlib functions return 0 for normal completion
+and a non-zero value in case of an error. In a few cases, such as
+[FCB_ATOL_WCNT](#2.5.1) and [FCB_NBLEN_ARRAY](#2.5.4), in order to
+conform to the conventions for commonly used C-equivalent functions, the
+function return is the value being computed.
+
+For each function, an interface is given to be included in the
+declarations of your Fortran 90/95 or later code. Some functions in
+FCBlib are not intended for external use and are subject to change:
+FCB_UPDATE_JPA_POINTERS_I2, FCB_UPDATE_JPA_POINTERS_I4,
+FCB_UPDATE_JPA_POINTERS_3D_I2, FCB_UPDATE_JPA_POINTERS_3D_I4 and
+CNT2PIX. These names should not be used for user routines. See the
+source code of cbf_packed.c and fcb_packed.f90.
+
+The functions involving reading of a CBF in libfcb have been done
+strictly in Fortran without the use of C code. This has required some
+compromises and the use of direct access I/O. Rather than putting the
+buffer and its control variables into COMMON these are passed as local
+arguments to make the routines inherently \'threadsafe\' in a parallel
+programming environment. Note also, that a reading error could occur for
+the last record if it does not fill a full block. The code is written to
+recover from end-of-record and end-of-file errors, if possible. On many
+modern systems, no special action is required, but on some systems it
+may be necessary to make use of the padding between the end of binary
+data and the terminal MIME boundary marker in binary sections. To ensure
+maximum portability of CBF files, a padding of 4095 bytes is
+recommended. Existing files without padding can be converted to files
+with padding by use of the new -p4 option for cif2cbf.
+
+As of this writng the pure f90 routines in FCBlib are:
+[FCB_ATOL_WCNT](#2.5.1), [FCB_CI_STRNCMPARR](#2.5.2),
+[FCB_EXIT_BINARY](#2.5.3), [FCB_NBLEN_ARRAY](#2.5.4),
+[FCB_NEXT_BINARY](#2.5.5), [FCB_OPEN_CIFIN](#2.5.6),
+[FCB_DECOMPRESS_PACKED_I2](#2.5.7), [FCB_DECOMPRESS_PACKED_I4](#2.5.7),
+[FCB_DECOMPRESS_PACKED_3D_I2](#2.5.7),
+[FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7), [FCB_READ_BITS](#2.5.8),
+[FCB_READ_BYTEFCB_READ_IMAGE_I2](#2.5.9), [FCB_READ_IMAGE_I4](#2.5.10),
+[FCB_READ_IMAGE_3D_I2](#2.5.10), [FCB_READ_IMAGE_3D_I4](#2.5.10),
+[FCB_READ_LINE](#2.5.11), [FCB_READ_XDS_I2](#2.5.12), and
+[FCB_SKIP_WHITESPACE](#2.5.13).
+
+::: {#2.5.1}
+#### 2.5.1 FCB_ATOL_WCNT
 
           INTERFACE
-          INTEGER(8) FUNCTION FCB_ATOL_WCNT(ARRAY, N, CNT)
-          INTEGER(1),INTENT(IN):: ARRAY(N)
-          INTEGER,   INTENT(IN):: N
-          INTEGER,  INTENT(OUT):: CNT
-          END FUNCTION
-          END INTERFACE
+    INTEGER(8) FUNCTION FCB_ATOL_WCNT(ARRAY, N, CNT)
+    INTEGER(1),INTENT(IN):: ARRAY(N)
+    INTEGER,   INTENT(IN):: N
+    INTEGER,  INTENT(OUT):: CNT
+    END FUNCTION
+    END INTERFACE
 
-FCB_ATOL_WCNT converts INTEGER(1) bytes in *ARRAY* of *N* bytes to an INTEGER(8) value returned as the function value. The number of bytes of *ARRAY* actually used before encountering a character not used to form the number is returned in *CNT*.
+FCB_ATOL_WCNT converts INTEGER(1) bytes in *ARRAY* of *N* bytes to an
+INTEGER(8) value returned as the function value. The number of bytes of
+*ARRAY* actually used before encountering a character not used to form
+the number is returned in *CNT*.
 
-The scan stops at the first byte in *ARRAY* that cannot be properly parsed as part of the integer result.
+The scan stops at the first byte in *ARRAY* that cannot be properly
+parsed as part of the integer result.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *ARRAY*
 
@@ -6698,23 +8416,28 @@ The scan stops at the first byte in *ARRAY* that cannot be properly parsed as pa
 
 **RETURN VALUE**
 
-Returns the INTEGER(8) value derived from the characters *ARRAY*(1:*CNT*) scanned.
+Returns the INTEGER(8) value derived from the characters
+*ARRAY*(1:*CNT*) scanned.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.2">2.5.2 FCB_CI_STRNCMPARR</span>
+::: {#2.5.2}
+#### 2.5.2 FCB_CI_STRNCMPARR
 
           INTERFACE
-          INTEGER FUNCTION FCB_CI_STRNCMPARR(STRING>, ARRAY, N, LIMIT)
-          CHARACTER(LEN=*),INTENT(IN):: STRING>
+    INTEGER FUNCTION FCB_CI_STRNCMPARR(STRING>, ARRAY, N, LIMIT)
+    CHARACTER(LEN=*),INTENT(IN):: STRING>
           INTEGER,         INTENT(IN):: N, LIMIT
           INTEGER(1),      INTENT(IN):: ARRAY(N)
           END FUNCTION
           END INTERFACE
 
-The function FCB_CI_STRNCMPARR compares up to *LIMIT* characters of character string *STRING* and INTEGER(1) byte array *ARRAY* of dimension *N* in a case-insensitive manner, returning 0 for a match.
+The function FCB_CI_STRNCMPARR compares up to *LIMIT* characters of
+character string *STRING* and INTEGER(1) byte array *ARRAY* of dimension
+*N* in a case-insensitive manner, returning 0 for a match.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *STRING*
 
@@ -6730,15 +8453,18 @@ The function FCB_CI_STRNCMPARR compares up to *LIMIT* characters of character st
 
   *N*
 
-  The INTEGER limit on the number of characters to consider in the comparison
+  The INTEGER limit on the number of characters to consider in the
+comparison
 
 **RETURN VALUE**
 
 Returns 0 if the string and array match, a non-zero value otherwise.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.3">2.5.3 FCB_EXIT_BINARY</span>
+::: {#2.5.3}
+#### 2.5.3 FCB_EXIT_BINARY
 
           INTERFACE
           INTEGER FUNCTION FCB_EXIT_BINARY(TAPIN,LAST_CHAR,FCB_BYTES_IN_REC,&
@@ -6751,9 +8477,12 @@ Returns 0 if the string and array match, a non-zero value otherwise.
           END FUNCTION
           END INTERFACE
 
-The function FCB_EXIT_BINARY is used to skip from the end of a binary section past any padding to the end of the text section that encloses the binary section. The values of the arguments must be consistent with those in the last call to [FCB_NEXT_BINARY](#2.5.5)
+The function FCB_EXIT_BINARY is used to skip from the end of a binary
+section past any padding to the end of the text section that encloses
+the binary section. The values of the arguments must be consistent with
+those in the last call to [FCB_NEXT_BINARY](#2.5.5)
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *TAPIN*
 
@@ -6777,26 +8506,32 @@ The function FCB_EXIT_BINARY is used to skip from the end of a binary section pa
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
   *PADDING*
 
-  The INTEGER(8) number of bytes of padding after the binary data and before the closing MIME boundary.
+  The INTEGER(8) number of bytes of padding after the binary data and
+before the closing MIME boundary.
 
 **RETURN VALUE**
 
-Returns 0 if the function is successful. Returns whatever non-zero error value is reported by [FCB_READ_LINE](#2.5.11) if a necessary next line cannot be read.
+Returns 0 if the function is successful. Returns whatever non-zero error
+value is reported by [FCB_READ_LINE](#2.5.11) if a necessary next line
+cannot be read.
 
 **SEE ALSO**
 
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.9 FCB_READ_BYTE](#2.5.9)  
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.9 FCB_READ_BYTE](#2.5.9)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.4">2.5.4 FCB_NBLEN_ARRAY</span>
+::: {#2.5.4}
+#### 2.5.4 FCB_NBLEN_ARRAY
 
           INTERFACE
           INTEGER FUNCTION FCB_NBLEN_ARRAY(ARRAY, ARRAYLEN)
@@ -6805,11 +8540,14 @@ Returns 0 if the function is successful. Returns whatever non-zero error value i
           END FUNCTION
           END INTERFACE
 
-The function FCB_NBLEN_ARRAY returns the trimmed length of the INTEGER(1) byte array *ARRAY* of dimension *ARRAYLEN* after removal of trailing ASCII blanks, horizontal tabs (Z'09'), newlines (Z'0A') and carriage returns (Z'0D'). The resulting length may be zero.
+The function FCB_NBLEN_ARRAY returns the trimmed length of the
+INTEGER(1) byte array *ARRAY* of dimension *ARRAYLEN* after removal of
+trailing ASCII blanks, horizontal tabs (Z\'09\'), newlines (Z\'0A\') and
+carriage returns (Z\'0D\'). The resulting length may be zero.
 
 The INTEGER trimmed length is returned as the function value.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *ARRAY*
 
@@ -6822,10 +8560,12 @@ The INTEGER trimmed length is returned as the function value.
 **RETURN VALUE**
 
 Returns the trimmed length of the array *ARRAY*.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.5">2.5.5 FCB_NEXT_BINARY</span>
+::: {#2.5.5}
+#### 2.5.5 FCB_NEXT_BINARY
 
           INTERFACE
           INTEGER FUNCTION FCB_NEXT_BINARY(TAPIN,LAST_CHAR,FCB_BYTES_IN_REC,&
@@ -6852,27 +8592,82 @@ Returns the trimmed length of the array *ARRAY*.
           END FUNCTION
           END INTERFACE
 
-The function FCB_NEXT_BINARY skips to the start of the next binary section in the image file on unit *TAPIN* leaving the file positioned for a subsequent read of the image data. The skip may prior to the text field that contains the binary section. When the text filed is reached, it will be scanned for a MIME boundary marker, and, if it is found the subsequence MIME headers will be used to populate the arguments *ENCODING*, *SIZE*, *ID*, *DIGEST*, *COMPRESSION*, *BITS*, *VORZEICHEN*,*REELL*, *BYTEORDER*, *DIMOVER*, *DIM1*, *DIM2*,*DIM3*, *PADDING*.
+The function FCB_NEXT_BINARY skips to the start of the next binary
+section in the image file on unit *TAPIN* leaving the file positioned
+for a subsequent read of the image data. The skip may prior to the text
+field that contains the binary section. When the text filed is reached,
+it will be scanned for a MIME boundary marker, and, if it is found the
+subsequence MIME headers will be used to populate the arguments
+*ENCODING*, *SIZE*, *ID*, *DIGEST*, *COMPRESSION*, *BITS*,
+*VORZEICHEN*,*REELL*, *BYTEORDER*, *DIMOVER*, *DIM1*, *DIM2*,*DIM3*,
+*PADDING*.
 
-The value returned in *ENCODING* is taken from the MIME header Content-Transfer-Encoding as an INTEGER. It is returned as 0 if not specified. The reported value is one of the integer values ENC_NONE (Z'0001') for BINARY encoding, ENC_BASE64 (Z'0002') for BASE64 encoding, ENC_BASE32K (Z'0004') for X-BASE32K encoding, ENC_QP (Z'0008') for QUOTED-PRINTABLE encoding, ENC_BASE10 (Z'0010') for BASE10 encoding, ENC_BASE16 (Z'0020') for BASE16 encoding or ENC_BASE8 (Z'0040') for BASE8 encoding. **At this time FCBlib only supports ENC_NONE BINARY encoding**.
+The value returned in *ENCODING* is taken from the MIME header
+Content-Transfer-Encoding as an INTEGER. It is returned as 0 if not
+specified. The reported value is one of the integer values ENC_NONE
+(Z\'0001\') for BINARY encoding, ENC_BASE64 (Z\'0002\') for BASE64
+encoding, ENC_BASE32K (Z\'0004\') for X-BASE32K encoding, ENC_QP
+(Z\'0008\') for QUOTED-PRINTABLE encoding, ENC_BASE10 (Z\'0010\') for
+BASE10 encoding, ENC_BASE16 (Z\'0020\') for BASE16 encoding or ENC_BASE8
+(Z\'0040\') for BASE8 encoding. **At this time FCBlib only supports
+ENC_NONE BINARY encoding**.
 
-The value returned in *SIZE* is taken from the MIME header X-Binary-Size as an INTEGER. It is returned as 0 if not specified.
+The value returned in *SIZE* is taken from the MIME header X-Binary-Size
+as an INTEGER. It is returned as 0 if not specified.
 
-The value returned in *ID* is taken from the MIME header X-Binary-ID as an INTEGER. It is returned as 0 if not specified.
+The value returned in *ID* is taken from the MIME header X-Binary-ID as
+an INTEGER. It is returned as 0 if not specified.
 
-The value returned in *DIGEST* is taken from the MIME header Content-MD5. It is returned as a character string. If no digest is given, an empty string is returned.
+The value returned in *DIGEST* is taken from the MIME header
+Content-MD5. It is returned as a character string. If no digest is
+given, an empty string is returned.
 
-The value returned in *COMPRESSION* is taken from the MIME header Content-Type in the conversions parameter. The reported value is one of the INTEGER values CBF_CANONICAL (Z'0050'), CBF_PACKED (Z'0060'), CBF_PACKED_V2 (Z'0090'), CBF_BYTE_OFFSET (Z'0070'), CBF_PREDICTOR (Z'0080'), CBF_NONE (Z'0040'). Two flags may be combined with CBF_PACKED or CBF_PACKED_V2: CBF_UNCORRELATED_SECTIONS (Z'0100') or CBF_FLAT_IMAGE (Z'0200'). **At this time FCBlib does not support CBF_PREDICTOR or CBF_NONE compression**.
+The value returned in *COMPRESSION* is taken from the MIME header
+Content-Type in the conversions parameter. The reported value is one of
+the INTEGER values CBF_CANONICAL (Z\'0050\'), CBF_PACKED (Z\'0060\'),
+CBF_PACKED_V2 (Z\'0090\'), CBF_BYTE_OFFSET (Z\'0070\'), CBF_PREDICTOR
+(Z\'0080\'), CBF_NONE (Z\'0040\'). Two flags may be combined with
+CBF_PACKED or CBF_PACKED_V2: CBF_UNCORRELATED_SECTIONS (Z\'0100\') or
+CBF_FLAT_IMAGE (Z\'0200\'). **At this time FCBlib does not support
+CBF_PREDICTOR or CBF_NONE compression**.
 
-The values returned in *BITS*, *VORZEICHEN* and *REELL* are the parameters of the data types of the elements. These values are taken from the MIME header X-Binary-Element-Type, which has values of the form "signed *BITS*-bit integer", "unsigned *BITS*-bit integer", "signed *BITS*-bit real IEEE" or "signed *BITS*-bit complex IEEE". If no value is given, *REELL* is reported as -1. If the value in one of the integer types, *REELL* is reported as 0. If the value is one of the real or complex types, *REELL* is reported as 1. **In the current release of FCBlib only the integer types for *BITS* equal to 16 or 32 are supported.**
+The values returned in *BITS*, *VORZEICHEN* and *REELL* are the
+parameters of the data types of the elements. These values are taken
+from the MIME header X-Binary-Element-Type, which has values of the form
+\"signed *BITS*-bit integer\", \"unsigned *BITS*-bit integer\", \"signed
+*BITS*-bit real IEEE\" or \"signed *BITS*-bit complex IEEE\". If no
+value is given, *REELL* is reported as -1. If the value in one of the
+integer types, *REELL* is reported as 0. If the value is one of the real
+or complex types, *REELL* is reported as 1. **In the current release of
+FCBlib only the integer types for *BITS* equal to 16 or 32 are
+supported.**
 
-The value returned in *BYTEORDER* is the byte order of the data in the image file as reported in the MIME header. The value, if specified, will be either the character string "LITTLE_ENDIAN" or the character string "BIG_ENDIAN". If no byte order is specified, "LITTLE_ENDIAN" is reported. This value is taken from the MIME header X-Binary-Element-Byte-Order. **As of this writing, CBFlib will not generate "BIG_ENDIAN" byte-order files. However, both CBFlib and FCBlib read "LITTLE_ENDIAN" byte-order files, even on big-endian machines.**
+The value returned in *BYTEORDER* is the byte order of the data in the
+image file as reported in the MIME header. The value, if specified, will
+be either the character string \"LITTLE_ENDIAN\" or the character string
+\"BIG_ENDIAN\". If no byte order is specified, \"LITTLE_ENDIAN\" is
+reported. This value is taken from the MIME header
+X-Binary-Element-Byte-Order. **As of this writing, CBFlib will not
+generate \"BIG_ENDIAN\" byte-order files. However, both CBFlib and
+FCBlib read \"LITTLE_ENDIAN\" byte-order files, even on big-endian
+machines.**
 
-The value returned in *DIMOVER* is the overall number of elements in the image array, if specified, or zero, if not specified. This value is taken from the MIME header X-Binary-Number-of-Elements. The values returned in *DIM1*, *DIM2* and *DIM3* are the sizes of the fastest changing, second fastest changing and third fastest changing dimensions of the array, if specified, or zero, if not specified. These values are taken from the MIME header X-Binary-Size-Fastest-Dimension, X-Binary-Size-Second-Dimension and X-Binary-Size-Third-Dimension respectively.
+The value returned in *DIMOVER* is the overall number of elements in the
+image array, if specified, or zero, if not specified. This value is
+taken from the MIME header X-Binary-Number-of-Elements. The values
+returned in *DIM1*, *DIM2* and *DIM3* are the sizes of the fastest
+changing, second fastest changing and third fastest changing dimensions
+of the array, if specified, or zero, if not specified. These values are
+taken from the MIME header X-Binary-Size-Fastest-Dimension,
+X-Binary-Size-Second-Dimension and X-Binary-Size-Third-Dimension
+respectively.
 
-The value returned in *PADDING* is the size of the post-data padding, if any, if specified or zero, if not specified. The value is given as a count of octets. This value is taken from the MIME header X-Binary-Size-Padding.
+The value returned in *PADDING* is the size of the post-data padding, if
+any, if specified or zero, if not specified. The value is given as a
+count of octets. This value is taken from the MIME header
+X-Binary-Size-Padding.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *TAPIN*
 
@@ -6896,72 +8691,81 @@ The value returned in *PADDING* is the size of the post-data padding, if any, if
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
   *ENCODING*
 
-  INTEGER type of encoding for the binary section as reported in the MIME header.  
+  INTEGER type of encoding for the binary section as reported in the
+MIME header.\
 
   *ID*
 
-  INTEGER binary identifier as reported in the MIME header.  
+  INTEGER binary identifier as reported in the MIME header.\
 
   *SIZE*
 
-  INTEGER size of compressed binary section as reported in the MIME header.  
+  INTEGER size of compressed binary section as reported in the MIME
+header.\
 
   *DIGEST*
 
-  The MD5 message digest as reported in the MIME header.  
+  The MD5 message digest as reported in the MIME header.\
 
   *COMPRESSION*
 
-  INTEGER compression method as reported in the MIME header.  
+  INTEGER compression method as reported in the MIME header.\
 
   *BITS*
 
-  INTEGER number of bits in each element as reported in the MIME header.  
+  INTEGER number of bits in each element as reported in the MIME
+header.\
 
   *VORZEICHEN*
 
-  INTEGER flag for signed or unsigned elements as reported in the MIME header. Set to 1 if the elements can be read as signed values, 0 otherwise.  
+  INTEGER flag for signed or unsigned elements as reported in the MIME
+header. Set to 1 if the elements can be read as signed values, 0
+otherwise.\
 
   *REELL*
 
-  INTEGER flag for real elements as reported in the MIME header. Set to 1 if the elements can be read as REAL  
+  INTEGER flag for real elements as reported in the MIME header. Set to
+1 if the elements can be read as REAL\
 
   *BYTEORDER*
 
-  The byte order as reported in the MIME header.  
+  The byte order as reported in the MIME header.\
 
   *DIM1*
 
-  Pointer to the destination fastest dimension.  
+  Pointer to the destination fastest dimension.\
 
   *DIM2*
 
-  Pointer to the destination second fastest dimension.  
+  Pointer to the destination second fastest dimension.\
 
   *DIM3*
 
-  Pointer to the destination third fastest dimension.  
+  Pointer to the destination third fastest dimension.\
 
   *PADDING*
 
-  Pointer to the destination padding size.  
+  Pointer to the destination padding size.\
 
 **RETURN VALUE**
 
 Returns 0 if the function is successful. **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.9 FCB_READ_BYTE](#2.5.9)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.9 FCB_READ_BYTE](#2.5.9)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.6">2.5.6 FCB_OPEN_CIFIN</span>
+::: {#2.5.6}
+#### 2.5.6 FCB_OPEN_CIFIN
 
           INTERFACE
           INTEGER FUNCTION FCB_OPEN_CIFIN(FILNAM,TAPIN,LAST_CHAR,                &
@@ -6975,11 +8779,18 @@ Returns 0 if the function is successful. **SEE ALSO**
           END FUNCTION
           END INTERFACE
 
-The function FCB_OPEN_CIFIN opens the CBF image file given by the file name in the character string *FILNAM* on the logical unit *TAPIN*. The calling routine must provide an INTEGER(1) byte buffer *BUFFER* of some appropriate INTEGER size *FCB_BYTES_IN_REC*. The size must be chosen to suit the machine, but in most cases, 4096 will work. The values returned in *LAST_CHAR*, *BYTE_IN_FILE*, and *REC_IN_FILE* are for use in subsequent FCBlib I/O routines.
+The function FCB_OPEN_CIFIN opens the CBF image file given by the file
+name in the character string *FILNAM* on the logical unit *TAPIN*. The
+calling routine must provide an INTEGER(1) byte buffer *BUFFER* of some
+appropriate INTEGER size *FCB_BYTES_IN_REC*. The size must be chosen to
+suit the machine, but in most cases, 4096 will work. The values returned
+in *LAST_CHAR*, *BYTE_IN_FILE*, and *REC_IN_FILE* are for use in
+subsequent FCBlib I/O routines.
 
-The image file will be checked for the initial characters "###CBF: ". If there is no match the error value CBF_FILEREAD is returned.
+The image file will be checked for the initial characters \"###CBF: \".
+If there is no match the error value CBF_FILEREAD is returned.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *FILNAM*
 
@@ -7007,20 +8818,23 @@ The image file will be checked for the initial characters "###CBF: ". If there i
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
 **RETURN VALUE**
 
 Returns 0 if the function is successful. **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.9 FCB_READ_BYTE](#2.5.9)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.9 FCB_READ_BYTE](#2.5.9)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.7">2.5.7 FCB_PACKED: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4</span>
+::: {#2.5.7}
+#### 2.5.7 FCB_PACKED: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4
 
           INTERFACE
           INTEGER FUNCTION FCB_DECOMPRESS_PACKED_I2 (ARRAY,NELEM,NELEM_READ, &
@@ -7087,11 +8901,18 @@ Returns 0 if the function is successful. **SEE ALSO**
           END FUNCTION
           END INTERFACE
 
-The functions FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2 and FCB_DECOMPRESS_PACKED_3D_I4, decompress images compress according the the CBF_PACKED or CBF_PACKED_V2 compression described in section [3.3.2](#3.3.2) on J. P. Abrahams CCP4 packed compression.
+The functions FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4,
+FCB_DECOMPRESS_PACKED_3D_I2 and FCB_DECOMPRESS_PACKED_3D_I4, decompress
+images compress according the the CBF_PACKED or CBF_PACKED_V2
+compression described in section [3.3.2](#3.3.2) on J. P. Abrahams CCP4
+packed compression.
 
-The relevant function should be called immediately after a call to [FCB_NEXT_BINARY](#2.5.5), using the values returned by [FCB_NEXT_BINARY](#2.5.5) to select the appropriate version of the function.
+The relevant function should be called immediately after a call to
+[FCB_NEXT_BINARY](#2.5.5), using the values returned by
+[FCB_NEXT_BINARY](#2.5.5) to select the appropriate version of the
+function.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *ARRAY*
 
@@ -7143,7 +8964,8 @@ The relevant function should be called immediately after a call to [FCB_NEXT_BIN
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
 **RETURN VALUE**
 
@@ -7151,15 +8973,17 @@ Returns 0 if the function is successful.
 
 **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.9 FCB_READ_BYTE](#2.5.9)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.9 FCB_READ_BYTE](#2.5.9)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.8">2.5.8 FCB_READ_BITS</span>
+::: {#2.5.8}
+#### 2.5.8 FCB_READ_BITS
 
           INTERFACE
           INTEGER FUNCTION FCB_READ_BITS(TAPIN,FCB_BYTES_IN_REC,BUFFER,     &
@@ -7176,9 +9000,14 @@ Returns 0 if the function is successful.
           END FUNCTION
           END INTERFACE
 
-The function FCB_READ_BITS gets the integer value starting at *BYTE_IN_FILE* from file TAPIN continuing through BITCOUNT bits, with sign extension. *BYTE_IN_FILE* is left at the entry value and not incremented. The resulting, sign-extended integer value is stored in the INTEGER(4) array *IINT* of dimension *LINT* with the least significant portion in *IINT*(1).
+The function FCB_READ_BITS gets the integer value starting at
+*BYTE_IN_FILE* from file TAPIN continuing through BITCOUNT bits, with
+sign extension. *BYTE_IN_FILE* is left at the entry value and not
+incremented. The resulting, sign-extended integer value is stored in the
+INTEGER(4) array *IINT* of dimension *LINT* with the least significant
+portion in *IINT*(1).
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *TAPIN*
 
@@ -7190,7 +9019,8 @@ The function FCB_READ_BITS gets the integer value starting at *BYTE_IN_FILE* fro
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
   *REC_IN_FILE*
 
@@ -7202,19 +9032,23 @@ The function FCB_READ_BITS gets the integer value starting at *BYTE_IN_FILE* fro
 
   *BCOUNT*
 
-  The INTEGER count of bits remaining unused from the last call to FCB_READ_BITS.
+  The INTEGER count of bits remaining unused from the last call to
+FCB_READ_BITS.
 
   *BBYTE*
 
-  The INTEGER(1) byte containing the unused bits from the last call to FCB_READ_BITS.
+  The INTEGER(1) byte containing the unused bits from the last call to
+FCB_READ_BITS.
 
   *BITCOUNT*
 
-  The INTEGER count of the number of bits to be extracted from the image file.
+  The INTEGER count of the number of bits to be extracted from the image
+file.
 
   *IINT*
 
-  The INTEGER(4) array into which to store the value extracted from the image file.
+  The INTEGER(4) array into which to store the value extracted from the
+image file.
 
   *LINT*
 
@@ -7222,19 +9056,23 @@ The function FCB_READ_BITS gets the integer value starting at *BYTE_IN_FILE* fro
 
 **RETURN VALUE**
 
-Returns 0 if the function is successful. Because of the use of direct access I/O in blocks of size *FCB_BYTES_IN_REC* the precise location of the end of file may not be detected.
+Returns 0 if the function is successful. Because of the use of direct
+access I/O in blocks of size *FCB_BYTES_IN_REC* the precise location of
+the end of file may not be detected.
 
 **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.9 FCB_READ_BYTE](#2.5.9)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.9 FCB_READ_BYTE](#2.5.9)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.9">2.5.9 FCB_READ_BYTE</span>
+::: {#2.5.9}
+#### 2.5.9 FCB_READ_BYTE
 
           INTERFACE
           INTEGER FUNCTION FCB_READ_BYTE(TAPIN,FCB_BYTES_IN_REC,BUFFER,     &
@@ -7246,11 +9084,18 @@ Returns 0 if the function is successful. Because of the use of direct access I/O
           END FUNCTION
           END INTERFACE
 
-The function FCB_READ_BYTE reads the byte at the position *BYTE_IN_FILE* in the image file *TAPIN*. The first byte in the file is at *BYTE_IN_FILE* = 1. *BYTE_IN_FILE* should be set to the desired value before the call to the function and is not incremented within the function.
+The function FCB_READ_BYTE reads the byte at the position *BYTE_IN_FILE*
+in the image file *TAPIN*. The first byte in the file is at
+*BYTE_IN_FILE* = 1. *BYTE_IN_FILE* should be set to the desired value
+before the call to the function and is not incremented within the
+function.
 
-The function attempts to suppress the error caused by a read of a short last record, and in most systems cannot determine the exact location of the end of the image file, returning zero bytes until the equivalent of a full final record has been read.
+The function attempts to suppress the error caused by a read of a short
+last record, and in most systems cannot determine the exact location of
+the end of the image file, returning zero bytes until the equivalent of
+a full final record has been read.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *TAPIN*
 
@@ -7262,7 +9107,8 @@ The function attempts to suppress the error caused by a read of a short last rec
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
   *REC_IN_FILE*
 
@@ -7274,23 +9120,28 @@ The function attempts to suppress the error caused by a read of a short last rec
 
   *IBYTE*
 
-  The INTEGER(1) byte found in the image file at the byte position *BYTE_IN_FILE*.
+  The INTEGER(1) byte found in the image file at the byte position
+*BYTE_IN_FILE*.
 
 **RETURN VALUE**
 
-Returns 0 if the function is successful. Because of the use of direct access I/O in blocks of size *FCB_BYTES_IN_REC* the precise location of the end of file may not be detected.
+Returns 0 if the function is successful. Because of the use of direct
+access I/O in blocks of size *FCB_BYTES_IN_REC* the precise location of
+the end of file may not be detected.
 
 **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.9 FCB_READ_BITS](#2.5.8)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.9 FCB_READ_BITS](#2.5.8)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.10">2.5.10 FCB_READ_IMAGE_I2, FCB_READ_IMAGE_I4, FCB_READ_IMAGE_3D_I2, FCB_READ_IMAGE_3D_I4</span>
+::: {#2.5.10}
+#### 2.5.10 FCB_READ_IMAGE_I2, FCB_READ_IMAGE_I4, FCB_READ_IMAGE_3D_I2, FCB_READ_IMAGE_3D_I4
 
           INTERFACE
           INTEGER FUNCTION FCB_READ_IMAGE_I2(ARRAY,NELEM,NELEM_READ, &
@@ -7365,11 +9216,22 @@ Returns 0 if the function is successful. Because of the use of direct access I/O
           END FUNCTION
           END INTERFACE
 
-The function FCB_READ_IMAGE_I2 reads a 16-bit twos complement INTEGER(2) 2D image. The function FCB_READ_IMAGE_I4 read a 32-bit twos complement INTEGER(4) 2D image. The function FCB_READ_IMAGE_3D_I2 reads a 16-bit twos complement INTEGER(2) 3D image. The function FCB_READ_IMAGE_3D_I4 reads a 32-bit twos complement INTEGER(4) 3D image. In each case the image is compressed either by a BYTE_OFFSET algorithm by W. Kabsch based on a proposal by A. Hammersley or by a PACKED algorithm by J. P. Abrahams as used in CCP4, with modifications by P. Ellis and H. J. Bernstein.
+The function FCB_READ_IMAGE_I2 reads a 16-bit twos complement INTEGER(2)
+2D image. The function FCB_READ_IMAGE_I4 read a 32-bit twos complement
+INTEGER(4) 2D image. The function FCB_READ_IMAGE_3D_I2 reads a 16-bit
+twos complement INTEGER(2) 3D image. The function FCB_READ_IMAGE_3D_I4
+reads a 32-bit twos complement INTEGER(4) 3D image. In each case the
+image is compressed either by a BYTE_OFFSET algorithm by W. Kabsch based
+on a proposal by A. Hammersley or by a PACKED algorithm by J. P.
+Abrahams as used in CCP4, with modifications by P. Ellis and H. J.
+Bernstein.
 
-The relevant function automatically first calls [FCB_NEXT_BINARY](#2.5.5) to skip to the next binary section and then starts to read. An error return will result if the parameters of this call are inconsistent with the values in MIME header.
+The relevant function automatically first calls
+[FCB_NEXT_BINARY](#2.5.5) to skip to the next binary section and then
+starts to read. An error return will result if the parameters of this
+call are inconsistent with the values in MIME header.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *ARRAY*
 
@@ -7421,7 +9283,8 @@ The relevant function automatically first calls [FCB_NEXT_BINARY](#2.5.5) to ski
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*
 
 **RETURN VALUE**
 
@@ -7429,16 +9292,20 @@ Returns 0 if the function is successful.
 
 **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.7 FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)  
-[2.5.9 FCB_READ_BYTE](#2.5.9)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.7 FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2,
+FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2,
+FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)\
+[2.5.9 FCB_READ_BYTE](#2.5.9)\
 [2.5.11 FCB_READ_LINE](#2.5.11)
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.11">2.5.11 FCB_READ_LINE</span>
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.5.11}
+#### 2.5.11 FCB_READ_LINE
 
           INTERFACE
           INTEGER FUNCTION FCB_READ_LINE(TAPIN,LAST_CHAR,FCB_BYTES_IN_REC,  &
@@ -7451,11 +9318,16 @@ Returns 0 if the function is successful.
           END FUNCTION
           END INTERFACE
 
-The function FCB_READ_LINE reads successive bytes into the INTEGER(1) byte array *LINE* of dimension *N*), stopping at *N* bytes or the first error or the first CR (Z'0D') or LF (Z'0A'), whichever comes first. It discards an LF after a CR. The variable *LAST_CHAR* is checked for the last character from the previous line to make this determination.
+The function FCB_READ_LINE reads successive bytes into the INTEGER(1)
+byte array *LINE* of dimension *N*), stopping at *N* bytes or the first
+error or the first CR (Z\'0D\') or LF (Z\'0A\'), whichever comes first.
+It discards an LF after a CR. The variable *LAST_CHAR* is checked for
+the last character from the previous line to make this determination.
 
-The actual number of bytes read into the line, not including any terminal CR or LF is stored in *LINELEN*.
+The actual number of bytes read into the line, not including any
+terminal CR or LF is stored in *LINELEN*.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *TAPIN*
 
@@ -7463,7 +9335,8 @@ The actual number of bytes read into the line, not including any terminal CR or 
 
   *LAST_CHAR*
 
-  The INTEGER(1) byte holding the ASCII value of the last character read for each line read.
+  The INTEGER(1) byte holding the ASCII value of the last character read
+for each line read.
 
   *FCB_BYTES_IN_REC*
 
@@ -7479,11 +9352,13 @@ The actual number of bytes read into the line, not including any terminal CR or 
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*.
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*.
 
   *LINE*
 
-  The INTEGER(1) array of length *N* to hold the line to be read from *TAPIN*.
+  The INTEGER(1) array of length *N* to hold the line to be read from
+*TAPIN*.
 
   *N*
 
@@ -7499,13 +9374,16 @@ Returns 0 if the function is successful.
 
 **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.7 FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.7 FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2,
+FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2,
+FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)\
 [2.5.9 FCB_READ_BYTE](#2.5.9)
 
-#### <span id="2.5.12">2.5.12 FCB_READ_XDS_I2</span>
+::: {#2.5.12}
+#### 2.5.12 FCB_READ_XDS_I2
 
           INTERFACE
           INTEGER FUNCTION FCB_READ_XDS_I2(FILNAM,TAPIN,NX,NY,IFRAME,JFRAME)
@@ -7516,17 +9394,35 @@ Returns 0 if the function is successful.
           END FUNCTION
           END INTERFACE
 
-The function FCB_READ_XDS_I2 read a 32-bit integer twos complement image into a 16-bit INTEGER(2) XDS image using the CBF_BYTE_OFFSET, CBF_PACKED or CBF_PACKED_V2 compressions for the 32-bit data. The BYTE_OFFSET algorithm is a variant of the September 2006 version by W. Kabsch which was based on a suggestion by A. Hammersley and which was further modified by H. Bernstein.
+The function FCB_READ_XDS_I2 read a 32-bit integer twos complement image
+into a 16-bit INTEGER(2) XDS image using the CBF_BYTE_OFFSET, CBF_PACKED
+or CBF_PACKED_V2 compressions for the 32-bit data. The BYTE_OFFSET
+algorithm is a variant of the September 2006 version by W. Kabsch which
+was based on a suggestion by A. Hammersley and which was further
+modified by H. Bernstein.
 
-The file named *FILNAM* is opened on the logical unit *TAPIN* and [FCB_NEXT_BINARY](#2.5.5) is used to skip to the next binary image. The binary image is then decompressed to produce an XDS 16-bit integer image array *IFRAME* which is *NX* by *NY*. The dimensions must agree with the dimensions specified in MIME header.
+The file named *FILNAM* is opened on the logical unit *TAPIN* and
+[FCB_NEXT_BINARY](#2.5.5) is used to skip to the next binary image. The
+binary image is then decompressed to produce an XDS 16-bit integer image
+array *IFRAME* which is *NX* by *NY*. The dimensions must agree with the
+dimensions specified in MIME header.
 
-The conversion from a 32-bit integer I32 to 16-bit XDS pixel I16 is done as per W. Kabsch as follows: The value I32 is limited to the range -1023 ≤ I32 ≤ 1048576. If I32 is outside that range it is truncated to the closer boundary. The generate I16, the 16-bit result, if I32 \> 32767, it is divided by 32 (producing a number between 1024 and 32768), and then negated (producing a number between -1024 and -32768).
+The conversion from a 32-bit integer I32 to 16-bit XDS pixel I16 is done
+as per W. Kabsch as follows: The value I32 is limited to the range -1023
+≤ I32 ≤ 1048576. If I32 is outside that range it is truncated to the
+closer boundary. The generate I16, the 16-bit result, if I32 \> 32767,
+it is divided by 32 (producing a number between 1024 and 32768), and
+then negated (producing a number between -1024 and -32768).
 
-For CBF_BYTE_OFFSET this conversion can be done on the fly directly into the target array *IFRAME*, but for the CBF_PACKED or CBF_PACKED_V2, the full 32 bit precision is needed during the decompression, forcing the use of an intermediate INTEGER(4) array *JFRAME* to hold the 32-bit image in that case.
+For CBF_BYTE_OFFSET this conversion can be done on the fly directly into
+the target array *IFRAME*, but for the CBF_PACKED or CBF_PACKED_V2, the
+full 32 bit precision is needed during the decompression, forcing the
+use of an intermediate INTEGER(4) array *JFRAME* to hold the 32-bit
+image in that case.
 
 The image file is closed after reading one image.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *FILNAM*
 
@@ -7550,15 +9446,22 @@ The image file is closed after reading one image.
 
   *JFRAME*
 
-  The INTEGER(4) 32-bit image scratch array needed for CBF_PACKED or CBF_PACKED_V2 images.
+  The INTEGER(4) 32-bit image scratch array needed for CBF_PACKED or
+CBF_PACKED_V2 images.
 
 **RETURN VALUE**
 
-Returns 0 if the function is successful, CBF_FORMAT (=1) if it cannot handle this CBF format (not implemented), -1 if it cannot determine endian architecture of this machine, -2: if it cannot open the image file, -3: if it finds the wrong image format and -4 if it cannot read the image.
+Returns 0 if the function is successful, CBF_FORMAT (=1) if it cannot
+handle this CBF format (not implemented), -1 if it cannot determine
+endian architecture of this machine, -2: if it cannot open the image
+file, -3: if it finds the wrong image format and -4 if it cannot read
+the image.
+:::
 
 ------------------------------------------------------------------------
 
-#### <span id="2.5.13">2.5.13 FCB_SKIP_WHITESPACE</span>
+::: {#2.5.13}
+#### 2.5.13 FCB_SKIP_WHITESPACE
 
           INTERFACE
           INTEGER FUNCTION FCB_SKIP_WHITESPACE(TAPIN,LAST_CHAR,             &
@@ -7571,9 +9474,13 @@ Returns 0 if the function is successful, CBF_FORMAT (=1) if it cannot handle thi
                      LAST_CHAR
           END INTERFACE
 
-The function FCB_SKIP_WHITESPACE skips forward on the current INTEGER(1) byte array *LINE* of size *N* with valid data in *LINE*(1:*LINELEN*) from the current position *ICUR* moving over MIME header whitespace and comments, reading new lines into *LINE* if needed. The flag *FRESH_LINE* indicates that a fresh line should be read on entry.
+The function FCB_SKIP_WHITESPACE skips forward on the current INTEGER(1)
+byte array *LINE* of size *N* with valid data in *LINE*(1:*LINELEN*)
+from the current position *ICUR* moving over MIME header whitespace and
+comments, reading new lines into *LINE* if needed. The flag *FRESH_LINE*
+indicates that a fresh line should be read on entry.
 
-**ARGUMENTS**  
+**ARGUMENTS**\
 
   *TAPIN*
 
@@ -7581,7 +9488,8 @@ The function FCB_SKIP_WHITESPACE skips forward on the current INTEGER(1) byte ar
 
   *LAST_CHAR*
 
-  The INTEGER(1) byte holding the ASCII value of the last character read for each line read.
+  The INTEGER(1) byte holding the ASCII value of the last character read
+for each line read.
 
   *FCB_BYTES_IN_REC*
 
@@ -7597,11 +9505,13 @@ The function FCB_SKIP_WHITESPACE skips forward on the current INTEGER(1) byte ar
 
   *BUFFER*
 
-  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the appropriate record from *TAPIN*.
+  The INTEGER(1) array of length *FCB_BYTES_IN_REC* to hold the
+appropriate record from *TAPIN*.
 
   *LINE*
 
-  The INTEGER(1) array of length *N* to hold the line to be read from *TAPIN*.
+  The INTEGER(1) array of length *N* to hold the line to be read from
+*TAPIN*.
 
   *N*
 
@@ -7625,19 +9535,377 @@ Returns 0 if the function is successful.
 
 **SEE ALSO**
 
-[2.5.3 FCB_EXIT_BINARY](#2.5.3)  
-[2.5.5 FCB_NEXT_BINARY](#2.5.5)  
-[2.5.6 FCB_OPEN_CIFIN](#2.5.6)  
-[2.5.7 FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)  
+[2.5.3 FCB_EXIT_BINARY](#2.5.3)\
+[2.5.5 FCB_NEXT_BINARY](#2.5.5)\
+[2.5.6 FCB_OPEN_CIFIN](#2.5.6)\
+[2.5.7 FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2,
+FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2,
+FCB_DECOMPRESS_PACKED_3D_I4](#2.5.7)\
 [2.5.9 FCB_READ_BYTE](#2.5.9)
+:::
 
 ------------------------------------------------------------------------
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: {#2.5.14}
+#### 2.5.14 f90cbf SWIG interface
+
+Since Fortran 2003 is has also been feasible to access CBFlib directly
+from Fortran using the ISO C interface specification, but because of the
+differences between Fortran and C argument handling, it is more
+convenient to make use of SWIG wrappers for access to CBFlib from within
+Fortran applications. The necessary interfaces have been gathered in an
+f90cbf directory in CBFlib, as f90cbf_wrap.c with the interface
+definitions and argument conversions needed to call CBFlib functions
+from within Fortan applications. What follows are examples of the
+wrapper code for getting and setting wavelength, polarization, and
+divergence:
+
+
+    SWIGEXPORT int swigc_cbf_get_wavelength_(SwigClassWrapper *farg1, SwigClassWrapper *farg2) {
+      int fresult ;
+      cbf_handle arg1 = (cbf_handle) 0 ;
+      double *arg2 = (double *) 0 ;
+      int result;
+      
+      arg1 = (cbf_handle)farg1->cptr;
+      arg2 = (double *)farg2->cptr;
+      result = (int)cbf_get_wavelength(arg1,arg2);
+      fresult = (int)(result);
+      return fresult;
+    }
+
+
+    SWIGEXPORT int swigc_cbf_set_wavelength_(SwigClassWrapper *farg1, double const *farg2) {
+      int fresult ;
+      cbf_handle arg1 = (cbf_handle) 0 ;
+      double arg2 ;
+      int result;
+        
+      arg1 = (cbf_handle)farg1->cptr;
+      arg2 = (double)(*farg2);
+      result = (int)cbf_set_wavelength(arg1,arg2);
+      fresult = (int)(result);
+      return fresult;
+    }
+
+
+    SWIGEXPORT int swigc_cbf_get_polarization_(SwigClassWrapper *farg1, SwigClassWrapper *farg2, SwigClassWrapper *farg3) {
+      int fresult ;
+      cbf_handle arg1 = (cbf_handle) 0 ;
+      double *arg2 = (double *) 0 ;
+      double *arg3 = (double *) 0 ;
+      int result;
+
+      arg1 = (cbf_handle)farg1->cptr;
+      arg2 = (double *)farg2->cptr;
+      arg3 = (double *)farg3->cptr;
+      result = (int)cbf_get_polarization(arg1,arg2,arg3);
+      fresult = (int)(result);
+      return fresult;
+    }
+
+    SWIGEXPORT int swigc_cbf_set_polarization_(SwigClassWrapper *farg1, double const *farg2, double const *farg3) {
+      int fresult ;
+      cbf_handle arg1 = (cbf_handle) 0 ;
+      double arg2 ;
+      double arg3 ;
+      int result;
+
+      arg1 = (cbf_handle)farg1->cptr;
+      arg2 = (double)(*farg2);
+      arg3 = (double)(*farg3);
+      result = (int)cbf_set_polarization(arg1,arg2,arg3);
+      fresult = (int)(result);
+      return fresult;
+    }
+
+
+    SWIGEXPORT int swigc_cbf_get_divergence_(SwigClassWrapper *farg1, SwigClassWrapper *farg2, SwigClassWrapper *farg3, SwigClassWrapper *farg4) {
+      int fresult ;
+      cbf_handle arg1 = (cbf_handle) 0 ;
+      double *arg2 = (double *) 0 ;
+      double *arg3 = (double *) 0 ;
+      double *arg4 = (double *) 0 ;
+      int result;
+
+      arg1 = (cbf_handle)farg1->cptr;
+      arg2 = (double *)farg2->cptr;
+      arg3 = (double *)farg3->cptr;
+      arg4 = (double *)farg4->cptr;
+      result = (int)cbf_get_divergence(arg1,arg2,arg3,arg4);
+      fresult = (int)(result);
+      return fresult;
+    }
+
+
+    SWIGEXPORT int swigc_cbf_set_divergence_(SwigClassWrapper *farg1, double const *farg2, double const *farg3, double const *farg4) {
+      int fresult ;
+      cbf_handle arg1 = (cbf_handle) 0 ;
+      double arg2 ;
+      double arg3 ;
+      double arg4 ;
+      int result;
+
+      arg1 = (cbf_handle)farg1->cptr;
+      arg2 = (double)(*farg2);
+      arg3 = (double)(*farg3);
+      arg4 = (double)(*farg4);
+      result = (int)cbf_set_divergence(arg1,arg2,arg3,arg4);
+      fresult = (int)(result);
+      return fresult;
+    }
+
+which which called by fortran applications from f90cbf.f90 use:
+
+    function swigc_cbf_get_polarization(farg1, farg2, farg3) &
+    bind(C, name="swigc_cbf_get_polarization_") &
+    result(fresult)
+    use, intrinsic :: ISO_C_BINDING
+    import :: swigclasswrapper
+    type(SwigClassWrapper), intent(in) :: farg1
+    type(SwigClassWrapper), intent(in) :: farg2
+    type(SwigClassWrapper), intent(in) :: farg3
+    integer(C_INT) :: fresult
+    end function
+
+    function swigc_cbf_set_polarization(farg1, farg2, farg3) &
+    bind(C, name="swigc_cbf_set_polarization_") &
+    result(fresult)
+    use, intrinsic :: ISO_C_BINDING
+    import :: swigclasswrapper
+    type(SwigClassWrapper), intent(in) :: farg1
+    real(C_DOUBLE), intent(in) :: farg2
+    real(C_DOUBLE), intent(in) :: farg3
+    integer(C_INT) :: fresult
+    end function
+
+    function swigc_cbf_get_polarization(farg1, farg2, farg3) &
+    bind(C, name="swigc_cbf_get_polarization_") &
+    result(fresult)
+    use, intrinsic :: ISO_C_BINDING
+    import :: swigclasswrapper
+    type(SwigClassWrapper), intent(in) :: farg1
+    type(SwigClassWrapper), intent(in) :: farg2
+    type(SwigClassWrapper), intent(in) :: farg3
+    integer(C_INT) :: fresult
+    end function
+     
+    function swigc_cbf_set_polarization(farg1, farg2, farg3) &
+    bind(C, name="swigc_cbf_set_polarization_") &
+    result(fresult)
+    use, intrinsic :: ISO_C_BINDING
+    import :: swigclasswrapper
+    type(SwigClassWrapper), intent(in) :: farg1
+    real(C_DOUBLE), intent(in) :: farg2
+    real(C_DOUBLE), intent(in) :: farg3
+    integer(C_INT) :: fresult
+    end function
+     
+    function swigc_cbf_get_divergence(farg1, farg2, farg3, farg4) &
+    bind(C, name="swigc_cbf_get_divergence_") &
+    result(fresult)
+    use, intrinsic :: ISO_C_BINDING
+    import :: swigclasswrapper
+    type(SwigClassWrapper), intent(in) :: farg1
+    type(SwigClassWrapper), intent(in) :: farg2
+    type(SwigClassWrapper), intent(in) :: farg3
+    type(SwigClassWrapper), intent(in) :: farg4
+    integer(C_INT) :: fresult
+    end function
+     
+    function swigc_cbf_set_divergence(farg1, farg2, farg3, farg4) &
+    bind(C, name="swigc_cbf_set_divergence_") &
+    result(fresult)
+    use, intrinsic :: ISO_C_BINDING
+    import :: swigclasswrapper
+    type(SwigClassWrapper), intent(in) :: farg1
+    real(C_DOUBLE), intent(in) :: farg2
+    real(C_DOUBLE), intent(in) :: farg3
+    real(C_DOUBLE), intent(in) :: farg4
+    integer(C_INT) :: fresult
+    end function
+
+There are 316 functions beginning with swigc_cbf\_ defined in
+f90cbf.f90.
+
+------------------------------------------------------------------------
+
+::: {#2.5.15}
+#### 2.5.15 pycbf SWIG interface
+
+The code for the Python 3 SWIG wrapper is in the pycbf directory. The
+necessary code to adapt each C function to Python callin conventions is
+in pycbf_wrap.c. For example pycbf_wrap.c contains:
+
+    SWIGINTERN void cbf_handle_struct_read_widefile(cbf_handle_struct *self,char *filename,int headers){
+           /* CBFlib needs a stream that will remain open 
+              hence DO NOT open from python */
+           FILE *stream;
+           if ( ! ( stream = fopen (filename, "rb")) ){
+             {(error_status = CBF_FILEOPEN);};
+            }
+            else{
+             {(error_status = cbf_read_widefile(self, stream, headers));}; 
+        }
+    }
+    \end{verbatim}
+    }
+
+which can becalled by Python applications from
+
+    def read_widefile(self, filename, headers):
+            """
+
+            Returns : 
+            *args   : String filename,Integer headers
+
+            C prototype: int cbf_read_widefile (cbf_handle handle, FILE *file, int flags);
+
+            CBFLib documentation:
+            
+            DESCRIPTION
+            cbf_read_file reads the CBF or CIF file file into the CBF object 
+            specified by handle, using the CIF 1.0 convention of 80 character 
+            lines. cbf_read_widefile reads the CBF or CIF file file into the CBF 
+            object specified by handle, using the CIF 1.1 convention of 2048 
+            character lines. A warning is issued to stderr for ascii lines over 
+            the limit. No test is performed on binary sections.
+            
+            Validation is performed in three ways levels: during the lexical 
+            scan, during the parse, and, if a dictionary was converted, against 
+            the value types, value enumerations, categories and parent-child 
+            relationships specified in the dictionary.
+            
+            flags controls the interpretation of binary section headers, the 
+            parsing of brackets constructs and the parsing of treble-quoted 
+            strings.
+            
+            MSG_DIGEST: Instructs CBFlib to check that the digest 
+            of the binary section matches any header digest value. If the digests 
+            do not match, the call will return CBF_FORMAT. This evaluation and 
+            comparison is delayed (a  "lazy " evaluation) to ensure maximal 
+            processing efficiency. If an immediately evaluation is required, see 
+            MSG_DIGESTNOW, below. MSG_DIGESTNOW:            Instructs CBFlib to 
+            check that the digest of the binary section matches any header 
+            digeste value. If the digests do not match, the call will return 
+            CBF_FORMAT. This evaluation and comparison is performed during 
+            initial parsing of the section to ensure timely error reporting at 
+            the expense of processing efficiency. If a more efficient delayed ( 
+            "lazy ") evaluation is required, see MSG_DIGEST, above.
+            
+            MSG_DIGESTWARN: Instructs CBFlib to check that the digest 
+            of the binary section matches any header digeste value. If the 
+            digests do not match, a warning message will be sent to stderr, but 
+            processing will attempt to continue. This evaluation and comparison 
+            is first performed during initial parsing of the section to ensure 
+            timely error reporting at the expense of processing efficiency. An 
+            mismatch of the message digest usually indicates a serious error, but 
+            it is sometimes worth continuing processing to try to isolate the 
+            cause of the error. Use this option with caution.
+            
+            MSG_NODIGEST:  Do not check the digest (default). 
+            
+            PARSE_BRACKETS: Accept DDLm bracket-delimited [item,item,...item] or 
+            {item,item,...item} or (item,item,...item) constructs as valid, 
+            stripping non-quoted embedded whitespace and comments. These 
+            constructs may span multiple lines.
+            
+            PARSE_LIBERAL_BRACKETS:  Accept 
+            DDLm bracket-delimited [item,item,...item] or {item,item,...item} or 
+            (item,item,...item) constructs as valid, stripping embedded 
+            non-quoted, non-separating whitespace and comments. These constructs 
+            may span multiple lines. In this case, whitespace may be used as an 
+            alternative to the comma. 
+            
+            PARSE_TRIPLE_QUOTES:  Accept DDLm 
+            triple-quoted  " " "item,item,...item " " " or 
+            '''item,item,...item''' constructs as valid, stripping embedded 
+            whitespace and comments. These constructs may span multiple lines. If 
+            this flag is set, then ''' will not be interpreted as a quoted 
+            apoptrophe and  " " " will not be interpreted as a quoted double 
+            quote mark and 
+            
+            PARSE_NOBRACKETS:  Do not accept DDLm 
+            bracket-delimited [item,item,...item] or {item,item,...item} or 
+            (item,item,...item) constructs as valid, stripping non-quoted 
+            embedded whitespace and comments. These constructs may span multiple 
+            lines. 
+            
+            PARSE_NOTRIPLE_QUOTES:  Do not accept DDLm triple-quoted  " 
+            " "item,item,...item " " " or '''item,item,...item''' constructs 
+            as valid, stripping embedded whitespace and comments. These 
+            constructs may span multiple lines. If this flag is set, then ''' 
+            will be interpreted as a quoted apostrophe and  " " " will be 
+            interpreted as a quoted double quote mark.
+            CBFlib defers reading binary sections as long as possible. In the 
+            current version of CBFlib, this means that:
+            
+            1. The file must be a random-access file opened in binary mode (fopen 
+            ( ,
+
+            """
+            return _pycbf.cbf_handle_struct_read_widefile(self, filename, headers)
+
+in pycbf.py, which defines 324 function.
+:::
+
+------------------------------------------------------------------------
+
+::: {#2.5.16}
+#### 2.5.16 jcbf SWIG interface
+
+The java SWIG kit is in the jcbf folder. Not all CBFlib options have
+been carried over to the Java environment, but Java support is
+sufficient to allow development of a wide range of CBF applications in
+Java. For example, in order to read a CBF, jcbf_wrap.c only supports
+cbf_read_wide_file and not cbf_read_file in
+
+    SWIGINTERN struct _cbf_handle_struct *new__cbf_handle_struct(char const *name){
+                    FILE *f;
+                    cbf_handle_struct *pchs;
+
+                    f = fopen(name, "rb");
+      
+                    pchs = 0;
+                    cbf_make_handle(&pchs);
+      
+                    if (cbf_read_widefile(pchs, f, 0x0008))
+                            pchs = 0;
+      
+                    return pchs;
+            }
+    }
+
+which supports Java applications in reading CBF files. There are 163
+accessible function definitions in jcbf/cbf.java.
+:::
+
+------------------------------------------------------------------------
+
+:::::::::::::::::::::::::::::::::::::::: {#2.6}
 ## 2.6 HDF5 abstraction layer and convenience functions
 
-The HDF5 abstraction layer mostly follows the HDF5 naming convention of `H5Xfunction_name`, where `X` is usually a single letter identifying the section of the API that the function resides in. A `cbf_` prefix is used on all functions to avoid naming conflicts and make it clear that all these functions use the CBFlib error handling method whenever an error may occur.
+<div>
 
-The main purpose of this API is to not to reimplement the HDF5 API, but to make common HDF5-related tasks easier when working with HDF5 files within CBFlib. The API therefore doesn't attempt to cover every possible use of HDF5, but to simplify common tasks. Use of the HDF5 API is not unexpected in library or user code, but functions in this section should be preferred in order to reduce development time and the amount of debugging required. A relatively comprehensive test program is provided, this should be used to verify that the functions in this section of the API are performing as expected and can be used as a source of example code.
+The HDF5 abstraction layer mostly follows the HDF5 naming convention of
+`H5Xfunction_name`, where `X` is usually a single letter identifying the
+section of the API that the function resides in. A `cbf_` prefix is used
+on all functions to avoid naming conflicts and make it clear that all
+these functions use the CBFlib error handling method whenever an error
+may occur.
+
+The main purpose of this API is to not to reimplement the HDF5 API, but
+to make common HDF5-related tasks easier when working with HDF5 files
+within CBFlib. The API therefore doesn\'t attempt to cover every
+possible use of HDF5, but to simplify common tasks. Use of the HDF5 API
+is not unexpected in library or user code, but functions in this section
+should be preferred in order to reduce development time and the amount
+of debugging required. A relatively comprehensive test program is
+provided, this should be used to verify that the functions in this
+section of the API are performing as expected and can be used as a
+source of example code.
+
+</div>
 
 This section describes functions available for working with:
 
@@ -7683,58 +9951,88 @@ This section describes functions available for working with:
   - [2.6.32 cbf_H5Tcreate_string](#2.6.32)
   - [2.6.33 cbf_H5Tfree](#2.6.33)
 
+<div>
+
 #### Rank of a dataset
 
-Where a `rank` is required it must be equal to the length of the `dim`, `max` & `chunk` parameters, if they are given, and should be:
+Where a `rank` is required it must be equal to the length of the `dim`,
+`max` & `chunk` parameters, if they are given, and should be:
 
 - `0`, for scalar data
 - `1`, for vector data
 - `2`, for matrix data
 - `3`, for volume data
-- etc...
+- etc\...
 
-The maximum rank is defined by the HDF5 library, a negative rank makes no sense and will often be treated as an error.
+The maximum rank is defined by the HDF5 library, a negative rank makes
+no sense and will often be treated as an error.
+
+</div>
+
+<div>
 
 #### HDF5-specific datatypes
 
-Any `type` parameters defining types for data stored in a file should usually be a value returned by `cbf_H5Tcreate_string` or one of the standard or IEEE types:
+Any `type` parameters defining types for data stored in a file should
+usually be a value returned by `cbf_H5Tcreate_string` or one of the
+standard or IEEE types:
 
-|                  |                  |                  |                  |
-|------------------|------------------|------------------|------------------|
-| `H5T_STD_I8LE`   | `H5T_STD_I16LE`  | `H5T_STD_I32LE`  | `H5T_STD_I64LE`  |
-| `H5T_STD_U8LE`   | `H5T_STD_U16LE`  | `H5T_STD_U32LE`  | `H5T_STD_U64LE`  |
-| `H5T_STD_I8BE`   | `H5T_STD_I16BE`  | `H5T_STD_I32BE`  | `H5T_STD_I64BE`  |
-| `H5T_STD_U8BE`   | `H5T_STD_U16BE`  | `H5T_STD_U32BE`  | `H5T_STD_U64BE`  |
-| `H5T_IEEE_F32LE` | `H5T_IEEE_F64LE` | `H5T_IEEE_F32BE` | `H5T_IEEE_F64BE` |
+  ------------------ ------------------ ------------------ ------------------
+  `H5T_STD_I8LE`     `H5T_STD_I16LE`    `H5T_STD_I32LE`    `H5T_STD_I64LE`
+  `H5T_STD_U8LE`     `H5T_STD_U16LE`    `H5T_STD_U32LE`    `H5T_STD_U64LE`
+  `H5T_STD_I8BE`     `H5T_STD_I16BE`    `H5T_STD_I32BE`    `H5T_STD_I64BE`
+  `H5T_STD_U8BE`     `H5T_STD_U16BE`    `H5T_STD_U32BE`    `H5T_STD_U64BE`
+  `H5T_IEEE_F32LE`   `H5T_IEEE_F64LE`   `H5T_IEEE_F32BE`   `H5T_IEEE_F64BE`
+  ------------------ ------------------ ------------------ ------------------
 
-Any `type` parameters defining types for data stored in memory should usually be a value returned by `cbf_H5Tcreate_string` or one of the native types:
+Any `type` parameters defining types for data stored in memory should
+usually be a value returned by `cbf_H5Tcreate_string` or one of the
+native types:
 
-|  |  |  |  |  |
-|----|----|----|----|----|
-| `H5T_NATIVE_SCHAR` | `H5T_NATIVE_SHORT` | `H5T_NATIVE_INT` | `H5T_NATIVE_LONG` | `H5T_NATIVE_LLONG` |
-| `H5T_NATIVE_UCHAR` | `H5T_NATIVE_USHORT` | `H5T_NATIVE_UINT` | `H5T_NATIVE_ULONG` | `H5T_NATIVE_ULLONG` |
-| `H5T_NATIVE_FLOAT` | `H5T_NATIVE_DOUBLE` | `H5T_NATIVE_LDOUBLE` |  |  |
+  -------------------- --------------------- ---------------------- -------------------- ---------------------
+  `H5T_NATIVE_SCHAR`   `H5T_NATIVE_SHORT`    `H5T_NATIVE_INT`       `H5T_NATIVE_LONG`    `H5T_NATIVE_LLONG`
+  `H5T_NATIVE_UCHAR`   `H5T_NATIVE_USHORT`   `H5T_NATIVE_UINT`      `H5T_NATIVE_ULONG`   `H5T_NATIVE_ULLONG`
+  `H5T_NATIVE_FLOAT`   `H5T_NATIVE_DOUBLE`   `H5T_NATIVE_LDOUBLE`                        
+  -------------------- --------------------- ---------------------- -------------------- ---------------------
 
-Functions are rarely (if ever) limited to the above values, and can take any valid HDF5 datatype. The above is not a complete list of all available types, check the HDF5 documentation for such a list if you need one.
+Functions are rarely (if ever) limited to the above values, and can take
+any valid HDF5 datatype. The above is not a complete list of all
+available types, check the HDF5 documentation for such a list if you
+need one.
+
+</div>
+
+<div>
 
 #### Comparing data
 
-Some of the functions in this section will require a comparison function and some comparison parameters to be provided. The function should return zero if the data in the two arrays are considered equal and non-zero otherwise, note that this is the same as `C`'s `strcmp()`. The signature of the comparison functions used here is:
+Some of the functions in this section will require a comparison function
+and some comparison parameters to be provided. The function should
+return zero if the data in the two arrays are considered equal and
+non-zero otherwise, note that this is the same as `C`\'s `strcmp()`. The
+signature of the comparison functions used here is:
 
 `int compare (const void * expected, const void * existing, size_t length, const void * params)`
 
 This will be called with:
 
-| Type | Name | Description |
-|----|----|----|
-| const void \* | expected | A pointer to the array of requested values that was passed to the function. |
-| const void \* | existing | An array of existing values read from the object. |
-| size_t | length | The length of the `expected` and `existing` arrays. |
-| const void \* | params | A pointer to the comparison parameters which were passed to the calling function. |
+  Type            Name       Description
+  --------------- ---------- -----------------------------------------------------------------------------------
+  const void \*   expected   A pointer to the array of requested values that was passed to the function.
+  const void \*   existing   An array of existing values read from the object.
+  size_t          length     The length of the `expected` and `existing` arrays.
+  const void \*   params     A pointer to the comparison parameters which were passed to the calling function.
 
-The comparison parameters allow more complex comparisons to be performed, such as a check that the numbers are 'close enough' as determined by some variable measure of closeness. It is the caller's responsibility to ensure that the comparison function is appropriate for the type of data expected and that `params` is of the appropriate type for the comparison function. The parameters `expected` and `existing` should normally be cast to the appropriate type before being used.
+The comparison parameters allow more complex comparisons to be
+performed, such as a check that the numbers are \'close enough\' as
+determined by some variable measure of closeness. It is the caller\'s
+responsibility to ensure that the comparison function is appropriate for
+the type of data expected and that `params` is of the appropriate type
+for the comparison function. The parameters `expected` and `existing`
+should normally be cast to the appropriate type before being used.
 
-An example function for comparing `int`s, taken from the implementation of CBFlib:
+An example function for comparing `int`s, taken from the implementation
+of CBFlib:
 
 ` `
 
@@ -7768,32 +10066,39 @@ An example function for comparing `int`s, taken from the implementation of CBFli
         return length;
     }
 
-Some older functions use a simpler 3-argument comparison function, which doesn't have a parameter that can be used to pass some extra information to or retrieve information from the function.
+Some older functions use a simpler 3-argument comparison function, which
+doesn\'t have a parameter that can be used to pass some extra
+information to or retrieve information from the function.
+
+</div>
 
 ------------------------------------------------------------------------
 
+::: {#2.6.1 .function}
 #### 2.6.1 cbf_H5Acreate
 
 Create a new attribute.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Acreate (const hid_t location, hid_t *const attr, const char *const name, const hid_t type, const hid_t space)`
 
 **DESCRIPTION**
 
-Creates a new attribute of the object `location` with name given by `name`, optionally returning it in the `attr` variable. An error will occur if a similarly named attribute already exists.
+Creates a new attribute of the object `location` with name given by
+`name`, optionally returning it in the `attr` variable. An error will
+occur if a similarly named attribute already exists.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| location | The hdf5 group/file in which to put the attribute. |
-| attr | A pointer to a HDF5 object identifier that is set to the location of a valid object if the function succeeds, otherwise is left untouched. |
-| name | The name of the existing/new dataset. |
-| type | The type of data to be stored in the attribute. |
-| space | The dataspace of the attribute. |
+  ---------- --------------------------------------------------------------------------------------------------------------------------------------------
+  location   The hdf5 group/file in which to put the attribute.
+  attr       A pointer to a HDF5 object identifier that is set to the location of a valid object if the function succeeds, otherwise is left untouched.
+  name       The name of the existing/new dataset.
+  type       The type of data to be stored in the attribute.
+  space      The dataspace of the attribute.
+  ---------- --------------------------------------------------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -7809,33 +10114,40 @@ An error code.
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.2 .function}
 #### 2.6.2 cbf_H5Afind
 
 Try to locate an existing attribute.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Afind (const hid_t location, hid_t *const attr, const char *const name, const hid_t type, const hid_t space)`
 
 **DESCRIPTION**
 
-Checks for the existance of an attribute with the given `name` at `location` with a datatype of `type` and dataspace of `space`. Will return `CBF_NOTFOUND` if it cannot be found, or open it if it already exists.
+Checks for the existance of an attribute with the given `name` at
+`location` with a datatype of `type` and dataspace of `space`. Will
+return `CBF_NOTFOUND` if it cannot be found, or open it if it already
+exists.
 
-If `type` is not a datatype then no check of the attribute datatype will be done. If `space` is not a dataspace then no checks of the attribute dataspace wil be done.
+If `type` is not a datatype then no check of the attribute datatype will
+be done. If `space` is not a dataspace then no checks of the attribute
+dataspace wil be done.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| location | The hdf5 group/file in which to put the attribute. |
-| attr | A pointer to a HDF5 object identifier that is set to the location of a valid object if the function succeeds, otherwise is left untouched. |
-| name | The name of the existing/new attribute. |
-| type | The type of data stored in the attribute, or an invalid identifier if it should not be checked. |
-| space | The dataspace of the attribute, or an invalid identifier if it should not be checked. |
+  ---------- --------------------------------------------------------------------------------------------------------------------------------------------
+  location   The hdf5 group/file in which to put the attribute.
+  attr       A pointer to a HDF5 object identifier that is set to the location of a valid object if the function succeeds, otherwise is left untouched.
+  name       The name of the existing/new attribute.
+  type       The type of data stored in the attribute, or an invalid identifier if it should not be checked.
+  space      The dataspace of the attribute, or an invalid identifier if it should not be checked.
+  ---------- --------------------------------------------------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -7851,29 +10163,32 @@ An error code.
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.3 .function}
 #### 2.6.3 cbf_H5Aread
 
 Read an entire attribute from a file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Aread (const hid_t attr, const hid_t type, void *const buf)`
 
 **DESCRIPTION**
 
-Reads all of the data from `attr` into `buf`, which should have been allocated as the native type indicated by `mem_type`.
+Reads all of the data from `attr` into `buf`, which should have been
+allocated as the native type indicated by `mem_type`.
 
 **ARGUMENTS**
 
-|      |                                              |
-|------|----------------------------------------------|
-| attr | A valid hdf5 handle for an attribute.        |
-| type | The type of data in memory.                  |
-| buf  | The location where the data is to be stored. |
+  ------ ----------------------------------------------
+  attr   A valid hdf5 handle for an attribute.
+  type   The type of data in memory.
+  buf    The location where the data is to be stored.
+  ------ ----------------------------------------------
 
 **RETURN VALUE**
 
@@ -7889,28 +10204,31 @@ An error code.
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.4 .function}
 #### 2.6.4 cbf_H5Aread_string
 
 Read an entire string attribute from a file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Aread_string (const hid_t attr, const char **const val)`
 
 **DESCRIPTION**
 
-Read a string attribute into memory, returning a pointer that must be free'd by the caller in `val`.
+Read a string attribute into memory, returning a pointer that must be
+free\'d by the caller in `val`.
 
 **ARGUMENTS**
 
-|      |                                                |
-|------|------------------------------------------------|
-| attr | The attribute to read from.                    |
-| val  | A pointer to a place the string may be stored. |
+  ------ ------------------------------------------------
+  attr   The attribute to read from.
+  val    A pointer to a place the string may be stored.
+  ------ ------------------------------------------------
 
 **RETURN VALUE**
 
@@ -7926,29 +10244,32 @@ An error code.
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.5 .function}
 #### 2.6.5 cbf_H5Awrite
 
 Write an entire attribute to a file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Awrite (const hid_t attr, const hid_t type, void *const buf)`
 
 **DESCRIPTION**
 
-Writes all of the data from `buf`, which should contain data if the type indicated by `mem_type`, into `attr`.
+Writes all of the data from `buf`, which should contain data if the type
+indicated by `mem_type`, into `attr`.
 
 **ARGUMENTS**
 
-|      |                                        |
-|------|----------------------------------------|
-| attr | A valid hdf5 handle for an attribute.  |
-| type | The type of data in memory.            |
-| buf  | The address of the data to be written. |
+  ------ ----------------------------------------
+  attr   A valid hdf5 handle for an attribute.
+  type   The type of data in memory.
+  buf    The address of the data to be written.
+  ------ ----------------------------------------
 
 **RETURN VALUE**
 
@@ -7964,35 +10285,42 @@ An error code.
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.6 .function}
 #### 2.6.6 cbf_H5Arequire_cmp2
 
-Check for an attribute with the given space/type/value, or set one if it doesn't exist.
+Check for an attribute with the given space/type/value, or set one if it
+doesn\'t exist.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Arequire_cmp2 (const hid_t ID, const char *const name, const int rank, const hsize_t *const dim, const hid_t fileType, const hid_t memType, const void *const value, void *const buf, int(*cmp)(const void *, const void *, size_t))`
 
 **DESCRIPTION**
 
-Checks the existance of an attribute of the given name, size, type and value. Equal value is determined by a custom comparison function which may use some extra data for more sophisticated tests. A new attribute with the given properties will be created if none currently exist, the function will fail if an incompatible attribute exists.
+Checks the existance of an attribute of the given name, size, type and
+value. Equal value is determined by a custom comparison function which
+may use some extra data for more sophisticated tests. A new attribute
+with the given properties will be created if none currently exist, the
+function will fail if an incompatible attribute exists.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| ID | The HDF5 object that the attribute will be applied to. |
-| name | The name of the attribute. |
-| rank | The number of dimensions of the attribute data, 0 for scalar data. |
-| dim | The length of each dimension, not used for scalar data. |
-| fileType | The HDF5 type of the attribute data in the file. |
-| memType | The HDF5 type of the attribute data in memory. |
-| value | The data to be written to the attribute. |
-| buf | A buffer to be used when reading an existing attribute of the same size. |
-| cmp | A comparison function to test if a previously set value is equal to the value I asked for. |
+  ---------- --------------------------------------------------------------------------------------------
+  ID         The HDF5 object that the attribute will be applied to.
+  name       The name of the attribute.
+  rank       The number of dimensions of the attribute data, 0 for scalar data.
+  dim        The length of each dimension, not used for scalar data.
+  fileType   The HDF5 type of the attribute data in the file.
+  memType    The HDF5 type of the attribute data in memory.
+  value      The data to be written to the attribute.
+  buf        A buffer to be used when reading an existing attribute of the same size.
+  cmp        A comparison function to test if a previously set value is equal to the value I asked for.
+  ---------- --------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8008,36 +10336,43 @@ An error code.
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.7 .function}
 #### 2.6.7 cbf_H5Arequire_cmp2_ULP
 
-Check for an attribute with the given space/type/value, or set one if it doesn't exist.
+Check for an attribute with the given space/type/value, or set one if it
+doesn\'t exist.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Arequire_cmp2_ULP (const hid_t ID, const char *const name, const int rank, const hsize_t *const dim, const hid_t fileType, const hid_t memType, const void *const value, void *const buf, int(*cmp)(const void *, const void *, size_t, const void *), const void *const cmp_params)`
 
 **DESCRIPTION**
 
-Checks the existance of an attribute of the given name, size, type and value. Equal value is determined by a custom comparison function which may use some extra data for more sophisticated tests. A new attribute with the given properties will be created if none currently exist, the function will fail if an incompatible attribute exists.
+Checks the existance of an attribute of the given name, size, type and
+value. Equal value is determined by a custom comparison function which
+may use some extra data for more sophisticated tests. A new attribute
+with the given properties will be created if none currently exist, the
+function will fail if an incompatible attribute exists.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| ID | The HDF5 object that the attribute will be applied to. |
-| name | The name of the attribute. |
-| rank | The number of dimensions of the attribute data, 0 for scalar data. |
-| dim | The length of each dimension, not used for scalar data. |
-| fileType | The HDF5 type of the attribute data in the file. |
-| memType | The HDF5 type of the attribute data in memory. |
-| value | The data to be written to the attribute. |
-| buf | A buffer to be used when reading an existing attribute of the same size. |
-| cmp | A comparison function to test if a previously set value is equal to the value I asked for. |
-| cmp_params | A pointer to a data structure which may be used by the comparison function. |
+  ------------ --------------------------------------------------------------------------------------------
+  ID           The HDF5 object that the attribute will be applied to.
+  name         The name of the attribute.
+  rank         The number of dimensions of the attribute data, 0 for scalar data.
+  dim          The length of each dimension, not used for scalar data.
+  fileType     The HDF5 type of the attribute data in the file.
+  memType      The HDF5 type of the attribute data in memory.
+  value        The data to be written to the attribute.
+  buf          A buffer to be used when reading an existing attribute of the same size.
+  cmp          A comparison function to test if a previously set value is equal to the value I asked for.
+  cmp_params   A pointer to a data structure which may be used by the comparison function.
+  ------------ --------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8053,21 +10388,26 @@ An error code.
 - [2.6.6 cbf_H5Arequire_cmp2](#2.6.6)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.8 .function}
 #### 2.6.8 cbf_H5Arequire_string
 
-Check for a scalar string attribute with a given value, or set one if it doesn't exist.
+Check for a scalar string attribute with a given value, or set one if it
+doesn\'t exist.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Arequire_string (const hid_t location, const char *const name, const char *const value)`
 
 **DESCRIPTION**
 
-Forwarding function that calls `cbf_H5Arequire_cmp2_ULP` with the appropriate arguments to compare two strings. The `strcmp` function is used for string comparison, with a small wrapper to verify array length:
+Forwarding function that calls `cbf_H5Arequire_cmp2_ULP` with the
+appropriate arguments to compare two strings. The `strcmp` function is
+used for string comparison, with a small wrapper to verify array length:
 
 ` `
 
@@ -8086,11 +10426,11 @@ Forwarding function that calls `cbf_H5Arequire_cmp2_ULP` with the appropriate ar
 
 **ARGUMENTS**
 
-|          |                                                               |
-|----------|---------------------------------------------------------------|
-| location | HDF5 object to which the string attribute should/will belong. |
-| name     | The name of the attribute.                                    |
-| value    | The value which the attribute should/will have.               |
+  ---------- ---------------------------------------------------------------
+  location   HDF5 object to which the string attribute should/will belong.
+  name       The name of the attribute.
+  value      The value which the attribute should/will have.
+  ---------- ---------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8106,27 +10446,30 @@ An error code.
 - [2.6.6 cbf_H5Arequire_cmp2](#2.6.6)
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.9 cbf_H5Afree](#2.6.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.9 .function}
 #### 2.6.9 cbf_H5Afree
 
 Close a HDF5 attribute.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Afree (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close an attribute, but don't modify the identifier that described it.
+Attempt to close an attribute, but don\'t modify the identifier that
+described it.
 
 **ARGUMENTS**
 
-|     |                                  |
-|-----|----------------------------------|
-| ID  | The HDF5 attribute to be closed. |
+  ---- ----------------------------------
+  ID   The HDF5 attribute to be closed.
+  ---- ----------------------------------
 
 **RETURN VALUE**
 
@@ -8142,42 +10485,56 @@ An error code.
 - [2.6.6 cbf_H5Arequire_cmp2](#2.6.6)
 - [2.6.7 cbf_H5Arequire_cmp2_ULP](#2.6.7)
 - [2.6.8 cbf_H5Arequire_string](#2.6.8)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.10 .function}
 #### 2.6.10 cbf_H5Dcreate
 
 Creates a new dataset in the given location.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dcreate (const hid_t location, hid_t *const dataset, const char *const name, const int rank, const hsize_t *const dim, const hsize_t *const max, const hsize_t *const chunk, const hid_t type)`
 
 **DESCRIPTION**
 
-The `dataset` parameter gives a location to store the dataset for use by the caller, for example to add an attribute to it. If non-zero the returned handle MUST be free'd by the caller with `cbf_H5Dfree`.
+The `dataset` parameter gives a location to store the dataset for use by
+the caller, for example to add an attribute to it. If non-zero the
+returned handle MUST be free\'d by the caller with `cbf_H5Dfree`.
 
-The dimensions of the dataset to create are given in `dim`. The maximum extents of the dataset are given in `max`, which uses the values in `dim` as defaults if set to a null pointer. Each element of `max` must be at least as large as the corresponding element of `dim`. The dataset created will be a fixed-size dataset unless one of the elements of `max` is set to `H5S_UNLIMITED`.
+The dimensions of the dataset to create are given in `dim`. The maximum
+extents of the dataset are given in `max`, which uses the values in
+`dim` as defaults if set to a null pointer. Each element of `max` must
+be at least as large as the corresponding element of `dim`. The dataset
+created will be a fixed-size dataset unless one of the elements of `max`
+is set to `H5S_UNLIMITED`.
 
-A chunk size must be given in the `chunk` argument if any element of `max` is set to `H5S_UNLIMITED` or is greater than the corresponding element of `dim`. If the dataset should not be chunked then a null pointer should be given.
+A chunk size must be given in the `chunk` argument if any element of
+`max` is set to `H5S_UNLIMITED` or is greater than the corresponding
+element of `dim`. If the dataset should not be chunked then a null
+pointer should be given.
 
-The `dim`, `max` and `chunk` arrays - if given - must each contain `rank` elements.
+The `dim`, `max` and `chunk` arrays - if given - must each contain
+`rank` elements.
 
-This function will fail if a link with the same name already exists in `location`.
+This function will fail if a link with the same name already exists in
+`location`.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| location | The hdf5 group/file in which to put the dataset. |
-| dataset | An optional pointer to a location where the dataset handle should be stored. |
-| name | The name of the new dataset. |
-| rank | The rank of the data. |
-| dim | The dimensions of the dataset to create. Unused if `rank == 0`. |
-| max | The maximum size of each dimension. Unused if `rank == 0`. |
-| chunk | The chunk size for the dataset. |
-| type | The type of each data element in the file. |
+  ---------- ------------------------------------------------------------------------------
+  location   The hdf5 group/file in which to put the dataset.
+  dataset    An optional pointer to a location where the dataset handle should be stored.
+  name       The name of the new dataset.
+  rank       The rank of the data.
+  dim        The dimensions of the dataset to create. Unused if `rank == 0`.
+  max        The maximum size of each dimension. Unused if `rank == 0`.
+  chunk      The chunk size for the dataset.
+  type       The type of each data element in the file.
+  ---------- ------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8195,23 +10552,30 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.11 .function}
 #### 2.6.11 cbf_H5Dfind2
 
 Look for a dataset with the given properties.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dfind2 (const hid_t location, hid_t *const dataset, const char *const name, const int rank, const hsize_t *const max, hsize_t *const buf, const hid_t type)`
 
 **DESCRIPTION**
 
-Returns `CBF_NOTFOUND` without modifying `dataset` if no dataset exists and fails without modifying `dataset` if one with different properties exists. A dataset will be 'found' if it has the same name and a maximum size which is at least as big as the size requested in `max`.
+Returns `CBF_NOTFOUND` without modifying `dataset` if no dataset exists
+and fails without modifying `dataset` if one with different properties
+exists. A dataset will be \'found\' if it has the same name and a
+maximum size which is at least as big as the size requested in `max`.
 
-A buffer of `rank` elements pointed to by `buf` may be used to store the array of maximum extents for a potentially matching dataset, in order to avoid the use of `malloc` & `free` for very small amounts of memory.
+A buffer of `rank` elements pointed to by `buf` may be used to store the
+array of maximum extents for a potentially matching dataset, in order to
+avoid the use of `malloc` & `free` for very small amounts of memory.
 
 Use as:
 
@@ -8240,19 +10604,20 @@ Use as:
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| location | The hdf5 group/file in which to put the dataset. |
-| dataset | A pointer to a HDF5 object identifier that is set to the location of a valid object if the function succeeds, otherwise is left in an undefined state. |
-| name | The name of the existing/new dataset. |
-| rank | The rank of the data, must be equal to the length of the `max` and `buf` arrays, if they are given. |
-| max | The (optional) maximum size of each dimension, pointer or an array of length `rank` where `0 <= max[i] <= H5S_UNLIMITED` for `i = [0, rank)`, unused if `rank == 0`. |
-| buf | An optional buffer with `rank` elements which may be used to store the current maximum dimensions of a potential match to avoid a malloc/free call. |
-| type | The type of each data element in the file. If an invalid type is given a dataset of any type may be returned. |
+  ---------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  location   The hdf5 group/file in which to put the dataset.
+  dataset    A pointer to a HDF5 object identifier that is set to the location of a valid object if the function succeeds, otherwise is left in an undefined state.
+  name       The name of the existing/new dataset.
+  rank       The rank of the data, must be equal to the length of the `max` and `buf` arrays, if they are given.
+  max        The (optional) maximum size of each dimension, pointer or an array of length `rank` where `0 <= max[i] <= H5S_UNLIMITED` for `i = [0, rank)`, unused if `rank == 0`.
+  buf        An optional buffer with `rank` elements which may be used to store the current maximum dimensions of a potential match to avoid a malloc/free call.
+  type       The type of each data element in the file. If an invalid type is given a dataset of any type may be returned.
+  ---------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
-CBF_SUCCESS if a matching dataset was found, CBF_NOTFOUND if nothing with the same name was found, some other error code otherwise.
+CBF_SUCCESS if a matching dataset was found, CBF_NOTFOUND if nothing
+with the same name was found, some other error code otherwise.
 
 **SEE ALSO**
 
@@ -8266,25 +10631,39 @@ CBF_SUCCESS if a matching dataset was found, CBF_NOTFOUND if nothing with the sa
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.12 .function}
 #### 2.6.12 cbf_H5Drequire
 
-Ensure that a dataset exists, returning a handle to an existing dataset or creating a new dataset if needed.
+Ensure that a dataset exists, returning a handle to an existing dataset
+or creating a new dataset if needed.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Drequire (const hid_t location, hid_t *const dataset, const char *const name, const int rank, const hsize_t *const max, const hsize_t *const chunk, hsize_t *const buf, const hid_t type)`
 
 **DESCRIPTION**
 
-Ensure a dataset of the given `rank` exists and can hold at least as many elements as specified in `max`. If no dataset exists then one will be created with dimensions of \[0, 0, ... 0\]. `cbf_H5Dfind` and `cbf_H5Dcreate` are used in the implementation of this function.
+Ensure a dataset of the given `rank` exists and can hold at least as
+many elements as specified in `max`. If no dataset exists then one will
+be created with dimensions of \[0, 0, \... 0\]. `cbf_H5Dfind` and
+`cbf_H5Dcreate` are used in the implementation of this function.
 
-An existing dataset may be found using `cbf_H5Dfind2(location, dataset, name, rank, max, buf, type)`. If no dataset can be found then a dataset will be created by setting each element of a buffer of length `rank` to zero and using `cbf_H5Dcreate(location, dataset, name, rank, buffer, max, chunk, type)`. A buffer of `rank` elements may be provided to avoid using malloc to allocate memory for a small array whose size may already be known.
+An existing dataset may be found using
+`cbf_H5Dfind2(location, dataset, name, rank, max, buf, type)`. If no
+dataset can be found then a dataset will be created by setting each
+element of a buffer of length `rank` to zero and using
+`cbf_H5Dcreate(location, dataset, name, rank, buffer, max, chunk, type)`.
+A buffer of `rank` elements may be provided to avoid using malloc to
+allocate memory for a small array whose size may already be known.
 
-The value pointed to by `dataset` should be a valid object identifier if the function exits successfully, and will be left in an undefined state otherwise.
+The value pointed to by `dataset` should be a valid object identifier if
+the function exits successfully, and will be left in an undefined state
+otherwise.
 
 This is roughly equivalent to:
 
@@ -8300,20 +10679,21 @@ This is roughly equivalent to:
         return error;
     }
 
-but contains more sophisticated error handling code and allows for some parameters to be omitted.
+but contains more sophisticated error handling code and allows for some
+parameters to be omitted.
 
 **ARGUMENTS**
 
-|          |                                                  |
-|----------|--------------------------------------------------|
-| location | The hdf5 group/file in which to put the dataset. |
-| dataset  | A pointer to a location to store the dataset.    |
-| name     | The name of the existing/new dataset.            |
-| rank     | The rank of the data.                            |
-| max      | The (optional) maximum size of each dimension.   |
-| chunk    | The chunk size used if creating a new dataset.   |
-| buf      | An optional buffer with `rank` elements.         |
-| type     | The type of each data element in the file.       |
+  ---------- --------------------------------------------------
+  location   The hdf5 group/file in which to put the dataset.
+  dataset    A pointer to a location to store the dataset.
+  name       The name of the existing/new dataset.
+  rank       The rank of the data.
+  max        The (optional) maximum size of each dimension.
+  chunk      The chunk size used if creating a new dataset.
+  buf        An optional buffer with `rank` elements.
+  type       The type of each data element in the file.
+  ---------- --------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8331,37 +10711,48 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.13 .function}
 #### 2.6.13 cbf_H5Dinsert
 
-Add some data to a datset, expanding the dataset to the appropriate size if needed.
+Add some data to a datset, expanding the dataset to the appropriate size
+if needed.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dinsert (const hid_t dataset, const hsize_t *const offset, const hsize_t *const stride, const hsize_t *const count, hsize_t *const buf, const void *const value, const hid_t type)`
 
 **DESCRIPTION**
 
-Insert a slice of data into `dataset` with the appropriate `offset` & `stride`, ensuring that no existing data is lost due to resizing the dataset but not checking that previous data isn't being overwritten.
+Insert a slice of data into `dataset` with the appropriate `offset` &
+`stride`, ensuring that no existing data is lost due to resizing the
+dataset but not checking that previous data isn\'t being overwritten.
 
-The `offset`, `stride`, `count` and `buf` arrays must each have `rank` elements. If `stride` is set to the null pointer then a default of `[1, 1, 1, ..., 1]` will be used. An optional buffer may be provided in `buf` to avoid using malloc to allocate a small amount of memory whose size may actually be known at compile time.
+The `offset`, `stride`, `count` and `buf` arrays must each have `rank`
+elements. If `stride` is set to the null pointer then a default of
+`[1, 1, 1, ..., 1]` will be used. An optional buffer may be provided in
+`buf` to avoid using malloc to allocate a small amount of memory whose
+size may actually be known at compile time.
 
-The `value` array should contain `count[0] * count[1] * ... * count[rank-1] === product(count)` elements of data.
+The `value` array should contain
+`count[0] * count[1] * ... * count[rank-1] === product(count)` elements
+of data.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| dataset | The dataset to write the data to. |
-| offset | Where to start writing the data. |
-| stride | The number of elements in the dataset to step for each element to be written. |
-| count | The number of elements in each dimension to be written. |
-| buf | An optional buffer to avoid using the heap for small amounts of memory. |
-| value | The address of the data to be written. |
-| type | The type of data in memory. |
+  --------- -------------------------------------------------------------------------------
+  dataset   The dataset to write the data to.
+  offset    Where to start writing the data.
+  stride    The number of elements in the dataset to step for each element to be written.
+  count     The number of elements in each dimension to be written.
+  buf       An optional buffer to avoid using the heap for small amounts of memory.
+  value     The address of the data to be written.
+  type      The type of data in memory.
+  --------- -------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8379,28 +10770,32 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.14 .function}
 #### 2.6.14 cbf_H5Dset_extent
 
 Change the extent of a chunked dataset to the values in dim.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dset_extent (const hid_t dataset, const hsize_t *const dim)`
 
 **DESCRIPTION**
 
-Forwards to a HDF5 function to change the extent of `dataset`. The `dim` array must have the same number of elements as the rank of the dataset, but this can't be checked within this function.
+Forwards to a HDF5 function to change the extent of `dataset`. The `dim`
+array must have the same number of elements as the rank of the dataset,
+but this can\'t be checked within this function.
 
 **ARGUMENTS**
 
-|         |                                                          |
-|---------|----------------------------------------------------------|
-| dataset | A handle for the dataset whose extent is to be changed.  |
-| dim     | The new extent of the dataset, if the function succeeds. |
+  --------- ----------------------------------------------------------
+  dataset   A handle for the dataset whose extent is to be changed.
+  dim       The new extent of the dataset, if the function succeeds.
+  --------- ----------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8418,32 +10813,40 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.15 .function}
 #### 2.6.15 cbf_H5Dwrite2
 
-Add some data to the specified position in the dataset, without checking what (if anything) was there before.
+Add some data to the specified position in the dataset, without checking
+what (if anything) was there before.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dwrite2 (const hid_t dataset, const hsize_t *const offset, const hsize_t *const stride, const hsize_t *const count, const void *const value, const hid_t type)`
 
 **DESCRIPTION**
 
-Assumes the dataset has the appropriate size to contain all the data and overwrites any existing data that may be there. The `rank` of the dataset is assumed to be known, and the size of the array parameters is not tested. When `rank` is zero - in the case of scalar datasets - the `offset`, `stride` and `count` parameters are meaningless and should be omitted by setting them to zero.
+Assumes the dataset has the appropriate size to contain all the data and
+overwrites any existing data that may be there. The `rank` of the
+dataset is assumed to be known, and the size of the array parameters is
+not tested. When `rank` is zero - in the case of scalar datasets - the
+`offset`, `stride` and `count` parameters are meaningless and should be
+omitted by setting them to zero.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| dataset | The dataset to write the data to. |
-| offset | Where to start writing the data, as an array of `rank` numbers. |
-| stride | The number of elements in the dataset to step for each element to be written, where null is equivalent to a stride of \[1, 1, 1, ..., 1\], as an array of `rank` numbers. |
-| count | The number of elements in each dimension to be written, as an array of `rank` numbers. |
-| value | The address of the data to be written. |
-| type | The type of data in memory. |
+  --------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  dataset   The dataset to write the data to.
+  offset    Where to start writing the data, as an array of `rank` numbers.
+  stride    The number of elements in the dataset to step for each element to be written, where null is equivalent to a stride of \[1, 1, 1, \..., 1\], as an array of `rank` numbers.
+  count     The number of elements in each dimension to be written, as an array of `rank` numbers.
+  value     The address of the data to be written.
+  type      The type of data in memory.
+  --------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8461,32 +10864,40 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.16 .function}
 #### 2.6.16 cbf_H5Dread2
 
-Extract some existing data from a dataset at a known position with memtype.
+Extract some existing data from a dataset at a known position with
+memtype.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dread2 (const hid_t dataset, const hsize_t *const offset, const hsize_t *const stride, const hsize_t *const count, void *const value, const hid_t type)`
 
 **DESCRIPTION**
 
-Read some data from a given location in the dataset to an existing location in memory. Does not check the length of the array parameters, which should all have `rank` elements or (in some cases) be `null`. When `rank` is zero - in the case of scalar datasets - the `offset`, `stride` and `count` parameters are meaningless and should be omitted by setting them to zero.
+Read some data from a given location in the dataset to an existing
+location in memory. Does not check the length of the array parameters,
+which should all have `rank` elements or (in some cases) be `null`. When
+`rank` is zero - in the case of scalar datasets - the `offset`, `stride`
+and `count` parameters are meaningless and should be omitted by setting
+them to zero.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| dataset | The dataset to read the data from. |
-| offset | Where to start writing the data, as an array of `rank` numbers. |
-| stride | The number of elements in the dataset to step for each element to be written, where null is equivalent to a stride of \[1, 1, 1, ..., 1\], as an array of `rank` numbers. |
-| count | The number of elements in each dimension to be written, as an array of `rank` numbers. |
-| value | The location where the data is to be stored. |
-| type | The type of data in memory. |
+  --------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  dataset   The dataset to read the data from.
+  offset    Where to start writing the data, as an array of `rank` numbers.
+  stride    The number of elements in the dataset to step for each element to be written, where null is equivalent to a stride of \[1, 1, 1, \..., 1\], as an array of `rank` numbers.
+  count     The number of elements in each dimension to be written, as an array of `rank` numbers.
+  value     The location where the data is to be stored.
+  type      The type of data in memory.
+  --------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8504,31 +10915,38 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.17 .function}
 #### 2.6.17 cbf_H5Drequire_scalar_F64LE2
 
-Write a scalar 64-bit floating point number as a dataset with comparison.
+Write a scalar 64-bit floating point number as a dataset with
+comparison.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Drequire_scalar_F64LE2 (const hid_t location, hid_t *const dataset, const char *const name, const double value, int(*cmp)(const void *, const void *, size_t))`
 
 **DESCRIPTION**
 
-Convenience function using the HDF5 abstraction layer to avoid the need to consider array-related parameters for a scalar dataset.It ensures that a scalar 64-bit IEEE floating point dataset exists with the appropriate name and (for an existing dataset) the correct value as determined by the comparison function `cmp`.
+Convenience function using the HDF5 abstraction layer to avoid the need
+to consider array-related parameters for a scalar dataset.It ensures
+that a scalar 64-bit IEEE floating point dataset exists with the
+appropriate name and (for an existing dataset) the correct value as
+determined by the comparison function `cmp`.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| location | The group containing the new dataset. |
-| dataset | An optional pointer to a place to store the new dataset. |
-| name | The name of the new dataset. |
-| value | The value of the new dataset. |
-| cmp | A comparison function to test if a previously set value is equal to the value I asked for. |
+  ---------- --------------------------------------------------------------------------------------------
+  location   The group containing the new dataset.
+  dataset    An optional pointer to a place to store the new dataset.
+  name       The name of the new dataset.
+  value      The value of the new dataset.
+  cmp        A comparison function to test if a previously set value is equal to the value I asked for.
+  ---------- --------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8546,21 +10964,28 @@ An error code.
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.18 .function}
 #### 2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP
 
-Write a scalar 64-bit floating point number as a dataset with a user-defined comparison.
+Write a scalar 64-bit floating point number as a dataset with a
+user-defined comparison.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Drequire_scalar_F64LE2_ULP (const hid_t location, hid_t *const dataset, const char *const name, const double value, int(*cmp)(const void *, const void *, size_t, const void *), const void *const cmp_params)`
 
 **DESCRIPTION**
 
-Convenience function using the HDF5 abstraction layer to avoid the need to consider array-related parameters for a scalar dataset. It ensures that a scalar 64-bit IEEE floating point dataset exists with the appropriate name and (for an existing dataset) the correct value as determined by the user-supplied comparison function `cmp`.
+Convenience function using the HDF5 abstraction layer to avoid the need
+to consider array-related parameters for a scalar dataset. It ensures
+that a scalar 64-bit IEEE floating point dataset exists with the
+appropriate name and (for an existing dataset) the correct value as
+determined by the user-supplied comparison function `cmp`.
 
 It is implemented using some of the other dataset functions:
 
@@ -8571,14 +10996,14 @@ It is implemented using some of the other dataset functions:
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| location | The group containing the new dataset. |
-| dataset | An optional pointer to a place to store the new dataset. |
-| name | The name of the new dataset. |
-| value | The value of the new dataset. |
-| cmp | A comparison function to test if a previously set value is equal to the value I asked for. |
-| cmp_params | Some extra data which may be required by the comparison function. |
+  ------------ --------------------------------------------------------------------------------------------
+  location     The group containing the new dataset.
+  dataset      An optional pointer to a place to store the new dataset.
+  name         The name of the new dataset.
+  value        The value of the new dataset.
+  cmp          A comparison function to test if a previously set value is equal to the value I asked for.
+  cmp_params   Some extra data which may be required by the comparison function.
+  ------------ --------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8596,30 +11021,34 @@ An error code.
 - [2.6.17 cbf_H5Drequire_scalar_F64LE2](#2.6.17)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.19 .function}
 #### 2.6.19 cbf_H5Drequire_flstring
 
 Write a single fixed-length string as a dataset.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Drequire_flstring (const hid_t location, hid_t *const dataset, const char *const name, const char *const value)`
 
 **DESCRIPTION**
 
-Convenience function using the HDF5 abstraction layer to avoid the need to consider array-related parameters for a scalar dataset and to automatically set the string type to the correct size.
+Convenience function using the HDF5 abstraction layer to avoid the need
+to consider array-related parameters for a scalar dataset and to
+automatically set the string type to the correct size.
 
 **ARGUMENTS**
 
-|          |                                                          |
-|----------|----------------------------------------------------------|
-| location | The group containing the new dataset.                    |
-| dataset  | An optional pointer to a place to store the new dataset. |
-| name     | The name of the new dataset.                             |
-| value    | The value of the new dataset.                            |
+  ---------- ----------------------------------------------------------
+  location   The group containing the new dataset.
+  dataset    An optional pointer to a place to store the new dataset.
+  name       The name of the new dataset.
+  value      The value of the new dataset.
+  ---------- ----------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8637,27 +11066,30 @@ An error code.
 - [2.6.17 cbf_H5Drequire_scalar_F64LE2](#2.6.17)
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.20 cbf_H5Dfree](#2.6.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.20 .function}
 #### 2.6.20 cbf_H5Dfree
 
 Close a HDF5 dataset.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Dfree (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close a dataset, but don't modify the identifier that described it.
+Attempt to close a dataset, but don\'t modify the identifier that
+described it.
 
 **ARGUMENTS**
 
-|     |                                |
-|-----|--------------------------------|
-| ID  | The HDF5 dataset to be closed. |
+  ---- --------------------------------
+  ID   The HDF5 dataset to be closed.
+  ---- --------------------------------
 
 **RETURN VALUE**
 
@@ -8675,30 +11107,34 @@ An error code.
 - [2.6.17 cbf_H5Drequire_scalar_F64LE2](#2.6.17)
 - [2.6.18 cbf_H5Drequire_scalar_F64LE2_ULP](#2.6.18)
 - [2.6.19 cbf_H5Drequire_flstring](#2.6.19)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.21 .function}
 #### 2.6.21 cbf_H5Fopen
 
 Attempt to open an HDF5 file by file name.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Fopen (hid_t *const file, const char *const name)`
 
 **DESCRIPTION**
 
-Will try to open a file of the given name with suitable values for some of it's properties to make memory leaks less likely.
+Will try to open a file of the given name with suitable values for some
+of it\'s properties to make memory leaks less likely.
 
-*Warning:* this function will destroy any existing data in the file, do not pass the name of any file containing data you want to keep.
+*Warning:* this function will destroy any existing data in the file, do
+not pass the name of any file containing data you want to keep.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| file | A pointer to an HDF5 ID where the newly opened file should be stored. |
-| name | The name of the file to attempt to open. |
+  ------ -----------------------------------------------------------------------
+  file   A pointer to an HDF5 ID where the newly opened file should be stored.
+  name   The name of the file to attempt to open.
+  ------ -----------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8707,27 +11143,30 @@ An error code.
 **SEE ALSO**
 
 - [2.6.22 cbf_H5Fclose](#2.6.22)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.22 .function}
 #### 2.6.22 cbf_H5Fclose
 
 Close a HDF5 file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Fclose (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close a file, but don't modify the identifier that described it.
+Attempt to close a file, but don\'t modify the identifier that described
+it.
 
 **ARGUMENTS**
 
-|     |                             |
-|-----|-----------------------------|
-| ID  | The HDF5 file to be closed. |
+  ---- -----------------------------
+  ID   The HDF5 file to be closed.
+  ---- -----------------------------
 
 **RETURN VALUE**
 
@@ -8736,29 +11175,33 @@ An error code.
 **SEE ALSO**
 
 - [2.6.21 cbf_H5Fopen](#2.6.21)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.23 .function}
 #### 2.6.23 cbf_H5Gcreate
 
 Attempt to create a group.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Gcreate (const hid_t location, hid_t *const group, const char *const name)`
 
 **DESCRIPTION**
 
-Helper function to attempt to create a HDF5 group identified by `name` and return an error code, to make error handling more consistant. This will fail if a link with the same name already exists in `parent`.
+Helper function to attempt to create a HDF5 group identified by `name`
+and return an error code, to make error handling more consistant. This
+will fail if a link with the same name already exists in `parent`.
 
 **ARGUMENTS**
 
-|          |                                                             |
-|----------|-------------------------------------------------------------|
-| location | The group that will contain the newly created group.        |
-| group    | A pointer to a HDF5 ID type where the group will be stored. |
-| name     | The name that the group will be given.                      |
+  ---------- -------------------------------------------------------------
+  location   The group that will contain the newly created group.
+  group      A pointer to a HDF5 ID type where the group will be stored.
+  name       The name that the group will be given.
+  ---------- -------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8769,29 +11212,34 @@ An error code.
 - [2.6.24 cbf_H5Gfind](#2.6.24)
 - [2.6.25 cbf_H5Grequire](#2.6.25)
 - [2.6.26 cbf_H5Gfree](#2.6.26)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.24 .function}
 #### 2.6.24 cbf_H5Gfind
 
 Check if a group exists.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Gfind (const hid_t location, hid_t *const group, const char *const name)`
 
 **DESCRIPTION**
 
-Checks for the existance of a group with the given `name` and `parent`. Will return `CBF_NOTFOUND` if it cannot be found, or open it if it already exists. An error code will be returned if something other than a group exists at the specified location.
+Checks for the existance of a group with the given `name` and `parent`.
+Will return `CBF_NOTFOUND` if it cannot be found, or open it if it
+already exists. An error code will be returned if something other than a
+group exists at the specified location.
 
 **ARGUMENTS**
 
-|          |                                                             |
-|----------|-------------------------------------------------------------|
-| location | The group to be searched.                                   |
-| group    | A pointer to a HDF5 ID type where the group will be stored. |
-| name     | The path (ie, name) of the group to be found.               |
+  ---------- -------------------------------------------------------------
+  location   The group to be searched.
+  group      A pointer to a HDF5 ID type where the group will be stored.
+  name       The path (ie, name) of the group to be found.
+  ---------- -------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8802,29 +11250,34 @@ An error code.
 - [2.6.23 cbf_H5Gcreate](#2.6.23)
 - [2.6.25 cbf_H5Grequire](#2.6.25)
 - [2.6.26 cbf_H5Gfree](#2.6.26)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.25 .function}
 #### 2.6.25 cbf_H5Grequire
 
 Ensure a group exists.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Grequire (const hid_t location, hid_t *const group, const char *const name)`
 
 **DESCRIPTION**
 
-Checks for the existance of a group with the given `name` and `parent`. Will create the group if it cannot be found, or open it if it already exists. It is an error if a matching group cannot be found or created. This uses `cbf_H5Gcreate` to create any new groups.
+Checks for the existance of a group with the given `name` and `parent`.
+Will create the group if it cannot be found, or open it if it already
+exists. It is an error if a matching group cannot be found or created.
+This uses `cbf_H5Gcreate` to create any new groups.
 
 **ARGUMENTS**
 
-|          |                                                             |
-|----------|-------------------------------------------------------------|
-| location | The group that will contain the newly created group.        |
-| group    | A pointer to a HDF5 ID type where the group will be stored. |
-| name     | The name that the group will be given.                      |
+  ---------- -------------------------------------------------------------
+  location   The group that will contain the newly created group.
+  group      A pointer to a HDF5 ID type where the group will be stored.
+  name       The name that the group will be given.
+  ---------- -------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8835,27 +11288,30 @@ An error code.
 - [2.6.23 cbf_H5Gcreate](#2.6.23)
 - [2.6.24 cbf_H5Gfind](#2.6.24)
 - [2.6.26 cbf_H5Gfree](#2.6.26)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.26 .function}
 #### 2.6.26 cbf_H5Gfree
 
 Close a HDF5 group.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Gfree (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close a group, but don't modify the identifier that described it.
+Attempt to close a group, but don\'t modify the identifier that
+described it.
 
 **ARGUMENTS**
 
-|     |                              |
-|-----|------------------------------|
-| ID  | The HDF5 group to be closed. |
+  ---- ------------------------------
+  ID   The HDF5 group to be closed.
+  ---- ------------------------------
 
 **RETURN VALUE**
 
@@ -8866,27 +11322,32 @@ An error code.
 - [2.6.23 cbf_H5Gcreate](#2.6.23)
 - [2.6.24 cbf_H5Gfind](#2.6.24)
 - [2.6.25 cbf_H5Grequire](#2.6.25)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.27 .function}
 #### 2.6.27 cbf_H5Ivalid
 
 Check the validity of an object identifier.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Ivalid (const hid_t ID)`
 
 **DESCRIPTION**
 
-Function to check validity of a HDF5 identifier. HDF5's predefined types are never counted as valid by this function, so it can't be used to test the validity of a type constant. Types obtained by using H5Tcopy are safe to test.
+Function to check validity of a HDF5 identifier. HDF5\'s predefined
+types are never counted as valid by this function, so it can\'t be used
+to test the validity of a type constant. Types obtained by using H5Tcopy
+are safe to test.
 
 **ARGUMENTS**
 
-|     |                            |
-|-----|----------------------------|
-| ID  | An HDF5 object identifier. |
+  ---- ----------------------------
+  ID   An HDF5 object identifier.
+  ---- ----------------------------
 
 **RETURN VALUE**
 
@@ -8895,57 +11356,65 @@ Non-zero if the type is valid, zero otherwise.
 **SEE ALSO**
 
 - [2.6.28 cbf_H5Ocmp](#2.6.28)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.28 .function}
 #### 2.6.28 cbf_H5Ocmp
 
 A missing HDF5 function.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `htri_t cbf_H5Ocmp (const hid_t id0, const hid_t id1)`
 
 **DESCRIPTION**
 
-Compare two HDF5 object ID's for equality. This follows the standard practice of returning zero if objects should be considered equal, and the HDF5 practice of returning a negative number if there is an error.
+Compare two HDF5 object ID\'s for equality. This follows the standard
+practice of returning zero if objects should be considered equal, and
+the HDF5 practice of returning a negative number if there is an error.
 
 **ARGUMENTS**
 
-|     |                     |
-|-----|---------------------|
-| id0 | An HDF5 identifier. |
-| id1 | An HDF5 identifier. |
+  ----- ---------------------
+  id0   An HDF5 identifier.
+  id1   An HDF5 identifier.
+  ----- ---------------------
 
 **RETURN VALUE**
 
-0 if equal, a positive value if not equal, or a negative value if there is an error.
+0 if equal, a positive value if not equal, or a negative value if there
+is an error.
 
 **SEE ALSO**
 
 - [2.6.27 cbf_H5Ivalid](#2.6.27)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.29 .function}
 #### 2.6.29 cbf_H5Ofree
 
 Close a HDF5 object identifier.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Ofree (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close an object identifier of unknown type, but don't modify the identifier that described it.
+Attempt to close an object identifier of unknown type, but don\'t modify
+the identifier that described it.
 
 **ARGUMENTS**
 
-|     |                               |
-|-----|-------------------------------|
-| ID  | The HDF5 object to be closed. |
+  ---- -------------------------------
+  ID   The HDF5 object to be closed.
+  ---- -------------------------------
 
 **RETURN VALUE**
 
@@ -8955,32 +11424,40 @@ An error code.
 
 - [2.6.28 cbf_H5Ocmp](#2.6.28)
 - [2.6.27 cbf_H5Ivalid](#2.6.27)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.30 .function}
 #### 2.6.30 cbf_H5Screate
 
 Create a dataspace with some given values.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Screate (hid_t *const ID, const int rank, const hsize_t *const dim, const hsize_t *const max)`
 
 **DESCRIPTION**
 
 Helper function which creates a HDF5 dataspace.
 
-Maximum dimensions can be set to infinity by passing `H5S_UNLIMITED` in the appropriate slot of the `max` parameter. If `rank` is zero then neither `dim` nor `max` are used and a scalar dataspace is created. If `rank` is non-zero and `dim` is a null pointer then `ID` will not be modified and the function will fail. If `rank` is non-zero and `max` is a null pointer the maximum length is set to the current length as given by `dim`.
+Maximum dimensions can be set to infinity by passing `H5S_UNLIMITED` in
+the appropriate slot of the `max` parameter. If `rank` is zero then
+neither `dim` nor `max` are used and a scalar dataspace is created. If
+`rank` is non-zero and `dim` is a null pointer then `ID` will not be
+modified and the function will fail. If `rank` is non-zero and `max` is
+a null pointer the maximum length is set to the current length as given
+by `dim`.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| ID | A pointer to a HDF5 identifier that will contain the new dataspace. |
-| rank | The number of dimensions of the new dataspace. |
-| dim | The current size of each dimension of the dataspace, should be an array of length `rank` . |
-| max | The maximum size of each dimension, should be an array of length `rank` . |
+  ------ --------------------------------------------------------------------------------------------
+  ID     A pointer to a HDF5 identifier that will contain the new dataspace.
+  rank   The number of dimensions of the new dataspace.
+  dim    The current size of each dimension of the dataspace, should be an array of length `rank` .
+  max    The maximum size of each dimension, should be an array of length `rank` .
+  ------ --------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -8989,27 +11466,30 @@ An error code.
 **SEE ALSO**
 
 - [2.6.31 cbf_H5Sfree](#2.6.31)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.31 .function}
 #### 2.6.31 cbf_H5Sfree
 
 Close a HDF5 dataspace identifier.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Sfree (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close a dataspace identifier, but don't modify the identifier that described it.
+Attempt to close a dataspace identifier, but don\'t modify the
+identifier that described it.
 
 **ARGUMENTS**
 
-|     |                                  |
-|-----|----------------------------------|
-| ID  | The HDF5 dataspace to be closed. |
+  ---- ----------------------------------
+  ID   The HDF5 dataspace to be closed.
+  ---- ----------------------------------
 
 **RETURN VALUE**
 
@@ -9018,28 +11498,32 @@ An error code.
 **SEE ALSO**
 
 - [2.6.30 cbf_H5Screate](#2.6.30)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.32 .function}
 #### 2.6.32 cbf_H5Tcreate_string
 
 Get a HDF5 string datatype to describe a sting of the specified length.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Tcreate_string (hid_t *const type, const size_t len)`
 
 **DESCRIPTION**
 
-Convenience function to create a string datatype suitable for use when storing a string of length `len`, returning it in the identifier pointed to by `type`.
+Convenience function to create a string datatype suitable for use when
+storing a string of length `len`, returning it in the identifier pointed
+to by `type`.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| type | A pointer to a the HDF5 handle of the new datatype, which should be free'd with `cbf_H5Tfree` |
-| len | The length of the string datatype - should be `strlen()` or `H5T_VARIABLE` |
+  ------ ------------------------------------------------------------------------------------------------
+  type   A pointer to a the HDF5 handle of the new datatype, which should be free\'d with `cbf_H5Tfree`
+  len    The length of the string datatype - should be `strlen()` or `H5T_VARIABLE`
+  ------ ------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9048,27 +11532,30 @@ An error code.
 **SEE ALSO**
 
 - [2.6.33 cbf_H5Tfree](#2.6.33)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.6.33 .function}
 #### 2.6.33 cbf_H5Tfree
 
 Close a HDF5 datatype identifier.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_H5Tfree (const hid_t ID)`
 
 **DESCRIPTION**
 
-Attempt to close a datatype identifier, but don't modify the identifier that described it.
+Attempt to close a datatype identifier, but don\'t modify the identifier
+that described it.
 
 **ARGUMENTS**
 
-|     |                                 |
-|-----|---------------------------------|
-| ID  | The HDF5 datatype to be closed. |
+  ---- ---------------------------------
+  ID   The HDF5 datatype to be closed.
+  ---- ---------------------------------
 
 **RETURN VALUE**
 
@@ -9077,16 +11564,28 @@ An error code.
 **SEE ALSO**
 
 - [2.6.32 cbf_H5Tcreate_string](#2.6.32)
+:::
+::::::::::::::::::::::::::::::::::::::::
 
 ------------------------------------------------------------------------
 
+:::::::::::::::::::::::::::::::::::::::::::: {#2.7}
 ## 2.7 High-level NeXus-related functions
 
-These functions primarily allow interaction with a `cbf_h5handle` without being exposed to its structure or the complexities of using it correctly. Wherever possible these functions should be used instead of directly accessing a `cbf_h5handle` or `cbf_config_t` in order make code easier to read, to maintain the integrity of the data structures and to ensure all resources allocated to these object are correctly cleaned up.
+<div>
+
+These functions primarily allow interaction with a `cbf_h5handle`
+without being exposed to its structure or the complexities of using it
+correctly. Wherever possible these functions should be used instead of
+directly accessing a `cbf_h5handle` or `cbf_config_t` in order make code
+easier to read, to maintain the integrity of the data structures and to
+ensure all resources allocated to these object are correctly cleaned up.
+
+</div>
 
 This section describes functions available for working with:
 
-- **CBF's HDF5 handles:**
+- **CBF\'s HDF5 handles:**
   - [2.7.1 cbf_h5handle_get_file](#2.7.1)
   - [2.7.2 cbf_h5handle_set_file](#2.7.2)
   - [2.7.3 cbf_h5handle_get_entry](#2.7.3)
@@ -9128,9 +11627,13 @@ This section describes functions available for working with:
   - [2.7.38 cbf_config_free](#2.7.38)
   - [2.7.39 cbf_config_strerror](#2.7.39)
 
+<div>
+
 #### Reading miniCBF configuration settings
 
-This example demonstrates how a miniCBF configuration file should be parsed, what should be checked before the extracted settings are used and what should be cleaned up by the caller afterwards:
+This example demonstrates how a miniCBF configuration file should be
+parsed, what should be checked before the extracted settings are used
+and what should be cleaned up by the caller afterwards:
 
 ` `
 
@@ -9158,15 +11661,18 @@ This example demonstrates how a miniCBF configuration file should be parsed, wha
     /* Clean up the settings to avoid memory leaks */
     cbf_config_free(configSettings);
 
+</div>
+
 ------------------------------------------------------------------------
 
+::: {#2.7.1 .function}
 #### 2.7.1 cbf_h5handle_get_file
 
 Get the current id of the file within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_file (const cbf_h5handle nx, hid_t *const file)`
 
 **DESCRIPTION**
@@ -9175,10 +11681,10 @@ Check the handle for the presence of a file, optionally returning it.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| file | A place to store the file (if found), or null if the file isn't wanted. |
+  ------ --------------------------------------------------------------------------
+  nx     A handle to query for the presence of the requested information.
+  file   A place to store the file (if found), or null if the file isn\'t wanted.
+  ------ --------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9187,28 +11693,31 @@ An error code.
 **SEE ALSO**
 
 - [2.7.2 cbf_h5handle_set_file](#2.7.2)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.2 .function}
 #### 2.7.2 cbf_h5handle_set_file
 
 Set the id of the file within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_file (const cbf_h5handle nx, const hid_t file)`
 
 **DESCRIPTION**
 
-Sets the file id within the handle to the given value. Doesn't check or modify any attributes in any way.
+Sets the file id within the handle to the given value. Doesn\'t check or
+modify any attributes in any way.
 
 **ARGUMENTS**
 
-|      |                                            |
-|------|--------------------------------------------|
-| nx   | The handle to add information to.          |
-| file | The file to be set as the current file id. |
+  ------ --------------------------------------------
+  nx     The handle to add information to.
+  file   The file to be set as the current file id.
+  ------ --------------------------------------------
 
 **RETURN VALUE**
 
@@ -9217,31 +11726,37 @@ An error code.
 **SEE ALSO**
 
 - [2.7.1 cbf_h5handle_get_file](#2.7.1)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.3 .function}
 #### 2.7.3 cbf_h5handle_get_entry
 
 Get the current id and name of the entry group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_entry (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an entry group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of an entry group and its name,
+optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9251,29 +11766,33 @@ An error code.
 
 - [2.7.4 cbf_h5handle_set_entry](#2.7.4)
 - [2.7.5 cbf_h5handle_require_entry](#2.7.5)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.4 .function}
 #### 2.7.4 cbf_h5handle_set_entry
 
 Set the id and name of the entry group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_entry (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the entry group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the entry group and name within the handle to the given values.
+Doesn\'t check or modify the `NX_class` attribute in any way. The handle
+will take ownership of the group id iff this function succeeds.
 
 **ARGUMENTS**
 
-|       |                                                |
-|-------|------------------------------------------------|
-| nx    | The handle to add information to.              |
-| group | The group to be set as the current entry group |
-| name  | The name which the group should be given.      |
+  ------- ------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current entry group
+  name    The name which the group should be given.
+  ------- ------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9283,29 +11802,34 @@ An error code.
 
 - [2.7.3 cbf_h5handle_get_entry](#2.7.3)
 - [2.7.5 cbf_h5handle_require_entry](#2.7.5)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.5 .function}
 #### 2.7.5 cbf_h5handle_require_entry
 
 Ensure I have an entry in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_entry (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the entry group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the entry group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                  |
-|-------|------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                          |
-| group | An optional pointer to a place where the group should be stored. |
-| name  | The group name, or null to use the default name of `"entry"`.    |
+  ------- ------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"entry"`.
+  ------- ------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9315,32 +11839,42 @@ An error code.
 
 - [2.7.3 cbf_h5handle_get_entry](#2.7.3)
 - [2.7.4 cbf_h5handle_set_entry](#2.7.4)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.6 .function}
 #### 2.7.6 cbf_h5handle_require_entry_definition
 
 Ensure I have an entry in the hdf5 handle with definition.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_entry_definition (const cbf_h5handle nx, hid_t *const group, const char *name, const char *definition, const char *version, const char *URL)`
 
 **DESCRIPTION**
 
-This will check if the entry group and definition within the handle matches any existing group of the same name within the current file and has a definition designation that agrees. If the group name doesn't match a new group is opened or created and added to the handle. If the `definition` does not match, it is replaced with the new one. If the `version` attribute does not match it is replaced with the new one. If the `URL>` attribute does not match it is replace with the new one. The `NX_class` attributes are not checked, but if a new entry is created it will be created with `NX_class` NXentry.
+This will check if the entry group and definition within the handle
+matches any existing group of the same name within the current file and
+has a definition designation that agrees. If the group name doesn\'t
+match a new group is opened or created and added to the handle. If the
+`definition` does not match, it is replaced with the new one. If the
+`version` attribute does not match it is replaced with the new one. If
+the `URL>` attribute does not match it is replace with the new one. The
+`NX_class` attributes are not checked, but if a new entry is created it
+will be created with `NX_class` NXentry.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | The HDF5 handle to use. |
-| group | An optional pointer to a place where the group ID should be stored. |
-| name | The group name, or null to use the default name of `"entry"`. |
-| definition | The definition name, or null to not specify a definition name. |
-| version | The version string, or null to not specify a version string. |
-| URL | The URL at which the definition is stored, or null to not specify a URL |
+  ------------ -------------------------------------------------------------------------
+  nx           The HDF5 handle to use.
+  group        An optional pointer to a place where the group ID should be stored.
+  name         The group name, or null to use the default name of `"entry"`.
+  definition   The definition name, or null to not specify a definition name.
+  version      The version string, or null to not specify a version string.
+  URL          The URL at which the definition is stored, or null to not specify a URL
+  ------------ -------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9351,29 +11885,32 @@ An error code.
 - [2.7.3 cbf_h5handle_get_entry](#2.7.3)
 - [2.7.4 cbf_h5handle_set_entry](#2.7.4)
 - [2.7.5 cbf_h5handle_require_entry](#2.7.5)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.7 .function}
 #### 2.7.7 cbf_h5handle_get_sample
 
 Get the current id and name of the sample group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_sample (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an sample group and its name, optionally returning any combination of them.
+Check the handle for the presence of an sample group and its name,
+optionally returning any combination of them.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9383,29 +11920,33 @@ An error code.
 
 - [2.7.8 cbf_h5handle_set_sample](#2.7.8)
 - [2.7.9 cbf_h5handle_require_sample](#2.7.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.8 .function}
 #### 2.7.8 cbf_h5handle_set_sample
 
 Set the id and name of the sample group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_sample (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the sample group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the sample group and name within the handle to the given values.
+Doesn\'t check or modify the `NX_class` attribute in any way. The handle
+will take ownership of the group id iff this function succeeds.
 
 **ARGUMENTS**
 
-|       |                                                 |
-|-------|-------------------------------------------------|
-| nx    | The handle to add information to.               |
-| group | The group to be set as the current sample group |
-| name  | The name which the group should be given.       |
+  ------- -------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current sample group
+  name    The name which the group should be given.
+  ------- -------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9415,29 +11956,34 @@ An error code.
 
 - [2.7.7 cbf_h5handle_get_sample](#2.7.7)
 - [2.7.9 cbf_h5handle_require_sample](#2.7.9)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.9 .function}
 #### 2.7.9 cbf_h5handle_require_sample
 
 Ensure I have a sample in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_sample (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the sample group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the sample group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                  |
-|-------|------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                          |
-| group | An optional pointer to a place where the group should be stored. |
-| name  | The group name, or null to use the default name of `"sample"`.   |
+  ------- ------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"sample"`.
+  ------- ------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9447,31 +11993,37 @@ An error code.
 
 - [2.7.7 cbf_h5handle_get_sample](#2.7.7)
 - [2.7.8 cbf_h5handle_set_sample](#2.7.8)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.10 .function}
 #### 2.7.10 cbf_h5handle_get_beam
 
 Get the current id and name of the beam group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_beam (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of a beam group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of a beam group and its name,
+optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9481,29 +12033,33 @@ An error code.
 
 - [2.7.11 cbf_h5handle_set_beam](#2.7.11)
 - [2.7.12 cbf_h5handle_require_beam](#2.7.12)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.11 .function}
 #### 2.7.11 cbf_h5handle_set_beam
 
 Set the id and name of the beam group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_beam (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the beam group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the beam group and name within the handle to the given values.
+Doesn\'t check or modify the `NX_class` attribute in any way. The handle
+will take ownership of the group id iff this function succeeds.
 
 **ARGUMENTS**
 
-|       |                                               |
-|-------|-----------------------------------------------|
-| nx    | The handle to add information to.             |
-| group | The group to be set as the current beam group |
-| name  | The name which the group should be given.     |
+  ------- -----------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current beam group
+  name    The name which the group should be given.
+  ------- -----------------------------------------------
 
 **RETURN VALUE**
 
@@ -9513,29 +12069,34 @@ An error code.
 
 - [2.7.10 cbf_h5handle_get_beam](#2.7.10)
 - [2.7.12 cbf_h5handle_require_beam](#2.7.12)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.12 .function}
 #### 2.7.12 cbf_h5handle_require_beam
 
 Ensure I have a beam in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_beam (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the beam group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the beam group within the handle matches any existing
+group of the same name within the current file. If they don\'t match a
+new group is opened or created and added to the handle. The `NX_class`
+attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                  |
-|-------|------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                          |
-| group | An optional pointer to a place where the group should be stored. |
-| name  | The group name, or null to use the default name of `"beam"`.     |
+  ------- ------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"beam"`.
+  ------- ------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9545,31 +12106,38 @@ An error code.
 
 - [2.7.10 cbf_h5handle_get_beam](#2.7.10)
 - [2.7.11 cbf_h5handle_set_beam](#2.7.11)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.13 .function}
 #### 2.7.13 cbf_h5handle_get_instrument
 
-Get the current id and name of the instrument group within the given handle.
+Get the current id and name of the instrument group within the given
+handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_instrument (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an instrument group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of an instrument group and its name,
+optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9580,29 +12148,34 @@ An error code.
 - [2.7.14 cbf_h5handle_set_instrument](#2.7.14)
 - [2.7.15 cbf_h5handle_find_instrument](#2.7.15)
 - [2.7.16 cbf_h5handle_require_instrument](#2.7.16)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.14 .function}
 #### 2.7.14 cbf_h5handle_set_instrument
 
 Set the id and name of the instrument group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_instrument (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the instrument group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the instrument group and name within the handle to the given
+values. Doesn\'t check or modify the `NX_class` attribute in any way.
+The handle will take ownership of the group id iff this function
+succeeds.
 
 **ARGUMENTS**
 
-|       |                                                     |
-|-------|-----------------------------------------------------|
-| nx    | The handle to add information to.                   |
-| group | The group to be set as the current instrument group |
-| name  | The name which the group should be given.           |
+  ------- -----------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current instrument group
+  name    The name which the group should be given.
+  ------- -----------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9613,48 +12186,55 @@ An error code.
 - [2.7.13 cbf_h5handle_get_instrument](#2.7.13)
 - [2.7.15 cbf_h5handle_find_instrument](#2.7.15)
 - [2.7.16 cbf_h5handle_require_instrument](#2.7.16)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.15 .function}
 #### 2.7.15 cbf_h5handle_find_instrument
 
 Find an existing instrument group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_find_instrument (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **ARGUMENTS**
 
-|       |     |
-|-------|-----|
-| nx    |     |
-| group |     |
-| name  |     |
+  ------- --
+  nx      
+  group   
+  name    
+  ------- --
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.16 .function}
 #### 2.7.16 cbf_h5handle_require_instrument
 
 Ensure I have an instrument in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_instrument (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the instrument group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the instrument group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                    |
-|-------|--------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                            |
-| group | An optional pointer to a place where the group should be stored.   |
-| name  | The group name, or null to use the default name of `"instrument"`. |
+  ------- --------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"instrument"`.
+  ------- --------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9665,31 +12245,38 @@ An error code.
 - [2.7.13 cbf_h5handle_get_instrument](#2.7.13)
 - [2.7.14 cbf_h5handle_set_instrument](#2.7.14)
 - [2.7.15 cbf_h5handle_find_instrument](#2.7.15)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.17 .function}
 #### 2.7.17 cbf_h5handle_get_detector
 
-Get the current id and name of the detector group within the given handle.
+Get the current id and name of the detector group within the given
+handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_detector (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an detector group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of an detector group and its name,
+optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9700,29 +12287,33 @@ An error code.
 - [2.7.18 cbf_h5handle_set_detector](#2.7.18)
 - [2.7.19 cbf_h5handle_find_detector](#2.7.19)
 - [2.7.20 cbf_h5handle_require_detector](#2.7.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.18 .function}
 #### 2.7.18 cbf_h5handle_set_detector
 
 Set the id and name of the detector group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_detector (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the detector group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the detector group and name within the handle to the given values.
+Doesn\'t check or modify the `NX_class` attribute in any way. The handle
+will take ownership of the group id iff this function succeeds.
 
 **ARGUMENTS**
 
-|       |                                                   |
-|-------|---------------------------------------------------|
-| nx    | The handle to add information to.                 |
-| group | The group to be set as the current detector group |
-| name  | The name which the group should be given.         |
+  ------- ---------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current detector group
+  name    The name which the group should be given.
+  ------- ---------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9733,48 +12324,55 @@ An error code.
 - [2.7.17 cbf_h5handle_get_detector](#2.7.17)
 - [2.7.19 cbf_h5handle_find_detector](#2.7.19)
 - [2.7.20 cbf_h5handle_require_detector](#2.7.20)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.19 .function}
 #### 2.7.19 cbf_h5handle_find_detector
 
 Find an existing detector group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_find_detector (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **ARGUMENTS**
 
-|       |     |
-|-------|-----|
-| nx    |     |
-| group |     |
-| name  |     |
+  ------- --
+  nx      
+  group   
+  name    
+  ------- --
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.20 .function}
 #### 2.7.20 cbf_h5handle_require_detector
 
 Ensure I have a detector in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_detector (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the detector group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the detector group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                  |
-|-------|------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                          |
-| group | An optional pointer to a place where the group should be stored. |
-| name  | The group name, or null to use the default name of `"detector"`. |
+  ------- ------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"detector"`.
+  ------- ------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9785,31 +12383,38 @@ An error code.
 - [2.7.17 cbf_h5handle_get_detector](#2.7.17)
 - [2.7.18 cbf_h5handle_set_detector](#2.7.18)
 - [2.7.19 cbf_h5handle_find_detector](#2.7.19)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.21 .function}
 #### 2.7.21 cbf_h5handle_get_goniometer
 
-Get the current id and name of the goniometer group within the given handle.
+Get the current id and name of the goniometer group within the given
+handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_goniometer (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an goniometer group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of an goniometer group and its name,
+optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9819,29 +12424,34 @@ An error code.
 
 - [2.7.22 cbf_h5handle_set_goniometer](#2.7.22)
 - [2.7.23 cbf_h5handle_require_goniometer](#2.7.23)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.22 .function}
 #### 2.7.22 cbf_h5handle_set_goniometer
 
 Set the id and name of the goniometer group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_goniometer (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the goniometer group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the goniometer group and name within the handle to the given
+values. Doesn\'t check or modify the `NX_class` attribute in any way.
+The handle will take ownership of the group id iff this function
+succeeds.
 
 **ARGUMENTS**
 
-|       |                                                     |
-|-------|-----------------------------------------------------|
-| nx    | The handle to add information to.                   |
-| group | The group to be set as the current goniometer group |
-| name  | The name which the group should be given.           |
+  ------- -----------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current goniometer group
+  name    The name which the group should be given.
+  ------- -----------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9851,29 +12461,34 @@ An error code.
 
 - [2.7.21 cbf_h5handle_get_goniometer](#2.7.21)
 - [2.7.23 cbf_h5handle_require_goniometer](#2.7.23)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.23 .function}
 #### 2.7.23 cbf_h5handle_require_goniometer
 
 Ensure I have a goniometer in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_goniometer (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the goniometer group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the goniometer group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                    |
-|-------|--------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                            |
-| group | An optional pointer to a place where the group should be stored.   |
-| name  | The group name, or null to use the default name of `"goniometer"`. |
+  ------- --------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"goniometer"`.
+  ------- --------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9883,31 +12498,38 @@ An error code.
 
 - [2.7.21 cbf_h5handle_get_goniometer](#2.7.21)
 - [2.7.22 cbf_h5handle_set_goniometer](#2.7.22)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.24 .function}
 #### 2.7.24 cbf_h5handle_get_monochromator
 
-Get the current id and name of the monochromator group within the given handle.
+Get the current id and name of the monochromator group within the given
+handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_monochromator (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an monochromator group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of an monochromator group and its
+name, optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9917,29 +12539,34 @@ An error code.
 
 - [2.7.25 cbf_h5handle_set_monochromator](#2.7.25)
 - [2.7.26 cbf_h5handle_require_monochromator](#2.7.26)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.25 .function}
 #### 2.7.25 cbf_h5handle_set_monochromator
 
 Set the id and name of the monochromator group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_monochromator (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the monochromator group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the monochromator group and name within the handle to the given
+values. Doesn\'t check or modify the `NX_class` attribute in any way.
+The handle will take ownership of the group id iff this function
+succeeds.
 
 **ARGUMENTS**
 
-|       |                                                        |
-|-------|--------------------------------------------------------|
-| nx    | The handle to add information to.                      |
-| group | The group to be set as the current monochromator group |
-| name  | The name which the group should be given.              |
+  ------- --------------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current monochromator group
+  name    The name which the group should be given.
+  ------- --------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9949,29 +12576,34 @@ An error code.
 
 - [2.7.24 cbf_h5handle_get_monochromator](#2.7.24)
 - [2.7.26 cbf_h5handle_require_monochromator](#2.7.26)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.26 .function}
 #### 2.7.26 cbf_h5handle_require_monochromator
 
 Ensure I have a monochromator in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_monochromator (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the monochromator group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the monochromator group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | The HDF5 handle to use. |
-| group | An optional pointer to a place where the group should be stored. |
-| name | The group name, or null to use the default name of `"monochromator"`. |
+  ------- -----------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"monochromator"`.
+  ------- -----------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -9981,31 +12613,37 @@ An error code.
 
 - [2.7.24 cbf_h5handle_get_monochromator](#2.7.24)
 - [2.7.25 cbf_h5handle_set_monochromator](#2.7.25)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.27 .function}
 #### 2.7.27 cbf_h5handle_get_source
 
 Get the current id and name of the source group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_get_source (const cbf_h5handle nx, hid_t *const group, const char **const name)`
 
 **DESCRIPTION**
 
-Check the handle for the presence of an source group and its name, optionally returning any combination of them. The error code 'CBF_NOTFOUND' will be returned if any of the requested items of data cannot be found.
+Check the handle for the presence of an source group and its name,
+optionally returning any combination of them. The error code
+\'CBF_NOTFOUND\' will be returned if any of the requested items of data
+cannot be found.
 
-The handle retains ownership of the returned object and/or string, neither of them should be free'd by the caller.
+The handle retains ownership of the returned object and/or string,
+neither of them should be free\'d by the caller.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| nx | A handle to query for the presence of the requested information. |
-| group | A place to store the group (if found), or null if the group isn't wanted. |
-| name | A place to store the name of the group (if found), or null if the name isn't wanted. |
+  ------- ---------------------------------------------------------------------------------------
+  nx      A handle to query for the presence of the requested information.
+  group   A place to store the group (if found), or null if the group isn\'t wanted.
+  name    A place to store the name of the group (if found), or null if the name isn\'t wanted.
+  ------- ---------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10015,29 +12653,33 @@ An error code.
 
 - [2.7.28 cbf_h5handle_set_source](#2.7.28)
 - [2.7.29 cbf_h5handle_require_source](#2.7.29)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.28 .function}
 #### 2.7.28 cbf_h5handle_set_source
 
 Set the id and name of the source group within the given handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_set_source (const cbf_h5handle nx, const hid_t group, const char *const name)`
 
 **DESCRIPTION**
 
-Sets the source group and name within the handle to the given values. Doesn't check or modify the `NX_class` attribute in any way. The handle will take ownership of the group id iff this function succeeds.
+Sets the source group and name within the handle to the given values.
+Doesn\'t check or modify the `NX_class` attribute in any way. The handle
+will take ownership of the group id iff this function succeeds.
 
 **ARGUMENTS**
 
-|       |                                                 |
-|-------|-------------------------------------------------|
-| nx    | The handle to add information to.               |
-| group | The group to be set as the current source group |
-| name  | The name which the group should be given.       |
+  ------- -------------------------------------------------
+  nx      The handle to add information to.
+  group   The group to be set as the current source group
+  name    The name which the group should be given.
+  ------- -------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10047,29 +12689,34 @@ An error code.
 
 - [2.7.27 cbf_h5handle_get_source](#2.7.27)
 - [2.7.29 cbf_h5handle_require_source](#2.7.29)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.29 .function}
 #### 2.7.29 cbf_h5handle_require_source
 
 Ensure I have a source in the hdf5 handle.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_h5handle_require_source (const cbf_h5handle nx, hid_t *const group, const char *name)`
 
 **DESCRIPTION**
 
-This will check if the source group within the handle matches any existing group of the same name within the current file. If they don't match a new group is opened or created and added to the handle. The `NX_class` attributes are not checked.
+This will check if the source group within the handle matches any
+existing group of the same name within the current file. If they don\'t
+match a new group is opened or created and added to the handle. The
+`NX_class` attributes are not checked.
 
 **ARGUMENTS**
 
-|       |                                                                  |
-|-------|------------------------------------------------------------------|
-| nx    | The HDF5 handle to use.                                          |
-| group | An optional pointer to a place where the group should be stored. |
-| name  | The group name, or null to use the default name of `"source"`.   |
+  ------- ------------------------------------------------------------------
+  nx      The HDF5 handle to use.
+  group   An optional pointer to a place where the group should be stored.
+  name    The group name, or null to use the default name of `"source"`.
+  ------- ------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10079,27 +12726,30 @@ An error code.
 
 - [2.7.27 cbf_h5handle_get_source](#2.7.27)
 - [2.7.28 cbf_h5handle_set_source](#2.7.28)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.30 .function}
 #### 2.7.30 cbf_free_h5handle
 
 Free a handle for an HDF5 file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_free_h5handle (cbf_h5handle h5handle)`
 
 **DESCRIPTION**
 
-Checks if the handle appears to be valid, the free's the handle and any data that the handle owns.
+Checks if the handle appears to be valid, the free\'s the handle and any
+data that the handle owns.
 
 **ARGUMENTS**
 
-|          |                          |
-|----------|--------------------------|
-| h5handle | The handle to be free'd. |
+  ---------- ---------------------------
+  h5handle   The handle to be free\'d.
+  ---------- ---------------------------
 
 **RETURN VALUE**
 
@@ -10108,28 +12758,34 @@ An error code
 **SEE ALSO**
 
 - [2.7.31 cbf_create_h5handle3](#2.7.31)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.31 .function}
 #### 2.7.31 cbf_create_h5handle3
 
-Allocates space for a HDF5 file handle and associates it with the given file.
+Allocates space for a HDF5 file handle and associates it with the given
+file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_create_h5handle3 (cbf_h5handle *handle, hid_t file)`
 
 **DESCRIPTION**
 
-This function expects the user to create or open a hdf5 file with the appropriate parameters for what they are trying to do, replacing older functions which would create a file with the `H5F_ACC_TRUNC` flag and `H5F_CLOSE_STRONG` property.
+This function expects the user to create or open a hdf5 file with the
+appropriate parameters for what they are trying to do, replacing older
+functions which would create a file with the `H5F_ACC_TRUNC` flag and
+`H5F_CLOSE_STRONG` property.
 
 **ARGUMENTS**
 
-|        |                                                       |
-|--------|-------------------------------------------------------|
-| handle | A pointer to a handle which is to be allocated.       |
-| file   | A HDF5 file to store within the newly created handle. |
+  -------- -------------------------------------------------------
+  handle   A pointer to a handle which is to be allocated.
+  file     A HDF5 file to store within the newly created handle.
+  -------- -------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10138,16 +12794,18 @@ An error code
 **SEE ALSO**
 
 - [2.7.30 cbf_free_h5handle](#2.7.30)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.32 .function}
 #### 2.7.32 cbf_write_cbf_h5file
 
 Extract the data from a CBF file & put it into a NeXus file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_write_cbf_h5file (cbf_handle handle, cbf_h5handle h5handle)`
 
 **DESCRIPTION**
@@ -10156,10 +12814,10 @@ Equivalent to `cbf_write_cbf2nx(handle,h5handle,0,0,0)`.
 
 **ARGUMENTS**
 
-|          |                                    |
-|----------|------------------------------------|
-| handle   | The CBF file to extract data from. |
-| h5handle | The NeXuS file to write data to.   |
+  ---------- ------------------------------------
+  handle     The CBF file to extract data from.
+  h5handle   The NeXuS file to write data to.
+  ---------- ------------------------------------
 
 **RETURN VALUE**
 
@@ -10170,43 +12828,55 @@ An error code.
 - [2.7.34 cbf_write_minicbf_h5file](#2.7.34)
 - [2.7.33 cbf_write_cbf2nx](#2.7.33)
 - [2.7.35 cbf_write_nx2cbf](#2.7.35)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.33 .function}
 #### 2.7.33 cbf_write_cbf2nx
 
 Extract the data from a CBF file & put it into a NeXus file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_write_cbf2nx (cbf_handle handle, cbf_h5handle h5handle, const char *const datablock, const char *const scan, const int list)`
 
 **DESCRIPTION**
 
-Extracts data from `handle` and generates a NeXus file in `h5handle`. This will attempt to extract metadata and image data from each scan (or the named scan) within each datablock (or the the named datablock) and insert it into a given index into the NXentry group specified in `h5handle`.
+Extracts data from `handle` and generates a NeXus file in `h5handle`.
+This will attempt to extract metadata and image data from each scan (or
+the named scan) within each datablock (or the the named datablock) and
+insert it into a given index into the NXentry group specified in
+`h5handle`.
 
-Each scan in the CBF file corresponds to one NXentry in NeXus, so a CBF datablock with multiple scans must be converted by calling this function with the appropriate value of `scan` once for each scan in the datablock.
+Each scan in the CBF file corresponds to one NXentry in NeXus, so a CBF
+datablock with multiple scans must be converted by calling this function
+with the appropriate value of `scan` once for each scan in the
+datablock.
 
 The flags (within `h5handle`) determine:
 
 - Compression algorithm: zlib/CBF/none
 - Plugin registration method: automatic/manual
 
-The strings given by `h5handle->scan_id` and `h5handle->sample_id` define:
+The strings given by `h5handle->scan_id` and `h5handle->sample_id`
+define:
 
-- The presence and value of an identifier for the scan, stored in `/*:NXentry/entry_identifier`.
-- The presence and value of an identifier for the sample, stored in `/*:NXentry/*:NXsample/sample_identifier`.
+- The presence and value of an identifier for the scan, stored in
+  `/*:NXentry/entry_identifier`.
+- The presence and value of an identifier for the sample, stored in
+  `/*:NXentry/*:NXsample/sample_identifier`.
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| handle | The CBF file to extract data from. |
-| h5handle | The NeXuS file to write data to. |
-| datablock | The name of the datablock to convert, or NULL to convert all datablocks. |
-| scan | The name of the scan to convert, or NULL if there is only one scan in the datablock. |
-| list | Boolean flag to determine if a list of processed items is printed. |
+  ----------- --------------------------------------------------------------------------------------
+  handle      The CBF file to extract data from.
+  h5handle    The NeXuS file to write data to.
+  datablock   The name of the datablock to convert, or NULL to convert all datablocks.
+  scan        The name of the scan to convert, or NULL if there is only one scan in the datablock.
+  list        Boolean flag to determine if a list of processed items is printed.
+  ----------- --------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10217,21 +12887,28 @@ An error code.
 - [2.7.32 cbf_write_cbf_h5file](#2.7.32)
 - [2.7.34 cbf_write_minicbf_h5file](#2.7.34)
 - [2.7.35 cbf_write_nx2cbf](#2.7.35)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.34 .function}
 #### 2.7.34 cbf_write_minicbf_h5file
 
 Extract the data from a miniCBF file & put it into a NeXus file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_write_minicbf_h5file (cbf_handle handle, cbf_h5handle h5handle, const cbf_config_t *const axisConfig)`
 
 **DESCRIPTION**
 
-Extracts the miniCBF data directly - by parsing the header - and uses that plus the configuration options from `axisConfig` to generate a NeXus file in `h5handle`. This can extract metadata and image data from miniCBF files containing multiple datablocks which each contain a single image and insert it into a given index into the NXentry group specified in `h5handle`.
+Extracts the miniCBF data directly - by parsing the header - and uses
+that plus the configuration options from `axisConfig` to generate a
+NeXus file in `h5handle`. This can extract metadata and image data from
+miniCBF files containing multiple datablocks which each contain a single
+image and insert it into a given index into the NXentry group specified
+in `h5handle`.
 
 Currently, only `Pilatus 1.2` format headers are supported.
 
@@ -10242,11 +12919,11 @@ The flags determine:
 
 **ARGUMENTS**
 
-|  |  |
-|----|----|
-| handle | The miniCBF file to extract data from. |
-| h5handle | The NeXus file to write data to. |
-| axisConfig | The configuration settings desribing the axes and their relation to the sample and to each other. |
+  ------------ ---------------------------------------------------------------------------------------------------
+  handle       The miniCBF file to extract data from.
+  h5handle     The NeXus file to write data to.
+  axisConfig   The configuration settings desribing the axes and their relation to the sample and to each other.
+  ------------ ---------------------------------------------------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10256,28 +12933,32 @@ An error code.
 
 - [2.7.32 cbf_write_cbf_h5file](#2.7.32)
 - [2.7.35 cbf_write_nx2cbf](#2.7.35)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.35 .function}
 #### 2.7.35 cbf_write_nx2cbf
 
 Extract data from a nexus file and store it in a CBF file.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_write_nx2cbf (cbf_h5handle nx, cbf_handle cbf)`
 
 **DESCRIPTION**
 
-Reads NeXus-format data from the entry group defined in the `nx` handle, extracting data related to the frame with index `nx->slice` and in CBF-format within the the `cbf` handle.
+Reads NeXus-format data from the entry group defined in the `nx` handle,
+extracting data related to the frame with index `nx->slice` and in
+CBF-format within the the `cbf` handle.
 
 **ARGUMENTS**
 
-|     |                                                      |
-|-----|------------------------------------------------------|
-| nx  | The handle defining the NeXus data to be converted.  |
-| cbf | The handle in which to store the resulting CBF data. |
+  ----- ------------------------------------------------------
+  nx    The handle defining the NeXus data to be converted.
+  cbf   The handle in which to store the resulting CBF data.
+  ----- ------------------------------------------------------
 
 **RETURN VALUE**
 
@@ -10287,21 +12968,24 @@ An error code.
 
 - [2.7.32 cbf_write_cbf_h5file](#2.7.32)
 - [2.7.34 cbf_write_minicbf_h5file](#2.7.34)
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.36 .function}
 #### 2.7.36 cbf_config_create
 
 Obtain a new handle for some configuration settings.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `cbf_config_t* cbf_config_create ()`
 
 **DESCRIPTION**
 
-Allocates a new collection of configuration settings on the heap, and initialises it. The returned pointer should be destroyed by the caller.
+Allocates a new collection of configuration settings on the heap, and
+initialises it. The returned pointer should be destroyed by the caller.
 
 **ARGUMENTS**
 
@@ -10310,111 +12994,169 @@ This function takes no arguments.
 **RETURN VALUE**
 
 A newly allocated object for miniCBF configuration settings, or NULL.
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.37 .function}
 #### 2.7.37 cbf_config_parse
 
-Read a minicbf configuration file into the given handle, writing errors to logfile.
+Read a minicbf configuration file into the given handle, writing errors
+to logfile.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `int cbf_config_parse (FILE *const configFile, FILE *const logFile, cbf_config_t *const vec)`
 
 **DESCRIPTION**
 
-Parses a configuration file to extract a collection of configuration settings for a miniCBF file, storing them in the given configuration settings object. The pointer should have been obtained by a call to `cbf_config_create`. The configuration file format is described in the `minicbf2nexus` documentation.
+Parses a configuration file to extract a collection of configuration
+settings for a miniCBF file, storing them in the given configuration
+settings object. The pointer should have been obtained by a call to
+`cbf_config_create`. The configuration file format is described in the
+`minicbf2nexus` documentation.
 
 **ARGUMENTS**
 
-|            |                                                         |
-|------------|---------------------------------------------------------|
-| configFile | The file from which the config settings should be read. |
-| logFile    | A stream to be used for logging error messages.         |
-| vec        | An object describing the configuration settings.        |
+  ------------ ---------------------------------------------------------
+  configFile   The file from which the config settings should be read.
+  logFile      A stream to be used for logging error messages.
+  vec          An object describing the configuration settings.
+  ------------ ---------------------------------------------------------
 
 **RETURN VALUE**
 
 A parser error code.
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.38 .function}
 #### 2.7.38 cbf_config_free
 
-Free any heap memory associated with the given cbf_hdf5_configItemVectorhandle object.
+Free any heap memory associated with the given
+cbf_hdf5_configItemVectorhandle object.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `void cbf_config_free (const cbf_config_t *const vector)`
 
 **DESCRIPTION**
 
-Destroys an existing collection of configuration settings. The settings should have been obtained by a call to `cbf_config_create`.
+Destroys an existing collection of configuration settings. The settings
+should have been obtained by a call to `cbf_config_create`.
 
 **ARGUMENTS**
 
-|        |                                      |
-|--------|--------------------------------------|
-| vector | The configuration data to be free'd. |
+  -------- ---------------------------------------
+  vector   The configuration data to be free\'d.
+  -------- ---------------------------------------
 
 **RETURN VALUE**
 
 Nothing.
+:::
 
 ------------------------------------------------------------------------
 
+::: {#2.7.39 .function}
 #### 2.7.39 cbf_config_strerror
 
 Convert a parse error to a descriptive string.
 
 **PROTOTYPE**
 
-`#include "cbf_hdf5.h"`  
+`#include "cbf_hdf5.h"`\
 `const char* cbf_config_strerror (const int error)`
 
 **DESCRIPTION**
 
-The returned string is "none" for success, "unknown error" if the given error code is not recognised and a non-empty string briefly describing the error otherwise.
+The returned string is \"none\" for success, \"unknown error\" if the
+given error code is not recognised and a non-empty string briefly
+describing the error otherwise.
 
-The returned string must not be free'd.
+The returned string must not be free\'d.
 
 **ARGUMENTS**
 
-|       |                                                 |
-|-------|-------------------------------------------------|
-| error | An error returned by a `cbf_config_*` function. |
+  ------- -------------------------------------------------
+  error   An error returned by a `cbf_config_*` function.
+  ------- -------------------------------------------------
 
 **RETURN VALUE**
 
 A string describing the error.
+:::
+::::::::::::::::::::::::::::::::::::::::::::
 
 ------------------------------------------------------------------------
 
-### <span id="3.">3. File format</span>
+:::::::::: {#3.}
+### 3. File format
 
-#### <span id="3.1">3.1 General description</span>
+::::::::: {#3.1}
+#### 3.1 General description
 
-With the exception of the binary sections, a CBF file is an mmCIF-format ASCII file, so a CBF file with no binary sections is a CIF file. An imgCIF file has any binary sections encoded as CIF-format ASCII strings and is a CIF file whether or not it contains binary sections. In most cases, CBFlib can also be used to access normal CIF files as well as CBF and imgCIF files.
+With the exception of the binary sections, a CBF file is an mmCIF-format
+ASCII file, so a CBF file with no binary sections is a CIF file. An
+imgCIF file has any binary sections encoded as CIF-format ASCII strings
+and is a CIF file whether or not it contains binary sections. In most
+cases, CBFlib can also be used to access normal CIF files as well as CBF
+and imgCIF files.
 
-#### <span id="3.2">3.2 Format of the binary sections</span>
+::: {#3.2}
+#### 3.2 Format of the binary sections
 
-Before getting to the binary data itself, there are some preliminaries to allow a smooth transition from the conventions of CIF to those of raw or encoded streams of "octets" (8-bit bytes). The binary data is given as the essential part of a specially formatted semicolon-delimited CIF multi-line text string. This text string is the value associated with the tag "\_array_data.data".
+Before getting to the binary data itself, there are some preliminaries
+to allow a smooth transition from the conventions of CIF to those of raw
+or encoded streams of \"octets\" (8-bit bytes). The binary data is given
+as the essential part of a specially formatted semicolon-delimited CIF
+multi-line text string. This text string is the value associated with
+the tag \"\_array_data.data\".
 
-The specific format of the binary sections differs between an imgCIF and a CBF file.
+The specific format of the binary sections differs between an imgCIF and
+a CBF file.
+:::
 
-#### <span id="3.2.1">3.2.1 Format of imgCIF binary sections</span>
+::: {#3.2.1}
+#### 3.2.1 Format of imgCIF binary sections
 
-Each binary section is encoded as a semicolon-delimited string. Within the text string, the conventions developed for transmitting email messages including binary attachments are followed. There is secondary ASCII header information, formatted as Multipurpose Internet Mail Extensions (MIME) headers (see RFCs 2045-49 by Freed, et al.). The boundary marker for the beginning of all this is the special string
+Each binary section is encoded as a semicolon-delimited string. Within
+the text string, the conventions developed for transmitting email
+messages including binary attachments are followed. There is secondary
+ASCII header information, formatted as Multipurpose Internet Mail
+Extensions (MIME) headers (see RFCs 2045-49 by Freed, et al.). The
+boundary marker for the beginning of all this is the special string
 
     --CIF-BINARY-FORMAT-SECTION--
 
-at the beginning of a line. The initial "--" says that this is a MIME boundary. We cannot put "###" in front of it and conform to MIME conventions. Immediately after the boundary marker are MIME headers, describing some useful information we will need to process the binary section. MIME headers can appear in different orders, and can be very confusing (look at the raw contents of a email message with attachments), but there is only one header which is has to be understood to process an imgCIF: "Content-Transfer-Encoding". If the value given on this header is "BINARY", this is a CBF and the data will be presented as raw binary, containing a count (in the header described in [3.2.2 Format of CBF binary sections](#3.2.2)) so that we'll know when to start looking for more information.
+at the beginning of a line. The initial \"\--\" says that this is a MIME
+boundary. We cannot put \"###\" in front of it and conform to MIME
+conventions. Immediately after the boundary marker are MIME headers,
+describing some useful information we will need to process the binary
+section. MIME headers can appear in different orders, and can be very
+confusing (look at the raw contents of a email message with
+attachments), but there is only one header which is has to be understood
+to process an imgCIF: \"Content-Transfer-Encoding\". If the value given
+on this header is \"BINARY\", this is a CBF and the data will be
+presented as raw binary, containing a count (in the header described in
+[3.2.2 Format of CBF binary sections](#3.2.2)) so that we\'ll know when
+to start looking for more information.
 
-If the value given for "Content-Transfer-Encoding" is one of the real encodings: "BASE64", "QUOTED-PRINTABLE", "X-BASE8", "X-BASE10" or "X-BASE16", the file is an imgCIF, and we'll need some other headers to process the encoded binary data properly. It is a good practice to give headers in all cases. The meanings of various encodings is given in the CBF extensions dictionary, [cif_img_1.5.4.dic](cif_img_1.5.4.html), as one html file, or as [separate pages for each defintion](index.html).
+If the value given for \"Content-Transfer-Encoding\" is one of the real
+encodings: \"BASE64\", \"QUOTED-PRINTABLE\", \"X-BASE8\", \"X-BASE10\"
+or \"X-BASE16\", the file is an imgCIF, and we\'ll need some other
+headers to process the encoded binary data properly. It is a good
+practice to give headers in all cases. The meanings of various encodings
+is given in the CBF extensions dictionary,
+[cif_img_1.5.4.dic](cif_img_1.5.4.html), as one html file, or as
+[separate pages for each defintion](index.html).
 
-For certain compressions (e.g. CBF_PACKED) MIME headers are essential to determine the parameters of the compression. The full list of MIME headers recognized by and generated by CBFlib is:
+For certain compressions (e.g. CBF_PACKED) MIME headers are essential to
+determine the parameters of the compression. The full list of MIME
+headers recognized by and generated by CBFlib is:
 
 - Content-Type:
 - Content-Transfer-Encoding:
@@ -10433,21 +13175,59 @@ For certain compressions (e.g. CBF_PACKED) MIME headers are essential to determi
 
 - Content-Type:
 
-  The "Content-Type" header tells us what sort of data we have (currently always "application/octet-stream" for a miscellaneous stream of binary data) and, optionally, the conversions that were applied to the original data. The default is to compress the data with the "CBF-PACKED" algorithm. The Content-Type may be any of the discrete types permitted in RFC 2045; 'application/octet-stream' is recommended. If an octet stream was compressed, the compression should be specified by the parameter 'conversions="**X**-CBF_PACKED"' or the parameter 'conversions="**X**-CBF_PACKED_V2"' or the parameter 'conversions="**X**-CBF_CANONICAL"' or the parameter 'conversions="**X**-CBF_BYTE_OFFSET"' or the parameter 'conversions="**X**-CBF_NIBBLE_OFFSET"'
+  The \"Content-Type\" header tells us what sort of data we have
+  (currently always \"application/octet-stream\" for a miscellaneous
+  stream of binary data) and, optionally, the conversions that were
+  applied to the original data. The default is to compress the data with
+  the \"CBF-PACKED\" algorithm. The Content-Type may be any of the
+  discrete types permitted in RFC 2045; \'application/octet-stream\' is
+  recommended. If an octet stream was compressed, the compression should
+  be specified by the parameter \'conversions=\"**X**-CBF_PACKED\"\' or
+  the parameter \'conversions=\"**X**-CBF_PACKED_V2\"\' or the parameter
+  \'conversions=\"**X**-CBF_CANONICAL\"\' or the parameter
+  \'conversions=\"**X**-CBF_BYTE_OFFSET\"\' or the parameter
+  \'conversions=\"**X**-CBF_NIBBLE_OFFSET\"\'
 
-  If the parameter 'conversions="**X**-CBF_PACKED"' or 'conversions="**X**-CBF_PACKED_V2"' is given it may be further modified with the parameters '"uncorrelated_sections"' or '"flat"'
+  If the parameter \'conversions=\"**X**-CBF_PACKED\"\' or
+  \'conversions=\"**X**-CBF_PACKED_V2\"\' is given it may be further
+  modified with the parameters \'\"uncorrelated_sections\"\' or
+  \'\"flat\"\'
 
-  If the '"uncorrelated_sections"' parameter is given, each section will be compressed without using the prior section for averaging. If the '"flat"' parameter is given, each the image will be treated as one long row.
+  If the \'\"uncorrelated_sections\"\' parameter is given, each section
+  will be compressed without using the prior section for averaging. If
+  the \'\"flat\"\' parameter is given, each the image will be treated as
+  one long row.
 
 - Content-Transfer-Encoding:
 
-  The "Content-Transfer-Encoding" may be 'BASE64', 'Quoted-Printable', '**X**-BASE8', '**X**-BASE10', '**X**-BASE16' or '**X**-BASE32K', for an imgCIF or 'BINARY' for a CBF. The octal, decimal and hexadecimal transfer encodings are provided for convenience in debugging and are not recommended for archiving and data interchange.
+  The \"Content-Transfer-Encoding\" may be \'BASE64\',
+  \'Quoted-Printable\', \'**X**-BASE8\', \'**X**-BASE10\',
+  \'**X**-BASE16\' or \'**X**-BASE32K\', for an imgCIF or \'BINARY\' for
+  a CBF. The octal, decimal and hexadecimal transfer encodings are
+  provided for convenience in debugging and are not recommended for
+  archiving and data interchange.
 
-  In a CIF, one of the parameters 'charset=us-ascii', 'charset=utf-8' or 'charset=utf-16' may be used on the Content-Transfer-Encoding to specify the character set used for the external presentation of the encoded data. If no charset parameter is given, the character set of the enclosing CIF is assumed. In any case, if a BOM flag is detected (FE FF for big-endian UTF-16, FF FE for little-endian UTF-16 or EF BB BF for UTF-8) is detected, the indicated charset will be assumed until the end of the encoded data or the detection of a different BOM. The charset of the Content-Transfer-Encoding is not the character set of the encoded data, only the character set of the presentation of the encoded data and should be respecified for each distinct STAR string.
+  In a CIF, one of the parameters \'charset=us-ascii\',
+  \'charset=utf-8\' or \'charset=utf-16\' may be used on the
+  Content-Transfer-Encoding to specify the character set used for the
+  external presentation of the encoded data. If no charset parameter is
+  given, the character set of the enclosing CIF is assumed. In any case,
+  if a BOM flag is detected (FE FF for big-endian UTF-16, FF FE for
+  little-endian UTF-16 or EF BB BF for UTF-8) is detected, the indicated
+  charset will be assumed until the end of the encoded data or the
+  detection of a different BOM. The charset of the
+  Content-Transfer-Encoding is not the character set of the encoded
+  data, only the character set of the presentation of the encoded data
+  and should be respecified for each distinct STAR string.
 
-  In an imgCIF file, the encoded binary data begins after the empty line terminating the header. In an imgCIF file, the encoded binary data ends with the terminating boundary delimiter '\n--CIF-BINARY-FORMAT-SECTION----' in the currently effective charset or with the '\n; ' that terminates the STAR string.
+  In an imgCIF file, the encoded binary data begins after the empty line
+  terminating the header. In an imgCIF file, the encoded binary data
+  ends with the terminating boundary delimiter
+  \'\\n\--CIF-BINARY-FORMAT-SECTION\-\-\--\' in the currently effective
+  charset or with the \'\\n; \' that terminates the STAR string.
 
-  In a CBF, the raw binary data begins after an empty line terminating the header and after the sequence:
+  In a CBF, the raw binary data begins after an empty line terminating
+  the header and after the sequence:
 
                     Octet   Hex   Decimal  Purpose
                       0     0C       12    (ctrl-L) Page break
@@ -10455,68 +13235,131 @@ For certain compressions (e.g. CBF_PACKED) MIME headers are essential to determi
                       2     04       04    (Ctrl-D) Stop listings in UNIX
                       3     D5      213    Binary section begins
 
-  None of these octets are included in the calculation of the message size or in the calculation of the message digest.
+  None of these octets are included in the calculation of the message
+  size or in the calculation of the message digest.
 
 - Content-MD5:
 
-  An MD5 message digest may, optionally, be used. The 'RSA Data Security, Inc. MD5 Message-Digest Algorithm' should be used. No portion of the header is included in the calculation of the message digest. The optional "Content-MD5" header provides a much more sophisticated check on the integrity of the binary data than size checks alone can provide.
+  An MD5 message digest may, optionally, be used. The \'RSA Data
+  Security, Inc. MD5 Message-Digest Algorithm\' should be used. No
+  portion of the header is included in the calculation of the message
+  digest. The optional \"Content-MD5\" header provides a much more
+  sophisticated check on the integrity of the binary data than size
+  checks alone can provide.
 
 - X-Binary-Size:
 
-  The "X-Binary-Size" header specifies the size of the equivalent binary data in octets. This is the size **after** any compressions, but before any ascii encodings. This is useful in making a simple check for a missing portion of this file. The 8 bytes for the Compression type (see below) are not counted in this field, so the value of "X-Binary-Size" is 8 less than the quantity in bytes 12-19 of the raw binary data ( [3.2.2 Format of CBF binary sections](#3.2.2)).
+  The \"X-Binary-Size\" header specifies the size of the equivalent
+  binary data in octets. This is the size **after** any compressions,
+  but before any ascii encodings. This is useful in making a simple
+  check for a missing portion of this file. The 8 bytes for the
+  Compression type (see below) are not counted in this field, so the
+  value of \"X-Binary-Size\" is 8 less than the quantity in bytes 12-19
+  of the raw binary data ( [3.2.2 Format of CBF binary
+  sections](#3.2.2)).
 
 - X-Binary-ID:
 
-  The "X-Binary-ID" header should contain the same value as was given for "\_array_data.binary_id".
+  The \"X-Binary-ID\" header should contain the same value as was given
+  for \"\_array_data.binary_id\".
 
 - X-Binary-Element-Type:
 
-  The "X-Binary-Element-Type" header specifies the type of binary data in the octets, using the same descriptive phrases as in [\_array_structure.encoding_type](#_array_structure.encoding_type). The default value is 'unsigned 32-bit integer'.
+  The \"X-Binary-Element-Type\" header specifies the type of binary data
+  in the octets, using the same descriptive phrases as in
+  [\_array_structure.encoding_type](#_array_structure.encoding_type).
+  The default value is \'unsigned 32-bit integer\'.
 
 - X-Binary-Element-Byte-Order:
 
-  The "X-Binary-Element-Byte-Order" can specify either '"BIG_ENDIAN"' or '"LITTLE_ENDIAN"' byte order of the image data. CBFlib only writes '"LITTLE_ENDIAN"', and in general can only process LITTLE_ENDIAN even on machines that are BIG_ENDIAN.
+  The \"X-Binary-Element-Byte-Order\" can specify either
+  \'\"BIG_ENDIAN\"\' or \'\"LITTLE_ENDIAN\"\' byte order of the image
+  data. CBFlib only writes \'\"LITTLE_ENDIAN\"\', and in general can
+  only process LITTLE_ENDIAN even on machines that are BIG_ENDIAN.
 
 - X-Binary-Number-of-Elements:
 
-  The "X-Binary-Number-of-Elements" specifies the number of elements (not the number of octets) in the decompressed, decoded image.
+  The \"X-Binary-Number-of-Elements\" specifies the number of elements
+  (not the number of octets) in the decompressed, decoded image.
 
 - X-Binary-Size-Fastest-Dimension:
 
-  The optional "X-Binary-Size-Fastest-Dimension" specifies the number of elements (not the number of octets) in one row of the fastest changing dimension of the binary data array. This information must be in the MIME header for proper operation of some of the decompression algorithms.
+  The optional \"X-Binary-Size-Fastest-Dimension\" specifies the number
+  of elements (not the number of octets) in one row of the fastest
+  changing dimension of the binary data array. This information must be
+  in the MIME header for proper operation of some of the decompression
+  algorithms.
 
 - X-Binary-Size-Second-Dimension:
 
-  The optional "X-Binary-Size-Second-Dimension" specifies the number of elements (not the number of octets) in one column of the second-fastest changing dimension of the binary data array. This information must be in the MIME header for proper operation of some of the decompression algorithms.
+  The optional \"X-Binary-Size-Second-Dimension\" specifies the number
+  of elements (not the number of octets) in one column of the
+  second-fastest changing dimension of the binary data array. This
+  information must be in the MIME header for proper operation of some of
+  the decompression algorithms.
 
 - X-Binary-Size-Third-Dimension:
 
-  The optional "X-Binary-Size-Third-Dimension" specifies the number of sections for the third-fastest changing dimension of the binary data array.
+  The optional \"X-Binary-Size-Third-Dimension\" specifies the number of
+  sections for the third-fastest changing dimension of the binary data
+  array.
 
 - X-Binary-Size-Padding:
 
-  The optional "X-Binary-Size-Padding" specifies the size in octets of an optional padding after the binary array data and before the closing flags for a binary section. CBFlib always writes this padding as zeros, but this information should be in the MIME header for a binary section that uses padding, especially if non-zero padding is used.
+  The optional \"X-Binary-Size-Padding\" specifies the size in octets of
+  an optional padding after the binary array data and before the closing
+  flags for a binary section. CBFlib always writes this padding as
+  zeros, but this information should be in the MIME header for a binary
+  section that uses padding, especially if non-zero padding is used.
 
-A blank line separator immediately precedes the start of the encoded binary data. Blank spaces may be added prior to the preceding "line separator" if desired (e.g. to force word or block alignment).
+A blank line separator immediately precedes the start of the encoded
+binary data. Blank spaces may be added prior to the preceding \"line
+separator\" if desired (e.g. to force word or block alignment).
 
-Because CBFLIB may jump forward in the file from the MIME header, the length of encoded data cannot be greater than the value defined by "X-Binary-Size" (except when "X-Binary-Size" is zero, which means that the size is unknown), unless "X-Binary-Size-Padding" is specified to allow for the padding. At exactly the byte following the full binary section as defined by the length and padding values is the end of binary section identifier. This consists of the line-termination sequence followed by:
+Because CBFLIB may jump forward in the file from the MIME header, the
+length of encoded data cannot be greater than the value defined by
+\"X-Binary-Size\" (except when \"X-Binary-Size\" is zero, which means
+that the size is unknown), unless \"X-Binary-Size-Padding\" is specified
+to allow for the padding. At exactly the byte following the full binary
+section as defined by the length and padding values is the end of binary
+section identifier. This consists of the line-termination sequence
+followed by:
 
     --CIF-BINARY-FORMAT-SECTION----
     ;
 
-with each of these lines followed by a line-termination sequence. This brings us back into a normal CIF environment. This identifier is, in a sense, redundant because the binary data length value tells the a program how many bytes to jump over to the end of the binary data. This redundancy has been deliberately added for error checking, and for possible file recovery in the case of a corrupted file and this identifier must be present at the end of every block of binary data.
+with each of these lines followed by a line-termination sequence. This
+brings us back into a normal CIF environment. This identifier is, in a
+sense, redundant because the binary data length value tells the a
+program how many bytes to jump over to the end of the binary data. This
+redundancy has been deliberately added for error checking, and for
+possible file recovery in the case of a corrupted file and this
+identifier must be present at the end of every block of binary data.
+:::
 
-#### <span id="3.2.2">3.2.2 Format of CBF binary sections</span>
+::: {#3.2.2}
+#### 3.2.2 Format of CBF binary sections
 
-In a CBF file, each binary section is encoded as a ;-delimited string, starting with an arbitrary number of pure-ASCII characters.
+In a CBF file, each binary section is encoded as a ;-delimited string,
+starting with an arbitrary number of pure-ASCII characters.
 
-**Note:** For historical reasons, CIFlib has the option of writing simple header and footer sections: "START OF BINARY SECTION" at the start of a binary section and "END OF BINARY SECTION" at the end of a binary section, or writing MIME-type header and footer sections ([3.2.1 Format of imgCIF binary sections](3.2.1)). If the simple header is used, the actual ASCII text is ignored when the binary section is read. **Use of the simple binary header is deprecated.**
+**Note:** For historical reasons, CIFlib has the option of writing
+simple header and footer sections: \"START OF BINARY SECTION\" at the
+start of a binary section and \"END OF BINARY SECTION\" at the end of a
+binary section, or writing MIME-type header and footer sections ([3.2.1
+Format of imgCIF binary sections](3.2.1)). If the simple header is used,
+the actual ASCII text is ignored when the binary section is read. **Use
+of the simple binary header is deprecated.**
 
 The MIME header is recommended.
 
-Between the ASCII header and the actual CBF binary data is a series of bytes ("octets") to try to stop the listing of the header, bytes which define the binary identifier which should match the "binary_id" defined in the header, and bytes which define the length of the binary section.
+Between the ASCII header and the actual CBF binary data is a series of
+bytes (\"octets\") to try to stop the listing of the header, bytes which
+define the binary identifier which should match the \"binary_id\"
+defined in the header, and bytes which define the length of the binary
+section.
 
-  
+\
 
 Octet
 
@@ -10566,11 +13409,16 @@ Purpose
 
   Binary data (n octets)
 
-  
+\
 
-NOTE: When a MIME header is used, only bytes 5 through 5+n-1 are considered in computing the size and the message digest, and only these bytes are encoded for the equivalent imgCIF file using the indicated Content-Transfer-Encoding.
+NOTE: When a MIME header is used, only bytes 5 through 5+n-1 are
+considered in computing the size and the message digest, and only these
+bytes are encoded for the equivalent imgCIF file using the indicated
+Content-Transfer-Encoding.
 
-If no MIME header has been requested (a deprecated use), then bytes 5 through 28 are used for three 8-byte words to hold the binary_id, the size and the compression type:
+If no MIME header has been requested (a deprecated use), then bytes 5
+through 28 are used for three 8-byte words to hold the binary_id, the
+size and the compression type:
 
    5..12
 
@@ -10578,8 +13426,8 @@ If no MIME header has been requested (a deprecated use), then bytes 5 through 28
 
    
 
-  Binary Section Identifier  
-(See \_array_data.binary_id)  
+  Binary Section Identifier\
+(See \_array_data.binary_id)\
 64-bit, little endian
 
    13..20
@@ -10588,10 +13436,10 @@ If no MIME header has been requested (a deprecated use), then bytes 5 through 28
 
    
 
-  The size (n) of the  
-binary section in octets  
-(i.e. the offset from octet  
-29 to the first byte following  
+  The size (n) of the\
+binary section in octets\
+(i.e. the offset from octet\
+29 to the first byte following\
 the data)
 
    21..28
@@ -10600,7 +13448,7 @@ the data)
 
    
 
-  Compression type:  
+  Compression type:\
 
   CBF_NONE
 
@@ -10630,7 +13478,7 @@ the data)
 
   0x0080 (128)
 
-  ...
+  \...
 
    
 
@@ -10638,27 +13486,44 @@ The binary data then follows in bytes 29 through 29+n-1.
 
 The binary characters serve specific purposes:
 
-- The Control-L (from-feed) will terminate printing of the current page on most operating systems.
+- The Control-L (from-feed) will terminate printing of the current page
+  on most operating systems.
 
-- The Control-Z will stop the listing of the file on MS-DOS type operating systems.
+- The Control-Z will stop the listing of the file on MS-DOS type
+  operating systems.
 
-- The Control-D will stop the listing of the file on Unix type operating systems.
+- The Control-D will stop the listing of the file on Unix type operating
+  systems.
 
-- The unsigned byte value 213 (decimal) is binary 11010101. (Octal 325, and hexadecimal D5). This has the eighth bit set so can be used for error checking on 7-bit transmission. It is also asymmetric, but with the first bit also set in the case that the bit order could be reversed (which is not a known concern).
+- The unsigned byte value 213 (decimal) is binary 11010101. (Octal 325,
+  and hexadecimal D5). This has the eighth bit set so can be used for
+  error checking on 7-bit transmission. It is also asymmetric, but with
+  the first bit also set in the case that the bit order could be
+  reversed (which is not a known concern).
 
-- (The carriage return, line-feed pair before the START_OF_BIN and other lines can also be used to check that the file has not been corrupted e.g. by being sent by ftp in ASCII mode.)
+- (The carriage return, line-feed pair before the START_OF_BIN and other
+  lines can also be used to check that the file has not been corrupted
+  e.g. by being sent by ftp in ASCII mode.)
 
-    
-  At present four compression schemes are implemented are defined: CBF_NONE (for no compression), CBF_CANONICAL (for and entropy-coding scheme based on the canonical-code algorithm described by Moffat, *et al*. (*International Journal of High Speed Electronics and Systems*, Vol 8, No 1 (1997) 179-231)), CBF_PACKED or CBF_PACKED_V2 for J. P. Abrahams CCP4-style packing schemes and CBF_BYTE_OFFSET for a simple byte_offset compression scheme.. Other compression schemes will be added to this list in the future.
+  \
+  At present four compression schemes are implemented are defined:
+  CBF_NONE (for no compression), CBF_CANONICAL (for and entropy-coding
+  scheme based on the canonical-code algorithm described by Moffat, *et
+  al*. (*International Journal of High Speed Electronics and Systems*,
+  Vol 8, No 1 (1997) 179-231)), CBF_PACKED or CBF_PACKED_V2 for J. P.
+  Abrahams CCP4-style packing schemes and CBF_BYTE_OFFSET for a simple
+  byte_offset compression scheme.. Other compression schemes will be
+  added to this list in the future.
 
-For historical reasons, CBFlib can read or write a binary string without a MIME header. The structure of a binary string with simple headers is:
+For historical reasons, CBFlib can read or write a binary string without
+a MIME header. The structure of a binary string with simple headers is:
 
 Byte
 
-ASCII  
+ASCII\
 symbol
 
-Decimal   
+Decimal \
 value
 
 Description
@@ -10669,7 +13534,7 @@ Description
 
   59
 
-  Initial ; delimiter  
+  Initial ; delimiter\
 
   2
 
@@ -10677,7 +13542,7 @@ Description
 
   13
 
-    
+  \
 
   3
 
@@ -10685,7 +13550,7 @@ Description
 
   10
 
-  The CBF new-line code is carriage-return, line-feed  
+  The CBF new-line code is carriage-return, line-feed\
 
   4
 
@@ -10693,7 +13558,7 @@ Description
 
   83
 
-    
+  \
 
   5
 
@@ -10701,7 +13566,7 @@ Description
 
   84
 
-    
+  \
 
   6
 
@@ -10709,7 +13574,7 @@ Description
 
   65
 
-    
+  \
 
   7
 
@@ -10717,7 +13582,7 @@ Description
 
   83
 
-    
+  \
 
   8
 
@@ -10725,7 +13590,7 @@ Description
 
   84
 
-    
+  \
 
   9
 
@@ -10733,7 +13598,7 @@ Description
 
   32
 
-    
+  \
 
   10
 
@@ -10741,7 +13606,7 @@ Description
 
   79
 
-    
+  \
 
   11
 
@@ -10749,7 +13614,7 @@ Description
 
   70
 
-    
+  \
 
   12
 
@@ -10757,7 +13622,7 @@ Description
 
   32
 
-    
+  \
 
   13
 
@@ -10765,7 +13630,7 @@ Description
 
   66
 
-    
+  \
 
   14
 
@@ -10773,7 +13638,7 @@ Description
 
   73
 
-    
+  \
 
   15
 
@@ -10781,7 +13646,7 @@ Description
 
   78
 
-    
+  \
 
   16
 
@@ -10789,7 +13654,7 @@ Description
 
   65
 
-    
+  \
 
   17
 
@@ -10797,7 +13662,7 @@ Description
 
   83
 
-    
+  \
 
   18
 
@@ -10805,7 +13670,7 @@ Description
 
   89
 
-    
+  \
 
   19
 
@@ -10813,7 +13678,7 @@ Description
 
   32
 
-    
+  \
 
   20
 
@@ -10821,7 +13686,7 @@ Description
 
   83
 
-    
+  \
 
   21
 
@@ -10829,7 +13694,7 @@ Description
 
   69
 
-    
+  \
 
   22
 
@@ -10837,7 +13702,7 @@ Description
 
   67
 
-    
+  \
 
   23
 
@@ -10845,7 +13710,7 @@ Description
 
   84
 
-    
+  \
 
   24
 
@@ -10853,7 +13718,7 @@ Description
 
   73
 
-    
+  \
 
   25
 
@@ -10861,7 +13726,7 @@ Description
 
   79
 
-    
+  \
 
   26
 
@@ -10869,7 +13734,7 @@ Description
 
   78
 
-    
+  \
 
   27
 
@@ -10877,7 +13742,7 @@ Description
 
   13
 
-    
+  \
 
   28
 
@@ -10885,7 +13750,7 @@ Description
 
   10
 
-    
+  \
 
   29
 
@@ -10893,7 +13758,7 @@ Description
 
   12
 
-    
+  \
 
   30
 
@@ -10901,7 +13766,7 @@ Description
 
   26
 
-  Stop the listing of the file in MS-DOS  
+  Stop the listing of the file in MS-DOS\
 
   31
 
@@ -10909,7 +13774,7 @@ Description
 
   4
 
-  Stop the listing of the file in unix  
+  Stop the listing of the file in unix\
 
   32
 
@@ -10917,7 +13782,7 @@ Description
 
   213
 
-  First non-ASCII value  
+  First non-ASCII value\
 
   33 .. 40
 
@@ -10925,7 +13790,7 @@ Description
 
   
 
-  Binary section identifier (64-bit little-endien)  
+  Binary section identifier (64-bit little-endien)\
 
   41 .. 48
 
@@ -10933,7 +13798,8 @@ Description
 
   
 
-  Offset from byte 57 to the first ASCII character following the binary data  
+  Offset from byte 57 to the first ASCII character following the binary
+data\
 
   49 .. 56
 
@@ -10941,13 +13807,13 @@ Description
 
   
 
-  Compression type  
+  Compression type\
 
 57 .. 57 + *n*-1
 
   
 
-  Binary data (*n*bytes)  
+  Binary data (*n*bytes)\
 
   57 + *n*
 
@@ -10955,7 +13821,7 @@ Description
 
   13
 
-    
+  \
 
   58 + *n*
 
@@ -10963,7 +13829,7 @@ Description
 
   10
 
-    
+  \
 
   59 + *n*
 
@@ -10971,7 +13837,7 @@ Description
 
   69
 
-    
+  \
 
   60 + *n*
 
@@ -10979,7 +13845,7 @@ Description
 
   78
 
-    
+  \
 
   61 + *n*
 
@@ -10987,7 +13853,7 @@ Description
 
   68
 
-    
+  \
 
   62 + *n*
 
@@ -10995,7 +13861,7 @@ Description
 
   32
 
-    
+  \
 
   63 + *n*
 
@@ -11003,7 +13869,7 @@ Description
 
   79
 
-    
+  \
 
   64 + *n*
 
@@ -11011,7 +13877,7 @@ Description
 
   70
 
-    
+  \
 
   65 + *n*
 
@@ -11019,7 +13885,7 @@ Description
 
   32
 
-    
+  \
 
   66 + *n*
 
@@ -11027,7 +13893,7 @@ Description
 
   66
 
-    
+  \
 
   67 + *n*
 
@@ -11035,7 +13901,7 @@ Description
 
   73
 
-    
+  \
 
   68 + *n*
 
@@ -11043,7 +13909,7 @@ Description
 
   78
 
-    
+  \
 
   69 + *n*
 
@@ -11051,7 +13917,7 @@ Description
 
   65
 
-    
+  \
 
   70 + *n*
 
@@ -11059,7 +13925,7 @@ Description
 
   83
 
-    
+  \
 
   71 + *n*
 
@@ -11067,7 +13933,7 @@ Description
 
   89
 
-    
+  \
 
   72 + *n*
 
@@ -11075,7 +13941,7 @@ Description
 
   32
 
-    
+  \
 
   73 + *n*
 
@@ -11083,7 +13949,7 @@ Description
 
   83
 
-    
+  \
 
   74 + *n*
 
@@ -11091,7 +13957,7 @@ Description
 
   69
 
-    
+  \
 
   75 + *n*
 
@@ -11099,7 +13965,7 @@ Description
 
   67
 
-    
+  \
 
   76 + *n*
 
@@ -11107,7 +13973,7 @@ Description
 
   84
 
-    
+  \
 
   77 + *n*
 
@@ -11115,7 +13981,7 @@ Description
 
   73
 
-    
+  \
 
   78 + *n*
 
@@ -11123,7 +13989,7 @@ Description
 
   79
 
-    
+  \
 
   79 + *n*
 
@@ -11131,7 +13997,7 @@ Description
 
   78
 
-    
+  \
 
   80 + *n*
 
@@ -11139,7 +14005,7 @@ Description
 
   13
 
-    
+  \
 
   81 + *n*
 
@@ -11147,7 +14013,7 @@ Description
 
   10
 
-    
+  \
 
   82 + *n*
 
@@ -11155,24 +14021,45 @@ Description
 
   59
 
-  Final ; delimiter  
+  Final ; delimiter\
 
-  
+\
+:::
 
-#### <span id="3.3">3.3 Compression schemes</span>
+::: {3.3\"=""}
+#### 3.3 Compression schemes
 
-Two schemes for lossless compression of integer arrays (such as images) have been implemented in this version of CBFlib:
+Two schemes for lossless compression of integer arrays (such as images)
+have been implemented in this version of CBFlib:
 
-1\. An entropy-encoding scheme using canonical coding  
-2. A CCP4-style packing scheme. 3. A simple and efficient byte-offset compression. 4. A slightly more complex nibble-offset compression.
+1\. An entropy-encoding scheme using canonical coding\
+2. A CCP4-style packing scheme. 3. A simple and efficient byte-offset
+compression. 4. A slightly more complex nibble-offset compression.
 
-All encode the difference (or error) between the current element in the array and the prior element or neighboring elements.
+All encode the difference (or error) between the current element in the
+array and the prior element or neighboring elements.
+:::
 
-#### <span id="3.3.1">3.3.1 Canonical-code compression</span>
+::: {#3.3.1}
+#### 3.3.1 Canonical-code compression
 
-The canonical-code compression scheme encodes errors in two ways: directly or indirectly. Errors are coded directly using a symbol corresponding to the error value. Errors are coded indirectly using a symbol for the number of bits in the (signed) error, followed by the error iteslf.
+The canonical-code compression scheme encodes errors in two ways:
+directly or indirectly. Errors are coded directly using a symbol
+corresponding to the error value. Errors are coded indirectly using a
+symbol for the number of bits in the (signed) error, followed by the
+error iteslf.
 
-At the start of the compression, CBFlib constructs a table containing a set of symbols, one for each of the 2^<sup>n</sup> direct codes from -2^<sup>(n-1)</sup> .. 2^<sup>(n-1)</sup>-1, one for a stop code, and one for each of the *maxbits* -*n* indirect codes, where *n* is chosen at compress time and *maxbits* is the maximum number of bits in an error. CBFlib then assigns to each symbol a bit-code, using a shorter bit code for the more common symbols and a longer bit code for the less common symbols. The bit-code lengths are calculated using a Huffman-type algorithm, and the actual bit-codes are constructed using the canonical-code algorithm described by Moffat, *et al*. (*International Journal of High Speed Electronics and Systems*, Vol 8, No 1 (1997) 179-231).
+At the start of the compression, CBFlib constructs a table containing a
+set of symbols, one for each of the 2\^^n^ direct codes from -2\^^(n-1)^
+.. 2\^^(n-1)^-1, one for a stop code, and one for each of the *maxbits*
+-*n* indirect codes, where *n* is chosen at compress time and *maxbits*
+is the maximum number of bits in an error. CBFlib then assigns to each
+symbol a bit-code, using a shorter bit code for the more common symbols
+and a longer bit code for the less common symbols. The bit-code lengths
+are calculated using a Huffman-type algorithm, and the actual bit-codes
+are constructed using the canonical-code algorithm described by Moffat,
+*et al*. (*International Journal of High Speed Electronics and Systems*,
+Vol 8, No 1 (1997) 179-231).
 
 The structure of the compressed data is:
 
@@ -11182,19 +14069,19 @@ Value
 
   1 .. 8
 
-  Number of elements (64-bit little-endian number)  
+  Number of elements (64-bit little-endian number)\
 
   9 .. 16
 
-  Minimum element  
+  Minimum element\
 
   17 .. 24
 
-  Maximum element  
+  Maximum element\
 
   25 .. 32
 
-  (reserved for future use)  
+  (reserved for future use)\
 
   33
 
@@ -11204,43 +14091,77 @@ Value
 
   Maximum number of bits encoded, *maxbits*
 
-  35 .. 35+2^<sup>n</sup>-1
+  35 .. 35+2\^^n^-1
 
-  Number of bits in each direct code  
+  Number of bits in each direct code\
 
-  35+2^<sup>n</sup>
+  35+2\^^n^
 
-  Number of bits in the stop code  
+  Number of bits in the stop code\
 
-  35+2^<sup>n</sup>+1 .. 35+2^<sup>n</sup>+*maxbits*-*n*
+  35+2\^^n^+1 .. 35+2\^^n^+*maxbits*-*n*
 
-  Number of bits in each indirect code  
+  Number of bits in each indirect code\
 
-  35+2^<sup>n</sup>+*maxbits*-*n*+1 ..
+  35+2\^^n^+*maxbits*-*n*+1 ..
 
-  Coded data  
+  Coded data\
+:::
 
-#### <span id="3.3.2">3.3.2 CCP4-style compression</span>
+::: {#3.3.2}
+#### 3.3.2 CCP4-style compression
 
-Starting with CBFlib 0.7.7, CBFlib supports three variations on CCP4-style compression: the "flat" version supported in versions of CBFlib prior to release 0.7.7, as well as both version 1 and version 2 of J. P. Abrahams "pack_c" compression.
+Starting with CBFlib 0.7.7, CBFlib supports three variations on
+CCP4-style compression: the \"flat\" version supported in versions of
+CBFlib prior to release 0.7.7, as well as both version 1 and version 2
+of J. P. Abrahams \"pack_c\" compression.
 
-The CBF_PACKED and CBF_PACKED_V2 compression and decompression code incorporated in CBFlib is derived in large part from the J. P. Abrahams pack_c.c compression code in CCP4. This code is incorporated in CBFlib under the GPL and the LGPL with both the permission Jan Pieter Abrahams, the original author of pack_c.c (email from Jan Pieter Abrahams of 15 January 2007) and of the CCP4 project (email from Martyn Winn on 12 January 2007). The cooperation of J. P. Abrahams and of the CCP4 project is gratefully acknowledged.
+The CBF_PACKED and CBF_PACKED_V2 compression and decompression code
+incorporated in CBFlib is derived in large part from the J. P. Abrahams
+pack_c.c compression code in CCP4. This code is incorporated in CBFlib
+under the GPL and the LGPL with both the permission Jan Pieter Abrahams,
+the original author of pack_c.c (email from Jan Pieter Abrahams of 15
+January 2007) and of the CCP4 project (email from Martyn Winn on 12
+January 2007). The cooperation of J. P. Abrahams and of the CCP4 project
+is gratefully acknowledged.
 
-The basis for all three versions is a scheme to pack offsets (differences from a base value) into a small-endian bit stream. The stream is organized into blocks. Each block begins with a header of 6 bits in the flat packed version and version 1 of J. P. Abrahams compression, and 7 bits in version 2 of J. P. Abrahams compression. The header gives the number of offsets that follow and the number of bits in each offset. Each offset is a signed, 2's complement integer.
+The basis for all three versions is a scheme to pack offsets
+(differences from a base value) into a small-endian bit stream. The
+stream is organized into blocks. Each block begins with a header of 6
+bits in the flat packed version and version 1 of J. P. Abrahams
+compression, and 7 bits in version 2 of J. P. Abrahams compression. The
+header gives the number of offsets that follow and the number of bits in
+each offset. Each offset is a signed, 2\'s complement integer.
 
-The first 3 bits in the header gives the logarithm base 2 of the numer of offsets that follow the header. For example, if a header has a zero in bits, only one offset follows the header. If those same bits contain the number n, the number of offsets in the block is 2<sup>n</sup>.
+The first 3 bits in the header gives the logarithm base 2 of the numer
+of offsets that follow the header. For example, if a header has a zero
+in bits, only one offset follows the header. If those same bits contain
+the number n, the number of offsets in the block is 2^n^.
 
-The following 3 bits (flat and version 1) or 4 bits (version 2) contains a number giving an index into a table of bit-lengths for the offsets. All offsets in a given block are of the same length.
+The following 3 bits (flat and version 1) or 4 bits (version 2) contains
+a number giving an index into a table of bit-lengths for the offsets.
+All offsets in a given block are of the same length.
 
-Bits 3 .. 5 (flat and version 1) or bits 3 .. 6 (version 2) encode the number of bits in each offset as follows:  
+Bits 3 .. 5 (flat and version 1) or bits 3 .. 6 (version 2) encode the
+number of bits in each offset as follows:\
 
-Value in  
+Value in\
 bits 3 .. 5
+:::
+:::::::::
+::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Number of bits  
+Number of bits\
 in each V1 offset
 
-Number of bits  
+Number of bits\
 in each V2 offset
 
 0
@@ -11339,19 +14260,59 @@ max
 
 max
 
-The value "max" is determined by the compression version and the element size. If the compression used is "flat", then "max" is 65. If the compression is version 1 or version 2 of the JPA compression, then "max" is the number of bits in each element, i.e. 8, 16, 32 or 64 bits.
+The value \"max\" is determined by the compression version and the
+element size. If the compression used is \"flat\", then \"max\" is 65.
+If the compression is version 1 or version 2 of the JPA compression,
+then \"max\" is the number of bits in each element, i.e. 8, 16, 32 or 64
+bits.
 
-The major difference between the three variants of packed compression is the choice of the base value from which the offset is measured. In all cases the first offset is measured from zero, i.e. the first offset is the value of the first pixel of the image. If "flat" is chosen or if the dimensions of the data array are not given, then the remaining offset are measure against the prior value, making it similar in approach to the "byte offset" compression described in section [3.3.3 Byte offset compression](3.3.3), but with a more efficient representation of the offsets.
+The major difference between the three variants of packed compression is
+the choice of the base value from which the offset is measured. In all
+cases the first offset is measured from zero, i.e. the first offset is
+the value of the first pixel of the image. If \"flat\" is chosen or if
+the dimensions of the data array are not given, then the remaining
+offset are measure against the prior value, making it similar in
+approach to the \"byte offset\" compression described in section [3.3.3
+Byte offset compression](3.3.3), but with a more efficient
+representation of the offsets.
 
-In version 1 and version 2 of the J. P. Abrahams compression, the offsets are measured against an average of earlier pixels. If there is only one row only the prior pxiel is used, starting with the same offsets for that row as for "flat". After the first row, three pixels from the prior row are used in addition to using the immediately prior pixel. If there are multiple sections, and the sections are marked as correlated, after the first section, 4 pixels from the prior section are included in the average. The CBFlib code differs from the pack_c code in the handling of the beginnings and ends of rows and sections. The pack_c code will use pixels from the other side of the image in doing the averaging. The CBFlib code drops pixels from the other side of the image from the pool. The details follow.
+In version 1 and version 2 of the J. P. Abrahams compression, the
+offsets are measured against an average of earlier pixels. If there is
+only one row only the prior pxiel is used, starting with the same
+offsets for that row as for \"flat\". After the first row, three pixels
+from the prior row are used in addition to using the immediately prior
+pixel. If there are multiple sections, and the sections are marked as
+correlated, after the first section, 4 pixels from the prior section are
+included in the average. The CBFlib code differs from the pack_c code in
+the handling of the beginnings and ends of rows and sections. The pack_c
+code will use pixels from the other side of the image in doing the
+averaging. The CBFlib code drops pixels from the other side of the image
+from the pool. The details follow.
 
-After dealing with the special case of the first pixel, The algorithm uses an array of pointers, trail_char_data. The assignment of pixels to the pool to be averaged begins with trail_char_data\[0\] points to the pixel immediately prior to the next pixel to be processed, either in the same row (fastest index) or, at the end of the prior row if the next data element to be processed is at the end of a row. The location of the pixel pointed to by trail_char_data\[0\] is used to compute the locations of the other pixels in the pool. It will be dropped from the pool before averaging if it is on the opposite side of the image. The pool will consist of 1, 2, 4 or 8 pixels.
+After dealing with the special case of the first pixel, The algorithm
+uses an array of pointers, trail_char_data. The assignment of pixels to
+the pool to be averaged begins with trail_char_data\[0\] points to the
+pixel immediately prior to the next pixel to be processed, either in the
+same row (fastest index) or, at the end of the prior row if the next
+data element to be processed is at the end of a row. The location of the
+pixel pointed to by trail_char_data\[0\] is used to compute the
+locations of the other pixels in the pool. It will be dropped from the
+pool before averaging if it is on the opposite side of the image. The
+pool will consist of 1, 2, 4 or 8 pixels.
 
-Assume ndim1, ndim2, ndim3 are the indices of the same pixel as trail_char_data\[0\] points to. These indices are incremented to be the indices of the next pixel to be processed before populating trail_char_data.
+Assume ndim1, ndim2, ndim3 are the indices of the same pixel as
+trail_char_data\[0\] points to. These indices are incremented to be the
+indices of the next pixel to be processed before populating
+trail_char_data.
 
-On exit, trail_char_data\[0 .. 7\] will have been populated with pointers to the pixels to be used in forming the average. Pixels that will not be used will be set to NULL. Note that trail_char_data\[0\] may be set to NULL.
+On exit, trail_char_data\[0 .. 7\] will have been populated with
+pointers to the pixels to be used in forming the average. Pixels that
+will not be used will be set to NULL. Note that trail_char_data\[0\] may
+be set to NULL.
 
-If we mark the next element to be processed with a "\*" and the entries in trail_char_data with their array indices 0 .. 7, the possible patterns of settings in the general case are:
+If we mark the next element to be processed with a \"\*\" and the
+entries in trail_char_data with their array indices 0 .. 7, the possible
+patterns of settings in the general case are:
 
 current section:
 
@@ -11367,18 +14328,29 @@ prior section:
              - - - - 7 6 5 - - - 
              - - - - - - - - - -
 
-If there is no prior section (i.e. ndim3 is 0, or the CBF_UNCORRELATED_SECTIONS flag is set to indicate discontinuous sections), the values for trail_char_data\[4 .. 7\] will all be NULL. When there is a prior section, trail_char_data\[5..7\] are pointers to the pixels immediately below the elements pointed to by trail_char_data\[1..3\], except trail_char_data\[4\] is one element further along its row to be directly below the next element to be processed.
+If there is no prior section (i.e. ndim3 is 0, or the
+CBF_UNCORRELATED_SECTIONS flag is set to indicate discontinuous
+sections), the values for trail_char_data\[4 .. 7\] will all be NULL.
+When there is a prior section, trail_char_data\[5..7\] are pointers to
+the pixels immediately below the elements pointed to by
+trail_char_data\[1..3\], except trail_char_data\[4\] is one element
+further along its row to be directly below the next element to be
+processed.
 
-The first element of the first row of the first section is a special case, with no averaging.
+The first element of the first row of the first section is a special
+case, with no averaging.
 
-In the first row of the first section (ndim2 == 0, and ndim3 == 0), after the first element (ndim1 \> 0), only trail_char_data\[0\] is used
+In the first row of the first section (ndim2 == 0, and ndim3 == 0),
+after the first element (ndim1 \> 0), only trail_char_data\[0\] is used
 
 current section:
 
             
              - - - - 0 * - - - -
 
-For subsequent rows of the first section (ndim2 \> 0, and ndim3 == 0), for the first element (ndim1 == 0), two elements from the prior row are used:
+For subsequent rows of the first section (ndim2 \> 0, and ndim3 == 0),
+for the first element (ndim1 == 0), two elements from the prior row are
+used:
 
 current section:
 
@@ -11387,7 +14359,8 @@ current section:
              2 1 - - - - - - - -
              - - - - - - - - - -
 
-while for element after the first element, but before the last element of the row, a full set of 4 elements is used:
+while for element after the first element, but before the last element
+of the row, a full set of 4 elements is used:
 
 current section:
 
@@ -11405,9 +14378,13 @@ current section:
              - - - - - - - - - 2 
              - - - - - - - - - -
 
-For sections after the first section, provided the CBF_UNCORRELATED_SECTIONS flag is not set in the compression, for each non-NULL entry in trail_char_data \[0..3\] an entry is made in trail_char_data \[4..7\], except for the first element of the first row of a section. In that case an entry is made in trail_char_data\[4\].
+For sections after the first section, provided the
+CBF_UNCORRELATED_SECTIONS flag is not set in the compression, for each
+non-NULL entry in trail_char_data \[0..3\] an entry is made in
+trail_char_data \[4..7\], except for the first element of the first row
+of a section. In that case an entry is made in trail_char_data\[4\].
 
-The structure of the compressed data is:  
+The structure of the compressed data is:\
 
 Byte
 
@@ -11433,53 +14410,127 @@ Value
 
   Coded data
 
-#### <span id="3.3.3">3.3.3 Byte_offset compression</span>
+::::::::::: {#3.3.3}
+#### 3.3.3 Byte_offset compression
 
-Starting with CBFlib 0.7.7, CBFlib supports a simple and efficient "byte_offset" algorithm originally proposed by Andy Hammerley and modified by Wolgang Kabsch and Herbert Bernstein. The original proposal was called "byte_offsets". We distinguish this variant by calling it "byte_offset". The major differences are that the "byte_offsets" algorithm started with explicit storage of the first element of the array as a 4-byte signed two's integer, and checked for image edges to changes the selection of prior pixel. The CBFlib "byte_offset" alogorithm starts with an assumed zero before the first pixel and represents the value of the first pixel as an offset of whatever number of size is needed to hold the value, and for speed, treats the entire image as a simple linear array, allowing use of the last pixel of one row as the base against which to compute the offset for the first element of the next row.
+Starting with CBFlib 0.7.7, CBFlib supports a simple and efficient
+\"byte_offset\" algorithm originally proposed by Andy Hammerley and
+modified by Wolgang Kabsch and Herbert Bernstein. The original proposal
+was called \"byte_offsets\". We distinguish this variant by calling it
+\"byte_offset\". The major differences are that the \"byte_offsets\"
+algorithm started with explicit storage of the first element of the
+array as a 4-byte signed two\'s integer, and checked for image edges to
+changes the selection of prior pixel. The CBFlib \"byte_offset\"
+alogorithm starts with an assumed zero before the first pixel and
+represents the value of the first pixel as an offset of whatever number
+of size is needed to hold the value, and for speed, treats the entire
+image as a simple linear array, allowing use of the last pixel of one
+row as the base against which to compute the offset for the first
+element of the next row.
 
-The algorithm is simple and easily implemented. This algorithm can never achieve better than a factor of two compression relative to 16-bit raw data or 4 relative to 32-bit raw data, but for most diffraction data the compression will indeed be very close to these ideal values. It also has the advantage that integer values up to 32 bits (or 31 bits and sign) may be stored efficiently without the need for special over-load tables. It is a fixed algorithm which does not need to calculate any image statistics, so is fast.
+The algorithm is simple and easily implemented. This algorithm can never
+achieve better than a factor of two compression relative to 16-bit raw
+data or 4 relative to 32-bit raw data, but for most diffraction data the
+compression will indeed be very close to these ideal values. It also has
+the advantage that integer values up to 32 bits (or 31 bits and sign)
+may be stored efficiently without the need for special over-load tables.
+It is a fixed algorithm which does not need to calculate any image
+statistics, so is fast.
 
-The algorithm works because of the following property of almost all diffraction data and much other image data: The value of one element tends to be close to the value of the adjacent elements, and the vast majority of the differences use little of the full dynamic range. However, noise in experimental data means that run-length encoding is not useful (unless the image is separated into different bit-planes). If a variable length code is used to store the differences, with the number of bits used being inversely proportional to the probability of occurrence, then compression ratios of 2.5 to 3.0 may be achieved. However, the optimum encoding becomes dependent of the exact properties of the image, and in particular on the noise. Here a lower compression ratio is achieved, but the resulting algorithm is much simpler and more robust.
+The algorithm works because of the following property of almost all
+diffraction data and much other image data: The value of one element
+tends to be close to the value of the adjacent elements, and the vast
+majority of the differences use little of the full dynamic range.
+However, noise in experimental data means that run-length encoding is
+not useful (unless the image is separated into different bit-planes). If
+a variable length code is used to store the differences, with the number
+of bits used being inversely proportional to the probability of
+occurrence, then compression ratios of 2.5 to 3.0 may be achieved.
+However, the optimum encoding becomes dependent of the exact properties
+of the image, and in particular on the noise. Here a lower compression
+ratio is achieved, but the resulting algorithm is much simpler and more
+robust.
 
-The "byte_offset" compression algorithm is the following:
+The \"byte_offset\" compression algorithm is the following:
 
 1.  Start with a base pixel value of 0.
-2.  Compute the difference delta between the next pixel value and the base pixel value.
-3.  If -127 ≤ delta ≤ 127, output delta as one byte, make the current pixel value the base pixel value and return to step 2.
+2.  Compute the difference delta between the next pixel value and the
+    base pixel value.
+3.  If -127 ≤ delta ≤ 127, output delta as one byte, make the current
+    pixel value the base pixel value and return to step 2.
 4.  Otherwise output -128 (80 hex).
-5.  We still have to output delta. If -32767 ≤ delta ≤ 32767, output delta as a little_endian 16-bit quantity, make the current pixel value the base pixel value and return to step 2.
+5.  We still have to output delta. If -32767 ≤ delta ≤ 32767, output
+    delta as a little_endian 16-bit quantity, make the current pixel
+    value the base pixel value and return to step 2.
 6.  Otherwise output -32768 (8000 hex, little_endian, i.e. 00 then 80)
-7.  We still have to output delta. If -2147483647 ≤ delta ≤ 2147483647, output delta as a little_endian 32 bit quantity, make the current pixel value the base pixel value and return to step 2.
-8.  Otherwise output -2147483648 (80000000 hex, little_endian, i.e. 00, then 00, then 00, then 80) and then output the pixel value as a little-endian 64 bit quantity, make the current pixel value the base pixel value and return to step 2.
+7.  We still have to output delta. If -2147483647 ≤ delta ≤ 2147483647,
+    output delta as a little_endian 32 bit quantity, make the current
+    pixel value the base pixel value and return to step 2.
+8.  Otherwise output -2147483648 (80000000 hex, little_endian, i.e. 00,
+    then 00, then 00, then 80) and then output the pixel value as a
+    little-endian 64 bit quantity, make the current pixel value the base
+    pixel value and return to step 2.
 
-The "byte_offset" decompression algorithm is the following:
+The \"byte_offset\" decompression algorithm is the following:
 
 1.  Start with a base pixel value of 0.
 2.  Read the next byte as delta
-3.  If -127 ≤ delta ≤ 127, add delta to the base pixel value, make that the new base pixel value, place it on the output array and return to step 2.
-4.  If delta is 80 hex, read the next two bytes as a little_endian 16-bit number and make that delta.
-5.  If -32767 ≤ delta ≤ 32767, add delta to the base pixel value, make that the new base pixel value, place it on the output array and return to step 2.
-6.  If delta is 8000 hex, read the next 4 bytes as a little_endian 32-bit number and make that delta
-7.  If -2147483647 ≤ delta ≤ 2147483647, add delta to the base pixel value, make that the new base pixel value, place it on the output array and return to step 2.
-8.  If delta is 80000000 hex, read the next 8 bytes as a little_endian 64-bit number and make that delta, add delta to the base pixel value, make that the new base pixel value, place it on the output array and return to step 2.
+3.  If -127 ≤ delta ≤ 127, add delta to the base pixel value, make that
+    the new base pixel value, place it on the output array and return to
+    step 2.
+4.  If delta is 80 hex, read the next two bytes as a little_endian
+    16-bit number and make that delta.
+5.  If -32767 ≤ delta ≤ 32767, add delta to the base pixel value, make
+    that the new base pixel value, place it on the output array and
+    return to step 2.
+6.  If delta is 8000 hex, read the next 4 bytes as a little_endian
+    32-bit number and make that delta
+7.  If -2147483647 ≤ delta ≤ 2147483647, add delta to the base pixel
+    value, make that the new base pixel value, place it on the output
+    array and return to step 2.
+8.  If delta is 80000000 hex, read the next 8 bytes as a little_endian
+    64-bit number and make that delta, add delta to the base pixel
+    value, make that the new base pixel value, place it on the output
+    array and return to step 2.
 
-Let us look at an example, of two 1000 x 1000 flat field images presented as a mimimal imgCIF file. The first image uses 32-bit unsigned integers and the second image uses 16-bit unsigned integers.
+Let us look at an example, of two 1000 x 1000 flat field images
+presented as a mimimal imgCIF file. The first image uses 32-bit unsigned
+integers and the second image uses 16-bit unsigned integers.
 
-The imgCIF file begins with some identifying comments (magic numbers) to track the version of the dictionary and library:
+The imgCIF file begins with some identifying comments (magic numbers) to
+track the version of the dictionary and library:
+
+<div>
 
     ###CBF: VERSION 1.5
     # CBF file written by CBFlib v0.7.7
 
-This is followed by the necessary syntax to start a CIF data block and by whatever tags and values are appropriate to describe the experiment. The minimum is something like
+</div>
+
+This is followed by the necessary syntax to start a CIF data block and
+by whatever tags and values are appropriate to describe the experiment.
+The minimum is something like
+
+<div>
 
     data_testflat
 
-eventually we come to the actual binary data, which begins the loop header for the array_data category
+</div>
+
+eventually we come to the actual binary data, which begins the loop
+header for the array_data category
+
+<div>
 
     loop_
     _array_data.data
 
-with any additional tags needed, and then the data itself, which starts with the mini-header:
+</div>
+
+with any additional tags needed, and then the data itself, which starts
+with the mini-header:
+
+<div>
 
     ;
     --CIF-BINARY-FORMAT-SECTION--
@@ -11496,25 +14547,49 @@ with any additional tags needed, and then the data itself, which starts with the
     X-Binary-Size-Second-Dimension: 1000
     X-Binary-Size-Padding: 4095
 
+</div>
+
 followed by an empty line and then the sequence of characters:
+
+<div>
 
     ^L^Z^D<D5>
 
+</div>
+
 followed immediately by the compressed data.
 
-The binary data begins with the hex byte 80 to flag the need for a value that will not fit in one byte. That is followed by the small_endian hex value 3E8 saying that the first delta is 1000. Then 999,999 bytes of zero follow, since this is a flat field, with all values equal to zero. That gives us our entire 1000x1000 compressed flat field. However, because we asked for 4095 bytes of padding, there is an additional 4095 bytes of zero that are not part of the compressed field. They are just pad and can be ignored. Finally, after the pad, the CIF text field that began with
+The binary data begins with the hex byte 80 to flag the need for a value
+that will not fit in one byte. That is followed by the small_endian hex
+value 3E8 saying that the first delta is 1000. Then 999,999 bytes of
+zero follow, since this is a flat field, with all values equal to zero.
+That gives us our entire 1000x1000 compressed flat field. However,
+because we asked for 4095 bytes of padding, there is an additional 4095
+bytes of zero that are not part of the compressed field. They are just
+pad and can be ignored. Finally, after the pad, the CIF text field that
+began with
+
+<div>
 
     ;
     --CIF-BINARY-FORMAT-SECTION--
 
+</div>
+
 is completed with
+
+<div>
 
     --CIF-BINARY-FORMAT-SECTION----
     ;
 
+</div>
+
 notice the extra `--`
 
 The second flat field then follows, with a very similar mini-header:
+
+<div>
 
     ;
     --CIF-BINARY-FORMAT-SECTION--
@@ -11533,87 +14608,146 @@ The second flat field then follows, with a very similar mini-header:
 
     ^L^Z^D<D5>
 
-The only difference is that we have declared this array to be 16-bit and have chosen a different binary id (2 instead of 1). Even the checksum is the same.
+</div>
 
-#### <span id="3.3.4">3.3.4 Nibble_offset compression</span>
+The only difference is that we have declared this array to be 16-bit and
+have chosen a different binary id (2 instead of 1). Even the checksum is
+the same.
+:::::::::::
 
-The nibble offset algorithm is a variant on A. P. Hammersley's byte offset algorithm. The major differences are that the compression modes are "sticky", the compression can be reset at any point to allow for block parallelism, and the basic unit of compression is the nibble, but for very clean data, the dibit is also supported.
+::: {#3.3.4}
+#### 3.3.4 Nibble_offset compression
 
-The data stream starts with and in general uses a mode-setting octet presented in one if three forms, a single dibit a0, two dibits a0, a1, or two dibits and a nibble a0, a1, b:
+The nibble offset algorithm is a variant on A. P. Hammersley\'s byte
+offset algorithm. The major differences are that the compression modes
+are \"sticky\", the compression can be reset at any point to allow for
+block parallelism, and the basic unit of compression is the nibble, but
+for very clean data, the dibit is also supported.
 
-| a0 a1 b    | octet | meaning                  |
-|------------|-------|--------------------------|
-| 00 00 0000 | 0x00  | reset to zero            |
-| 01         | 0x01  | up 1 mode                |
-| 10         | 0x02  | dibit mode               |
-| 11         | 0x03  | up n modes               |
-| 00 01      | 0x04  | nibble mode              |
-| 00 11      | 0x0C  | 6-bit mode               |
-| 00 10      | 0x08  | byte mode                |
-| 00 00 0011 | 0x30  | 12-bit word mode         |
-| 00 00 0001 | 0x10  | 16-bit word mode         |
-| 00 00 0010 | 0x20  | 32-bit word mode         |
-| 00 00 0100 | 0x40  | 64-bit word mode         |
-| 00 00 1100 | 0xC0  | specify starting address |
+The data stream starts with and in general uses a mode-setting octet
+presented in one if three forms, a single dibit a0, two dibits a0, a1,
+or two dibits and a nibble a0, a1, b:
 
-The reset to zero is followed by a new mode octet A reset to zero resets the prior value for delta to zero
+  a0 a1 b      octet   meaning
+  ------------ ------- --------------------------
+  00 00 0000   0x00    reset to zero
+  01           0x01    up 1 mode
+  10           0x02    dibit mode
+  11           0x03    up n modes
+  00 01        0x04    nibble mode
+  00 11        0x0C    6-bit mode
+  00 10        0x08    byte mode
+  00 00 0011   0x30    12-bit word mode
+  00 00 0001   0x10    16-bit word mode
+  00 00 0010   0x20    32-bit word mode
+  00 00 0100   0x40    64-bit word mode
+  00 00 1100   0xC0    specify starting address
 
-The up n modes code is followed immediately by a dibit specifying 2 less than the number of modes by which to change, and then by a delta in the mode.
+The reset to zero is followed by a new mode octet A reset to zero resets
+the prior value for delta to zero
 
-Note that up n modes has no effect until an actual mode has been set and can be used immediately after a reset to pad to nibble, octet or double-word boundaries.
+The up n modes code is followed immediately by a dibit specifying 2 less
+than the number of modes by which to change, and then by a delta in the
+mode.
 
-Once a mode is established, it is followed by a stream of deltas of that size (for modes 2 or 4-64) or by one delta of that size and then a stream of deltas of the size that was in effect before an up or down giving little-endian offsets from the currently accumulated value. If the offset is one of the following in the indicated mode
+Note that up n modes has no effect until an actual mode has been set and
+can be used immediately after a reset to pad to nibble, octet or
+double-word boundaries.
 
-|                  |                       |
-|------------------|-----------------------|
-| dibit mode       | 0x2                   |
-| nibble mode      | 0x8                   |
-| 6-bit mode       | 0x20                  |
-| byte mode        | 0x80                  |
-| 12-bit word mode | 0x800                 |
-| 16-bit word mode | 0x8000                |
-| 32-bit word mode | 0x8000 0000           |
-| 64-bit word mode | 0x8000 0000 0000 0000 |
+Once a mode is established, it is followed by a stream of deltas of that
+size (for modes 2 or 4-64) or by one delta of that size and then a
+stream of deltas of the size that was in effect before an up or down
+giving little-endian offsets from the currently accumulated value. If
+the offset is one of the following in the indicated mode
 
-it is followed by the new mode as 1 or 2 dibits or 2 dibits and a nibble a1 a1 b. If a1 is 1 or 2 or 3, that is the new mode. If a1 is zero and a2 is 1 or 2 the new mode is a2\*4. If a2 is 3 the new mode is a2\*2. If both a1 and a2 are zero, the new mode is b\*16 unless b is 3. If b is 3 the new mode is b\*4
+  ------------------ -----------------------
+  dibit mode         0x2
+  nibble mode        0x8
+  6-bit mode         0x20
+  byte mode          0x80
+  12-bit word mode   0x800
+  16-bit word mode   0x8000
+  32-bit word mode   0x8000 0000
+  64-bit word mode   0x8000 0000 0000 0000
+  ------------------ -----------------------
 
-The 0xC0 flag is followed by a second mode giving the number of bytes of image starting offset address followed by the image offset address followed by the mode of that data. 0xC0 also acts as a reset. Use of the 0xC0 flag is not required. Addresses default to sequential starting from 0, but is provided to faciliate parallel compression.
+it is followed by the new mode as 1 or 2 dibits or 2 dibits and a nibble
+a1 a1 b. If a1 is 1 or 2 or 3, that is the new mode. If a1 is zero and
+a2 is 1 or 2 the new mode is a2\*4. If a2 is 3 the new mode is a2\*2. If
+both a1 and a2 are zero, the new mode is b\*16 unless b is 3. If b is 3
+the new mode is b\*4
 
-#### <span id="3.4">3.4 Access to CBFlib compressions from HDF5</span>
+The 0xC0 flag is followed by a second mode giving the number of bytes of
+image starting offset address followed by the image offset address
+followed by the mode of that data. 0xC0 also acts as a reset. Use of the
+0xC0 flag is not required. Addresses default to sequential starting from
+0, but is provided to faciliate parallel compression.
+:::
 
-Starting with CBFlib release 0.9.2.11, a plugin module in provided to allow access to CBFlib compressions from HDF5 1.8.11 and later. For general documentation on HDF5 dynamically loaded filters, see <http://www.hdfgroup.org/HDF5/doc/Advanced/DynamicallyLoadedFilters/HDF5DynamicallyLoadedFilters.pdf> The discussion here will be confined to use of the CBFlib compressions plugin.
+::: {#3.4}
+#### 3.4 Access to CBFlib compressions from HDF5
 
-The filter has been registered with the HDF5 group as 32006, and cbf.h includes the symbolic name for the filter CBF_H5Z_FILTER_CBF.
+Starting with CBFlib release 0.9.2.11, a plugin module in provided to
+allow access to CBFlib compressions from HDF5 1.8.11 and later. For
+general documentation on HDF5 dynamically loaded filters, see
+<http://www.hdfgroup.org/HDF5/doc/Advanced/DynamicallyLoadedFilters/HDF5DynamicallyLoadedFilters.pdf>
+The discussion here will be confined to use of the CBFlib compressions
+plugin.
 
-The source and header of the CBFlib filter plugin are cbf_hdf5_filter.c and cbf_hdf5_filter.h. To use the filter in C applications, you will need to include cbf_hdf5_filter.h in the application and have the cbflib.so library in the search path used by HDF5 1.8.11. The HDF group says
+The filter has been registered with the HDF5 group as 32006, and cbf.h
+includes the symbolic name for the filter CBF_H5Z_FILTER_CBF.
 
-> The default directory for an HDF5 filter plugin library is defined on UNIX- like systems as quot;/usr/local/hdf5/lib/plugin"  
-> and on Windows systems as "%ALLUSERSPROFILE%/hdf5/lib/plugin". The default path can be overwritten by a user with the HDF5_PLUGIN_PATH environment variable. Several directories can be specified for the search path using ":" as a path separator for UNIX-like systems and ";" for Windows.
+The source and header of the CBFlib filter plugin are cbf_hdf5_filter.c
+and cbf_hdf5_filter.h. To use the filter in C applications, you will
+need to include cbf_hdf5_filter.h in the application and have the
+cbflib.so library in the search path used by HDF5 1.8.11. The HDF group
+says
 
-In the Makefile, tests are done by defining HDF5_PLUGIN_PATH to point to the build kit shared library directory:
+> The default directory for an HDF5 filter plugin library is defined on
+> UNIX- like systems as quot;/usr/local/hdf5/lib/plugin\"\
+> and on Windows systems as \"%ALLUSERSPROFILE%/hdf5/lib/plugin\". The
+> default path can be overwritten by a user with the HDF5_PLUGIN_PATH
+> environment variable. Several directories can be specified for the
+> search path using \":\" as a path separator for UNIX-like systems and
+> \";\" for Windows.
 
-HDF5_PLUGIN_PATH=$(SOLIB); export HDF5_PLUGIN_PATH;
+In the Makefile, tests are done by defining HDF5_PLUGIN_PATH to point to
+the build kit shared library directory:
 
-In most cases that should be sufficient to allow code to read HDF5 files with datasets compressed with this filter.
+HDF5_PLUGIN_PATH=\$(SOLIB); export HDF5_PLUGIN_PATH;
 
-In order to write files that use this filter, several relevant values must first be stored into an unsigned int array, cd_values. The header, cbf_hdf5_filter.h, defines the follwing symbolic values for the indices of this array:
+In most cases that should be sufficient to allow code to read HDF5 files
+with datasets compressed with this filter.
 
-| symbol | value | meaning |
-|----|----|----|
-| CBF_H5Z_FILTER_CBF_NELMTS | 11 | size of cd_values |
-| CBF_H5Z_FILTER_CBF_COMPRESSION | 0 | one of the compressions (see [3.2.2](#3.2.2)) |
-| CBF_H5Z_FILTER_CBF_RESERVED | 1 | reserved for future use, should be set to zero |
-| CBF_H5Z_FILTER_CBF_BINARY_ID | 2 | binary ID of the array (default 1) |
-| CBF_H5Z_FILTER_CBF_ELSIZE | 3 | element size in octets |
-| CBF_H5Z_FILTER_CBF_ELSIGN | 4 | 1 if signed, 0 if unsigned |
-| CBF_H5Z_FILTER_CBF_REAL | 5 | 1 if a real array, 0 if an integer array |
-| CBF_H5Z_FILTER_CBF_DIMOVER | 6 | the total number of elements in the array |
-| CBF_H5Z_FILTER_CBF_DIMFAST | 7 | the fast dimension |
-| CBF_H5Z_FILTER_CBF_DIMMID | 8 | the middle dimension |
-| CBF_H5Z_FILTER_CBF_DIMSLOW | 9 | the slow domension |
-| CBF_H5Z_FILTER_CBF_PADDING | 10 | the padding |
+In order to write files that use this filter, several relevant values
+must first be stored into an unsigned int array, cd_values. The header,
+cbf_hdf5_filter.h, defines the follwing symbolic values for the indices
+of this array:
 
-Only chunked data may be written using this filter. The recommended chunk size is a single image. The filter writes the chunks using the imgCIF binary section format described in section [3.2.1](#3.2.1) including the MIME header. If each chunk is the size of an image, programs such as XDS can use the patterns of the MIME header to skip directly to a frame even in a complex HDF5 file. Typical code to write such chunks would first define the cd_values array and an array of chunk dimensions and create the properties to be used in creating a dataset, as in
+  symbol                           value   meaning
+  -------------------------------- ------- ------------------------------------------------
+  CBF_H5Z_FILTER_CBF_NELMTS        11      size of cd_values
+  CBF_H5Z_FILTER_CBF_COMPRESSION   0       one of the compressions (see [3.2.2](#3.2.2))
+  CBF_H5Z_FILTER_CBF_RESERVED      1       reserved for future use, should be set to zero
+  CBF_H5Z_FILTER_CBF_BINARY_ID     2       binary ID of the array (default 1)
+  CBF_H5Z_FILTER_CBF_ELSIZE        3       element size in octets
+  CBF_H5Z_FILTER_CBF_ELSIGN        4       1 if signed, 0 if unsigned
+  CBF_H5Z_FILTER_CBF_REAL          5       1 if a real array, 0 if an integer array
+  CBF_H5Z_FILTER_CBF_DIMOVER       6       the total number of elements in the array
+  CBF_H5Z_FILTER_CBF_DIMFAST       7       the fast dimension
+  CBF_H5Z_FILTER_CBF_DIMMID        8       the middle dimension
+  CBF_H5Z_FILTER_CBF_DIMSLOW       9       the slow domension
+  CBF_H5Z_FILTER_CBF_PADDING       10      the padding
+
+Only chunked data may be written using this filter. The recommended
+chunk size is a single image. The filter writes the chunks using the
+imgCIF binary section format described in section [3.2.1](#3.2.1)
+including the MIME header. If each chunk is the size of an image,
+programs such as XDS can use the patterns of the MIME header to skip
+directly to a frame even in a complex HDF5 file. Typical code to write
+such chunks would first define the cd_values array and an array of chunk
+dimensions and create the properties to be used in creating a dataset,
+as in
 
         unsigned int cd_values[CBF_H5Z_FILTER_CBF_NELMTS];
         hsize_t chunk[3];
@@ -11634,17 +14768,30 @@ Only chunked data may be written using this filter. The recommended chunk size i
         valprop = H5Pcreate(H5P_DATASET_CREATE);
         H5Pset_chunk(valprop,3,chunk);
         H5Pset_filter(valprop,CBF_H5Z_FILTER_CBF,H5Z_FLAG_OPTIONAL,CBF_H5Z_FILTER_CBF_NELMTS,cd_values);
+:::
 
-#### <span id="4.">4. Installation</span>
+::::::: {#4.}
+#### 4. Installation
 
-CBFlib should be built on a disk with at least 400 megabytes of free space. [CBFlib-0.9.2.11.tar.gz](../CBFlib-0.9.2.11.tar.gz) is a "gzipped" tar of the code as it now stands. Place the gzipped tar in the directory that is intended to contain a new directory, named CBFlib_0.9.2.11 (the "top-level" directory) and uncompress it with gunzip and unpack it with tar:
+CBFlib should be built on a disk with at least 400 megabytes of free
+space. [CBFlib-0.9.2.11.tar.gz](../CBFlib-0.9.2.11.tar.gz) is a
+\"gzipped\" tar of the code as it now stands. Place the gzipped tar in
+the directory that is intended to contain a new directory, named
+CBFlib_0.9.2.11 (the \"top-level\" directory) and uncompress it with
+gunzip and unpack it with tar:
 
          gunzip CBFlib.tar.gz
          tar xvf CBFLIB.tar
 
-As with prior releases, to run the test programs, you will also need Paul Ellis's sample MAR345 image, example.mar2300, and Chris Nielsen's sample ADSC Quantum 315 image, mb_LP_1_001.img as sample data. Both these files will be extracted by the Makefile from CBFlib_0.7.7_Data_Files. Do not download copies into the top level directory.
+As with prior releases, to run the test programs, you will also need
+Paul Ellis\'s sample MAR345 image, example.mar2300, and Chris Nielsen\'s
+sample ADSC Quantum 315 image, mb_LP_1_001.img as sample data. Both
+these files will be extracted by the Makefile from
+CBFlib_0.7.7_Data_Files. Do not download copies into the top level
+directory.
 
-After unpacking the archive, the top-level directory should contain a makefile:
+After unpacking the archive, the top-level directory should contain a
+makefile:
 
   Makefile
 
@@ -11684,11 +14831,14 @@ and the subdirectories:
 
   JPEG images used in rendering the HTML files
 
-For instructions on compiling and testing the library, go to the top-level directory and type:
+For instructions on compiling and testing the library, go to the
+top-level directory and type:
 
          make
 
-The CBFLIB source and header files are in the "src" and "include" subdirectories. The FCBLIB source and m4 files are in the "src" and "m4" subdirectories. The files are:
+The CBFLIB source and header files are in the \"src\" and \"include\"
+subdirectories. The FCBLIB source and m4 files are in the \"src\" and
+\"m4\" subdirectories. The files are:
 
 src/
 
@@ -11858,7 +15008,8 @@ Description
 
    
 
-  Function to do a case-insensitive comparison of a string to a byte array
+  Function to do a case-insensitive comparison of a string to a byte
+array
 
   fcb_nblen_array.f90
 
@@ -11948,7 +15099,9 @@ Description
 
   General m4 macro file for FCBLIB routines.
 
-In the "examples" subdirectory, there are 2 additional files used by the example programs (section 5) for reading MAR300, MAR345 or ADSC CCD images:
+In the \"examples\" subdirectory, there are 2 additional files used by
+the example programs (section 5) for reading MAR300, MAR345 or ADSC CCD
+images:
 
   img.c
 
@@ -11976,17 +15129,22 @@ and the example programs themselves:
 
   cif2c.c
 
-  Convert a template cbf file into a function to produce the same template in an internal cbf data structure
+  Convert a template cbf file into a function to produce the same
+template in an internal cbf data structure
 
   testcell.C
 
   Exercise the cell functions
 
-as well as three template files: template_adscquantum4_2304x2304.cbf, template_mar345_2300x2300.cbf, and template_adscquantum315_3072x3072.cbf.
+as well as three template files: template_adscquantum4_2304x2304.cbf,
+template_mar345_2300x2300.cbf, and
+template_adscquantum315_3072x3072.cbf.
 
-Two additional examples (test_fcb_read_image.f90 and test_xds_binary.f90) are created from two files (test_fcb_read_image.m4 and test_xds_binary.m4) in the m4 directory.
+Two additional examples (test_fcb_read_image.f90 and
+test_xds_binary.f90) are created from two files (test_fcb_read_image.m4
+and test_xds_binary.m4) in the m4 directory.
 
-The documentation files are in the "doc" subdirectory:
+The documentation files are in the \"doc\" subdirectory:
 
   CBFlib.html
 
@@ -11998,19 +15156,19 @@ The documentation files are in the "doc" subdirectory:
 
   CBFlib_NOTICES.html
 
-  Important NOTICES -- PLEASE READ
+  Important NOTICES \-- PLEASE READ
 
   CBFlib_NOTICES.txt
 
-  Important NOTICES -- PLEASE READ
+  Important NOTICES \-- PLEASE READ
 
   gpl.txt
 
-  GPL -- PLEASE READ
+  GPL \-- PLEASE READ
 
   lgpl.txt
 
-  LGPL -- PLEASE READ
+  LGPL \-- PLEASE READ
 
   cbf_definition_rev.txt
 
@@ -12036,11 +15194,30 @@ The documentation files are in the "doc" subdirectory:
 
   Summary of change history (ASCII)
 
-#### <span id="5.">5. Example programs</span>
+:::::: {#5.}
+#### 5. Example programs
 
-The example programs makecbf.c, img2cif.c and convert_image.c read an image file from a MAR300, MAR345 or ADSC CCD detector and then uses CBFlib to convert it to CBF format (makecbf) or either imgCIF or CBF format (img2cif). makecbf writes the CBF-format image to disk, reads it in again, and then compares it to the original. img2cif just writes the desired file. makecbf works only from stated files on disk, so that random I/O can be used. img2cif includes code to process files from stdin and to stdout. convert_image reads a template as well as the image file and produces a complete CBF. The program convert_minicbf reads a minimal CBF file with just and image and some lines of text specifying the parameters of the data collection as done at SLS and combines the result with a template to produce a full CBF. The program cif2cbf can be used to convert among carious compression and encoding schemes. The program sauter_test.C is a C++ test program contributed by Nick Sauter to help in resolving a memory leak he found. The programs adscimg2cbf and cbf2adscimg are a "jiffies" contributed by Chris Nielsen of ADSC to convert ADSC images to imgCIF/CBF format and vice versa.
+The example programs makecbf.c, img2cif.c and convert_image.c read an
+image file from a MAR300, MAR345 or ADSC CCD detector and then uses
+CBFlib to convert it to CBF format (makecbf) or either imgCIF or CBF
+format (img2cif). makecbf writes the CBF-format image to disk, reads it
+in again, and then compares it to the original. img2cif just writes the
+desired file. makecbf works only from stated files on disk, so that
+random I/O can be used. img2cif includes code to process files from
+stdin and to stdout. convert_image reads a template as well as the image
+file and produces a complete CBF. The program convert_minicbf reads a
+minimal CBF file with just and image and some lines of text specifying
+the parameters of the data collection as done at SLS and combines the
+result with a template to produce a full CBF. The program cif2cbf can be
+used to convert among carious compression and encoding schemes. The
+program sauter_test.C is a C++ test program contributed by Nick Sauter
+to help in resolving a memory leak he found. The programs adscimg2cbf
+and cbf2adscimg are a \"jiffies\" contributed by Chris Nielsen of ADSC
+to convert ADSC images to imgCIF/CBF format and vice versa.
 
-makecbf.c is a good example of how many of the CBFlib functions can be used. To compile makecbf and the other example programs use the Makefile in the top-level directory:
+makecbf.c is a good example of how many of the CBFlib functions can be
+used. To compile makecbf and the other example programs use the Makefile
+in the top-level directory:
 
          make all
 
@@ -12100,7 +15277,9 @@ The program img2cif has the following command line interface:
 
 #### cif2cbf
 
-The test program cif2cbf uses many of the same command line options as img2cif, but accepts either a CIF or a CBF as input instead of an image file:
+The test program cif2cbf uses many of the same command line options as
+img2cif, but accepts either a CIF or a CBF as input instead of an image
+file:
 
         cif2cbf [-i input_cif] [-o output_cbf] \
           [-u update_cif] \
@@ -12234,7 +15413,12 @@ The test program cif2cbf uses many of the same command line options as img2cif, 
 
 #### convert_image
 
-The program convert_image requires two arguments: *imagefile* and *cbffile*. Those are the primary input and output. The detector type is extracted from the image file or from the command line, converted to lower case and used to construct the name of a template cbf file to use for the copy. The template file name is of the form template\_*name*\_*columns*x*rows*. The full set of options is:
+The program convert_image requires two arguments: *imagefile* and
+*cbffile*. Those are the primary input and output. The detector type is
+extracted from the image file or from the command line, converted to
+lower case and used to construct the name of a template cbf file to use
+for the copy. The template file name is of the form
+template\_*name*\_*columns*x*rows*. The full set of options is:
 
 
       convert_image [-i input_img] [-o output_cbf] [-p template_cbf]\
@@ -12294,7 +15478,12 @@ The program convert_image requires two arguments: *imagefile* and *cbffile*. Tho
 
 #### convert_minicbf
 
-The program convert_minicbf requires two arguments: *minicbf* and *cbffile*. Those are the primary input and output. The detector type is extracted from the image file or from the command line, converted to lower case and used to construct the name of a template cbf file to use for the copy. The template file name is of the form template\_*name*\_*columns*x*rows*. The full set of options is:
+The program convert_minicbf requires two arguments: *minicbf* and
+*cbffile*. Those are the primary input and output. The detector type is
+extracted from the image file or from the command line, converted to
+lower case and used to construct the name of a template cbf file to use
+for the copy. The template file name is of the form
+template\_*name*\_*columns*x*rows*. The full set of options is:
 
 
       convert_minicbf [-i input_cbf] [-o output_cbf] [-p template_cbf]\
@@ -12367,32 +15556,67 @@ The program convert_minicbf requires two arguments: *minicbf* and *cbffile*. Tho
 
 #### testreals, testflat and testflatpacked
 
-The example programs testreals, testflat and testflatpacked exercise the handling of reals, byte_offset compression and packed compression. Each is run without any arguments. testreals will read real images from the data file testrealin.cbf and write a file with real images in testrealout.cbf, which should be identical to testrealin.cbf. testflat and testflatpacked read 4 1000x1000 2D images and one 50x60x70 3D image and produce an output file that should be identical to the input. testflat reads testflatin.cbf and produces testflatout.cbf using CBF_BYTE_OFFSET compression. testflatpacked reads testflatpackedin.cbf and produces testflatpackedout.cbf. The images are:
+The example programs testreals, testflat and testflatpacked exercise the
+handling of reals, byte_offset compression and packed compression. Each
+is run without any arguments. testreals will read real images from the
+data file testrealin.cbf and write a file with real images in
+testrealout.cbf, which should be identical to testrealin.cbf. testflat
+and testflatpacked read 4 1000x1000 2D images and one 50x60x70 3D image
+and produce an output file that should be identical to the input.
+testflat reads testflatin.cbf and produces testflatout.cbf using
+CBF_BYTE_OFFSET compression. testflatpacked reads testflatpackedin.cbf
+and produces testflatpackedout.cbf. The images are:
 
-- A 1000 x 1000 array of 32-bit integers forming a flat field with all pixels set to 1000.
-- A 1000 x 1000 array of 16-bit integers forming a flat field with all pixels set to 1000.
-- A 1000 x 1000 array of 32-bit integers forming a flat field with all pixels set to 1000, except for -3 along the main diagonal and its transpose.
-- A 1000 x 1000 array of 16-bit integers forming a flat field with all pixels set to 1000, except for -3 along the main diagonal and its transpose.
-- A 50 x 60 x 70 array of 32-bit integers in a flat field of 1000, except for -3 along the main diagonal and the values i+j+k (counting from zero) every 1000th pixel
+- A 1000 x 1000 array of 32-bit integers forming a flat field with all
+  pixels set to 1000.
+- A 1000 x 1000 array of 16-bit integers forming a flat field with all
+  pixels set to 1000.
+- A 1000 x 1000 array of 32-bit integers forming a flat field with all
+  pixels set to 1000, except for -3 along the main diagonal and its
+  transpose.
+- A 1000 x 1000 array of 16-bit integers forming a flat field with all
+  pixels set to 1000, except for -3 along the main diagonal and its
+  transpose.
+- A 50 x 60 x 70 array of 32-bit integers in a flat field of 1000,
+  except for -3 along the main diagonal and the values i+j+k (counting
+  from zero) every 1000th pixel
 
 #### test_fcb_read_image, test_xds_binary
 
-The example programs test_fcb_read_image and test_xds_binary are designed read the output of testflat and testflatpacked using the FCBlib routines in lib/libfcb. test_xds_binary reads only the first image and closes the file immediately. test_fcb_read_image reads all 5 images from the input file. The name of the input file should be provided on stdin, as in:
+The example programs test_fcb_read_image and test_xds_binary are
+designed read the output of testflat and testflatpacked using the FCBlib
+routines in lib/libfcb. test_xds_binary reads only the first image and
+closes the file immediately. test_fcb_read_image reads all 5 images from
+the input file. The name of the input file should be provided on stdin,
+as in:
 
 - echo testflatout.cbf \| bin/test_xds_binary
 - echo testflatpackedout.cbf \| bin/test_xds_binary
 - echo testflatout.cbf \| bin/test_fcb_read_image
 - echo testflatpackedout.cbf \| bin/test_fcb_read_image
 
-In order to compile these programs correctly for the G95 compiler it is important to set the record size for reading to be no larger than the padding after binary images. This in controlled in Makefile by the line M4FLAGS = -Dfcb_bytes_in_rec=131072 which provides good performance for gfortran. For g95, this line must be changed to M4FLAGS = -Dfcb_bytes_in_rec=4096
+In order to compile these programs correctly for the G95 compiler it is
+important to set the record size for reading to be no larger than the
+padding after binary images. This in controlled in Makefile by the line
+M4FLAGS = -Dfcb_bytes_in_rec=131072 which provides good performance for
+gfortran. For g95, this line must be changed to M4FLAGS =
+-Dfcb_bytes_in_rec=4096
 
 #### sauter_test
 
-The program sauter_test.C is a C++ test program contributed by Nick Sauter to help in resolving a memory leak he found. The program is run as bin/sauter_test and should run long enough to allow a check with top to ensure that it has constant memory demands. In addition, starting with release 0.7.8.1, the addition of -DCBFLIB_MEM_DEBUG to the compiler flags will cause detailed reports on memory use to stderr to be reported.
+The program sauter_test.C is a C++ test program contributed by Nick
+Sauter to help in resolving a memory leak he found. The program is run
+as bin/sauter_test and should run long enough to allow a check with top
+to ensure that it has constant memory demands. In addition, starting
+with release 0.7.8.1, the addition of -DCBFLIB_MEM_DEBUG to the compiler
+flags will cause detailed reports on memory use to stderr to be
+reported.
 
 #### adscimg2cbf
 
-The example program adscimg2cbf accepts any number of raw or compressed ADSC images with .img, .img.gz, .img.bz2 or .img.Z extensions and converts each of them to an imgCIF/CBF file with a .cbf extension.
+The example program adscimg2cbf accepts any number of raw or compressed
+ADSC images with .img, .img.gz, .img.bz2 or .img.Z extensions and
+converts each of them to an imgCIF/CBF file with a .cbf extension.
 
 
       adscimg2cbf [--flag[,modifier]] file1.img ... filen.img     (creates file1.cbf ... filen.cbf)
@@ -12410,7 +15634,9 @@ The example program adscimg2cbf accepts any number of raw or compressed ADSC ima
 
 #### adscimg2cbf
 
-The example program cbf2adscimg accepts any number of cbfs of ADSC images created by adscimg1cbf or convert_image and produces raw or compressed adsc image files with .img, .img.gz or .img.bz2 extensions.
+The example program cbf2adscimg accepts any number of cbfs of ADSC
+images created by adscimg1cbf or convert_image and produces raw or
+compressed adsc image files with .img, .img.gz or .img.bz2 extensions.
 
 
       cbf2adscimg [--flag] file1.cbf ... filen.cbf     (creates file1.img ... filen.img)
@@ -12420,8 +15646,7 @@ The example program cbf2adscimg accepts any number of cbfs of ADSC images create
         --gz    Output a .gz file  (e.g., filen.img.gz).
         --bz2   Output a .bz2 file (e.g., filen.img.bz2).
 
-<span id="cbf2tiff"></span>
-
+::::: {#cbf2tiff}
 #### cbf2tiff
 
 The test program cbf2tiff converts a cbf data file to a tiff datd file.
@@ -12429,64 +15654,101 @@ The test program cbf2tiff converts a cbf data file to a tiff datd file.
 
       cbf2tiff [-i]infile.cbf [-o]outfile.tif
 
-<span id="tiff2cbf"></span>
-
+::: {#tiff2cbf}
 #### tiff2cbf
 
-The test program tiff2cbf converts a tiff data file to a cbf data file. The program converts the tiff data samples directly into a minicbf with the tiff header stored at the value of \_array_data.header_contents. This conversion is supported for the sample formats SAMPLEFORMAT_UINT (unsigned integer data), SAMPLEFORMAT_INT (unsigned integer data), SAMPLEFORMAT_INT (signed integer data), SAMPLEFORMAT_IEEEFP (IEEE floating point data), SAMPLEFORMAT_COMPLEXINT (complex signed int) and SAMPLEFORMAT_COMPLEXIEEEFP (complex ieee floating). As of October 2023, tiff2cbf includes a -c option to convert to the various CBF compressions. The default is -c b for byte-offsetcompression. Conversions from these formats to other CBF formats can be handled by cif2cbf. The -c n option should be used if the pre-October 2023 behavior is desired. If you wish to convert and xxx.tif written with IEEE floating point samples into a CBF with integer values compressed by byte-offset compression for use by XDS, creating an xxx_view.cbf with values clipped between 0 and 100, and an xxx_xds.cbf with unclipped values for processing:
+The test program tiff2cbf converts a tiff data file to a cbf data file.
+The program converts the tiff data samples directly into a minicbf with
+the tiff header stored at the value of \_array_data.header_contents.
+This conversion is supported for the sample formats SAMPLEFORMAT_UINT
+(unsigned integer data), SAMPLEFORMAT_INT (unsigned integer data),
+SAMPLEFORMAT_INT (signed integer data), SAMPLEFORMAT_IEEEFP (IEEE
+floating point data), SAMPLEFORMAT_COMPLEXINT (complex signed int) and
+SAMPLEFORMAT_COMPLEXIEEEFP (complex ieee floating). As of October 2023,
+tiff2cbf includes a -c option to convert to the various CBF
+compressions. The default is -c b for byte-offsetcompression.
+Conversions from these formats to other CBF formats can be handled by
+cif2cbf. The -c n option should be used if the pre-October 2023 behavior
+is desired. If you wish to convert and xxx.tif written with IEEE
+floating point samples into a CBF with integer values compressed by
+byte-offset compression for use by XDS, creating an xxx_view.cbf with
+values clipped between 0 and 100, and an xxx_xds.cbf with unclipped
+values for processing:
 
 
       tiff2cbf [-c {n|p|c|b|i|v|f}] [-i]  xxx.tif [-o] xxx.cbf
       cif2cbf -I 4 -C 100. -L 0. -e n -c b -i xxx.cbf -o xxx_view.cbf
       cif2cbf -I 4 -e n -c b -i xxx.cbf -o xxx_xds.cbf
       
+:::
 
-<span id="minicbf2nexus"></span>
-
+::: {#minicbf2nexus}
 #### minicbf2nexus
 
-This program takes some minicbf files describing a single scan and axis configuration settings for them and creates a nexus file containing the same data. As this is an early version of the program it lacks a lot of useful functionality and should not be assumed to be stable.
+This program takes some minicbf files describing a single scan and axis
+configuration settings for them and creates a nexus file containing the
+same data. As this is an early version of the program it lacks a lot of
+useful functionality and should not be assumed to be stable.
 
 It currently takes several command line arguments:
 
-- `-c`  
-  `--compression`  
-  These are optional and take a single case-insensitive argument which describes the compression used for the dataset.
+- `-c`\
+  `--compression`\
+  These are optional and take a single case-insensitive argument which
+  describes the compression used for the dataset.
 
   Currently implemented values are:
 
-  - `cbf`  
+  - `cbf`\
     Use the same CBFlib compression method as the miniCBF data uses
-  - `none`  
-    Don't compress the data
-  - `zlib`  
+  - `none`\
+    Don\'t compress the data
+  - `zlib`\
     Use zlib compression
 
-  More compression options will be added in later versions, including options for CBFlib compression schemes.
+  More compression options will be added in later versions, including
+  options for CBFlib compression schemes.
 
-- `-C`  
-  `--config`  
-  This takes a single argument giving the file name of a configuration file which describes how the axes of the minicbf file relate to each other.
+- `-C`\
+  `--config`\
+  This takes a single argument giving the file name of a configuration
+  file which describes how the axes of the minicbf file relate to each
+  other.
 
-- `-g`  
-  `--group`  
-  This takes a string defining the name of the group where the data should be inserted. Currently, the file will begin in an empty state and this will cause a group of the given name to be created, but this will eventually allow data to be inserted into an existing user-defined group.
+- `-g`\
+  `--group`\
+  This takes a string defining the name of the group where the data
+  should be inserted. Currently, the file will begin in an empty state
+  and this will cause a group of the given name to be created, but this
+  will eventually allow data to be inserted into an existing
+  user-defined group.
 
-- `-o`  
-  `--output`  
-  This takes a single argument which is used as the filename for the new nexus file. Any existing files of the same name are overwritten without warning, so be careful that the name of any existing files that you wish to keep are not passed as an argument here.
+- `-o`\
+  `--output`\
+  This takes a single argument which is used as the filename for the new
+  nexus file. Any existing files of the same name are overwritten
+  without warning, so be careful that the name of any existing files
+  that you wish to keep are not passed as an argument here.
 
-- `-Z`  
-  `--register`  
-  Takes a single case-insensitive argument of '`manual`' or '`plugin`' defining the method of plugin registration used. May be specified multiple times to define a system default (via an alias) and optionally over-ride it later.
+- `-Z`\
+  `--register`\
+  Takes a single case-insensitive argument of \'`manual`\' or
+  \'`plugin`\' defining the method of plugin registration used. May be
+  specified multiple times to define a system default (via an alias) and
+  optionally over-ride it later.
 
-- Other arguments are interpreted as file names identifying the miniCBF files to be packed into the new NeXus file. These must currently be pilatus v1.2 miniCBF files, but this restriction will be relaxed in later versions.
+- Other arguments are interpreted as file names identifying the miniCBF
+  files to be packed into the new NeXus file. These must currently be
+  pilatus v1.2 miniCBF files, but this restriction will be relaxed in
+  later versions.
 
 An example, from the test scripts, is:
 
 `minicbf2nexus -c zlib -C config X4_test_1.cbf X4_test_2&3.cbf X4_test_4.cbf X4_test_5.cbf -o minicbf.h5`
 
-Where test files 1, 4 & 5 are each single-image miniCBF files and test file 2 & 3 is created by 'cat'ing together two single-image miniCBF files
+Where test files 1, 4 & 5 are each single-image miniCBF files and test
+file 2 & 3 is created by \'cat\'ing together two single-image miniCBF
+files
 
 The config file used for this example is:
 
@@ -12502,109 +15764,188 @@ The config file used for this example is:
     CBF_axis_kappa vector [0 1 0] depends-on .
     CBF_axis_omega vector [0 0 0]
 
-Text from any `#` character to the end of the line is ignored as a comment.
+Text from any `#` character to the end of the line is ignored as a
+comment.
 
-Axes are declared by the `map` keyword as the name of the axis in the minicbf file, which must match exactly, followed by the keyword `to` and then the name that will be given to the axis in the resulting nexus file. Each axis is treated as a rotation axis and should have a `vector` which defines the axis of rotation in the 3D coordinate frame used by nexus, this should be 3 numbers within square brackets separated by spaces and does not need to be normalised. Each axis may also depend on a nother axis by using the keyword `depends-on` folowed by the name of the nexus axis it depends on, or `.` if it does not depend on another axis, omitting a dependency as shown on the final line of the example above is not recommended as it will eventually be a fatal error. The `vector` and `depends-on` declarations do not need to be on the same line.
+Axes are declared by the `map` keyword as the name of the axis in the
+minicbf file, which must match exactly, followed by the keyword `to` and
+then the name that will be given to the axis in the resulting nexus
+file. Each axis is treated as a rotation axis and should have a `vector`
+which defines the axis of rotation in the 3D coordinate frame used by
+nexus, this should be 3 numbers within square brackets separated by
+spaces and does not need to be normalised. Each axis may also depend on
+a nother axis by using the keyword `depends-on` folowed by the name of
+the nexus axis it depends on, or `.` if it does not depend on another
+axis, omitting a dependency as shown on the final line of the example
+above is not recommended as it will eventually be a fatal error. The
+`vector` and `depends-on` declarations do not need to be on the same
+line.
 
-The `Sample` keyword is used to define a dependency for the sample being scanned and should be followed by a `depends-on` declaration which defines the name of the nexus axis that the sample depends on.
+The `Sample` keyword is used to define a dependency for the sample being
+scanned and should be followed by a `depends-on` declaration which
+defines the name of the nexus axis that the sample depends on.
 
-The final line of the config file should be blank to allow for some simple integrity tests.
+The final line of the config file should be blank to allow for some
+simple integrity tests.
 
-A continuous chain of dependencies should be formed from the sample to the nexus coordinate system, otherwise there is insufficient information available to properly describe the orientation of the sample. This will be enforced in later versions, with a fatal error if insufficient information is provided.
+A continuous chain of dependencies should be formed from the sample to
+the nexus coordinate system, otherwise there is insufficient information
+available to properly describe the orientation of the sample. This will
+be enforced in later versions, with a fatal error if insufficient
+information is provided.
 
 #### cbf2nexus
 
-This program takes some CBF files describing a single scan and converts them to a single NeXus file containing the same data. It can also be used to merge a CBF file into an existing NeXus file.
+This program takes some CBF files describing a single scan and converts
+them to a single NeXus file containing the same data. It can also be
+used to merge a CBF file into an existing NeXus file.
 
 It currently takes several command line arguments:
 
-- `-c`  
-  `--compression`  
-  These are optional and take a single case-insensitive argument which describes the compression used for the dataset.
+- `-c`\
+  `--compression`\
+  These are optional and take a single case-insensitive argument which
+  describes the compression used for the dataset.
 
   Currently implemented values are:
 
-  - `cbf`  
+  - `cbf`\
     Use the same CBFlib compression method as the miniCBF data uses
-  - `none`  
-    Don't compress the data
-  - `zlib`  
+  - `none`\
+    Don\'t compress the data
+  - `zlib`\
     Use zlib compression
 
-  More compression options will be added in later versions, including options for CBFlib compression schemes.
+  More compression options will be added in later versions, including
+  options for CBFlib compression schemes.
 
-- `-g`  
-  `--group`  
-  This takes a string defining the name of the group where the data should be inserted. Currently, the file will begin in an empty state and this will cause a group of the given name to be created, but this will eventually allow data to be inserted into an existing user-defined group.
+- `-g`\
+  `--group`\
+  This takes a string defining the name of the group where the data
+  should be inserted. Currently, the file will begin in an empty state
+  and this will cause a group of the given name to be created, but this
+  will eventually allow data to be inserted into an existing
+  user-defined group.
 
-- `-o`  
-  `--output`  
-  This takes a single argument which is used as the filename for the new nexus file. Any existing files of the same name are overwritten without warning, so be careful that the name of any existing files that you wish to keep are not passed as an argument here.
+- `-o`\
+  `--output`\
+  This takes a single argument which is used as the filename for the new
+  nexus file. Any existing files of the same name are overwritten
+  without warning, so be careful that the name of any existing files
+  that you wish to keep are not passed as an argument here.
 
-- `-u`  
-  `--update`  
-  This take a single argument which is used as the filename for an existing nexus file, to which the nexus translation of the input file will be added. This is a direct change in the specified file. It is not making a copy first.
+- `-u`\
+  `--update`\
+  This take a single argument which is used as the filename for an
+  existing nexus file, to which the nexus translation of the input file
+  will be added. This is a direct change in the specified file. It is
+  not making a copy first.
 
-- `-Z`  
-  `--register`  
-  Takes a single case-insensitive argument of '`manual`' or '`plugin`' defining the method of plugin registration used. May be specified multiple times to define a system default (via an alias) and optionally over-ride it later. This is only relevant if the NeXus file is written with CBF compression algorithms, it doesn't have any effect for uncompressed data or data compressed uning HDF5's built-in compression algorithms.
+- `-Z`\
+  `--register`\
+  Takes a single case-insensitive argument of \'`manual`\' or
+  \'`plugin`\' defining the method of plugin registration used. May be
+  specified multiple times to define a system default (via an alias) and
+  optionally over-ride it later. This is only relevant if the NeXus file
+  is written with CBF compression algorithms, it doesn\'t have any
+  effect for uncompressed data or data compressed uning HDF5\'s built-in
+  compression algorithms.
 
-- `--datablock`  
-  Gives the name of a datblock to attempt to extract data from, or may be omitted to extract data from all datablocks.
+- `--datablock`\
+  Gives the name of a datblock to attempt to extract data from, or may
+  be omitted to extract data from all datablocks.
 
-- `--scan`  
-  Gives the name of a scan to attempt to extract data from, or may be omitted if there is only one scan in the datablock(s).
+- `--scan`\
+  Gives the name of a scan to attempt to extract data from, or may be
+  omitted if there is only one scan in the datablock(s).
 
-- `--experiment_id`  
-  Should be a unique identifier for the scan, which will be stored in `/*:NXentry/entry_identifier`.
+- `--experiment_id`\
+  Should be a unique identifier for the scan, which will be stored in
+  `/*:NXentry/entry_identifier`.
 
-- `--sample_id`  
-  Should be a unique identifier for the sample, which will be stored in `/*:NXentry/*:NXsample/sample_identifier`.
+- `--sample_id`\
+  Should be a unique identifier for the sample, which will be stored in
+  `/*:NXentry/*:NXsample/sample_identifier`.
 
-- `--list` & `--no-list`  
-  Determines whether the list of recognised data items is printed or not. These may be used multiple times, the last specified value is the one that is actually used.
+- `--list` & `--no-list`\
+  Determines whether the list of recognised data items is printed or
+  not. These may be used multiple times, the last specified value is the
+  one that is actually used.
 
-- Other arguments are interpreted as file names identifying the CBF files to be packed into the new NeXus file.
+- Other arguments are interpreted as file names identifying the CBF
+  files to be packed into the new NeXus file.
 
 An example, from the test scripts, is:
 
 `cbf2nexus -c zlib adscconverted.cbf adscconverted.cbf -o cbf.zlib.h5`
 
-This creates a single NeXus file containing two copies of the 'adscconverted' CBF file.
+This creates a single NeXus file containing two copies of the
+\'adscconverted\' CBF file.
 
 #### nexus2cbf
 
-This program converts a single frame of data from a nexus file to a cbf file with a given name. The primary purpose of this program is to help verify that data can be recovered after being converted to NeXus format, to check that it hasn't been lost or mangled.
+This program converts a single frame of data from a nexus file to a cbf
+file with a given name. The primary purpose of this program is to help
+verify that data can be recovered after being converted to NeXus format,
+to check that it hasn\'t been lost or mangled.
 
 It currently takes several command line arguments:
 
-- `-f`  
-  `--frame`  
-  This should be an integer, in the range `[0, frameCount)`, defining the index of the frame that is to be extracted, and defaults to 0.
+- `-f`\
+  `--frame`\
+  This should be an integer, in the range `[0, frameCount)`, defining
+  the index of the frame that is to be extracted, and defaults to 0.
 
-- `-g`  
-  `--group`  
-  This takes a string defining the name of the group where the data should be inserted. Currently, the file will begin in an empty state and this will cause a group of the given name to be created, but this will eventually allow data to be inserted into an existing user-defined group.
+- `-g`\
+  `--group`\
+  This takes a string defining the name of the group where the data
+  should be inserted. Currently, the file will begin in an empty state
+  and this will cause a group of the given name to be created, but this
+  will eventually allow data to be inserted into an existing
+  user-defined group.
 
-- `-o`  
-  `--output`  
-  This takes a single argument which is used as the filename for the new NeXus file. Any existing files of the same name are overwritten without warning, so be careful that the name of any existing files that you wish to keep are not passed as an argument here.
+- `-o`\
+  `--output`\
+  This takes a single argument which is used as the filename for the new
+  NeXus file. Any existing files of the same name are overwritten
+  without warning, so be careful that the name of any existing files
+  that you wish to keep are not passed as an argument here.
 
-- `-Z`  
-  `--register`  
-  Takes a single case-insensitive argument of '`manual`' or '`plugin`' defining the method of plugin registration used. May be specified multiple times to define a system default (via an alias) and optionally over-ride it later. This is only relevant if the NeXus file was written with CBF compression algorithms, it doesn't have any effect for uncompressed data or data compressed uning HDF5's built-in compression algorithms.
+- `-Z`\
+  `--register`\
+  Takes a single case-insensitive argument of \'`manual`\' or
+  \'`plugin`\' defining the method of plugin registration used. May be
+  specified multiple times to define a system default (via an alias) and
+  optionally over-ride it later. This is only relevant if the NeXus file
+  was written with CBF compression algorithms, it doesn\'t have any
+  effect for uncompressed data or data compressed uning HDF5\'s built-in
+  compression algorithms.
 
-- The remaining argument(s) should be the file name of the NeXus file that is to be converted.
+- The remaining argument(s) should be the file name of the NeXus file
+  that is to be converted.
 
 #### testhdf5
 
-This program runs a set of unit tests on the [HDF5 abstraction layer](#2.6). These are designed to ensure everything is working correctly, to help locate bugs and prevent regressions. A short summary will be printed detailing the number of tests passed, the number of tests failed and the number of components skipped. If any tests fail or are skipped then some additional output should be produced to help identify the cause of the error so that it is easier to fix.
+This program runs a set of unit tests on the [HDF5 abstraction
+layer](#2.6). These are designed to ensure everything is working
+correctly, to help locate bugs and prevent regressions. A short summary
+will be printed detailing the number of tests passed, the number of
+tests failed and the number of components skipped. If any tests fail or
+are skipped then some additional output should be produced to help
+identify the cause of the error so that it is easier to fix.
 
-The program does not take any command-line arguments, and creates a file called `testfile.h5` in its working directory for use in the tests.
+The program does not take any command-line arguments, and creates a file
+called `testfile.h5` in its working directory for use in the tests.
 
 #### testulp
 
-This program runs a set of unit tests on the ULP comparison functions. These are designed to ensure everything is working correctly, to help locate bugs and prevent regressions. A short summary will be printed detailing the number of tests passed, the number of tests failed and the number of components skipped. If any tests fail or are skipped then some additional output should be produced to help identify the cause of the error so that it is easier to fix.
+This program runs a set of unit tests on the ULP comparison functions.
+These are designed to ensure everything is working correctly, to help
+locate bugs and prevent regressions. A short summary will be printed
+detailing the number of tests passed, the number of tests failed and the
+number of components skipped. If any tests fail or are skipped then some
+additional output should be produced to help identify the cause of the
+error so that it is easier to fix.
 
 The program does not take any command-line arguments.
 
@@ -12617,3 +15958,7 @@ The program does not take any command-line arguments.
 Updated 22 February 2015. Contact:
 
 yaya **at** bernstein-plus-sons **dot** com
+:::
+:::::
+::::::
+:::::::

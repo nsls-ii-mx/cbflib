@@ -697,7 +697,7 @@ http://downloads.sf.net/cbflib/tiff-3.9.4-rev-6Feb11.tar.gz</a>
       <LI><A HREF="#2.3.27">2.3.27   cbf_next_column</A>
       <LI><A HREF="#2.3.28">2.3.28   cbf_next_row</A>
       <LI><A HREF="#2.3.29">2.3.29   cbf_find_datablock</A>
-      <LI><A HREF="#2.3.30">2.3.30   cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A>
+      <LI><A HREF="#2.3.30">2.3.30   cbf_find_category, cbf_find_saveframe</A>
       <LI><A HREF="#2.3.31">2.3.31   cbf_find_column</A>
       <LI><A HREF="#2.3.32">2.3.32   cbf_find_row</A>
       <LI><A HREF="#2.3.33">2.3.33   cbf_find_nextrow</A>
@@ -830,7 +830,7 @@ http://downloads.sf.net/cbflib/tiff-3.9.4-rev-6Feb11.tar.gz</a>
       <LI><A HREF="#2.4.58">2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise, cbf_get_axis_reference_poise</a>
       <LI><A HREF="#2.4.59">2.4.59 cbf_airy_disk, cbf_airy_disk_volume</a>
     </UL>
-    <LI><A HREF="#2.5">2.5   F90 function interfaces</A>
+    <LI><A HREF="#2.5">2.5   F90, Python and Java function interfaces</A>
     <UL>
       <LI><A HREF="#2.5.1">2.5.1 FCB_ATOL_WCNT</a>
       <LI><A HREF="#2.5.2">2.5.2 FCB_CI_STRNCMPARR</a>
@@ -845,6 +845,9 @@ http://downloads.sf.net/cbflib/tiff-3.9.4-rev-6Feb11.tar.gz</a>
       <LI><A HREF="#2.5.11">2.5.11 FCB_READ_LINE</a>
       <LI><A HREF="#2.5.12">2.5.12 FCB_READ_XDS_I2</a>
       <LI><A HREF="#2.5.13">2.5.13 FCB_SKIP_WHITESPACE</a>
+      <LI><A HREF="#2.5.14">2.5.14 f90cbf SWIG interface</a>
+      <LI><A HREF="#2.5.15">2.5.15 pycbf SWIG interface</a>
+      <LI><A HREF="#2.5.16">2.5.16 jcbf SWIG interface</a>
     </UL>
         <li>
           <a href="#2.6">2.6 HDF5 abstraction layer and convenience functions</a>
@@ -1096,8 +1099,8 @@ http://downloads.sf.net/cbflib/tiff-3.9.4-rev-6Feb11.tar.gz</a>
 </UL>
 <p>
 
-
-<h3><A NAME="1.">1.  Introduction</A></h3>
+<div id="1.">
+<h3>1.  Introduction</h3>
 <p>
 CBFlib (Crystallographic Binary File library) is a library of ANSI-C functions providing a simple mechanism for accessing
 Crystallographic Binary Files (CBF files) and Image-supporting CIF (imgCIF) files.
@@ -1110,10 +1113,11 @@ Starting with version 0.7.7, an envolving FCBlib (Fortran Crystallographic Binar
 added.  As of this release it includes code for reading byte-offset and packed compression
 image files created by CBFlib.
 <p>
-
-<h3><A NAME="2.">2.  Function descriptions</A></h3>
-
-<h4><a NAME="2.1">2.1  General description</a></h4>
+</div>
+<div id="2.">
+<h3>2.  Function descriptions</h3>
+<div id="2.1">
+<h4>2.1  General description</h4>
 <p>
 Almost all of the CBFlib functions receive a value of type cbf_handle
 (a CBF handle) as the first argument.
@@ -1125,7 +1129,8 @@ or cbf_detector (a handle for a CBF detector object).
 All functions return an integer
 equal to 0 for success or an error code for failure.<br />
 <p>
-<h4><a NAME="2.1.1">2.1.1  CBF handles</a></h4>
+<div id="2.1.1">
+<h4>2.1.1  CBF handles</h4>
 <p>
 CBFlib permits a program to use multiple CBF objects simultaneously.  To identify
 the CBF object on which a function will operate, CBFlib uses a value of type cbf_handle.
@@ -1140,8 +1145,9 @@ the corresponding CBF object.<br />
 <p>
 
 
-
-<h4><a NAME="2.1.2">2.1.2 CBF goniometer handles</a></h4>
+</div>
+<div id="2.1.2">
+<h4>2.1.2 CBF goniometer handles</h4>
 <p>
 To represent the goniometer used to orient a sample, CBFlib uses a value of
 type cbf_goniometer.
@@ -1154,8 +1160,9 @@ all memory associated with the corresponding object.
 <p>
 
 
-
-<h4><a NAME="2.1.3">2.1.3 CBF detector handles</a></h4>
+</div>
+<div id="2.1.3">
+<h4>2.1.3 CBF detector handles</h4>
 <p>
 To represent a detector surface mounted on a positioning system, CBFlib
 uses a value of type cbf_detector.
@@ -1169,7 +1176,9 @@ all memory associated with the corresponding object.
 
 <p>
 
-<h4><a NAME="2.1.4">2.1.4 CBF positioner handles</a></h4>
+</div>
+<div id="2.1.4">
+<h4>2.1.4 CBF positioner handles</h4>
 <p>
 To represent an arbitrary positioning system designated by the terminal axis, 
 CBFlib uses a value of type cbf_positioner.
@@ -1183,8 +1192,9 @@ all memory associated with the corresponding object.
 
 <p>
 
-
-<h4><a NAME="2.1.5">2.1.5  Return values</a></h4>
+</div>
+<div id="2.1.5">
+<h4>2.1.5  Return values</h4>
 All of the CBFlib functions return 0 on success and an error code on failure.
 The error codes are:
 <p>
@@ -1216,10 +1226,12 @@ has<br />been set to the nearest value.
 
 If more than one error has occurred, the error code is the logical OR of the individual
 error codes.<br />
-
-<h4><A NAME="2.2">2.2  Reading and writing files containing binary sections</A></h4>
-
-<h4><A NAME="2.2.1">2.2.1  Reading binary sections</A></h4>
+</div>
+</div>
+<div id="2.2">
+<h4>2.2  Reading and writing files containing binary sections</h4>
+<div id="2.2.1">
+<h4>2.2.1  Reading binary sections</h4>
 <p>
 The current version of CBFlib only decompresses a binary section from disk when requested
 by the program.
@@ -1242,7 +1254,9 @@ the same file.   This restriction will be eliminated in a future version.
 <p>
 When reading an imgCIF vs a CBF, the difference is detected automatically.
 <p>
-<h4><A NAME="2.2.2">2.2.2  Writing binary sections</A></h4>
+</div>
+<div id="2.2.2">
+<h4>2.2.2  Writing binary sections</h4>
 <p>
 When a program passes CBFlib a binary value, the data is compressed to a temporary
 file.  If the CBF object is subsequently written to a file, the data is simply copied
@@ -1267,7 +1281,9 @@ If this option is not used:
 2. CBFlib <i>will not</i>
  close the file.  This is the responsibility of the main program.
 <p>
-<h4><A NAME="2.2.3">2.2.3  Summary of reading and writing files containing binary sections</A></h4>
+</div>
+<div id="2.2.3">
+<h4>2.2.3  Summary of reading and writing files containing binary sections</h4>
 <p>
 1. Open disk files to read using the mode &quot;rb&quot;. <br />
 2. If possible, open disk files to write using the mode &quot;w+b&quot;
@@ -1279,7 +1295,9 @@ buffering turned on.<br />
 write to the same file.<br />
 
 <P>
-<h4><A NAME="2.2.4">2.2.4   Ordering of array indices</A></h4>
+</div>
+<div id="2.2.4">
+<h4>2.2.4   Ordering of array indices</h4>
 <P>
 There are two major conventions in the ordering of array indices:
 <ul>
@@ -1301,9 +1319,12 @@ one convention or the other.  The differences are resolved at compile time by us
 preprocessor macros.
 <hr /><hr />
 <p>
-<h4><A NAME="2.3">2.3  Low-level function prototypes</A></h4>
-
-<h4><A NAME="2.3.1">2.3.1  cbf_make_handle</A> </h4>
+</div>
+</div>
+<div id="2.3">
+<h4>2.3  Low-level function prototypes</h4>
+<div id="2.3.1">
+<h4>2.3.1  cbf_make_handle </h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1330,7 +1351,9 @@ Returns an error code on failure or 0 for success.
 <p>
 <A HREF="#2.3.2">2.3.2  cbf_free_handle</A><br />
 <p><hr /><P>
-<h4><A NAME="2.3.2">2.3.2  cbf_free_handle</A> </h4>
+</div>
+<div id="2.3.2">
+<h4>2.3.2  cbf_free_handle </h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1356,7 +1379,9 @@ Returns an error code on failure or 0 for success.
 <p>
 <A HREF="#2.3.1">2.3.1  cbf_make_handle</A><br />
 <p><hr /><P>
-<h4><A NAME="2.3.3">2.3.3  cbf_read_file, cbf_read_widefile</A></H4>
+</div>
+<div id="2.3.3">
+<h4>2.3.3  cbf_read_file, cbf_read_widefile</H4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1474,11 +1499,11 @@ Returns an error code on failure or 0 for success.
 <p>
 <b>SEE ALSO</b>
 <p>
-
-
 <A HREF="#2.3.4">2.3.4  cbf_write_file</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.4">2.3.4  cbf_write_file, cbf_write_widefile</A> </h4>
+<div id="2.3.4">
+<h4>2.3.4  cbf_write_file, cbf_write_widefile </h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1580,10 +1605,11 @@ Returns an error code on failure or 0 for success.
 <b>SEE ALSO</b>
 <p>
 <A HREF="#2.3.3">2.3.3  cbf_read_file</A><br />
+</div>
 <p><hr /><P>
 
-
-<h4><A NAME="2.3.5">2.3.5  cbf_new_datablock, cbf_new_saveframe</A></h4>
+<div id="2.3.5">
+<h4>2.3.5  cbf_new_datablock, cbf_new_saveframe</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1627,9 +1653,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.6">2.3.6  cbf_force_new_datablock, cbf_force_new_saveframe</A></h4>
+<div id="2.3.6">
+<h4>2.3.6  cbf_force_new_datablock, cbf_force_new_saveframe</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1668,15 +1695,16 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.9">2.3.9  cbf_new_column</A><br />
 <A HREF="#2.3.10">2.3.10  cbf_new_row</A><br />
 <A HREF="#2.3.11">2.3.11  cbf_insert_row</A><br />
-<a href="#2.3.12">2.3.12  cbf_set_datablockname, cbf_set_saveframename</A><br />
+<A HREF="#2.3.12">2.3.12  cbf_set_datablockname, cbf_set_saveframename</A><br />
 <A HREF="#2.3.17">2.3.17  cbf_remove_datablock, cbf_remove_saveframe</A><br />
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
 
-
-<h4><A NAME="2.3.7">2.3.7  cbf_new_category</A></h4>
+<div id="2.3.7">
+<h4>2.3.7  cbf_new_category</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1715,8 +1743,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.8">2.3.8  cbf_force_new_category</A> </h4>
+<div id="2.3.8">
+<h4>2.3.8  cbf_force_new_category </h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1754,8 +1784,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.9">2.3.9  cbf_new_column</A></h4>
+<div id="2.3.9">
+<h4>2.3.9  cbf_new_column</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1792,10 +1824,11 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
 
-
-<h4><A NAME="2.3.10">2.3.10  cbf_new_row</A></h4>
+<div id="2.3.10">
+<h4>2.3.10  cbf_new_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1828,8 +1861,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.11">2.3.11  cbf_insert_row</A></h4>
+<div id="2.3.11">
+<h4>2.3.11  cbf_insert_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1871,10 +1906,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.3.12">2.3.12  cbf_delete_row</A></h4>
+<div id="2.3.12">
+<h4>2.3.12  cbf_delete_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1910,10 +1945,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.3.13">2.3.13  cbf_set_datablockname, cbf_set_saveframename</A></h4>
+<div id="2.3.13">
+<h4>2.3.13  cbf_set_datablockname, cbf_set_saveframename</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1947,8 +1982,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.15">2.3.15  cbf_reset_datablock, cbf_reset_saveframe</A><br />
 <A HREF="#2.3.17">2.3.17  cbf_remove_datablock, cbf_remove_saveframe</A><br />
 <A HREF="#2.3.42">2.3.42  cbf_datablock_name</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.14">2.3.14  cbf_reset_datablocks</A></h4>
+<div id="2.3.14">
+<h4>2.3.14  cbf_reset_datablocks</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -1974,8 +2011,10 @@ Returns an error code on failure or 0 for success.
 <p>
 <A HREF="#2.3.15">2.3.15  cbf_reset_datablock, cbf_reset_saveframe</A><br />
 <A HREF="#2.3.18">2.3.18  cbf_remove_category</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.15">2.3.15  cbf_reset_datablock, cbf_reset_saveframe</A></h4>
+<div id="2.3.15">
+<h4>2.3.15  cbf_reset_datablock, cbf_reset_saveframe</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2003,8 +2042,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.14">2.3.14  cbf_reset_datablocks</A><br />
 <A HREF="#2.3.18">2.3.18  cbf_remove_category</A><br />
 
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.16">2.3.16  cbf_reset_category</A></h4>
+<div id="2.3.16">
+<h4>2.3.16  cbf_reset_category</A></h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2029,8 +2070,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.16">2.3.16  cbf_reset_category</A><br />
 <A HREF="#2.3.19">2.3.19  cbf_remove_column</A><br />
 <A HREF="#2.3.20">2.3.20  cbf_remove_row</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.17">2.3.17  cbf_remove_datablock, cbf_remove_saveframe </A></h4>
+<div id="2.3.17">
+<h4>2.3.17  cbf_remove_datablock, cbf_remove_saveframe></h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2064,8 +2107,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.18">2.3.18  cbf_remove_category</A></h4>
+<div id="2.3.18">
+<h4>2.3.18  cbf_remove_category</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2097,8 +2142,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.19">2.3.19  cbf_remove_column</A></h4>
+<div id="2.3.19">
+<h4>2.3.19  cbf_remove_column</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2129,8 +2176,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.20">2.3.20  cbf_remove_row</A></h4>
+<div id="2.3.20">
+<h4>2.3.20  cbf_remove_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2164,10 +2213,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.3.21">2.3.21  cbf_rewind_datablock</A></h4>
+<div id="2.3.21">
+<h4>2.3.21  cbf_rewind_datablock</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2197,13 +2246,13 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.19">2.3.19  cbf_rewind_column</A><br />
 <A HREF="#2.3.24">2.3.24  cbf_rewind_row</A><br />
 <A HREF="#2.3.25">2.3.25  cbf_next_datablock</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.22">2.3.22  cbf_rewind_category,  cbf_rewind_saveframe,  cbf_rewind_blockitem</A></h4>
+<div id="2.3.22">
+<h4>2.3.22  cbf_rewind_category,  cbf_rewind_saveframe,  cbf_rewind_blockitem</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
-
 int cbf_rewind_category (cbf_handle <i>handle</i>);<br />
 int cbf_rewind_saveframe (cbf_handle <i>handle</i>);<br />
 int cbf_rewind_blockitem (cbf_handle <i>handle</i>, <i>CBF_NODETYPE * type</i>);
@@ -2238,8 +2287,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.24">2.3.24  cbf_rewind_row</A><br />
 <A HREF="#2.3.26">2.3.26  cbf_next_category, cbf_next_saveframe, cbf_next_blockitem</A><br />
 
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.23">2.3.23  cbf_rewind_column</A></h4>
+<div id="2.3.23">
+<h4>2.3.23  cbf_rewind_column</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2271,9 +2322,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.22">2.3.22  cbf_rewind_category, cbf_rewind_saveframe, cbf_rewind_blockitem</A><br />
 <A HREF="#2.3.24">2.3.24  cbf_rewind_row</A><br />
 <A HREF="#2.3.27">2.3.27  cbf_next_column</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.24">2.3.24  cbf_rewind_row</A></h4>
+<div id="2.3.24">
+<h4>2.3.24  cbf_rewind_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2304,8 +2356,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.19">2.3.19  cbf_rewind_column</A><br />
 <A HREF="#2.3.28">2.3.28  cbf_next_row</A><br />
 
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.25">2.3.25  cbf_next_datablock</A></h4>
+<div id="2.3.25">
+<h4>2.3.25  cbf_next_datablock</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2336,8 +2390,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.26">2.3.26  cbf_next_category, cbf_next_saveframe, cbf_next_blockitem</A><br />
 <A HREF="#2.3.27">2.3.27  cbf_next_column</A><br />
 <A HREF="#2.3.28">2.3.28  cbf_next_row</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.26">2.3.26  cbf_next_category</A></h4>
+<div id="2.3.26">
+<h4>2.3.26  cbf_next_category</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2368,8 +2424,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.25">2.3.25  cbf_next_datablock</A><br />
 <A HREF="#2.3.27">2.3.27  cbf_next_column</A><br />
 <A HREF="#2.3.28">2.3.27  cbf_next_row</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.27">2.3.27  cbf_next_column</A></h4>
+<div id="2.3.27">
+<h4>2.3.27  cbf_next_column</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2400,8 +2458,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.25">2.3.25  cbf_next_datablock</A><br />
 <A HREF="#2.3.26">2.3.26  cbf_next_category, cbf_next_saveframe, cbf_next_blockitem</A><br />
 <A HREF="#2.3.28">2.3.28  cbf_next_row</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.28">2.3.28  cbf_next_row</A></h4>
+<div id="2.3.28">
+<h4>2.3.28  cbf_next_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2432,9 +2492,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.25">2.3.25  cbf_next_datablock</A><br />
 <A HREF="#2.3.26">2.3.26  cbf_next_category, cbf_next_saveframe, cbf_next_blockitem</A><br />
 <A HREF="#2.3.27">2.3.27  cbf_next_column</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.29">2.3.29  cbf_find_datablock</A></h4>
+<div id="2.3.29">
+<h4>2.3.29  cbf_find_datablock</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2466,30 +2527,38 @@ Returns an error code on failure or 0 for success.
 <p>
 <A HREF="#2.3.21">2.3.21  cbf_rewind_datablock</A><br />
 <A HREF="#2.3.25">2.3.25  cbf_next_datablock</A><br />
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
+<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
 <A HREF="#2.3.31">2.3.31  cbf_find_column</A><br />
 <A HREF="#2.3.32">2.3.32  cbf_find_row</A><br />
 <A HREF="#2.3.42">2.3.42  cbf_datablock_name</A><br />
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.30">2.3.30  cbf_find_category</A></h4>
+<div id="2.3.30">
+<h4>2.3.30  cbf_find_category, cbf_find_saveframe</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_find_category (cbf_handle <i>handle</i>,
-const char *<i>categoryname</i>);
+const char *<i>categoryname</i>);<br />
+int cbf_find_saveframe (cbf_handle <i>handle</i>,
+const char *<i>saveframename</i>);<br />
+
 <p>
 <b>DESCRIPTION</b>
 <p>
 cbf_find_category makes the category in the current data block with
 name <i>categoryname</i> the current category.
+cbf_find_saveframe makes the saveframe in the current data block with
+name <i>saveframename</i> the current saveframe.
+
 <p>
 The comparison is case-insensitive.
 <p>
-If the category does not exist, the function returns CBF_NOTFOUND.
+If the category or saveframe does not exist, the function returns CBF_NOTFOUND.
 <p>
 The current column and row become undefined.
 <p>
@@ -2497,6 +2566,7 @@ The current column and row become undefined.
 <TABLE>
 <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
 <TR><td valign="top">&nbsp;&nbsp;<i>categoryname</i><td valign="top">&nbsp;&nbsp;The name of the category to find.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>saveframename</i><td valign="top">&nbsp;&nbsp;The name of the saveframe to find.<br />
 </TABLE>
 <p>
 <b>RETURN VALUE</b>
@@ -2514,8 +2584,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.31">2.3.31  cbf_find_column</A></h4>
+<div id="2.3.31">
+<h4>2.3.31  cbf_find_column</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2548,18 +2620,19 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.19">2.3.19  cbf_rewind_column</A><br />
 <A HREF="#2.3.27">2.3.27  cbf_next_column</A><br />
 <A HREF="#2.3.29">2.3.29  cbf_find_datablock</A><br />
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
+<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
 <A HREF="#2.3.32">2.3.32  cbf_find_row</A><br />
 <A HREF="#2.3.44">2.3.44  cbf_column_name</A><br />
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.32">2.3.32  cbf_find_row</A></h4>
+<div id="2.3.32">
+<h4>2.3.32  cbf_find_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
-#include &quot;cbf.h&quot;<p>
+#include"2.3.32" &quot;cbf.h&quot;<p>
 
 int cbf_find_row (cbf_handle <i>handle</i>, const char *<i>value</i>);
 <p>
@@ -2589,18 +2662,18 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.24">2.3.24  cbf_rewind_row</A><br />
 <A HREF="#2.3.28">2.3.28  cbf_next_row</A><br />
 <A HREF="#2.3.29">2.3.29  cbf_find_datablock</A><br />
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
+<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
 <A HREF="#2.3.31">2.3.31  cbf_find_column</A><br />
 <A HREF="#2.3.33">2.3.33  cbf_find_nextrow</A><br />
 <A HREF="#2.3.46">2.3.46  cbf_get_value, cbf_require_value</A><br />
 <A HREF="#2.3.48">2.3.48  cbf_get_typeofvalue</A><br />
-
-<p>
-<h4><A NAME="2.3.33">2.3.33  cbf_find_nextrow</A></h4>
+</div>
+<p><hr /><P>
+<div id="2.3.33">
+<h4>2.3.33  cbf_find_nextrow</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
-
 int cbf_find_nextrow (cbf_handle <i>handle</i>, const char *<i>value</i>);
 <p>
 <b>DESCRIPTION</b>
@@ -2632,14 +2705,15 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.24">2.3.24  cbf_rewind_row</A><br />
 <A HREF="#2.3.28">2.3.28  cbf_next_row</A><br />
 <A HREF="#2.3.29">2.3.29  cbf_find_datablock</A><br />
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
+<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
 <A HREF="#2.3.31">2.3.31  cbf_find_column</A><br />
 <A HREF="#2.3.32">2.3.32  cbf_find_row</A><br />
 <A HREF="#2.3.46">2.3.46  cbf_get_value, cbf_require_value</A><br />
 <A HREF="#2.3.48">2.3.48  cbf_get_typeofvalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.34">2.3.34  cbf_count_datablocks</A></h4>
+<div id="2.3.34">
+<h4>2.3.34  cbf_count_datablocks</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2668,9 +2742,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.36">2.3.36  cbf_count_columns</A><br />
 <A HREF="#2.3.37">2.3.37  cbf_count_rows</A><br />
 <A HREF="#2.3.38">2.3.38  cbf_select_datablock</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.35">2.3.35  cbf_count_categories</A></h4>
+<div id="2.3.35">
+<h4>2.3.35  cbf_count_categories</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2699,9 +2774,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.36">2.3.36  cbf_count_columns</A><br />
 <A HREF="#2.3.37">2.3.37  cbf_count_rows</A><br />
 <A HREF="#2.3.39">2.3.39  cbf_select_category, cbf_select_saveframe, cbf_select_blockitem</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.36">2.3.36  cbf_count_columns</A></h4>
+<div id="2.3.36">
+<h4>2.3.36  cbf_count_columns</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2729,10 +2805,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.35">2.3.35  cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems</A><br />
 <A HREF="#2.3.37">2.3.37  cbf_count_rows</A><br />
 <A HREF="#2.3.40">2.3.40  cbf_select_column</A><br />
-<p>
-
-<hr /><p>
-<h4><A NAME="2.3.37">2.3.37  cbf_count_rows</A></h4>
+</div>
+<p><hr /><p>
+<div id="2.3.37">
+<h4>2.3.37  cbf_count_rows</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2760,9 +2836,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.35">2.3.35  cbf_count_categories, cbf_count_saveframes, cbf_count_blockitems</A><br />
 <A HREF="#2.3.36">2.3.36  cbf_count_columns</A><br />
 <A HREF="#2.3.41">2.3.41  cbf_select_row</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.38">2.3.38  cbf_select_datablock</A></h4>
+<div id="2.3.38">
+<h4>2.3.38  cbf_select_aaaaaaaadatablock</A></h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2795,8 +2872,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.39">2.3.39  cbf_select_category, cbf_select_saveframe, cbf_select_blockitem</A><br />
 <A HREF="#2.3.40">2.3.40  cbf_select_column</A><br />
 <A HREF="#2.3.41">2.3.41  cbf_select_row</A>
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.39">2.3.39  cbf_select_category</A></h4>
+<div id="2.3.39">
+<h4>2.3.39  cbf_select_category</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2831,8 +2910,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.38">2.3.38  cbf_select_datablock</A><br />
 <A HREF="#2.3.40">2.3.40  cbf_select_column</A><br />
 <A HREF="#2.3.41">2.3.41  cbf_select_row</A><br />
-<p><hr /><P>
-<h4><A NAME="2.3.40">2.3.40  cbf_select_column</A></h4>
+</div>
+<p><hr /><P>]
+<div id="2.3.40">
+<h4>2.3.40  cbf_select_column</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2866,8 +2947,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.38">2.3.38  cbf_select_datablock</A><br />
 <A HREF="#2.3.39">2.3.39  cbf_select_category, cbf_select_saveframe, cbf_select_blockitem</A><br />
 <A HREF="#2.3.41">2.3.41  cbf_select_row</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.41">2.3.41  cbf_select_row</A></h4>
+<div id="2.3.41">
+<h4>2.3.41  cbf_select_row</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2901,8 +2984,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.38">2.3.38  cbf_select_datablock</A><br />
 <A HREF="#2.3.39">2.3.39  cbf_select_category, cbf_select_saveframe, cbf_select_blockitem</A><br />
 <A HREF="#2.3.40">2.3.40  cbf_select_column</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.42">2.3.42  cbf_datablock_name</A></h4>
+<div id="2.3.42">
+<h4>2.3.42  cbf_datablock_name<</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2913,7 +2998,7 @@ const char **<i>datablockname</i>);
 <b>DESCRIPTION</b>
 <p>
 cbf_datablock_name sets *<i>datablockname</i>
- to point to the name of the current data block.
+to point to the name of the current data block.
 <p>
 The data block name will be valid as long as the data block exists
 and has not been renamed.
@@ -2934,9 +3019,10 @@ Returns an error code on failure or 0 for success.
 <b>SEE ALSO</b>
 <p>
 <A HREF="#2.3.29">2.3.29  cbf_find_datablock</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.43">2.3.43  cbf_category_name</A></h4>
+<div id="2.3.43">
+<h4>2.3.43  cbf_category_name</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -2966,10 +3052,12 @@ Returns an error code on failure or 0 for success.
 <p>
 <b>SEE ALSO</b>
 <p>
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
-
+<A HREF="#2.3.30">
+2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.44">2.3.44  cbf_column_name, cbf_set_column_name</A></h4>
+<div id="2.3.44">
+<h4>2.3.44  cbf_column_name, cbf_set_column_name</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3004,9 +3092,10 @@ Returns an error code on failure or 0 for success.
 <b>SEE ALSO</b>
 <p>
 <A HREF="#2.3.31">2.3.31  cbf_find_column</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.45">2.3.45  cbf_row_number</A></h4>
+<div id="2.3.45">
+<h4>2.3.45  cbf_row_number</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3016,7 +3105,7 @@ int cbf_row_number (cbf_handle <i>handle</i>, unsigned int *<i>row</i>);
 <b>DESCRIPTION</b>
 <p>
 cbf_row_number sets *<i>row</i>
- to the number of the current row of the current category.
+to the number of the current row of the current category.
 <p>
 <b>ARGUMENTS</b><br />
 <TABLE>
@@ -3031,9 +3120,10 @@ Returns an error code on failure or 0 for success.
 <b>SEE ALSO</b>
 <p>
 <A HREF="#2.3.41">2.3.41  cbf_select_row</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.46">2.3.46  cbf_get_value, cbf_require_value</A></h4>
+<div id="2.3.46">
+<h4>2.3.46  cbf_get_value, cbf_require_value</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3044,10 +3134,10 @@ int cbf_require_value (cbf_handle <i>handle</i>, const char **<i>value</i>, cons
 <b>DESCRIPTION</b>
 <p>
 cbf_get_value sets *<i>value</i>
- to point to the ASCII value of the item at the current column and row.
+to point to the ASCII value of the item at the current column and row.
 cbf_require_value sets *<i>value</i>
- to point to the ASCII value of the item at the current column and row,
- creating the data item if necessary
+to point to the ASCII value of the item at the current column and row,
+creating the data item if necessary
 and initializing it to a copy of <i>defaultvalue</i>.
 
 <p>
@@ -3082,9 +3172,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
 
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.47">2.3.47  cbf_set_value</A></h4>
+<div id="2.3.47">
+<h4>2.3.47  cbf_set_value</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3117,9 +3208,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.48">2.3.48  cbf_get_typeofvalue</A></h4>
+<div id="2.3.48">
+<h4>2.3.48  cbf_get_typeofvalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3174,8 +3266,8 @@ Not all types are valid for all type of CIF
 files.  In partcular the types &quot;prns&quot;, &quot;brcs&quot;, &quot;bkts&quot; were
 introduced with DDLm and are not valid in DDL1 or DDL2 CIFS.  The types &quot;tsqs&quot; and
 &quot;tdqs&quot; are not formally part of the CIF syntax.
- 
- 
+
+
 A field for which no value has been set sets
 *<i>typeofvalue</i> to NULL rather than to the
 string &quot;null&quot;.
@@ -3206,9 +3298,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.49">2.3.49  cbf_set_typeofvalue</A></h4>
+<div id="2.3.49">
+<h4>2.3.49  cbf_set_typeofvalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3260,7 +3353,7 @@ are:
 </table>
 </center>
 
-Not all types may be used for all values.  Not all types are valid for all type of CIF
+Not all types may be used for all values.  Not all types are valid for all types of CIF
 files.  In partcular the types &quot;prns&quot;, &quot;brcs&quot;, &quot;bkts&quot; were
 introduced with DDLm and are not valid in DDL1 or DDL2 CIFS.  The types &quot;tsqs&quot; and
 &quot;tdqs&quot; are not formally part of the CIF syntax.  No changes may be made to the
@@ -3291,12 +3384,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
+</div>
 <p><hr /><P>
-
-
-
-
-<h4><A NAME="2.3.50">2.3.50  cbf_get_integervalue, cbf_require_integervalue</A></h4>
+<div id="2.3.50">
+<h4>2.3.50  cbf_get_integervalue, cbf_require_integervalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3307,10 +3398,10 @@ int cbf_require_integervalue (cbf_handle <i>handle</i>, int *<i>number</i>, int 
 <b>DESCRIPTION</b>
 <p>
 cbf_get_integervalue sets *<i>number</i>
- to the value of the ASCII item at the current column and row interpreted as a decimal
+to the value of the ASCII item at the current column and row interpreted as a decimal
 integer.
 cbf_require_integervalue sets *<i>number</i>
- to the value of the ASCII item at the current column and row interpreted as a decimal
+to the value of the ASCII item at the current column and row interpreted as a decimal
 integer, setting it to <i>defaultvalue</i> if necessary.
 <p>
 If the value is not ASCII, the function returns CBF_BINARY.
@@ -3337,9 +3428,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.51">2.3.51  cbf_set_integervalue</A></h4>
+<div id="2.3.51">
+<h4>2.3.51  cbf_set_integervalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3350,7 +3442,7 @@ int cbf_set_integervalue (cbf_handle <i>handle</i>, int <i>number</i>);
 <p>
 cbf_set_integervalue sets the item at the current column and row to the integer value
 <i>number</i>
- written as a decimal ASCII string.
+written as a decimal ASCII string.
 <p>
 <b>ARGUMENTS</b><br />
 <TABLE>
@@ -3375,9 +3467,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.52">2.3.52  cbf_get_doublevalue, cbf_require_doublevalue</A></h4>
+<div id="2.3.52">
+<h4>2.3.52  cbf_get_doublevalue, cbf_require_doublevalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3388,10 +3481,10 @@ int cbf_require_doublevalue (cbf_handle <i>handle</i>, double *<i>number</i>, do
 <b>DESCRIPTION</b>
 <p>
 cbf_get_doublevalue sets *<i>number</i>
- to the value of the ASCII item at the current column and row interpreted as a decimal
+to the value of the ASCII item at the current column and row interpreted as a decimal
 floating-point number.
 cbf_require_doublevalue sets *<i>number</i>
- to the value of the ASCII item at the current column and row interpreted as a decimal
+to the value of the ASCII item at the current column and row interpreted as a decimal
 floating-point number, setting it to <i>defaultvalue</i> if necessary.
 <p>
 If the value is not ASCII, the function returns CBF_BINARY.
@@ -3419,9 +3512,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.53">2.3.53  cbf_set_doublevalue</A></h4>
+<div id="2.3.53">
+<h4>2.3.53  cbf_set_doublevalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3459,13 +3553,14 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
+</div>
 <p><hr /><P>
 
-
-<h4><A NAME="2.3.54">2.3.54  cbf_get_integerarrayparameters,<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_integerarrayparameters_wdims, cbf_get_integerarrayparameters_wdims_fs, cbf_get_integerarrayparameters_wdims_sf,
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_realarrayparameters,<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs, cbf_get_realarrayparameters_wdims_sf</A></h4>
+<div id="2.3.54">
+<h4>2.3.54  cbf_get_integerarrayparameters,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_integerarrayparameters_wdims, cbf_get_integerarrayparameters_wdims_fs, cbf_get_integerarrayparameters_wdims_sf,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_realarrayparameters,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_realarrayparameters_wdims, cbf_get_realarrayparameters_wdims_fs, cbf_get_realarrayparameters_wdims_sf</A></h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3568,19 +3663,19 @@ size_t       *<i>padding</i>);
 <b>DESCRIPTION</b>
 <p>
 cbf_get_integerarrayparameters sets *<i>compression</i>,
- *<i>binary_id</i>, *<i>elsize</i>,
- *<i>elsigned</i>, *<i>elunsigned</i>,
- *<i>elements</i>, *<i>minelement</i>
- and *<i>maxelement</i>
- to values read from the binary value of the item at the
+*<i>binary_id</i>, *<i>elsize</i>,
+*<i>elsigned</i>, *<i>elunsigned</i>,
+*<i>elements</i>, *<i>minelement</i>
+and *<i>maxelement</i>
+to values read from the binary value of the item at the
 current column and row.
 This provides all the arguments needed for a subsequent call to
 cbf_set_integerarray,
 if a copy of the array is to be made into another CIF or CBF.
 cbf_get_realarrayparameters sets *<i>compression</i>,
- *<i>binary_id</i>, *<i>elsize</i>,
- *<i>elements</i>
- to values read from the binary value of the item at the
+*<i>binary_id</i>, *<i>elsize</i>,
+*<i>elements</i>
+to values read from the binary value of the item at the
 current column and row.
 This provides all the arguments needed for a subsequent call to
 cbf_set_realarray,
@@ -3649,9 +3744,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.55">2.3.55  cbf_get_integerarray, cbf_get_realarray </A></h4>
+<div id="2.3.55">
+<h4>2.3.55  cbf_get_integerarray, cbf_get_realarray </h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3672,14 +3768,14 @@ cbf_get_integerarray reads the binary value of the item at the current
 column and row into an integer array.  The array consists of
 <i>elements</i> elements of <i>elsize</i> bytes each, starting at
 <i>array</i>.  The elements are signed if <i>elsigned</i>
- is non-0 and unsigned otherwise.  *<i>binary_id</i>
- is set to the binary section identifier and *<i>elements_read </i>
+is non-0 and unsigned otherwise.  *<i>binary_id</i>
+is set to the binary section identifier and *<i>elements_read </i>
 to the number of elements actually read.
 cbf_get_realarray reads the binary value of the item at the current
 column and row into a real array.  The array consists of
 <i>elements</i> elements of <i>elsize</i> bytes each, starting at
 <i>array</i>.   *<i>binary_id</i>
- is set to the binary section identifier and *<i>elements_read </i>
+is set to the binary section identifier and *<i>elements_read </i>
 to the number of elements actually read.
 <p>
 If any element in the integer binary data cant fit into the destination
@@ -3738,11 +3834,13 @@ SEE ALSO
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.56">2.3.56  cbf_set_integerarray,<br />
+<div id="2.3.56">
+<h4>2.3.56  cbf_set_integerarray,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_realarray,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs, cbf_set_realarray_wdims_sf</A></h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs, cbf_set_realarray_wdims_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3815,27 +3913,27 @@ size_t        <i>dimfast</i>, size_t       <i>padding</i>);<br />
 <p>
 cbf_set_integerarray sets the binary value of the item at the current
 column and row to an integer <i>array</i>.
- The array consists of <i>elements</i>
- elements of <i>elsize</i>
- bytes each, starting at <i>array</i>.  The elements
+The array consists of <i>elements</i>
+elements of <i>elsize</i>
+bytes each, starting at <i>array</i>.  The elements
 are signed if <i>elsigned</i>
- is non-0 and unsigned otherwise.  <i>binary_id</i>
- is the binary section identifier.
+is non-0 and unsigned otherwise.  <i>binary_id</i>
+is the binary section identifier.
 cbf_set_realarray sets the binary value of the item at the current
 column and row to an integer <i>array</i>.
- The array consists of <i>elements</i>
- elements of <i>elsize</i>
- bytes each, starting at <i>array</i>.  <i>binary_id</i>
- is the binary section identifier.
- <P>
- The cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf, 
- cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs and cbf_set_realarray_wdims_sf variants
- allow the data header values of <i>byteorder</i>,
- <i>dimfast</i>, <i>dimmid</i>, <i>dimslow</i> and <i>padding</i>
- to be set to the data byte order, the fastest,
- second fastest and third fastest array dimensions and
- the size in byte of the post data padding to be used.
- 
+The array consists of <i>elements</i>
+elements of <i>elsize</i>
+bytes each, starting at <i>array</i>.  <i>binary_id</i>
+is the binary section identifier.
+<P>
+The cbf_set_integerarray_wdims, cbf_set_integerarray_wdims_fs, cbf_set_integerarray_wdims_sf, 
+cbf_set_realarray_wdims, cbf_set_realarray_wdims_fs and cbf_set_realarray_wdims_sf variants
+allow the data header values of <i>byteorder</i>,
+<i>dimfast</i>, <i>dimmid</i>, <i>dimslow</i> and <i>padding</i>
+to be set to the data byte order, the fastest,
+second fastest and third fastest array dimensions and
+the size in byte of the post data padding to be used.
+
 <p>
 The array will be compressed using the compression scheme specifed
 by <i>compression</i>.  Currently, the available schemes are:
@@ -3857,7 +3955,7 @@ than 64 bits, the value compressed is the nearest 64-bit value.
 <p>
 Currently, the source array must consist of chars, shorts or ints (signed or unsigned),
 for cbf_set_integerarray, or IEEE doubles or floats for cbf_set_realarray.
- If <i>elsize </i>
+If <i>elsize </i>
 is not equal to sizeof (char), sizeof (short) or sizeof (int), the function returns
 CBF_ARGUMENT.
 <p>
@@ -3888,9 +3986,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.64">2.3.64  cbf_require_column_doublevalue</A><br />
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.57">2.3.57  cbf_failnez</A></h4>
+<div id="2.3.57">
+<h4>2.3.57  cbf_failnez</h4>
 <p>
 <b>DEFINITION</b>
 <p>
@@ -3902,7 +4001,7 @@ Returns an error code on failure or 0 for success.
 <p>
 cbf_failnez is a macro used for error propagation throughout CBFlib.  cbf_failnez
 executes the function <i>f</i>
- and saves the returned error value.  If the error value is non-0, cbf_failnez executes
+and saves the returned error value.  If the error value is non-0, cbf_failnez executes
 a return with the error value as argument.  If CBFDEBUG is defined, then a report of
 the error is also printed to the standard error stream, stderr, in the form
 <p>
@@ -3919,8 +4018,10 @@ form.
 <b>SEE ALSO</b>
 <p>
 <A HREF="#2.3.58">2.3.58  cbf_onfailnez</A><br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.58">2.3.58  cbf_onfailnez</A></h4>
+<div id="2.3.58">
+<h4>2.3.58  cbf_onfailnez</h4>
 <p><b>DEFINITION</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -3933,8 +4034,8 @@ cbf_onfailnez is a macro used for error propagation throughout CBFlib.
 cbf_onfailnez executes the function <i>f</i>
 and saves the returned error value.  If the error value is non-0,
 cbf_failnez executes first the statement <i>c</i>
- and then a return with the error value as argument.   If CBFDEBUG is defined,
- then a report of
+and then a return with the error value as argument.   If CBFDEBUG is defined,
+then a report of
 the error is also printed to the standard error stream, stderr, in the form
 <p>
 CBFlib error <i>f</i> in &quot;<i>symbol</i>&quot;
@@ -3951,20 +4052,21 @@ form.
 <LI><A HREF="#2.3.57">2.3.57   cbf_failnez</A>
 
 
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.59">2.3.59   cbf_require_datablock</A></h4>
+<div id="2.3.59">
+<h4>2.3.59   cbf_require_datablock</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_require_datablock (cbf_handle  <i>handle</i>,
-                             const char *<i>datablockname</i>);
+		     const char *<i>datablockname</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
 cbf_require_datablock makes the data block with name <i>datablockname</i>
- the current data block, if it exists, or creates it if it does not.
+the current data block, if it exists, or creates it if it does not.
 <p>
 The comparison is case-insensitive.
 <p>
@@ -3985,23 +4087,24 @@ Returns an error code on failure or 0 for success.
 <p>
 <A HREF="#2.3.21">2.3.21  cbf_rewind_datablock</A><br />
 <A HREF="#2.3.25">2.3.25  cbf_next_datablock</A><br />
-<A HREF="#2.3.30">2.3.29  cbf_find_datablock</A><br />
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
+<A HREF="#2.3.29">2.3.29  cbf_find_datablock</A><br />
+<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
 <A HREF="#2.3.31">2.3.31  cbf_find_column</A><br />
 <A HREF="#2.3.32">2.3.32  cbf_find_row</A><br />
 <A HREF="#2.3.42">2.3.42  cbf_datablock_name</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 <A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
 
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.60">2.3.60   cbf_require_category</A></h4>
+<div id="2.3.60">
+<h4>2.3.60   cbf_require_category</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_require_category (cbf_handle  <i>handle</i>,
-                             const char *<i>categoryname</i>);
+		     const char *<i>categoryname</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -4032,17 +4135,17 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.32">2.3.32  cbf_find_row</A><br />
 <A HREF="#2.3.43">2.3.43  cbf_category_name</A><br />
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
-<A HREF="#2.3.61">2.3.61  cbf_require_column</A><br />
-
-							
+<A HREF="#2.3.61">2.3.61  cbf_require_column</A><br /
+</div>			
 <p><hr /><P>
-<h4><A NAME="2.3.61">2.3.61   cbf_require_column</A></h4>
+<div id="2.3.61">
+<h4>2.3.61   cbf_require_column<</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_require_column (cbf_handle  <i>handle</i>,
-                             const char *<i>columnname</i>);
+		     const char *<i>columnname</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -4069,16 +4172,17 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.19">2.3.19  cbf_rewind_column</A><br />
 <A HREF="#2.3.27">2.3.27  cbf_next_column</A><br />
 <A HREF="#2.3.29">2.3.29  cbf_find_datablock</A><br />
-<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe, cbf_find_blockitem</A><br />
+<A HREF="#2.3.30">2.3.30  cbf_find_category, cbf_find_saveframe</A><br />
 <A HREF="#2.3.32">2.3.32  cbf_find_row</A><br />
 <A HREF="#2.3.44">2.3.44  cbf_column_name, cbf_set_column_name</A><br />
 <A HREF="#2.3.59">2.3.59  cbf_require_datablock</A><br />
 <A HREF="#2.3.60">2.3.60  cbf_require_category</A><br />
 
 
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.62">2.3.62  cbf_require_column_value</A></h4>
+<div id="2.3.62">
+<h4>2.3.62  cbf_require_column_value</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4092,10 +4196,10 @@ const char *<i>defaultvalue</i>);
 <p>
 cbf_require_column_doublevalue
 sets *<i>value</i>
- to the ASCII item at the current row for the column given
- with the name given by *<i>columnname</i>, or to the string
- given by <i>defaultvalue</i> if the
- item cannot be found.
+to the ASCII item at the current row for the column given
+with the name given by *<i>columnname</i>, or to the string
+given by <i>defaultvalue</i> if the
+item cannot be found.
 <p>
 <b>ARGUMENTS</b><br />
 <TABLE>
@@ -4121,12 +4225,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.56">2.3.56  cbf_set_integerarray, cbf_set_integerarray_wdims, cbf_set_realarray, cbf_set_realarray_wdims</A><br />
 <A HREF="#2.3.62">2.3.63  cbf_require_column_integervalue</A><br />
 <A HREF="#2.3.63">2.3.64  cbf_require_column_doublevalue</A><br />
-
-
-
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.63">2.3.63  cbf_require_column_integervalue</A></h4>
+<div id="2.3.63">
+<h4>2.3.63  cbf_require_column_integervalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4140,8 +4242,8 @@ const int <i>defaultvalue</i>);
 <p>
 cbf_require_column_doublevalue
 sets *<i>number</i>
- to the value of the ASCII item at the current row for the column given
- with the name given by *<i>columnname</i>, with the value interpreted as an
+to the value of the ASCII item at the current row for the column given
+with the name given by *<i>columnname</i>, with the value interpreted as an
 integer number, or to the number given by <i>defaultvalue</i> if the
 item cannot be found.
 <p>
@@ -4171,9 +4273,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.63">2.3.64  cbf_require_column_doublevalue</A><br />
 
 
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.64">2.3.64  cbf_require_column_doublevalue</A></h4>
+<div id="2.3.64">
+<h4>2.3.64  cbf_require_column_doublevalue</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4187,8 +4290,8 @@ const double <i>defaultvalue</i>);
 <p>
 cbf_require_column_doublevalue
 sets *<i>number</i>
- to the value of the ASCII item at the current row for the column given
- with the name given by *<i>columnname</i>, with the value interpreted as a decimal
+to the value of the ASCII item at the current row for the column given
+with the name given by *<i>columnname</i>, with the value interpreted as a decimal
 floating-point number, or to the number given by <i>defaultvalue</i> if the
 item cannot be found.
 <p>
@@ -4217,10 +4320,11 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.3.62">2.3.62  cbf_require_column_value</A><br />
 <A HREF="#2.3.63">2.3.63  cbf_require_column_integervalue</A><br />
 
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.3.65">2.3.65  cbf_get_local_integer_byte_order,  
-cbf_get_local_real_byte_order, cbf_get_local_real_format </A></h4>
+<div id="2.3.65">
+<h4>2.3.65  cbf_get_local_integer_byte_order,  
+cbf_get_local_real_byte_order, cbf_get_local_real_format</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4253,10 +4357,10 @@ by future versions of the API.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.3.66">2.3.66  cbf_get_dictionary, cbf_set_dictionary, cbf_require_dictionary</A></h4>
+<div id="2.3.66">
+<h4>2.3.66  cbf_get_dictionary, cbf_set_dictionary, cbf_require_dictionary</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4277,17 +4381,17 @@ empty CBF and associates it with <i>handle</i>, returning the new handle in
 <P>
 <b>ARGUMENTS</b><br />
 <table>
- <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>dictionary</i><td valign="top">&nbsp;&nbsp;Pointer to CBF handle of dictionary.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>dictionary_in</i><td valign="top">&nbsp;&nbsp;CBF handle of dcitionary.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>dictionary</i><td valign="top">&nbsp;&nbsp;Pointer to CBF handle of dictionary.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>dictionary_in</i><td valign="top">&nbsp;&nbsp;CBF handle of dcitionary.<br />
 </table>
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.3.67">2.3.67 cbf_convert_dictionary</A></h4>
+<div id="2.3.67">
+<h4>2.3.67 cbf_convert_dictionary</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4306,17 +4410,16 @@ the dictionary will be used for validation of the CBF as it is read.
 <P>
 <b>ARGUMENTS</b><br />
 <table>
- <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>dictionary</i><td valign="top">&nbsp;&nbsp;CBF handle of dictionary.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>dictionary</i><td valign="top">&nbsp;&nbsp;CBF handle of dictionary.<br />
 </table>
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.3.68">2.3.68 cbf_find_tag, cbf_find_local_tag</A></h4>
+<div id="2.3.68">
+<h4>2.3.68 cbf_find_tag, cbf_find_local_tag</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
@@ -4338,28 +4441,26 @@ starting with the leading underscore, not just a category or column.
 <P>
 <b>ARGUMENTS</b><br />
 <table>
- <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>tag</i><td valign="top">&nbsp;&nbsp;CIF tag.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>tag</i><td valign="top">&nbsp;&nbsp;CIF tag.<br />
 </table>
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-
-
-
-<h4><A NAME="2.3.69">2.3.69 cbf_find_category_root, cbf_set_category_root, cbf_require_category_root</A></h4>
+<div id="2.3.69">
+<h4>2.3.69 cbf_find_category_root, cbf_set_category_root, cbf_require_category_root</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_find_category_root (cbf_handle <i>handle</i>, const char* <i>categoryname</i>,
-                                            const char** <i>categoryroot</i>);<br />
+				    const char** <i>categoryroot</i>);<br />
 int cbf_set_category_root (cbf_handle <i>handle</i>, const char* <i>categoryname_in</i>,
-                                            const char*<i>categoryroot</i>);<br />
+				    const char*<i>categoryroot</i>);<br />
 int cbf_require_category_root (cbf_handle handle, const char* <i>categoryname</i>,
-                                            const char** <i>categoryroot</i>);
+				    const char** <i>categoryroot</i>);
 
 <P>
 <b>DESCRIPTION</b>
@@ -4377,29 +4478,28 @@ A returned <i>categoryroot</i> string must not be modified in any way.
 <P>
 <b>ARGUMENTS</b><br />
 <table>
- <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>categoryname</i><td valign="top">&nbsp;&nbsp;category name which may be an alias.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>categoryroot</i><td valign="top">&nbsp;&nbsp;pointer to a returned category root name.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>categoryroot_in</i><td valign="top">&nbsp;&nbsp;input category root name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>categoryname</i><td valign="top">&nbsp;&nbsp;category name which may be an alias.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>categoryroot</i><td valign="top">&nbsp;&nbsp;pointer to a returned category root name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>categoryroot_in</i><td valign="top">&nbsp;&nbsp;input category root name.<br />
 </table>
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.3.70">2.3.70 cbf_find_tag_root, cbf_set_tag_root, cbf_require_tag_root</A></h4>
+<div id="2.3.70">
+<h4>2.3.70 cbf_find_tag_root, cbf_set_tag_root, cbf_require_tag_root</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_find_tag_root (cbf_handle <i>handle</i>, const char* <i>tagname</i>,
-                                            const char** <i>tagroot</i>);<br />
+				    const char** <i>tagroot</i>);<br />
 int cbf_set_tag_root (cbf_handle <i>handle</i>, const char* <i>tagname</i>,
-                                            const char*<i>tagroot_in</i>);<br />
+				    const char*<i>tagroot_in</i>);<br />
 int cbf_require_tag_root (cbf_handle handle, const char* <i>tagname</i>,
-                                            const char** <i>tagroot</i>);
+				    const char** <i>tagroot</i>);
 
 <P>
 <b>DESCRIPTION</b>
@@ -4417,26 +4517,26 @@ A returned <i>tagroot</i> string must not be modified in any way.
 <P>
 <b>ARGUMENTS</b><br />
 <table>
- <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>tagname</i><td valign="top">&nbsp;&nbsp;tag name which may be an alias.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>tagroot</i><td valign="top">&nbsp;&nbsp;pointer to a returned tag root name.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>tagroot_in</i><td valign="top">&nbsp;&nbsp;input tag root name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>tagname</i><td valign="top">&nbsp;&nbsp;tag name which may be an alias.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>tagroot</i><td valign="top">&nbsp;&nbsp;pointer to a returned tag root name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>tagroot_in</i><td valign="top">&nbsp;&nbsp;input tag root name.<br />
 </table>
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.3.71">2.3.71 cbf_find_tag_category, cbf_set_tag_category</A></h4>
+<div id="2.3.71">
+<h4>2.3.71 cbf_find_tag_category, cbf_set_tag_category</h4>
 <p><b>PROTOTYPE</b>
 <p>
 #include &quot;cbf.h&quot;<p>
 
 int cbf_find_tag_category (cbf_handle <i>handle</i>, const char* <i>tagname</i>,
-                                            const char** <i>categoryname</i>);<br />
+				    const char** <i>categoryname</i>);<br />
 int cbf_set_tag_category (cbf_handle <i>handle</i>, const char* tagname,
-                                            const char* <i>categoryname_in</i>);
+				    const char* <i>categoryname_in</i>);
 <P>
 <b>DESCRIPTION</b>
 <p>
@@ -4447,22 +4547,24 @@ to indicated that <i>tagname</i> is in category <i>categoryname_in</i>.
 <P>
 <b>ARGUMENTS</b><br />
 <table>
- <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>tagname</i><td valign="top">&nbsp;&nbsp;tag name.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>categoryname</i><td valign="top">&nbsp;&nbsp;pointer to a returned category name.<br />
- <TR><td valign="top">&nbsp;&nbsp;<i>categoryname_in</i><td valign="top">&nbsp;&nbsp;input category name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>tagname</i><td valign="top">&nbsp;&nbsp;tag name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>categoryname</i><td valign="top">&nbsp;&nbsp;pointer to a returned category name.<br />
+<TR><td valign="top">&nbsp;&nbsp;<i>categoryname_in</i><td valign="top">&nbsp;&nbsp;input category name.<br />
 </table>
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
 
 <p>
-
+</div>
 <hr /><hr />
 <p>
-<h4><A NAME="2.4">2.4 High-level function prototypes</A></H4>
+<div id="2.4">
+<h4>2.4 High-level function prototypes</H4>
 <p>
-<h4><A NAME="2.4.1">2.4.1 cbf_read_template</A></h4>
+<div id="2.4.1">
+<h4>2.4.1 cbf_read_template</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4482,9 +4584,10 @@ specified by <I>handle</I> and selects the first datablock as the current databl
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
-
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.2">2.4.2 cbf_get_diffrn_id, cbf_require_diffrn_id</A></h4>
+<div id="2.4.2">
+<h4>2.4.2 cbf_get_diffrn_id, cbf_require_diffrn_id</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4514,8 +4617,10 @@ The <I>diffrn_id</I> must not be modified by the program in any way.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.3">2.4.3 cbf_set_diffrn_id</A></h4>
+<div id="2.4.3">
+<h4>2.4.3 cbf_set_diffrn_id</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4536,8 +4641,10 @@ This function also changes corresponding &quot;diffrn_id&quot; entries in the &q
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.4">2.4.4 cbf_get_crystal_id</A></h4>
+<div id="2.4.4">
+<h4>2.4.4 cbf_get_crystal_id</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4562,8 +4669,10 @@ The value must not be modified by the program in any way.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.5">2.4.5 cbf_set_crystal_id</A></h4>
+<div id="2.4.5">
+<h4>2.4.5 cbf_set_crystal_id</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4582,8 +4691,10 @@ cbf_set_crystal_id sets the &quot;diffrn.crystal_id&quot; entry to the ASCII val
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.6">2.4.6 cbf_get_wavelength</A></h4>
+<div id="2.4.6">
+<h4>2.4.6 cbf_get_wavelength</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4602,8 +4713,10 @@ cbf_get_wavelength sets *<i>wavelength</i> to the current wavelength in &Aring;.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.7">2.4.7 cbf_set_wavelength</A></h4>
+<div id="2.4.7">
+<h4>2.4.7 cbf_set_wavelength</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4622,8 +4735,10 @@ cbf_set_wavelength sets the current wavelength in &Aring; to <i>wavelength</i>.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.8">2.4.8 cbf_get_polarization</A></h4>
+<div id="2.4.8">
+<h4>2.4.8 cbf_get_polarization</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4647,9 +4762,10 @@ Either destination pointer may be NULL.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.9">2.4.9 cbf_set_polarization
-</A></h4>
+<div id="2.4.9">
+<h4>2.4.9 cbf_set_polarization</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4670,13 +4786,15 @@ cbf_set_polarization sets the source polarization to the values specified by <i>
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.10">2.4.10 cbf_get_divergence</A></h4>
+<div id="2.4.10">
+<h4>2.4.10 cbf_get_divergence</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_get_divergence (cbf_handle <i>handle</i>, double *<i>div_x_source</i>, double *<i>div_y_source</i>,
-	double *<i>div_x_y_source</i>);
+double *<i>div_x_y_source</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -4695,13 +4813,15 @@ Any of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.11">2.4.11 cbf_set_divergence</A></h4>
+<div id="2.4.11">
+<h4>2.4.11 cbf_set_divergence</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_set_divergence (cbf_handle <i>handle</i>, double <i>div_x_source</i>, double <i>div_y_source</i>,
-	double <i>div_x_y_source</i>);
+double <i>div_x_y_source</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -4718,8 +4838,10 @@ cbf_set_divergence sets the source divergence parameters to the values specified
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.12">2.4.12 cbf_count_elements</A></h4>
+<div id="2.4.12">
+<h4>2.4.12 cbf_count_elements</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4738,29 +4860,31 @@ cbf_count_elements sets *<i>elements</i>  to the number of detector elements.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.13">2.4.13 cbf_get_element_number, cbf_get_element_id</A></h4>
+<div id="2.4.13">
+<h4>2.4.13 cbf_get_element_number, cbf_get_element_id</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_get_element_number(cbf_handle <i>handle</i>, const char <i>*element_id</i>,
-    const char <i>*array_id</i>,
-    const char <i>*array_section_id</i>,
-    unsigned int <i>*element_number</i>);<br />
+const char <i>*array_id</i>,
+const char <i>*array_section_id</i>,
+unsigned int <i>*element_number</i>);<br />
 int cbf_get_element_id (cbf_handle <i>handle</i>, unsigned int <i>element_number</i>, const char **<i>element_id</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
 cbf_get_element_number sets <i>element_number</i> to a number that can be used
-    in other cbf_simple calls to identify the detector element <i>element_id</i>
-    and optionally the specific <i>array_id> and <i>array_section_id</i>.  
+in other cbf_simple calls to identify the detector element <i>element_id</i>
+and optionally the specific <i>array_id> and <i>array_section_id</i>.  
 cbf_get_element_id sets *<i>element_id</i> to point to the ASCII value of the <i>element_number</i>'th &quot;diffrn_data_frame.detector_element_id&quot; entry, counting from 0.
-    The <i>element_number</i> is the ordinal of the detector element in the
-    DIFFRN_DETECTOR_ELEMENT category.  If an <i>array_section_id</a> is
-    specified (i.e. is not NULL), the <i>element_number</i> is the sum of
-    the ordinal of the detector element plus the number of detector elements
-    multiplied by the ordinal of <i>array_section_id</i> for the specified
-    <i>array_id> in the ARRAY_STRUCTURE_LIST_SECTION category.
+The <i>element_number</i> is the ordinal of the detector element in the
+DIFFRN_DETECTOR_ELEMENT category.  If an <i>array_section_id</a> is
+specified (i.e. is not NULL), the <i>element_number</i> is the sum of
+the ordinal of the detector element plus the number of detector elements
+multiplied by the ordinal of <i>array_section_id</i> for the specified
+<i>array_id> in the ARRAY_STRUCTURE_LIST_SECTION category.
 <p>
 If the detector element does not exist, the function returns CBF_NOTFOUND.
 <p>
@@ -4773,19 +4897,20 @@ The <i>element_id</i> must not be modified by the program in any way.
 <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.
 <TR><td valign="top">&nbsp;&nbsp;<i>element_number</i><td valign="top">&nbsp;&nbsp;The number of the detector element counting from 0 by order of appearance in the &quot;diffrn_data_frame&quot; category.
 <TR><td valign="top">&nbsp;&nbsp;<i>element_id</i><td valign="top">&nbsp;&nbsp;Pointer to the destination
-    string for cbf_get_element_id, but the string itself for cbf_get_element_number.
+string for cbf_get_element_id, but the string itself for cbf_get_element_number.
 <TR><td valign="top">&nbsp;&nbsp;<i>array_id</i><td valign="top">&nbsp;&nbsp;The optional array id or NULL.
 <TR><td valign="top">&nbsp;&nbsp;<i>array_section_id</i><td valign="top">&nbsp;&nbsp;The optional
-    array_section_id or NULL.
+array_section_id or NULL.
 </TABLE>
 <p>
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
 
-
-<h4><A NAME="2.4.14">2.4.14 cbf_get_gain</A></h4>
+<div id="2.4.14">
+<h4>2.4.14 cbf_get_gain</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4808,8 +4933,10 @@ Either of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.15">2.4.15 cbf_set_gain</A></h4>
+<div id="2.4.15">
+<h4>2.4.15 cbf_set_gain</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4830,8 +4957,10 @@ cbf_set_gain sets the gain of element number <i>element_number</i> to the values
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.16">2.4.16 cbf_get_overload</A></h4>
+<div id="2.4.16">
+<h4>2.4.16 cbf_get_overload</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4851,8 +4980,10 @@ cbf_get_overload sets *<i>overload</i> to the overload value for element number 
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.17">2.4.17 cbf_set_overload</A></h4>
+<div id="2.4.17">
+<h4>2.4.17 cbf_set_overload</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4872,8 +5003,10 @@ cbf_set_overload sets the overload value of element number <i>element_number</i>
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.18">2.4.18 cbf_get_integration_time</A></h4>
+<div id="2.4.18">
+<h4>2.4.18 cbf_get_integration_time</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4893,8 +5026,10 @@ cbf_get_integration_time sets *<i>time</i> to the integration time in seconds.  
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.19">2.4.19 cbf_set_integration_time</A></h4>
+<div id="2.4.19"
+<h4>2.4.19 cbf_set_integration_time</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4915,8 +5050,10 @@ cbf_set_integration_time sets the integration time in seconds to the value speci
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.20">2.4.20 cbf_get_timestamp</A></h4>
+<div id="2.4.20">
+<h4>2.4.20 cbf_get_timestamp</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4940,8 +5077,10 @@ Either of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.21">2.4.21 cbf_set_timestamp</A></h4>
+<div id="2.4.21">
+<h4>2.4.21 cbf_set_timestamp</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -4968,8 +5107,10 @@ The precision of the new timestamp is specified by the value <i>precision</i> in
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.22">2.4.22 cbf_get_datestamp</A></h4>
+<div id="2.4.22">
+<h4>2.4.22 cbf_get_datestamp</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5000,8 +5141,10 @@ Any of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.23">2.4.23 cbf_set_datestamp</A></h4>
+<div id="2.4.23">
+<h4>2.4.23 cbf_set_datestamp</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5028,8 +5171,10 @@ The precision of the new timestamp is specified by the value <i>precision</i> in
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.24">2.4.24 cbf_set_current_timestamp</A></h4>
+<div id="2.4.24">
+<h4>2.4.24 cbf_set_current_timestamp</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5053,9 +5198,11 @@ The new timestamp will have a precision of 1 second.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.25">2.4.25 cbf_get_image_size, cbf_get_image_size_fs, cbf_get_image_size_sf,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_3d_image_size, cbf_get_3d_image_size_fs, cbf_get_3d_image_size_sf</A></h4>
+<div id="2.4.26">
+<h4>2.4.25 cbf_get_image_size, cbf_get_image_size_fs, cbf_get_image_size_sf,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_3d_image_size, cbf_get_3d_image_size_fs, cbf_get_3d_image_size_s</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5112,11 +5259,13 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.26">2.4.26 cbf_get_image, cbf_get_image_fs, cbf_get_image_sf,<br />
+<div id="2.4.26">
+<h4>2.4.26 cbf_get_image, cbf_get_image_fs, cbf_get_image_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_real_image, cbf_get_real_image_fs, cbf_get_real_image_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_3d_image, cbf_get_3d_image_fs, cbf_get_3d_image_sf,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_real_3d_image, cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf</A></h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_get_real_3d_image, cbf_get_real_3d_image_fs, cbf_get_real_3d_image_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5219,8 +5368,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.27">2.4.27 cbf_set_image, cbf_set_image_fs, cbf_set_image_sf,</a><br />
+<div id="2.4.27">
+<h4>2.4.27 cbf_set_image, cbf_set_image_fs, cbf_set_image_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_real_image, cbf_set_real_image_fs, cbf_set_real_image_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_3d_image, cbf_set_3d_image_fs, cbf_set_3d_image_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_real_3d_image, cbf_set_real_3d_image_fs, cbf_set_real_3d_image_sf</h4>
@@ -5346,62 +5497,64 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-    <h4><A NAME="2.4.28">2.4.28 cbf_count_axis_ancestors,
-        cbf_get_axis_ancestor,
-        cbf_get_axis_depends_on,<br />
-        cbf_get_axis_equipment,
-        cbf_get_axis_equipment_component,<br />
-        cbf_get_axis_offset,<br />
-        cbf_get_axis_rotation,
-        cbf_get_axis_rotation_axis,<br />
-        cbf_get_axis_setting,<br />
-        cbf_get_axis_type,<br />
-        cbf_get_axis_vector </A></h4>
+<div id="2.4.28">
+<h4>2.4.28 cbf_count_axis_ancestors,
+cbf_get_axis_ancestor,
+cbf_get_axis_depends_on,<br />
+cbf_get_axis_equipment,
+cbf_get_axis_equipment_component,<br />
+cbf_get_axis_offset,<br />
+cbf_get_axis_rotation,
+cbf_get_axis_rotation_axis,<br />
+cbf_get_axis_setting,<br />
+cbf_get_axis_type,<br />
+cbf_get_axis_vector</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_count_axis_ancestors (cbf_handle <i>handle</i>,
-    const char *<i>axis_id</i>,
-    unsigned int  *<i>ancestors</i>);<br />
+const char *<i>axis_id</i>,
+unsigned int  *<i>ancestors</i>);<br />
 <p>
 int cbf_get_axis_ancestor (cbf_handle <i>handle</i>,
-    const char *<i>axis_id</i>,
-    const unsigned int <i>ancestor_index</i>,
-    const char * *<i>ancestor</i>);<br />
+const char *<i>axis_id</i>,
+const unsigned int <i>ancestor_index</i>,
+const char * *<i>ancestor</i>);<br />
 <p>
 int cbf_get_axis_depends_on (cbf_handle <i>handle</i>, const char *<i>axis_id</i>,
-    const char * *<i>depends_on</i>);<br />
+const char * *<i>depends_on</i>);<br />
 <p>
 int cbf_get_axis_equipment (cbf_handle <i>handle</i>, const char *<i>axis_id</i>,
-    const char * *<i>equipment</i>);<br />
+const char * *<i>equipment</i>);<br />
 <p>
 int cbf_get_axis_equipment_component (cbf_handle <i>handle</i>,
-    const char *<i>axis_id</i>,
-    const char * *<i>equipment_component</i>);<br />
+const char *<i>axis_id</i>,
+const char * *<i>equipment_component</i>);<br />
 <p>
 int cbf_get_axis_offset (cbf_handle <i>handle</i>, const char *<i>axis_id</i>,
-    double *<i>offset1</i>,
-    double *<i>offset2</i>,
-    double *<i>offset3</i>);<br />
+double *<i>offset1</i>,
+double *<i>offset2</i>,
+double *<i>offset3</i>);<br />
 <p>
 int cbf_get_axis_rotation (cbf_handle <i>handle</i>, const char *<i>axis_id</i>,
-    double *<i>rotation</i>);<br />
+double *<i>rotation</i>);<br />
 <p>
 int cbf_get_axis_rotation_axis (cbf_handle <i>handle</i>,
-    const char *<i>axis_id</i>,
-    const char * *<i>rotation_axis</i>);<br />
+const char *<i>axis_id</i>,
+const char * *<i>rotation_axis</i>);<br />
 <p>
 int cbf_get_axis_setting (cbf_handle <i>handle</i>, unsigned int <i>reserved</i>, const char *<i>axis_id</i>, double *<i>start</i>,
 double *<i>increment</i>);<br />
 <p>
 int cbf_get_axis_type (cbf_handle <i>handle</i>, const char *<i>axis_id</i>,
-    cbf_axis_type *<i>axis_type</i>);<br />
+cbf_axis_type *<i>axis_type</i>);<br />
 <p>
 int cbf_get_axis_vector (cbf_handle <i>handle</i>, const char *<i>axis_id</i>,
-    double *<i>vector1</i>,
-    double *<i>vector2</i>,
-    double *<i>vector3</i>);<br />
+double *<i>vector1</i>,
+double *<i>vector2</i>,
+double *<i>vector3</i>);<br />
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -5415,28 +5568,28 @@ cbf_get_axis_depends_on sets *<i>depends_on</i> to the immediate
 ancestor of <i>axis_id</i> or to &quot;.&quot; if there is no
 such ancestor.
 cbf_get_axis_equipment sets *<i>equipment</i> to the equipment of
-    <i>axis_id</i> or to &quot;.&quot; if there is no
-    such equipment.
+<i>axis_id</i> or to &quot;.&quot; if there is no
+such equipment.
 cbf_get_axis_equipment_component sets *<i>equipment_component</i> to the equipment_component of
-    <i>axis_id</i> or to &quot;.&quot; if there is no
-    such equipment_component.
+<i>axis_id</i> or to &quot;.&quot; if there is no
+such equipment_component.
 <p>
 cbf_get_axis_offset sets *<i>offset1</i>, *<i>offset2</i> and
-    *<i>offset3</i> to the components of the ofset of <i>axis_id</i>.
+*<i>offset3</i> to the components of the ofset of <i>axis_id</i>.
 <p>
 cbf_get_axis_rotation sets <i>rotation</i> to the rotation of
-    <i>axis_id</i> or to 0 if there is no
-    such rotation.
+<i>axis_id</i> or to 0 if there is no
+such rotation.
 cbf_get_axis_rotation_axis sets *<i>rotation_axis</i> to the rotation_axis of
-    <i>axis_id</i> or to &quot;.&quot; if there is no
-    such rotation_axis.
+<i>axis_id</i> or to &quot;.&quot; if there is no
+such rotation_axis.
 <p>
 cbf_get_axis_setting sets *<i>start</i> and *<i>increment</i> to the corresponding values of the axis <i>axis_id</i>.  Any of the destination pointers may be NULL.
 <p>
 cbf_get_axis_type sets <i>axis_type</i> to the type of <i>axis_id</i>.
 <p>
 cbf_get_axis_vector sets *<i>vector1</i>, *<i>vector2</i> and
-    *<i>vector3</i> to the components of the vector of <i>axis_id</i>.
+*<i>vector3</i> to the components of the vector of <i>axis_id</i>.
 <p>
 The parameter <i>reserved</i> is presently unused and should be set to 0.
 <p>
@@ -5467,9 +5620,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.29">2.4.29 cbf_set_axis_setting
-</A></h4>
+<div id="2.4.29">
+<h4>2.4.29 cbf_set_axis_setting</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5494,9 +5648,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.30">2.4.30 cbf_construct_goniometer
-</A></h4>
+<div id="2.4.30">
+<h4>2.4.30 cbf_construct_goniometer</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5515,8 +5670,10 @@ cbf_construct_goniometer constructs a goniometer object using the description in
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.31">2.4.31 cbf_free_goniometer</A></h4>
+<div id="2.4.31">
+<h4>2.4.31 cbf_free_goniometer</A></h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5534,9 +5691,10 @@ cbf_free_goniometer destroys the goniometer object specified by <i>goniometer</i
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.32">2.4.32 cbf_get_rotation_axis
-</A></h4>
+<div id="2.4.32">
+<h4>2.4.32 cbf_get_rotation_axis</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5563,9 +5721,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.33">2.4.33 cbf_get_rotation_range
-</A></h4>
+<div id="2.4.33">
+<h4>2.4.33 cbf_get_rotation_range</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5591,9 +5750,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.34">2.4.34 cbf_rotate_vector
-</A></h4>
+<div id="2.4.34">
+<h4>2.4.34 cbf_rotate_vector</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5626,9 +5786,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.35">2.4.35 cbf_get_reciprocal
-</A></h4>
+<div id="2.4.35">
+<h4>2.4.35 cbf_get_reciprocal</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5664,9 +5825,10 @@ The parameter <i>reserved</i> is presently unused and should be set to 0.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.36">2.4.36 cbf_construct_detector, cbf_construct_reference_detector, cbf_require_reference_detector
-</A></h4>
+<div id="2.4.36">
+<h4>2.4.36 cbf_construct_detector, cbf_construct_reference_detector, cbf_require_reference_detector</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5697,8 +5859,10 @@ creations of missing intermediate categories needed to construct a detector obje
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.37">2.4.37 cbf_free_detector</A></h4>
+<div id="2.4.37">
+<h4>2.4.37 cbf_free_detector</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5716,10 +5880,10 @@ cbf_free_detector destroys the detector object specified by <i>detector</i> and 
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.4.38">2.4.38 cbf_construct_positioner, cbf_construct_reference_positioner,
-</A></h4>
+<div id="2.4.38">
+<h4>2.4.38 cbf_construct_positioner, cbf_construct_reference_positioner</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5747,8 +5911,10 @@ reference settings of the axes.
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.39">2.4.39 cbf_free_positioner</A></h4>
+<div id="2.4.39">
+<h4>2.4.39 cbf_free_positioner</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5766,14 +5932,12 @@ cbf_free_positioner destroys the positioner object specified by <i>positioner</i
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-
-
-<h4><A NAME="2.4.40">2.4.40 cbf_get_beam_center, cbf_get_beam_center_fs, cbf_get_beam_center_sf,<br />
+<div id="2.4.40">
+<h4>2.4.40 cbf_get_beam_center, cbf_get_beam_center_fs, cbf_get_beam_center_sf,<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_beam_center, cbf_set_beam_center_fs, cbf_set_beam_center_sf,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_reference_beam_center, cbf_set_reference_beam_center_fs, cbf_set_reference_beam_center_sf
-</A></h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbf_set_reference_beam_center, cbf_set_reference_beam_center_fs, cbf_set_reference_beam_center_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5848,8 +6012,10 @@ in millimetres and the value of _diffrn_detector_element.reference_units will be
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.41">2.4.41 cbf_get_detector_distance</A></h4>
+<div id="2.4.41">
+<h4>2.4.41 cbf_get_detector_distance</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5868,8 +6034,10 @@ cbf_get_detector_distance sets *<i>distance</i> to the nearest distance from the
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.42">2.4.42 cbf_get_detector_normal</A></h4>
+<div id="2.4.42">
+<h4>2.4.42 cbf_get_detector_normal</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5893,9 +6061,11 @@ Any of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.43">2.4.43 cbf_get_detector_axis_slow, cbf_get_detector_axis_fast, cbf_get_detector_axes, cbf_get_detector_axes_fs, cbf_get_detector_axes_sf,
-    cbf_get_detector_surface_axes</A></h4>
+<div id="2.4.43">
+<h4>2.4.43 cbf_get_detector_axis_slow, cbf_get_detector_axis_fast, cbf_get_detector_axes, cbf_get_detector_axes_fs, cbf_get_detector_axes_sf,
+cbf_get_detector_surface_axes</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -5913,8 +6083,8 @@ int cbf_get_detector_axes_sf (cbf_detector <i>detector</i>, double *<i>slowaxis1
 double *<i>slowaxis3</i>, double *<i>fastaxis1</i>, double *<i>fastaxis2</i>,
 double *<i>fastaxis3</i>);<br />
 int cbf_get_detector_surface_axes(cbf_detector <i>detector</i>,
-    const char * * <i>axis_id1</i>,
-    const char * * <i>axis_id2</i>);<br />
+const char * * <i>axis_id1</i>,
+const char * * <i>axis_id2</i>);<br />
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -5949,18 +6119,19 @@ Any of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.44">2.4.44 cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs, cbf_get_pixel_coordinates_sf
-</A></h4>
+<div id="2.4.44">
+<h4>2.4.44 cbf_get_pixel_coordinates, cbf_get_pixel_coordinates_fs, cbf_get_pixel_coordinates_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_get_pixel_coordinates (cbf_detector <I>detector</I>, double <i>indexslow</i>, double <i>indexfast</i>, double *<i>coordinate1</i>,
-	double *<i>coordinate2</i>, double *<i>coordinate3</i>);<br />
+double *<i>coordinate2</i>, double *<i>coordinate3</i>);<br />
 int cbf_get_pixel_coordinates_fs (cbf_detector <I>detector</I>, double <i>indexfast</i>, double <i>indexslow</i>, double *<i>coordinate1</i>,
-	double *<i>coordinate2</i>, double *<i>coordinate3</i>);<br />
+double *<i>coordinate2</i>, double *<i>coordinate3</i>);<br />
 int cbf_get_pixel_coordinates_sf (cbf_detector <I>detector</I>, double <i>indexslow</i>, double <i>indexfast</i>, double *<i>coordinate1</i>,
-	double *<i>coordinate2</i>, double *<i>coordinate3</i>);
+double *<i>coordinate2</i>, double *<i>coordinate3</i>);
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -5984,9 +6155,10 @@ Any of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.45">2.4.45 cbf_get_pixel_normal, cbf_get_pixel_normal_fs, cbf_get_pixel_normal_sf
-</A></h4>
+<div id="2.4.45">
+<h4>2.4.45 cbf_get_pixel_normal, cbf_get_pixel_normal_fs, cbf_get_pixel_normal_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6018,9 +6190,10 @@ Any of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.46">2.4.46 cbf_get_pixel_area, cbf_get_pixel_area_fs, cbf_get_pixel_area_sf
-</A></h4>
+<div id="2.4.46">
+<h4>2.4.46 cbf_get_pixel_area, cbf_get_pixel_area_fs, cbf_get_pixel_area_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6052,9 +6225,10 @@ Either of the destination pointers may be NULL.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.4.47">2.4.47 cbf_get_pixel_size, cbf_get_pixel_size_fs, cbf_get_pixel_size_sf</A></h4>
+<div id="2.4.47">
+<h4>2.4.47 cbf_get_pixel_size, cbf_get_pixel_size_fs, cbf_get_pixel_size_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6092,10 +6266,10 @@ cbf_get_pixel_size and cbf_get_pixel_size_fs and the slowest for cbf_get_pixel_s
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.4.48">2.4.48 cbf_set_pixel_size, cbf_set_pixel_size_fs, cbf_set_pixel_size_sf</A></h4>
+<div id="2.4.48">
+<h4>2.4.48 cbf_set_pixel_size, cbf_set_pixel_size_fs, cbf_set_pixel_size_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6139,10 +6313,10 @@ If the pixel size is not given explcitly in the &quot;array_element_size categor
 <b>RETURN VALUE</b>
 
 <p>Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.4.49">2.4.49 cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_fs, cbf_get_inferred_pixel_size_sf
-</A></h4>
+<div id="2.4.49">
+<h4>2.4.49 cbf_get_inferred_pixel_size, cbf_get_inferred_pixel_size_fs, cbf_get_inferred_pixel_size_sf</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6179,15 +6353,15 @@ and indicates the fast axis in a call to cbf_get_inferred_pixel_size_fs.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.4.50">2.4.50 cbf_get_unit_cell
-</A></h4>
+<div id="2.4.50">
+<h4>2.4.50 cbf_get_unit_cell</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_get_unit_cell (cbf_handle <i>handle</i>,
-    double <i>cell</i>[6], double <i>cell_esd</i>[6] );
+double <i>cell</i>[6], double <i>cell_esd</i>[6] );
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -6229,19 +6403,20 @@ missing values if the &quot;cell&quot; category exists.
 <A HREF="#2.4.53">2.4.53 cbf_set_reciprocal_cell<br />
 <A HREF="#2.4.54">2.4.54 cbf_compute_cell_volume<br />
 <A HREF="#2.4.55">2.4.55 cbf_compute_reciprocal_cell<br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.51">2.4.51 cbf_set_unit_cell
-</A></h4>
+<div id="2.4.51">
+<h4>2.4.51 cbf_set_unit_cell</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_set_unit_cell (cbf_handle <i>handle</i>,
-    double <i>cell</i>[6], double <i>cell_esd</i>[6] );
+double <i>cell</i>[6], double <i>cell_esd</i>[6] );
 <p>
 <b>DESCRIPTION</b>
 <p>
 cbf_set_unit_cell sets the cell parameters to the double values given in <i>cell</i>[0:2]
- for the cell edge
+for the cell edge
 lengths a, b and c in &Aring;ngstroms, the double values given in <i>cell</i>[3:5]
 for the cell angles &alpha;, &beta; and &gamma; in degrees, the double values given in <i>cell_esd</i>[0:2] for
 the estimated strandard deviations of the cell edge lengths a, b and c in
@@ -6279,15 +6454,15 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.4.53">2.4.53 cbf_set_reciprocal_cell<br />
 <A HREF="#2.4.54">2.4.54 cbf_compute_cell_volume<br />
 <A HREF="#2.4.55">2.4.55 cbf_compute_reciprocal_cell<br />
+</div>
 <p><hr /><P>
-<b>SEE ALSO</b>
-<h4><A NAME="2.4.52">2.4.52 cbf_get_reciprocal_cell
-</A></h4>
+<div id="2.4.52">
+<h4>2.4.52 cbf_get_reciprocal_cell</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_get_reciprocal_cell (cbf_handle <i>handle</i>,
-    double <i>cell</i>[6], double <i>cell_esd</i>[6] );
+double <i>cell</i>[6], double <i>cell_esd</i>[6] );
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -6296,7 +6471,7 @@ reciprocal cell edge
 lengths a<sup>*</sup>, b<sup>*</sup> and c<sup>*</sup> in &Aring;ngstroms<sup>-1</sup>, <i>cell</i>[3:5] to the double values
 of the reciprocal cell angles &alpha;<sup>*</sup>, &beta;<sup>*</sup> and &gamma;<sup>*</sup> in degrees,  <i>cell_esd</i>[0:2] to the double values of
 the estimated strandard deviations of the reciprocal cell edge lengths a<sup>*</sup>,
- b<sup>*</sup> and c<sup>*</sup> in
+b<sup>*</sup> and c<sup>*</sup> in
 &Aring;ngstroms<sup>-1</sup>, <i>cell_esd</i>[3:5] to the double values of the estimated
 standard deviations of the the reciprocal cell angles &alpha;<sup>*</sup>, &beta;<sup>*</sup> and &gamma;<sup>*</sup> in degrees.
 <p>The values returned are retrieved from the first row of the &quot;cell&quot;
@@ -6331,14 +6506,15 @@ missing values if the &quot;cell&quot; category exists.
 <A HREF="#2.4.53">2.4.53 cbf_set_reciprocal_cell<br />
 <A HREF="#2.4.54">2.4.54 cbf_compute_cell_volume<br />
 <A HREF="#2.4.55">2.4.55 cbf_compute_reciprocal_cell<br />
+</div>
 <p><hr /><P>
-<h4><A NAME="2.4.53">2.4.53 cbf_set_reciprocal_cell
-</A></h4>
+<div id="2.4.53">
+<h4>2.4.53 cbf_set_reciprocal_cell</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_set_reciprocal_cell (cbf_handle <i>handle</i>,
-    double <i>cell</i>[6], double <i>cell_esd</i>[6] );
+double <i>cell</i>[6], double <i>cell_esd</i>[6] );
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -6350,10 +6526,10 @@ for the reciprocal cell angles
 &alpha;<sup>*</sup>, &beta;<sup>*</sup> and &gamma;<sup>*</sup>
 in degrees, the double values given in <i>cell_esd</i>[0:2] for
 the estimated strandard deviations of the reciprocal cell edge lengths
- a<sup>*</sup>, b<sup>*</sup> and c<sup>*</sup> in
+a<sup>*</sup>, b<sup>*</sup> and c<sup>*</sup> in
 &Aring;ngstroms, and the double values given in <i>cell_esd</i>[3:5] for the estimated
 standard deviations of the reciprocal cell angles
- &alpha;<sup>*</sup>, &beta;<sup>*</sup> and &gamma;<sup>*</sup>
+&alpha;<sup>*</sup>, &beta;<sup>*</sup> and &gamma;<sup>*</sup>
 in degrees.
 <p>The values are placed in the first row of the &quot;cell&quot;
 category.  If no value has been given for "_cell.entry_id", it is set to
@@ -6387,10 +6563,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.4.52">2.4.52 cbf_get_reciprocal_cell<br />
 <A HREF="#2.4.54">2.4.54 cbf_compute_cell_volume<br />
 <A HREF="#2.4.55">2.4.55 cbf_compute_reciprocal_cell<br />
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.4.54">2.4.54 cbf_compute_cell_volume
-</A></h4>
+<div id="2.4.54">
+<h4>2.4.54 cbf_compute_cell_volume</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6402,7 +6578,7 @@ int cbf_compute_cell_volume ( double <i>cell</i>[6], double *<i>volume</i> );
 cbf_compute_cell_volume sets *<i>volume</i> to point to the volume of the unit cell
 computed from the double values in <i>cell</i>[0:2]
 for the cell edge lengths a, b and c in &Aring;ngstroms and
- the double values given in <i>cell</i>[3:5]
+the double values given in <i>cell</i>[3:5]
 for the cell angles &alpha;, &beta; and &gamma; in degrees.
 <p>
 <b>ARGUMENTS</b><br />
@@ -6424,17 +6600,14 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.4.52">2.4.52 cbf_get_reciprocal_cell<br />
 <A HREF="#2.4.53">2.4.53 cbf_set_reciprocal_cell<br />
 <A HREF="#2.4.55">2.4.55 cbf_compute_reciprocal_cell<br />
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.4.55">2.4.55 cbf_compute_reciprocal_cell
-</A></h4>
+<div id="2.4.55">
+<h4>2.4.55 cbf_compute_reciprocal_cell</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_compute_reciprocal_cell ( double <i>cell</i>[6], double <i>rcell</i>[6] );
-
-
 <p>
 <b>DESCRIPTION</b>
 <p>
@@ -6468,12 +6641,10 @@ Returns an error code on failure or 0 for success.
 <A HREF="#2.4.52">2.4.52 cbf_get_reciprocal_cell<br />
 <A HREF="#2.4.53">2.4.53 cbf_set_reciprocal_cell<br />
 <A HREF="#2.4.54">2.4.54 cbf_compute_cell_volume<br />
+</div>
 <p><hr /><P>
-
-
-
-<h4><A NAME="2.4.56">2.4.56 cbf_get_orientation_matrix, cbf_set_orientation_matrix
-</A></h4>
+<div id="2.4.56">
+<h4>2.4.56 cbf_get_orientation_matrix, cbf_set_orientation_matrix</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
@@ -6504,18 +6675,15 @@ of 9 doubles giving the orientation matrix parameters.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
-
-
-
-
-<h4><A NAME="2.4.57">2.4.57 cbf_get_bin_sizes, cbf_set_bin_sizes
-</A></h4>
+<div id="2.4.57">
+<h4>2.4.57 cbf_get_bin_sizes, cbf_set_bin_sizes</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_simple.h"
 <p>
 int cbf_get_bin_sizes(cbf_handle <i>handle</i>, unsigned int <i>element_number</i>, double * <i>slowbinsize</i>,
- double * <i>fastbinsize</i>); <br />
+double * <i>fastbinsize</i>); <br />
 int cbf_set_bin_sizes(cbf_handle <i>handle</i>, unsigned int element_number, double <i>slowbinsize_in</i>,double <i>fastbinsize_in</i>);
 <p>
 <b>DESCRIPTION</b>
@@ -6553,198 +6721,256 @@ the fastest rate.
 <b>RETURN VALUE</b>
 <p>
 Returns an error code on failure or 0 for success.
+</div>
 <p><hr /><P>
+<div id="2.4.58">
+<h4>2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise, cbf_get_axis_reference_poise</h4>
+<p><b>PROTOTYPE</b>
+<p>#include "cbf_simple.h"
+<p>
+int cbf_get_axis_poise(cbf_handle <i>handle</i>, double <i>ratio</i>,
+double * <i>vector1</i>, double * <i>vector2</i>, double * <i>vector3</i>,
+double * <i>offset1</i>, double * <i>offset2</i>, double * <i>offset3</i>,
+double * <i>angle</i>,
+const char * <i>axis_id</i>,
+const char * <i>frame_id</i>);<br />
+int cbf_get_goniometer_poise(cbf_goniometer <i>goniometer</i>, double <i>ratio</i>,
+double * <i>vector1</i>, double * <i>vector2</i>, double * <i>vector3</i>,
+double * <i>offset1</i>, double * <i>offset2</i>, double * <i>offset3</i>,
+double * <i>angle</i>);<br />
+int cbf_get_axis_reference_poise(cbf_handle <i>handle</i>,
+double * <i>vector1</i>, double * <i>vector2</i>, double * <i>vector3</i>,
+double * <i>offset1</i>, double * <i>offset2</i>, double * <i>offset3</i>,
+const char * <i>axis_id</i>);
 
-<h4><A NAME="2.4.58">2.4.58 cbf_get_axis_poise, cbf_get_goniometer_poise, cbf_get_axis_reference_poise
-    </A></h4>
-    <p><b>PROTOTYPE</b>
-    <p>#include "cbf_simple.h"
-    <p>
-    int cbf_get_axis_poise(cbf_handle <i>handle</i>, double <i>ratio</i>,
-    double * <i>vector1</i>, double * <i>vector2</i>, double * <i>vector3</i>,
-    double * <i>offset1</i>, double * <i>offset2</i>, double * <i>offset3</i>,
-    double * <i>angle</i>,
-    const char * <i>axis_id</i>,
-    const char * <i>frame_id</i>);<br />
-    int cbf_get_goniometer_poise(cbf_goniometer <i>goniometer</i>, double <i>ratio</i>,
-    double * <i>vector1</i>, double * <i>vector2</i>, double * <i>vector3</i>,
-    double * <i>offset1</i>, double * <i>offset2</i>, double * <i>offset3</i>,
-    double * <i>angle</i>);<br />
-    int cbf_get_axis_reference_poise(cbf_handle <i>handle</i>,
-    double * <i>vector1</i>, double * <i>vector2</i>, double * <i>vector3</i>,
-    double * <i>offset1</i>, double * <i>offset2</i>, double * <i>offset3</i>,
-    const char * <i>axis_id</i>);
+<p>
+<b>DESCRIPTION</b>
+<p>
+cbf_get_axis_poise sets <i>vector1</i>, <i>vector2</i>, <i>vector3</i> to
+point to the components of the axis vector for axis <i>axis_id</i>,
+<i>offset1</i>, <i>offset2</i>, <i>offset3</i> to point to the
+components of the axis base offset vector for axis <i>axis_id</i>, and
+<i>angle</i> to point to the angle of rotation of axis <i>axis_id</i>
+after application of the axis settings for frame <i>frame_id</i>, using
+<i>ratio</i>, a value between 0 and 1, indicating how far into the internal
+motion in the frame to go.  If <i>frame_id</i> is the string
+&quot;.&quot;, the first frame found is used.  If there is more than one
+frame, which frame will be found is indeterminate.  If <i>frame_id</i>
+is NULL, the overall setting for the scan are used, rather than those
+for any particular frame.  The vector and offset reported are the
+reference vector and offset of the axis <i>axis_id</i> transformed by
+application of all motions of the axes on which <i>axis_id</i> depends.
+<p>
+cbf_get_goniometer_poise <i>vector1</i>, <i>vector2</i>, <i>vector3</i> to
+point to the components of the axis vector for the goniometer axis,
+<i>offset1</i>, <i>offset2</i>, <i>offset3</i> to point to the
+components of the axis base offset vector for the goniometer axis, and
+<i>angle</i> to point to the angle of rotation of the goniometer axis
+after application of <b>all</b> axis settings in the <i>goniometer</i>
+deriving the vector, offset and angle from the resulting matrix.
+Calculation of the vector is indeterminate if the angle is zero.
+<p>
+cbf_get_axis_reference_poise sets <i>vector1</i>, <i>vector2</i>, <i>vector3</i> to
+point to the components of the axis vector for axis <i>axis_id</i>,
+<i>offset1</i>, <i>offset2</i>, <i>offset3</i> to point to the
+components of the axis base offset vector for axis <i>axis_id</i>
+unmodified by axis rotations.
 
-    <p>
-    <b>DESCRIPTION</b>
-    <p>
-    cbf_get_axis_poise sets <i>vector1</i>, <i>vector2</i>, <i>vector3</i> to
-    point to the components of the axis vector for axis <i>axis_id</i>,
-    <i>offset1</i>, <i>offset2</i>, <i>offset3</i> to point to the
-    components of the axis base offset vector for axis <i>axis_id</i>, and
-    <i>angle</i> to point to the angle of rotation of axis <i>axis_id</i>
-    after application of the axis settings for frame <i>frame_id</i>, using
-    <i>ratio</i>, a value between 0 and 1, indicating how far into the internal
-    motion in the frame to go.  If <i>frame_id</i> is the string
-    &quot;.&quot;, the first frame found is used.  If there is more than one
-    frame, which frame will be found is indeterminate.  If <i>frame_id</i>
-    is NULL, the overall setting for the scan are used, rather than those
-    for any particular frame.  The vector and offset reported are the
-    reference vector and offset of the axis <i>axis_id</i> transformed by
-    application of all motions of the axes on which <i>axis_id</i> depends.
-    <p>
-    cbf_get_goniometer_poise <i>vector1</i>, <i>vector2</i>, <i>vector3</i> to
-    point to the components of the axis vector for the goniometer axis,
-    <i>offset1</i>, <i>offset2</i>, <i>offset3</i> to point to the
-    components of the axis base offset vector for the goniometer axis, and
-    <i>angle</i> to point to the angle of rotation of the goniometer axis
-    after application of <b>all</b> axis settings in the <i>goniometer</i>
-    deriving the vector, offset and angle from the resulting matrix.
-    Calculation of the vector is indeterminate if the angle is zero.
-    <p>
-    cbf_get_axis_reference_poise sets <i>vector1</i>, <i>vector2</i>, <i>vector3</i> to
-    point to the components of the axis vector for axis <i>axis_id</i>,
-    <i>offset1</i>, <i>offset2</i>, <i>offset3</i> to point to the
-    components of the axis base offset vector for axis <i>axis_id</i>
-    unmodified by axis rotations.
-    
-    
-    Any of the pointers may be specified as NULL.
-    
-    <P>
-    <b>ARGUMENTS</b><br />
-    <TABLE>
-        <TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>ratio</i><td valign="top">&nbsp;&nbsp;A number between 0 and 1 indication how far into the frame to go</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>vector1</i><td valign="top">&nbsp;&nbsp;Pointer to the first component of the axis vector</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>vector2</i><td valign="top">&nbsp;&nbsp;Pointer to the second component of the axis vector</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>vector3</i><td valign="top">&nbsp;&nbsp;Pointer to the third component of the axis vector</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>offset1</i><td valign="top">&nbsp;&nbsp;Pointer to the first component of the axis offset</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>offset2</i><td valign="top">&nbsp;&nbsp;Pointer to the second component of the axis offset</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>offset3</i><td valign="top">&nbsp;&nbsp;Pointer to the third component of the axis offset</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>angle</i><td valign="top">&nbsp;&nbsp;Pointer to the rotation angle</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>axis_id</i><td valign="top">&nbsp;&nbsp;The specified axis</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>frame_id</i><td valign="top">&nbsp;&nbsp;The specified frame</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>positioner</i><td valign="top">&nbsp;&nbsp;CBF goniometer</TR>
-    </TABLE>
-    <p>
-    <b>RETURN VALUE</b>
-    <p>
-    Returns an error code on failure or 0 for success.
-    <p><hr /><P>
 
-<h4><a NAME="#2.4.59">2.4.59 cbf_airy_disk, cbf_airy_disk_volume
-</a></h4>
+Any of the pointers may be specified as NULL.
+
+<P>
+<b>ARGUMENTS</b><br />
+<TABLE>
+<TR><td valign="top">&nbsp;&nbsp;<i>handle</i><td valign="top">&nbsp;&nbsp;CBF handle.</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>ratio</i><td valign="top">&nbsp;&nbsp;A number between 0 and 1 indication how far into the frame to go</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>vector1</i><td valign="top">&nbsp;&nbsp;Pointer to the first component of the axis vector</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>vector2</i><td valign="top">&nbsp;&nbsp;Pointer to the second component of the axis vector</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>vector3</i><td valign="top">&nbsp;&nbsp;Pointer to the third component of the axis vector</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>offset1</i><td valign="top">&nbsp;&nbsp;Pointer to the first component of the axis offset</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>offset2</i><td valign="top">&nbsp;&nbsp;Pointer to the second component of the axis offset</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>offset3</i><td valign="top">&nbsp;&nbsp;Pointer to the third component of the axis offset</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>angle</i><td valign="top">&nbsp;&nbsp;Pointer to the rotation angle</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>axis_id</i><td valign="top">&nbsp;&nbsp;The specified axis</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>frame_id</i><td valign="top">&nbsp;&nbsp;The specified frame</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>positioner</i><td valign="top">&nbsp;&nbsp;CBF goniometer</TR>
+</TABLE>
+<p>
+<b>RETURN VALUE</b>
+<p>
+Returns an error code on failure or 0 for success.
+</div>
+<p><hr /><P>
+<div id="2.4.59">
+<h4>2.4.59 cbf_airy_disk, cbf_airy_disk_volume</h4>
 <p><b>PROTOTYPE</b>
 <p>#include "cbf_airy_disk.h"
-    <p>
-    int cbf_airy_disk(double <i>x</i>, double <i>y</i>,
-    double <i>cenx</i>, double <i>ceny</i>, double <i>volume</i>, double <i>fwhm</i>,
-    double * <i>value</i>);<br />
-    int cbf_airy_disk_volume(double <i>xlo</i>, double <i>ylo</i>,
-    double <i>xhi</i>, double <i>yhi</i>,
-    double <i>cenx</i>, double <i>ceny</i>,
-    double <i>volume</i>, double <i>fwhm</i>,
-    double * <i>volumeout</i>);
-
-    <p>
-    <b>DESCRIPTION</b>
-    <p>
-    cbf_airy_disk sets <i>value</i> to point to the value taken at (<i>x</i>,<i>y</i>)
-    of an truncated Airy function approximation to a point-spread function of
-    total included volume <i>volume</i> and full width at half max <i>fwhm</i>
-    centered on (<i>cenx</i>, <i>ceny</i>).
-    <p>
-    cbf_airy_disk_volume sets <volumeout</a> to point to the integral in the box
-        with diagonal corners (<i>xlo</i>, <i>ylo</i>) and
-        of (<i>xhi</i>, <i>yhi</i>) of a truncated Airy function approximation
-        to a point-spread function of total included volume <i>volume</i> and
-        full width at half max <i>fwhm</i>
-        centered on (<i>cenx</i>, <i>ceny</i>).
-        <p>
-    The Airy function used is an 8-digit approximation up to the first minimum,
-    after which it is forced to zero, so it cannot be used to simulate diffraction
-    rings.
-    
-    <P>
-    <b>ARGUMENTS</b><br />
-    <TABLE>
-        <TR><td valign="top">&nbsp;&nbsp;<i>x</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
-          a point in the real plane</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>y</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
-            a point in the real plane</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>xlo</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
-            a point in the real plane marking the left bound of integration</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>ylo</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
-            a point in the real plane marking the bottom bound of integration</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>xhi</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
-            a point in the real plane marking the right bound of integration</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>yhi</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
-            a point in the real plane marking the top bound of integration</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>cenx</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
-            a point in the real plane marking the PSF center</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>ceny</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
-            a point in the real plane marking the PSF center</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>volume</i><td valign="top">&nbsp;&nbsp;the total volume of the
-            PSF</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>fwhm</i><td valign="top">&nbsp;&nbsp;the full-width at half
-            max of the PSF</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>value</i><td valign="top">&nbsp;&nbsp;Pointer to the value of
-            the Airy function</TR>
-        <TR><td valign="top">&nbsp;&nbsp;<i>volumeout</i><td valign="top">&nbsp;&nbsp;Pointer to the value
-            of the integral/TR>
-    </TABLE>
-    <p>
-    <b>RETURN VALUE</b>
-    <p>
-    Returns an error code on failure or 0 for success.
-    <p><hr /><P>
-
-
-<h3><A NAME="2.5">2.5   F90 function interfaces</a></h3>
-<P>At the suggestion of W. Kabsch, Fortran 90/95 routines have been added
-to CBFlib.  As of this writing code has been written to allow the reading
-of CBF_BYTE_OFFSET, CBF_PACKED and CBF_PACKED_V2 binary images.  This code
-has been gather into FCBlib (Fortran Crystallographic Binary library) as
-lib/libfcb.
-
-<P>In general, most of the FCBlib functions return 0 for normal completion and a non-zero
-value in case of an error.  In a few cases, such as FCB_ATOL_WCNT and FCB_NBLEN_ARRAY
-in order to conform to the conventions for commonly used C-equivalent functions, 
-the function return is the value being computed.
 <p>
+int cbf_airy_disk(double <i>x</i>, double <i>y</i>,
+double <i>cenx</i>, double <i>ceny</i>, double <i>volume</i>, double <i>fwhm</i>,
+double * <i>value</i>);<br />
+int cbf_airy_disk_volume(double <i>xlo</i>, double <i>ylo</i>,
+double <i>xhi</i>, double <i>yhi</i>,
+double <i>cenx</i>, double <i>ceny</i>,
+double <i>volume</i>, double <i>fwhm</i>,
+double * <i>volumeout</i>);
+
+<p>
+<b>DESCRIPTION</b>
+<p>
+cbf_airy_disk sets <i>value</i> to point to the value taken at (<i>x</i>,<i>y</i>)
+of an truncated Airy function approximation to a point-spread function of
+total included volume <i>volume</i> and full width at half max <i>fwhm</i>
+centered on (<i>cenx</i>, <i>ceny</i>).
+<p>
+cbf_airy_disk_volume sets <volumeout</a> to point to the integral in the box
+with diagonal corners (<i>xlo</i>, <i>ylo</i>) and
+of (<i>xhi</i>, <i>yhi</i>) of a truncated Airy function approximation
+to a point-spread function of total included volume <i>volume</i> and
+full width at half max <i>fwhm</i>
+centered on (<i>cenx</i>, <i>ceny</i>).
+<p>
+The Airy function used is an 8-digit approximation up to the first minimum,
+after which it is forced to zero, so it cannot be used to simulate diffraction
+rings.
+
+<P>
+<b>ARGUMENTS</b><br />
+<TABLE>
+<TR><td valign="top">&nbsp;&nbsp;<i>x</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
+  a point in the real plane</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>y</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
+    a point in the real plane</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>xlo</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
+    a point in the real plane marking the left bound of integration</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>ylo</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
+    a point in the real plane marking the bottom bound of integration</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>xhi</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
+    a point in the real plane marking the right bound of integration</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>yhi</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
+    a point in the real plane marking the top bound of integration</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>cenx</i><td valign="top">&nbsp;&nbsp;the x-coordinate of
+    a point in the real plane marking the PSF center</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>ceny</i><td valign="top">&nbsp;&nbsp;the y-coordinate of
+    a point in the real plane marking the PSF center</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>volume</i><td valign="top">&nbsp;&nbsp;the total volume of the
+    PSF</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>fwhm</i><td valign="top">&nbsp;&nbsp;the full-width at half
+    max of the PSF</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>value</i><td valign="top">&nbsp;&nbsp;Pointer to the value of
+    the Airy function</TR>
+<TR><td valign="top">&nbsp;&nbsp;<i>volumeout</i><td valign="top">&nbsp;&nbsp;Pointer to the value
+    of the integral/TR>
+</TABLE>
+<p>
+<b>RETURN VALUE</b>
+<p>
+Returns an error code on failure or 0 for success.
+</div>
+<p><hr /><P>
+
+<div id="2.5">
+<h3>2.5   F90, Python and Java function interfaces</h3>
+<P>
+CBFlib directly supports C and C++ applications.  Various wrappers and interfaces
+have been added over the years to also support Fortan, Python and Java applications.
+<p>
+A small number of pure Fortran-90 were added to CBFlib in 2007 at the request of
+W. Kabsch to assist in the support of XDS for reading CBF files.
+As of this writing code has been written to allow the reading
+of CBF_BYTE_OFFSET, CBF_PACKED and CBF_PACKED_V2 binary images.  This code
+has been gathered into into FCBlib (Fortran Crystallographic Binary library) as
+lib/libfcb.
+<p>
+In late 2005 Jonathan P. Wright of ESRF used SWIG to add a Python wrapper to
+the CBFlib providing access to all the C CBFlib functions as Python functions.
+At that time Python 2.7 was supported,  As of this time, support for Python 2
+has been dropped from CBFlib, and the SWIG wrapper in the pycbf folder now
+supports Python 3.  This kit uses the literate programming package nuweb 
+\cite{nuweb2024} to extract the C function signatures from the CBFlib manual and generate
+the wrapper for Python.
+<p>
+In 2009, Peter Chang of Diamond Light Source contributed a SWIG wrapper for
+CBFlib to allow Java applications to access most C CBFlib functions, 
+&quot;An initial set of Java wrapper classes for CBFlib-0.8.0 has been
+implemented using SWIG. A pair of example programs (testcbf.c and
+testcbf.java) are included that show the similarities and differences
+of using CBFlib in C and Java.
+<p>
+&quot;This has been tested using Red Hat EL 4.7 WS for i568 and Red Hat EL
+5.3 WS for x86_64 with Sun's JDK. It was also tested using Microsoft
+Windows XP with MinGW and MSYS.
+<p>
+&quot;In addition to the static methods in org.iucr.cbflib.cbf, six helper
+classes are included: four wrapper classes for C pointers that point
+to size_t (sizetP), int (intP), unsigned int (uintP) and double
+(doubleP); two wrapper classes for C arrays that hold int (intArray)
+and double (doubleArray). Also, some helper functions for a pointer to
+pointer to char (charPP_*) aid the output of strings, and pointer
+casts to void (int_void and double_void). CBF_NODETYPE is supported
+too as mapped to ints. Finally, a constructor and a destructor has
+been added to the cbf_handle_struct class.&quot;
+<p>
+He updated the kit in 2020, &quot;Switched to faster data access using Java NIO direct buffers so the
+methods cbf_get_realarray and cbf_get_intarray have changed to use NIO
+byte buffers instead of arrays. The array wrapper classes have been
+removed.
+<p>
+&quot;Tests have been extended to demonstrate the reading of data.&quot;
+<p>
+<hr />
+<P>
+In general, most of the FCBlib functions return 0 for normal completion and a non-zero
+value in case of an error.  In a few cases, such as <A HREF="#2.5.1">FCB_ATOL_WCNT<A>
+and <A HREF="#2.5.4">FCB_NBLEN_ARRAY</A>,
+in order to conform to the conventions for commonly used C-equivalent functions,
+the function return is the value being computed.
+<P>
 For each function, an interface is given to be included in the declarations of your
-Fortran 90/95 code.  Some functions in FCBlIB are not intended for external
+Fortran 90/95 or later code.  Some functions in FCBlib are not intended for external
 use and are subject to change:  FCB_UPDATE_JPA_POINTERS_I2,
 FCB_UPDATE_JPA_POINTERS_I4, FCB_UPDATE_JPA_POINTERS_3D_I2,
 FCB_UPDATE_JPA_POINTERS_3D_I4 and CNT2PIX.  These
-names should not be used for user routines.
-<P>
-The functions involving reading of a CBF have been done strictly in Fortran
+names should not be used for user routines. See the source
+code of cbf_packed.c and fcb_packed.f90.
+<p>
+The functions involving reading of a CBF in libfcb have been done strictly in Fortran
 without the use of C code.  This has required some compromises and the use
-of direct access I/O.   Rather than 
-putting the buffer and its control variables into COMMON these are passed 
-as local arguments to make the routines inherently 'threadsafe' in a parallel 
-programming environment.  Note also, that a reading error could occur for the 
+of direct access I/O.   Rather than
+putting the buffer and its control variables into COMMON these are passed
+as local arguments to make the routines inherently 'threadsafe' in a parallel
+programming environment.  Note also, that a reading error could occur for the
 last record if it does not fill a full block.  The code is written to
 recover from end-of-record and end-of-file errors, if possible.  On
-many modern system, no special action is required, but
+many modern systems, no special action is required, but
 on some systems it may be necessary to make use of the padding
 between the end of binary data and the terminal MIME boundary marker
 in binary sections.  To ensure maximum portability of CBF files,
 a padding of 4095 bytes is recommended.  Existing files without
 padding can be converted to files with padding by use of the new
 -p4 option for cif2cbf.
+<p>
+As of this writng the pure f90 routines in FCBlib are:  <A HREF="#2.5.1">FCB_ATOL_WCNT</A>,
+<A HREF="#2.5.2">FCB_CI_STRNCMPARR</A>, <A HREF="#2.5.3">FCB_EXIT_BINARY</A>, <A HREF="#2.5.4">FCB_NBLEN_ARRAY</A>,
+<A HREF="#2.5.5">FCB_NEXT_BINARY</A>,
+<A HREF="#2.5.6">FCB_OPEN_CIFIN</A>, <A HREF="#2.5.7">FCB_DECOMPRESS_PACKED_I2</A>,
+<A HREF="#2.5.7">FCB_DECOMPRESS_PACKED_I4</A>, <A HREF="#2.5.7">FCB_DECOMPRESS_PACKED_3D_I2</A>,
+<A HREF="#2.5.7">FCB_DECOMPRESS_PACKED_3D_I4</A>, <A HREF="#2.5.8">FCB_READ_BITS</A>, <A HREF="#2.5.9">FCB_READ_BYTE</A?,
+<A HREF="#2.5.10">FCB_READ_IMAGE_I2</A>, <A HREF="#2.5.10">FCB_READ_IMAGE_I4</A>, <A HREF="#2.5.10">FCB_READ_IMAGE_3D_I2</A>,
+<A HREF="#2.5.10">FCB_READ_IMAGE_3D_I4</A>, <A HREF="#2.5.11">FCB_READ_LINE</A>, <A HREF="#2.5.12">FCB_READ_XDS_I2</A>, and
+<A HREF="#2.5.13">FCB_SKIP_WHITESPACE</A>.
+
 <P>
-<h4><A NAME="2.5.1">2.5.1 FCB_ATOL_WCNT</a></h4>
+<div id="2.5.1">
+<h4>2.5.1 FCB_ATOL_WCNT</h4>
 <p><pre><b>      INTERFACE</b>
-      INTEGER(8) FUNCTION FCB_ATOL_WCNT(<i>ARRAY</i>, <i>N</i>, <i>CNT</i>)
-      INTEGER(1),INTENT(IN):: <i>ARRAY</i>(<i>N</i>)
-      INTEGER,   INTENT(IN):: <i>N</i>
-      INTEGER,  INTENT(OUT):: <i>CNT</i>
-      END FUNCTION
-      END INTERFACE</pre>
- <P>
+INTEGER(8) FUNCTION FCB_ATOL_WCNT(<i>ARRAY</i>, <i>N</i>, <i>CNT</i>)
+INTEGER(1),INTENT(IN):: <i>ARRAY</i>(<i>N</i>)
+INTEGER,   INTENT(IN):: <i>N</i>
+INTEGER,  INTENT(OUT):: <i>CNT</i>
+END FUNCTION
+END INTERFACE</pre>
+<P>
 FCB_ATOL_WCNT converts INTEGER(1) bytes in <i>ARRAY</i> of <i>N</i> bytes 
 to an INTEGER(8) value returned as the function value.  The number of
 bytes of <i>ARRAY</i> actually used before encountering a character
@@ -6763,12 +6989,13 @@ part of the integer result.
 <b>RETURN VALUE</b>
 <p>
 Returns the INTEGER(8) value derived from the characters <i>ARRAY</i>(1:<i>CNT</i>) scanned.
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.2">2.5.2 FCB_CI_STRNCMPARR</a></h4>
+<div id="2.5.2">
+<h4>2.5.2 FCB_CI_STRNCMPARR</h4>
 <p><pre><b>      INTERFACE</b>
-      INTEGER FUNCTION FCB_CI_STRNCMPARR(<i>STRING></i>, <i>ARRAY</i>, <i>N</i>, <i>LIMIT</i>)
-      CHARACTER(LEN=*),INTENT(IN):: <i>STRING></i>
+INTEGER FUNCTION FCB_CI_STRNCMPARR(<i>STRING></i>, <i>ARRAY</i>, <i>N</i>, <i>LIMIT</i>)
+CHARACTER(LEN=*),INTENT(IN):: <i>STRING></i>
       INTEGER,         INTENT(IN):: <i>N</i>, <i>LIMIT</i>
       INTEGER(1),      INTENT(IN):: <i>ARRAY</i>(<i>N</i>)
       END FUNCTION
@@ -6789,9 +7016,10 @@ dimension <i>N</i> in a case-insensitive manner, returning 0 for a match.
 <b>RETURN VALUE</b>
 <p>
 Returns 0 if the string and array match, a non-zero value otherwise.
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.3">2.5.3 FCB_EXIT_BINARY</a></h4>
+<div id="2.5.3">
+<h4>2.5.3 FCB_EXIT_BINARY</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_EXIT_BINARY(<i>TAPIN</i>,<i>LAST_CHAR</i>,<i>FCB_BYTES_IN_REC</i>,&amp;
                                       <i>BYTE_IN_FILE</i>,<i>REC_IN_FILE</i>,<i>BUFFER</i>,  &amp;
@@ -6837,9 +7065,10 @@ Returns 0 if the function is successful.  Returns whatever non-zero error value 
 <A HREF="#2.5.6">2.5.6  FCB_OPEN_CIFIN</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.4">2.5.4 FCB_NBLEN_ARRAY</a></h4>
+<div id="2.5.4">
+<h4>2.5.4 FCB_NBLEN_ARRAY</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_NBLEN_ARRAY(<i>ARRAY</i>, <i>ARRAYLEN</i>)
       INTEGER,    INTENT(IN):: <i>ARRAYLEN</i>
@@ -6865,8 +7094,10 @@ of the array of bytes to be scanned.
 <b>RETURN VALUE</b>
 <p>
 Returns the trimmed length of the array <i>ARRAY</i>.
+</div>
 <p><hr /><P>
-<h4><A NAME="2.5.5">2.5.5 FCB_NEXT_BINARY</a></h4>
+<div id="2.5.5">
+<h4>2.5.5 FCB_NEXT_BINARY</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_NEXT_BINARY(<i>TAPIN</i>,<i>LAST_CHAR</i>,<i>FCB_BYTES_IN_REC</i>,&amp;
                                       <i>BYTE_IN_FILE</i>,<i>REC_IN_FILE</i>,<i>BUFFER</i>,  &amp;
@@ -7022,10 +7253,10 @@ Returns 0 if the function is successful.
 <A HREF="#2.5.6">2.5.6  FCB_OPEN_CIFIN</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.6">2.5.6 FCB_OPEN_CIFIN</a></h4>
+<div id="2.5.6">
+<h4>2.5.6 FCB_OPEN_CIFIN</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_OPEN_CIFIN(<i>FILNAM</i>,<i>TAPIN</i>,<i>LAST_CHAR</i>,                &amp;
       <i>FCB_BYTES_IN_REC</i>,<i>BYTE_IN_FILE</i>,<i>REC_IN_FILE</i>,<i>BUFFER</i>)
@@ -7079,12 +7310,10 @@ Returns 0 if the function is successful.
 <A HREF="#2.5.5">2.5.5  FCB_NEXT_BINARY</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
-
+</div>
 <p><hr /><P>
-
-
-<h4><A NAME="2.5.7">2.5.7 FCB_PACKED: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4</a></h4>
-
+<div id="2.5.7">
+<h4>2.5.7 FCB_PACKED: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_DECOMPRESS_PACKED_I2 (<i>ARRAY</i>,<i>NELEM</i>,<i>NELEM_READ</i>, &amp;
         <i>ELSIGN</i>, <i>COMPRESSION</i>, <i>DIM1</i>, <i>DIM2</i>,  &amp;
@@ -7193,12 +7422,10 @@ Returns 0 if the function is successful.
 <A HREF="#2.5.6">2.5.6  FCB_OPEN_CIFIN</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
-
-
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.8">2.5.8 FCB_READ_BITS</a></h4>
+<div id="2.5.8">
+<h4>2.5.8 FCB_READ_BITS</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_READ_BITS(<i>TAPIN</i>,<i>FCB_BYTES_IN_REC</i>,<i>BUFFER</i>,     &amp;
                      <i>REC_IN_FILE</i>,<i>BYTE_IN_FILE</i>,<i>BCOUNT</i>,<i>BBYTE</i>,             &amp;
@@ -7257,11 +7484,10 @@ size <i>FCB_BYTES_IN_REC</i> the precise location of the end of file may not be 
 <A HREF="#2.5.6">2.5.6  FCB_OPEN_CIFIN</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
-
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.9">2.5.9 FCB_READ_BYTE</a></h4>
+<div id="2.5.9">
+<h4>2.5.9 FCB_READ_BYTE</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_READ_BYTE(<i>TAPIN</i>,<i>FCB_BYTES_IN_REC</i>,<i>BUFFER</i>,     &amp;
                              <i>REC_IN_FILE</i>,<i>BYTE_IN_FILE</i>,<i>IBYTE</i>)
@@ -7312,11 +7538,10 @@ size <i>FCB_BYTES_IN_REC</i> the precise location of the end of file may not be 
 <A HREF="#2.5.6">2.5.6  FCB_OPEN_CIFIN</a><br />
 <A HREF="#2.5.8">2.5.9  FCB_READ_BITS</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.10">2.5.10 FCB_READ_IMAGE_I2, FCB_READ_IMAGE_I4, FCB_READ_IMAGE_3D_I2, FCB_READ_IMAGE_3D_I4</a></h4>
-
+<div id="2.5.10">
+<h4>2.5.10 FCB_READ_IMAGE_I2, FCB_READ_IMAGE_I4, FCB_READ_IMAGE_3D_I2, FCB_READ_IMAGE_3D_I4</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_READ_IMAGE_I2(<i>ARRAY</i>,<i>NELEM</i>,<i>NELEM_READ</i>, &amp;
         <i>ELSIGN</i>, <i>COMPRESSION</i>, <i>DIM1</i>, <i>DIM2</i>,                         &amp;
@@ -7442,10 +7667,10 @@ Returns 0 if the function is successful.
 <A HREF="#2.5.7">2.5.7  FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a><br />
 <A HREF="#2.5.11">2.5.11  FCB_READ_LINE</a>
-
+</div>
 <p><hr /><P>
-
-<h4><A NAME="2.5.11">2.5.11 FCB_READ_LINE</a></h4>
+<div id="2.5.11">
+<h4>2.5.11 FCB_READ_LINE</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_READ_LINE(<i>TAPIN</i>,<i>LAST_CHAR</i>,<i>FCB_BYTES_IN_REC</i>,  &amp;
 			 <i>BYTE_IN_FILE</i>,<i>REC_IN_FILE</i>,<i>BUFFER</i>,<i>LINE</i>,<i>N</i>,<i>LINELEN</i>)
@@ -7501,8 +7726,8 @@ Returns 0 if the function is successful.
 <A HREF="#2.5.7">2.5.7  FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a>
 
-
-<h4><A NAME="2.5.12">2.5.12 FCB_READ_XDS_I2</a></h4>
+<div id="2.5.12">
+<h4>2.5.12 FCB_READ_XDS_I2</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_READ_XDS_I2(<i>FILNAM</i>,<i>TAPIN</i>,<i>NX</i>,<i>NY</i>,<i>IFRAME</i>,<i>JFRAME</i>)
       CHARACTER(len=*),INTENT(IN) :: <i>FILNAM</i>
@@ -7564,9 +7789,11 @@ this CBF format (not implemented), -1 if it cannot determine endian architecture
 of this machine, -2: if it cannot open the image file, -3: if it finds the wrong image 
 format and -4 if it cannot read the image.
 <P>
+</div>
 <p><hr /><P>
 
-<h4><A NAME="2.5.13">2.5.13 FCB_SKIP_WHITESPACE</a></h4>
+<div id="2.5.13">
+<h4>2.5.13 FCB_SKIP_WHITESPACE</h4>
 <p><pre><b>      INTERFACE</b>
       INTEGER FUNCTION FCB_SKIP_WHITESPACE(<i>TAPIN</i>,<i>LAST_CHAR</i>,             &amp;
 		       <i>FCB_BYTES_IN_REC</i>,<i>BYTE_IN_FILE</i>,<i>REC_IN_FILE</i>,<i>BUFFER</i>,&amp;
@@ -7623,7 +7850,350 @@ Returns 0 if the function is successful.
 <A HREF="#2.5.7">2.5.7  FCB_DECOMPRESS: FCB_DECOMPRESS_PACKED_I2, FCB_DECOMPRESS_PACKED_I4, FCB_DECOMPRESS_PACKED_3D_I2, FCB_DECOMPRESS_PACKED_3D_I4</a><br />
 <A HREF="#2.5.9">2.5.9  FCB_READ_BYTE</a>
 </p>
-    <hr/>
+</div>
+<hr />
+<div id="2.5.14">
+<h4>2.5.14 f90cbf SWIG interface</h4>
+Since Fortran 2003 is has also been feasible to access CBFlib directly from Fortran using the
+ISO C interface specification, but because of the differences between Fortran and C argument
+handling, it is more convenient to make use of SWIG wrappers for access to CBFlib from
+within Fortran applications.  The necessary interfaces have been gathered in an f90cbf
+directory in CBFlib, as f90cbf_wrap.c with the interface definitions and
+argument conversions needed to call CBFlib functions from within Fortan applications.
+What follows are examples of the wrapper code for getting and setting wavelength,
+polarization, and divergence:
+<p>
+<pre>
+
+SWIGEXPORT int swigc_cbf_get_wavelength_(SwigClassWrapper *farg1, SwigClassWrapper *farg2) {
+  int fresult ;
+  cbf_handle arg1 = (cbf_handle) 0 ;
+  double *arg2 = (double *) 0 ;
+  int result;
+  
+  arg1 = (cbf_handle)farg1->cptr;
+  arg2 = (double *)farg2->cptr;
+  result = (int)cbf_get_wavelength(arg1,arg2);
+  fresult = (int)(result);
+  return fresult;
+}
+
+
+SWIGEXPORT int swigc_cbf_set_wavelength_(SwigClassWrapper *farg1, double const *farg2) {
+  int fresult ;
+  cbf_handle arg1 = (cbf_handle) 0 ;
+  double arg2 ;
+  int result;
+    
+  arg1 = (cbf_handle)farg1->cptr;
+  arg2 = (double)(*farg2);
+  result = (int)cbf_set_wavelength(arg1,arg2);
+  fresult = (int)(result);
+  return fresult;
+}
+
+
+SWIGEXPORT int swigc_cbf_get_polarization_(SwigClassWrapper *farg1, SwigClassWrapper *farg2, SwigClassWrapper *farg3) {
+  int fresult ;
+  cbf_handle arg1 = (cbf_handle) 0 ;
+  double *arg2 = (double *) 0 ;
+  double *arg3 = (double *) 0 ;
+  int result;
+
+  arg1 = (cbf_handle)farg1->cptr;
+  arg2 = (double *)farg2->cptr;
+  arg3 = (double *)farg3->cptr;
+  result = (int)cbf_get_polarization(arg1,arg2,arg3);
+  fresult = (int)(result);
+  return fresult;
+}
+
+SWIGEXPORT int swigc_cbf_set_polarization_(SwigClassWrapper *farg1, double const *farg2, double const *farg3) {
+  int fresult ;
+  cbf_handle arg1 = (cbf_handle) 0 ;
+  double arg2 ;
+  double arg3 ;
+  int result;
+
+  arg1 = (cbf_handle)farg1->cptr;
+  arg2 = (double)(*farg2);
+  arg3 = (double)(*farg3);
+  result = (int)cbf_set_polarization(arg1,arg2,arg3);
+  fresult = (int)(result);
+  return fresult;
+}
+
+
+SWIGEXPORT int swigc_cbf_get_divergence_(SwigClassWrapper *farg1, SwigClassWrapper *farg2, SwigClassWrapper *farg3, SwigClassWrapper *farg4) {
+  int fresult ;
+  cbf_handle arg1 = (cbf_handle) 0 ;
+  double *arg2 = (double *) 0 ;
+  double *arg3 = (double *) 0 ;
+  double *arg4 = (double *) 0 ;
+  int result;
+
+  arg1 = (cbf_handle)farg1->cptr;
+  arg2 = (double *)farg2->cptr;
+  arg3 = (double *)farg3->cptr;
+  arg4 = (double *)farg4->cptr;
+  result = (int)cbf_get_divergence(arg1,arg2,arg3,arg4);
+  fresult = (int)(result);
+  return fresult;
+}
+
+
+SWIGEXPORT int swigc_cbf_set_divergence_(SwigClassWrapper *farg1, double const *farg2, double const *farg3, double const *farg4) {
+  int fresult ;
+  cbf_handle arg1 = (cbf_handle) 0 ;
+  double arg2 ;
+  double arg3 ;
+  double arg4 ;
+  int result;
+
+  arg1 = (cbf_handle)farg1->cptr;
+  arg2 = (double)(*farg2);
+  arg3 = (double)(*farg3);
+  arg4 = (double)(*farg4);
+  result = (int)cbf_set_divergence(arg1,arg2,arg3,arg4);
+  fresult = (int)(result);
+  return fresult;
+}
+
+</pre>
+<p>
+which which called by fortran applications from f90cbf.f90 use:
+<p>
+<pre>
+function swigc_cbf_get_polarization(farg1, farg2, farg3) &
+bind(C, name="swigc_cbf_get_polarization_") &
+result(fresult)
+use, intrinsic :: ISO_C_BINDING
+import :: swigclasswrapper
+type(SwigClassWrapper), intent(in) :: farg1
+type(SwigClassWrapper), intent(in) :: farg2
+type(SwigClassWrapper), intent(in) :: farg3
+integer(C_INT) :: fresult
+end function
+
+function swigc_cbf_set_polarization(farg1, farg2, farg3) &
+bind(C, name="swigc_cbf_set_polarization_") &
+result(fresult)
+use, intrinsic :: ISO_C_BINDING
+import :: swigclasswrapper
+type(SwigClassWrapper), intent(in) :: farg1
+real(C_DOUBLE), intent(in) :: farg2
+real(C_DOUBLE), intent(in) :: farg3
+integer(C_INT) :: fresult
+end function
+
+function swigc_cbf_get_polarization(farg1, farg2, farg3) &
+bind(C, name="swigc_cbf_get_polarization_") &
+result(fresult)
+use, intrinsic :: ISO_C_BINDING
+import :: swigclasswrapper
+type(SwigClassWrapper), intent(in) :: farg1
+type(SwigClassWrapper), intent(in) :: farg2
+type(SwigClassWrapper), intent(in) :: farg3
+integer(C_INT) :: fresult
+end function
+ 
+function swigc_cbf_set_polarization(farg1, farg2, farg3) &
+bind(C, name="swigc_cbf_set_polarization_") &
+result(fresult)
+use, intrinsic :: ISO_C_BINDING
+import :: swigclasswrapper
+type(SwigClassWrapper), intent(in) :: farg1
+real(C_DOUBLE), intent(in) :: farg2
+real(C_DOUBLE), intent(in) :: farg3
+integer(C_INT) :: fresult
+end function
+ 
+function swigc_cbf_get_divergence(farg1, farg2, farg3, farg4) &
+bind(C, name="swigc_cbf_get_divergence_") &
+result(fresult)
+use, intrinsic :: ISO_C_BINDING
+import :: swigclasswrapper
+type(SwigClassWrapper), intent(in) :: farg1
+type(SwigClassWrapper), intent(in) :: farg2
+type(SwigClassWrapper), intent(in) :: farg3
+type(SwigClassWrapper), intent(in) :: farg4
+integer(C_INT) :: fresult
+end function
+ 
+function swigc_cbf_set_divergence(farg1, farg2, farg3, farg4) &
+bind(C, name="swigc_cbf_set_divergence_") &
+result(fresult)
+use, intrinsic :: ISO_C_BINDING
+import :: swigclasswrapper
+type(SwigClassWrapper), intent(in) :: farg1
+real(C_DOUBLE), intent(in) :: farg2
+real(C_DOUBLE), intent(in) :: farg3
+real(C_DOUBLE), intent(in) :: farg4
+integer(C_INT) :: fresult
+end function
+</pre>
+<p>
+There are 316 functions  beginning with swigc_cbf_ defined in f90cbf.f90.
+<hr />
+<div id="2.5.15"> 
+<h4>2.5.15 pycbf SWIG interface</h4>
+<p>
+The code for the Python 3 SWIG wrapper is in the pycbf directory.  The necessary code
+to adapt each C function to Python callin conventions is in  pycbf_wrap.c.
+For example pycbf_wrap.c contains:
+<p>
+<pre>
+SWIGINTERN void cbf_handle_struct_read_widefile(cbf_handle_struct *self,char *filename,int headers){
+       /* CBFlib needs a stream that will remain open 
+          hence DO NOT open from python */
+       FILE *stream;
+       if ( ! ( stream = fopen (filename, "rb")) ){
+         {(error_status = CBF_FILEOPEN);};
+        }
+        else{
+         {(error_status = cbf_read_widefile(self, stream, headers));}; 
+    }
+}
+\end{verbatim}
+}
+</pre>
+<p>
+which can becalled by Python applications from
+<p>
+<pre>
+def read_widefile(self, filename, headers):
+        """
+
+        Returns : 
+        *args   : String filename,Integer headers
+
+        C prototype: int cbf_read_widefile (cbf_handle handle, FILE *file, int flags);
+
+        CBFLib documentation:
+        
+        DESCRIPTION
+        cbf_read_file reads the CBF or CIF file file into the CBF object 
+        specified by handle, using the CIF 1.0 convention of 80 character 
+        lines. cbf_read_widefile reads the CBF or CIF file file into the CBF 
+        object specified by handle, using the CIF 1.1 convention of 2048 
+        character lines. A warning is issued to stderr for ascii lines over 
+        the limit. No test is performed on binary sections.
+        
+        Validation is performed in three ways levels: during the lexical 
+        scan, during the parse, and, if a dictionary was converted, against 
+        the value types, value enumerations, categories and parent-child 
+        relationships specified in the dictionary.
+        
+        flags controls the interpretation of binary section headers, the 
+        parsing of brackets constructs and the parsing of treble-quoted 
+        strings.
+        
+        MSG_DIGEST: Instructs CBFlib to check that the digest 
+        of the binary section matches any header digest value. If the digests 
+        do not match, the call will return CBF_FORMAT. This evaluation and 
+        comparison is delayed (a  "lazy " evaluation) to ensure maximal 
+        processing efficiency. If an immediately evaluation is required, see 
+        MSG_DIGESTNOW, below. MSG_DIGESTNOW:            Instructs CBFlib to 
+        check that the digest of the binary section matches any header 
+        digeste value. If the digests do not match, the call will return 
+        CBF_FORMAT. This evaluation and comparison is performed during 
+        initial parsing of the section to ensure timely error reporting at 
+        the expense of processing efficiency. If a more efficient delayed ( 
+        "lazy ") evaluation is required, see MSG_DIGEST, above.
+        
+        MSG_DIGESTWARN: Instructs CBFlib to check that the digest 
+        of the binary section matches any header digeste value. If the 
+        digests do not match, a warning message will be sent to stderr, but 
+        processing will attempt to continue. This evaluation and comparison 
+        is first performed during initial parsing of the section to ensure 
+        timely error reporting at the expense of processing efficiency. An 
+        mismatch of the message digest usually indicates a serious error, but 
+        it is sometimes worth continuing processing to try to isolate the 
+        cause of the error. Use this option with caution.
+        
+        MSG_NODIGEST:  Do not check the digest (default). 
+        
+        PARSE_BRACKETS: Accept DDLm bracket-delimited [item,item,...item] or 
+        {item,item,...item} or (item,item,...item) constructs as valid, 
+        stripping non-quoted embedded whitespace and comments. These 
+        constructs may span multiple lines.
+        
+        PARSE_LIBERAL_BRACKETS:  Accept 
+        DDLm bracket-delimited [item,item,...item] or {item,item,...item} or 
+        (item,item,...item) constructs as valid, stripping embedded 
+        non-quoted, non-separating whitespace and comments. These constructs 
+        may span multiple lines. In this case, whitespace may be used as an 
+        alternative to the comma. 
+        
+        PARSE_TRIPLE_QUOTES:  Accept DDLm 
+        triple-quoted  " " "item,item,...item " " " or 
+        '''item,item,...item''' constructs as valid, stripping embedded 
+        whitespace and comments. These constructs may span multiple lines. If 
+        this flag is set, then ''' will not be interpreted as a quoted 
+        apoptrophe and  " " " will not be interpreted as a quoted double 
+        quote mark and 
+        
+        PARSE_NOBRACKETS:  Do not accept DDLm 
+        bracket-delimited [item,item,...item] or {item,item,...item} or 
+        (item,item,...item) constructs as valid, stripping non-quoted 
+        embedded whitespace and comments. These constructs may span multiple 
+        lines. 
+        
+        PARSE_NOTRIPLE_QUOTES:  Do not accept DDLm triple-quoted  " 
+        " "item,item,...item " " " or '''item,item,...item''' constructs 
+        as valid, stripping embedded whitespace and comments. These 
+        constructs may span multiple lines. If this flag is set, then ''' 
+        will be interpreted as a quoted apostrophe and  " " " will be 
+        interpreted as a quoted double quote mark.
+        CBFlib defers reading binary sections as long as possible. In the 
+        current version of CBFlib, this means that:
+        
+        1. The file must be a random-access file opened in binary mode (fopen 
+        ( ,
+
+        """
+        return _pycbf.cbf_handle_struct_read_widefile(self, filename, headers)
+</pre>
+
+in pycbf.py, which defines 324 function.
+<p>
+</div>
+<hr />
+<div id="2.5.16">
+<h4>2.5.16 jcbf SWIG interface</h4>
+The java SWIG kit is in the jcbf folder.  Not all CBFlib options have been
+carried over to the Java environment, but Java support is sufficient to
+allow development of a wide range of CBF applications in Java.  For example,
+in order to read a CBF, jcbf_wrap.c only supports cbf_read_wide_file and
+not cbf_read_file in
+
+
+<pre>
+SWIGINTERN struct _cbf_handle_struct *new__cbf_handle_struct(char const *name){
+                FILE *f;
+                cbf_handle_struct *pchs;
+
+                f = fopen(name, "rb");
+  
+                pchs = 0;
+                cbf_make_handle(&pchs);
+  
+                if (cbf_read_widefile(pchs, f, 0x0008))
+                        pchs = 0;
+  
+                return pchs;
+        }
+}
+</pre>
+
+which supports Java applications in reading CBF files.  There are 163 accessible function
+definitions in jcbf/cbf.java.
+
+
+
+</div>
+
+<hr/>
     <div id="2.6">
       <h2>2.6 HDF5 abstraction layer and convenience functions</h2>
       <div>
@@ -12670,11 +13240,11 @@ cbf_config_free(configSettings);</pre>
     </div>
       <hr/>
 
+<div id="3.">
+<h3>3.  File format</h3>
 
-<h3><A NAME="3.">3.  File format</A></h3>
-
-
-<h4><A NAME="3.1">3.1  General description</A></h4>
+<div id="3.1">
+<h4>3.1  General description</h4>
 <p>
 With the exception of the binary sections, a CBF file is an
 mmCIF-format ASCII file, so a CBF file with no binary sections is a CIF
@@ -12683,7 +13253,8 @@ ASCII strings and is a CIF file whether or not it contains binary
 sections. In most cases, CBFlib can also be used to access normal
 CIF files as well as CBF and imgCIF files.
 <p>
-<h4><A NAME="3.2">3.2  Format of the binary sections</A></h4>
+<div id="3.2">
+<h4>3.2  Format of the binary sections</h4>
 <p>
 Before getting to the binary data itself, there are some preliminaries
 to allow a smooth transition from the conventions of CIF to those of
@@ -12694,7 +13265,9 @@ with the tag "_array_data.data".
 <p>
 The specific format of the binary sections differs between an
 imgCIF and a CBF file.
-<h4><A NAME="3.2.1">3.2.1  Format of imgCIF binary sections</A></h4>
+</div>
+<div id="3.2.1">
+<h4>3.2.1  Format of imgCIF binary sections</h4>
 <p>
 
 Each binary section is encoded as a semicolon-delimited string.
@@ -12967,8 +13540,9 @@ and for possible file recovery in the
 case of a corrupted file and this identifier must be
 present at the end of every block of binary data.
 <p>
-
-<h4><A NAME="3.2.2">3.2.2  Format of CBF binary sections</A></h4>
+</div>
+<div id="3.2.2">
+<h4>3.2.2  Format of CBF binary sections</h4>
 <p>
 
 
@@ -13179,9 +13753,9 @@ headers is:
 <tr><td valign="top">&nbsp;&nbsp;82 + <i>n</i>
 <td valign="top">&nbsp;&nbsp;;<td valign="top">&nbsp;&nbsp;59<td valign="top">&nbsp;&nbsp;Final ; delimiter<br />
 </table><br />
-
-
-<h4><A NAME="3.3">3.3  Compression schemes</A></h4>
+</div>
+<div id=""3.3">
+<h4>3.3  Compression schemes</h4>
 <p>
 Two schemes for lossless compression of integer arrays (such as images) have been
 implemented in this version of CBFlib:
@@ -13194,8 +13768,9 @@ implemented in this version of CBFlib:
 All encode the difference (or error) between the current element in the array and
 the prior element or neighboring elements.
 <p>
-
-<h4><A NAME="3.3.1">3.3.1  Canonical-code compression</A></h4>
+</div>
+<div id="3.3.1">
+<h4>3.3.1  Canonical-code compression</h4>
 <p>
 The canonical-code compression scheme encodes errors in two ways: directly or indirectly.
  Errors are coded directly using a symbol corresponding to the error value.  Errors
@@ -13234,8 +13809,9 @@ The structure of the compressed data is:
 <TR><td valign="top">&nbsp;&nbsp;35+2^<SUP>n</SUP>+<I>maxbits</I>-<I>n</I>+1 ..
 <td valign="top">&nbsp;&nbsp;Coded data<br />
 </TABLE>
-
-<H4><A NAME="3.3.2">3.3.2  CCP4-style compression</A></H4>
+</div>
+<div id="3.3.2">
+<H4>3.3.2  CCP4-style compression</H4>
 <p>
 Starting with CBFlib 0.7.7, CBFlib supports three variations on CCP4-style
 compression:  the &quot;flat&quot; version supported in versions of
@@ -13465,10 +14041,9 @@ The structure of the compressed data is:<br />
 <TR><td valign="top">&nbsp;&nbsp;33 ..</TD><td valign="top">&nbsp;&nbsp;Coded data</TD></TR>
 </TABLE>
 <P>
-<H4><A NAME="3.3.3">3.3.3   Byte_offset compression</A></H4>
-<p>
-
-
+</div>
+<div id="3.3.3">
+<H4>3.3.3   Byte_offset compression</H4>
 <p>
 Starting with CBFlib 0.7.7, CBFlib supports a simple and efficient &quot;byte_offset&quot;
 algorithm originally proposed by Andy Hammerley and modified by Wolgang Kabsch and
@@ -13696,11 +14271,11 @@ X-Binary-Size-Padding: 4095
 
 The only difference is that we have declared this
 array to be 16-bit and have chosen a different
-binary id (2 instead of 1).  Even the checksum is the same.
-
-    
+binary id (2 instead of 1).  Even the checksum is the same.    
 <P>
-<H4><A NAME="3.3.4">3.3.4   Nibble_offset compression</A></H4>
+</div>
+<div id="3.3.4">
+<H4>3.3.4   Nibble_offset compression</H4>
 <p>
     
 The nibble offset algorithm is a variant on
@@ -13782,8 +14357,9 @@ two dibits and a nibble a0, a1, b:
     provided to faciliate parallel compression.
 <p>
 
-
-<h4><A NAME="3.4">3.4  Access to CBFlib compressions from HDF5</A></h4>
+</div>
+<div id="3.4">
+<h4>3.4  Access to CBFlib compressions from HDF5</h4>
     
 Starting with CBFlib release 0.9.2.11, a plugin module in provided
 to allow access to CBFlib compressions from HDF5 1.8.11 and later.
@@ -13878,8 +14454,9 @@ dimensions and create the properties to be used in creating a dataset, as in
 
 
 
-
-<H4><A NAME="4.">4.  Installation</A></H4>
+</div>
+<div id="4.">
+<H4>4.  Installation</H4>
 <p>
 CBFlib should be built on a disk with at least 400 megabytes of free space.
 <A HREF="../CBFlib-0.9.2.11.tar.gz">CBFlib-0.9.2.11.tar.gz</A> is a "gzipped" tar of
@@ -14057,7 +14634,8 @@ The documentation files are in the "doc" subdirectory:
 <TR><td valign="top">&nbsp;&nbsp;ChangeLog<td valign="top">&nbsp;&nbsp;Summary of change history (ASCII)
 </TABLE>
 
-<H4><A NAME="5.">5.  Example programs</A></H4>
+<div id="5.">
+<H4>5.  Example programs</H4>
 <p>
 The example programs makecbf.c, img2cif.c and convert_image.c read an image file
 from a MAR300, MAR345 or ADSC CCD detector and then uses CBFlib to
@@ -14539,7 +15117,8 @@ adscimg1cbf or convert_image and produces raw or compressed adsc image files wit
     --bz2   Output a .bz2 file (e.g., filen.img.bz2).
 </pre>
 <p>
-<a name="cbf2tiff"><h4>cbf2tiff</h4></a>
+<div id="cbf2tiff">
+<h4>cbf2tiff</h4>
 <p>
 The test program cbf2tiff converts a cbf data file to a tiff datd file.
 </p>
@@ -14549,7 +15128,8 @@ The test program cbf2tiff converts a cbf data file to a tiff datd file.
 
 </pre>
 <p>
-<a name="tiff2cbf"><h4>tiff2cbf</h4></a>
+<div id="tiff2cbf">
+<h4>tiff2cbf</h4>
 <p>
 The test program tiff2cbf converts a tiff data file to a cbf data file.  The program
 converts the tiff data samples directly into a minicbf with the tiff header
@@ -14574,8 +15154,10 @@ and an xxx_xds.cbf with unclipped values for processing:
   cif2cbf -I 4 -e n -c b -i xxx.cbf -o xxx_xds.cbf
   
 </pre>
+</div>
 <p>
-<a name="minicbf2nexus"><h4>minicbf2nexus</h4></a>
+<div id="minicbf2nexus">
+<h4>minicbf2nexus</h4>
 <p>
 This program takes some minicbf files describing a single scan and
 axis configuration settings for them and creates a nexus file containing 
