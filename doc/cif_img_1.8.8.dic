@@ -232,7 +232,7 @@ data_cif_img.dic
 #                ||-------------------------------------------------------------------------------------------------||
 #                || DIFFRN_MEASUREMENT         | Data items in the DIFFRN_MEASUREMENT category record details about ||
 #                ||                            | the device used to orient and/or position the crystal during data  ||
-#                ||                            | meas  urement and the manner in which the diffraction data were      ||
+#                ||                            | measurement and the manner in which the diffraction data were      ||
 #                ||                            | measured.                                                          ||
 #                ||-------------------------------------------------------------------------------------------------||
 #                || +---------------------------------------------------------------------------------------------+ ||
