@@ -12,7 +12,7 @@ data_cif_img.dic
 #             and Crystallographic Binary File Dictionary (CBF)              #
 #            Extending the Macromolecular CIF Dictionary (mmCIF)             #
 #                                                                            #
-#                                 1.8.8.1                                    #
+#                             Version 1.8.8.1                                #
 #                              of 2025-05-25                                 #
 #    ###################################################################     #
 #    # *** WARNING *** THIS IS A DRAFT FOR DISCUSSION *** WARNING ***  #     #
@@ -232,7 +232,7 @@ data_cif_img.dic
 #                ||-------------------------------------------------------------------------------------------------||
 #                || DIFFRN_MEASUREMENT         | Data items in the DIFFRN_MEASUREMENT category record details about ||
 #                ||                            | the device used to orient and/or position the crystal during data  ||
-#                ||                            | measurement and the manner in which the diffraction data were      ||
+#                ||                            | meas  urement and the manner in which the diffraction data were      ||
 #                ||                            | measured.                                                          ||
 #                ||-------------------------------------------------------------------------------------------------||
 #                || +---------------------------------------------------------------------------------------------+ ||
@@ -9485,7 +9485,7 @@ save__diffrn_scan_frame.polarizn_Stokes_U_esd
 
 save__diffrn_scan_frame.polarizn_Stokes_V
     _item_description.description
-;             The quantity2*sqrt(IpIn), with a + sign for right-handed
+;             The quantity +/-2*sqrt(IpIn), with a + sign for right-handed
               circular polarization, where Ip is the intensity
               (amplitude squared) of the electric vector in the plane of
               polarization and In is the intensity (amplitude squared) of
@@ -9524,7 +9524,7 @@ save__diffrn_scan_frame.polarizn_Stokes_V_esd
     _item_description.description
 ;             The standard uncertainty (estimated standard deviation, e.s.d.)
               of _diffrn_scan_frame.polarizn_Stokes_V,
-             2*sqrt(IpIn), with a + sign for right-handed circular
+              +/-2*sqrt(IpIn), with a + sign for right-handed circular
               polarization, where Ip is the intensity
               (amplitude squared) of the electric vector in the plane of
               polarization and In is the intensity (amplitude squared) of
@@ -10290,7 +10290,7 @@ save_
 save__diffrn_source.source
    _item_description.description  "              The general class of the radiation source."
 
-   _item.name            "_diffrn_source.source"
+   _item.name            '_diffrn_source.source'
    _item.category_id     diffrn_source
    _item.mandatory_code  no
   
@@ -10338,7 +10338,7 @@ save_
 save__diffrn_source.type
    _item_description.description  "              The make, model or name of the source of radiation."
 
-   _item.name            "_diffrn_source.type"
+   _item.name            '_diffrn_source.type'
    _item.category_id     diffrn_source
    _item.mandatory_code  no
 
