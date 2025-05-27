@@ -15,7 +15,7 @@ data_CIF_IMG.DIC
 #             and Crystallographic Binary File Dictionary (CBF)              #
 #            Extending the Macromolecular CIF Dictionary (mmCIF)             #
 #                                                                            #
-#                                 1.8.8.1                                    #
+#                             Version 1.8.8.1                                #
 #                              of 2025-05-25                                 #
 #    ###################################################################     #
 #    # *** WARNING *** THIS IS A DRAFT FOR DISCUSSION *** WARNING ***  #     #
@@ -10963,7 +10963,7 @@ save_diffrn_scan_frame.polarizn_stokes_v
 
     _definition.id                '_diffrn_scan_frame.polarizn_Stokes_V'
     _description.text
-;             The quantity2*sqrt(IpIn), with a + sign for right-handed
+;             The quantity +/-2*sqrt(IpIn), with a + sign for right-handed
               circular polarization, where Ip is the intensity
               (amplitude squared) of the electric vector in the plane of
               polarization and In is the intensity (amplitude squared) of
@@ -11007,7 +11007,7 @@ save_diffrn_scan_frame.polarizn_stokes_v_esd
     _description.text
 ;             The standard uncertainty (estimated standard deviation, e.s.d.)
               of _diffrn_scan_frame.polarizn_Stokes_V,
-             2*sqrt(IpIn), with a + sign for right-handed circular
+              +/-2*sqrt(IpIn), with a + sign for right-handed circular
               polarization, where Ip is the intensity
               (amplitude squared) of the electric vector in the plane of
               polarization and In is the intensity (amplitude squared) of
