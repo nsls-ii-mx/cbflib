@@ -201,8 +201,8 @@ data_cif_img.dic
 #             and Crystallographic Binary File Dictionary (CBF)              #
 #            Extending the Macromolecular CIF Dictionary (mmCIF)             #
 #                                                                            #
-#                             Version 1.8.9.1                                #
-#                              of 2025-05-26                                 #
+#                              Version 1.8.9                                #
+#                              of 2025-06-10                                 #
 #<a href="javascript:;" onclick="open_all();"><tt>++</tt></a>/<a href="javascript:;" onclick="close_all();"><tt>--</tt></a>                                                                       #
 <a href="javascript:;"  onclick="open_close('title1');" ><tt>#+/-</tt></a>                                                                         #
 <div id="title1" style="display:none">#    ###################################################################     #
@@ -392,6 +392,7 @@ data_cif_img.dic
 <div id="contents_diffrn_detector_element" style="display:none">#
 #                  <a href="#_diffrn_detector_element.id" >_diffrn_detector_element.id</a>
 #                  <a href="#_diffrn_detector_element.detector_id" >_diffrn_detector_element.detector_id</a>
+#                  <a href="#_diffrn_detector_element.diffrn_id" >_diffrn_detector_element.diffrn_id</a>
 #                  <a href="#_diffrn_detector_element.reference_center_fast" >_diffrn_detector_element.reference_center_fast</a>
 #                  <a href="#_diffrn_detector_element.reference_center_slow" >_diffrn_detector_element.reference_center_slow</a>
 #                  <a href="#_diffrn_detector_element.reference_center_units" >_diffrn_detector_element.reference_center_units</a>
@@ -457,6 +458,7 @@ data_cif_img.dic
 #
 </div>#        category  <a href="#diffrn_refln">DIFFRN_REFLN</a> <a href="javascript:open_close('contents_diffrn_refln');">+/-</a>
 <div id="contents_diffrn_refln" style="display:none">#
+#                  <a href="#_diffrn_refln.diffrn_id" >_diffrn_refln.diffrn_id</a>
 #                  <a href="#_diffrn_refln.frame_id" >_diffrn_refln.frame_id</a>
 #                  <a href="#_diffrn_refln.variant" >_diffrn_refln.variant</a>
 #
@@ -482,11 +484,11 @@ data_cif_img.dic
 #                  <a href="#_diffrn_scan_axis.angle_range" >_diffrn_scan_axis.angle_range</a>
 #                  <a href="#_diffrn_scan_axis.angle_increment" >_diffrn_scan_axis.angle_increment</a>
 #                  <a href="#_diffrn_scan_axis.angle_rstrt_incr" >_diffrn_scan_axis.angle_rstrt_incr</a>
-#                  <a href="#_diffrn_scan_axis.diffrn_id" >_diffrn_scan_axis.diffrn_id</a>
 #                  <a href="#_diffrn_scan_axis.displacement_start" >_diffrn_scan_axis.displacement_start</a>
 #                  <a href="#_diffrn_scan_axis.displacement_range" >_diffrn_scan_axis.displacement_range</a>
 #                  <a href="#_diffrn_scan_axis.displacement_increment" >_diffrn_scan_axis.displacement_increment</a>
 #                  <a href="#_diffrn_scan_axis.displacement_rstrt_incr" >_diffrn_scan_axis.displacement_rstrt_incr</a>
+#                  <a href="#_diffrn_scan_axis.diffrn_id" >_diffrn_scan_axis.displacement_diffrn_id</a>
 #                  <a href="#_diffrn_scan_axis.reference_angle" >_diffrn_scan_axis.reference_angle</a>
 #                  <a href="#_diffrn_scan_axis.reference_displacement" >_diffrn_scan_axis.reference_displacement</a>
 #                  <a href="#_diffrn_scan_axis.scan_id" >_diffrn_scan_axis.scan_id</a>
@@ -530,6 +532,7 @@ data_cif_img.dic
 #                  <a href="#_diffrn_scan_frame_axis.displacement" >_diffrn_scan_frame_axis.displacement</a>
 #                  <a href="#_diffrn_scan_frame_axis.displacement_increment" >_diffrn_scan_frame_axis.displacement_increment</a>
 #                  <a href="#_diffrn_scan_frame_axis.displacement_rstrt_incr" >_diffrn_scan_frame_axis.displacement_rstrt_incr</a>
+#                  <a href="#_diffrn_scan_frame_axis.diffrn_id" >_diffrn_scan_frame_axis.diffrn_id</a>
 #                  <a href="#_diffrn_scan_frame_axis.reference_angle" >_diffrn_scan_frame_axis.reference_angle</a>
 #                  <a href="#_diffrn_scan_frame_axis.reference_displacement" >_diffrn_scan_frame_axis.reference_displacement</a>
 #                  <a href="#_diffrn_scan_frame_axis.frame_id" >_diffrn_scan_frame_axis.frame_id</a>
@@ -2118,14 +2121,14 @@ save_<a name="_array_data_external_data.archive_path" >_array_data_external_data
 
 save_<a name="_array_data_external_data.file_compression">_array_data_external_data.file_compression</a>
     _item_description.description
- ;
+;
 
     The type of compression used for the file corresponding to
     a single frame, if any.
 
- ;
+;
 
-    _item.name                 '<a href="#_array_data_external_data.file_compression" >_array_data_external_data.file_compression</a>''
+    _item.name                 '<a href="#_array_data_external_data.file_compression" >_array_data_external_data.file_compression</a>'
     _item.category_id            <a href="#array_data_external_data">array_data_external_data</a>
     _item.mandatory_code         no
     _item.type_code              code
@@ -2201,7 +2204,6 @@ save_<a name="_array_data_external_data.format" >_array_data_external_data.forma
     <a href="#_array_data_external_data.format" >_array_data_external_data.format</a>,
     <a href="#_array_data_external_data.path" >_array_data_external_data.path</a>, and
     <a href="#_array_data_external_data.frame" >_array_data_external_data.frame</a> directly.
-
 ;
 
     _item.name                 '<a href="#_array_data_external_data.format" >_array_data_external_data.format</a>'
@@ -2236,7 +2238,6 @@ save_<a name="_array_data_external_data.format" >_array_data_external_data.forma
     within a TIFF file that meets the TIFF 6.0 baseline specification.
     '<a href="#_array_data_external_data.frame">_array_data_external_data.frame</a>' is the image number when multiple images
     are contained in a single TIFF file.
-;
 ;
     MAR
 ;
@@ -2324,7 +2325,7 @@ save_<a name="_array_data_external_data.format" >_array_data_external_data.forma
     archive compressed with bzip2.   
 ;
 
- ; 
+; 
     loop_
     <a href="#_array_data_external_data.id" >_array_data_external_data.id</a>
     <a href="#_array_data_external_data.format" >_array_data_external_data.format</a>
@@ -2341,14 +2342,10 @@ save_<a name="_array_data_external_data.format" >_array_data_external_data.forma
         TAR
         3lls/series/200873f12_x0085.img.bz2 BZ2
  ;
-
  ;
-
     Frames with SMV format are contained at data.proteindiffraction.org in a tarred
     archive with each frame individually compressed with Bzip2.
-
  ;
-
     save_
 
 save_<a name="_array_data_external_data.id" >_array_data_external_data.id</a>
@@ -6569,7 +6566,7 @@ diffrn
    _category.id              diffrn
    _category.mandatory_code  no
    
-   _category_key.name  "_diffrn.id"
+   _category_key.name  '<a href="#_diffrn.id">_diffrn.id</a>'
    
    loop_
    _category_group.id
@@ -6590,7 +6587,7 @@ save_<a name="_diffrn.id" >_diffrn.id</a>
    _item.name
    _item.category_id
    _item.mandatory_code
-     "_diffrn.id"                        diffrn                 yes
+     '<a href="#_diffrn.id">_diffrn.id</a>'                        diffrn                 yes
      "_diffrn_data_frame.diffrn_id"      diffrn_data_frame      implicit
      "_diffrn_detector.diffrn_id"        diffrn_detector        yes
      "_diffrn_detector_axis.diffrn_id"   diffrn_detector_axis   implicit
@@ -6618,14 +6615,26 @@ save_<a name="_diffrn.id" >_diffrn.id</a>
    loop_
    _item_linked.child_name
    _item_linked.parent_name
-     "_diffrn_detector.diffrn_id"        "_diffrn.id"
-     "_diffrn_measurement.diffrn_id"     "_diffrn.id"
-     "_diffrn_radiation.diffrn_id"       "_diffrn.id"
-     "_diffrn_refln.diffrn_id"           "_diffrn.id"
-     "_diffrn_reflns.diffrn_id"          "_diffrn.id"
-     "_diffrn_source.diffrn_id"          "_diffrn.id"
-     "_map.diffrn_id"                    "_diffrn.id"
-     "_variant.diffrn_id"                "_diffrn.id"
+     "_diffrn_data_frame.diffrn_id"      '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_detector.diffrn_id"        '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_detector_axis.diffrn_id"   '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_detector_element.diffrn_id"
+                                         '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_measurement.diffrn_id"     '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_measurement_axis.diffrn_id"
+                                         '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_radiation.diffrn_id"       '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_refln.diffrn_id"           '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_reflns.diffrn_id"          '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_scan.diffrn_id"            '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_scan_collection.diffrn_id" '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_source.diffrn_id"          '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_scan_frame.diffrn_id"      '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_scan_frame_axis.diffrn_id" '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_diffrn_scan_frame_monitor.diffrn_id"
+                                         '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_map.diffrn_id"                    '<a href="#_diffrn.id">_diffrn.id</a>'
+     "_variant.diffrn_id"                '<a href="#_diffrn.id">_diffrn.id</a>'
    #
    _item_type.code  code
    #
@@ -6885,18 +6894,17 @@ save_<a name="_diffrn_data_frame.center_units">_diffrn_data_frame.center_units</
                                    bins      'detector bins'
      save_
 
- 
-save_<a name="diffrn_data_frame.diffrn_id" >_diffrn_data_frame.diffrn_id</a>
+
+save_<a name="_diffrn_data_frame.diffrn_id" >_diffrn_data_frame.diffrn_id</a>
     _item_description.description
-;             This item is a pointer to _diffrn.id
+;             This item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>'
               in the DIFFRN category.
 ;
-    _item.name                  '<a href="#_diffrn_data_frame.diffrn_id" >_diffrn_data_frame.diffrn_id</a>'
+    _item.name                  '<a href="#_diffrn_data_frame.diffrn_id >_diffrn_data_frame.diffrn_id'
     _item.category_id             diffrn_data_frame
     _item.mandatory_code          implicit
     _item_type.code               code
      save_
-
 
 
 save_<a name="_diffrn_data_frame.detector_element_id" >_diffrn_data_frame.detector_element_id</a>
@@ -7143,7 +7151,7 @@ save_<a name="_diffrn_detector.detector" >_diffrn_detector.detector</a>
 
 save_<a name="_diffrn_detector.diffrn_id" >_diffrn_detector.diffrn_id</a>
     _item_description.description
-;             This data item is a pointer to <a href="#_diffrn.id">_diffrn.id</a> in the DIFFRN
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in the DIFFRN
               category.
 
               The value of <a href="#_diffrn.id">_diffrn.id</a> uniquely defines a set of
@@ -7379,19 +7387,20 @@ save_<a name="_diffrn_detector_axis.detector_id" >_diffrn_detector_axis.detector
     _item_type.code               code
      save_
 
+
 save_<a name="_diffrn_detector_axis.diffrn_id" >_diffrn_detector_axis.diffrn_id</a> 
     _item_description.description
-;             This data item is a pointer to _diffrn.id in
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in
               the DIFFRN category.
 ;
-    _item.name                  '<a href="#_diffrn_detector_axis.diffrn_id" >_diffrn_detector_axis.diffrn_id</a>'
+    _item.name                  '<a href="#_diffrn_detector_axis.diffrn_id" >_diffrn_detector_axis.diffrn_id'</a>
     _item.category_id             diffrn_detector_axis
     _item.mandatory_code          implicit
     _item_type.code               code
      save_
 
 
-save_<a name="_diffrn_detector_axis.variant" >_diffrn_detector_axis.variant</a>
+<a name="_diffrn_detector_axis.variant" >_diffrn_detector_axis.variant</a>
     _item_description.description
 ;            The value of <a href="#_diffrn_detector_axis.variant" >_diffrn_detector_axis.variant</a> gives the variant
              to which the given DIFFRN_DETECTOR_AXIS row is related.
@@ -7538,12 +7547,12 @@ save_<a name="_diffrn_detector_element.detector_id" >_diffrn_detector_element.de
      save_
 
 
-save_diffrn_detector_element.diffrn_id
+save_<a name="_diffrn_detector_element.diffrn_id" >_diffrn_detector_element.diffrn_id</a>
     _item_description.description
 ;             This item is a pointer to _diffrn.id
               in the DIFFRN category.
 ;
-    _item.name                  '_diffrn_detector_element.diffrn_id'
+    _item.name                  '<a href="#_diffrn_detector_element.diffrn_id" >_diffrn_detector_element.diffrn_id</a>'
     _item.category_id             diffrn_detector_element
     _item.mandatory_code          implicit
     _item_type.code               code
@@ -9922,7 +9931,19 @@ save_<a name="_diffrn_scan.id" >_diffrn_scan.id</a>
      save_
 
 
-save_<a name="_diffrn_scan.date_end">_diffrn_scan.date_end</a>
+save_<a name="_diffrn_scan.diffrn_id" >diffrn_scan.diffrn_id</a>
+    _item_description.description        
+;             This item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>'
+              in the DIFFRN category.    
+;    
+    _item.name                  '<a href="#_diffrn_scan.diffrn_id" >_diffrn_scan.diffrn_id</a>'
+    _item.category_id             diffrn_scan
+    _item.mandatory_code          implicit
+    _item_type.code               code
+     save_
+
+
+<a name="_diffrn_scan.date_end">_diffrn_scan.date_end</a>
     _item_description.description
 ;             The date and time of the end of the scan.  Note that this
               may be an estimate generated during the scan, before the
@@ -9946,18 +9967,6 @@ save_<a name="_diffrn_scan.date_end_estimated">_diffrn_scan.date_end_estimated</
     _item.category_id          diffrn_scan
     _item.mandatory_code       yes
     _item_type.code            yyyy-mm-dd
-     save_
-
-
-save_<a name="_diffrn_scan.diffrn_id" >_diffrn_scan.diffrn_id</a>
-    _item_description.description
-;             This data item is a pointer to _diffrn.id in
-              the DIFFRN category.
-;
-    _item.name                  '<a href="#diffrn_scan.diffrn_id">_diffrn_scan.diffrn_id</a>'
-    _item.category_id             diffrn_scan
-    _item.mandatory_code          implicit
-    _item_type.code               code
      save_
 
 
@@ -10291,12 +10300,13 @@ save_<a name="_diffrn_scan_axis.angle_rstrt_incr">_diffrn_scan_axis.angle_rstrt_
     _item_units.code           'degrees'
      save_
 
-save_<a name="diffrn_scan_axis.diffrn_id" >_diffrn_scan_axis.diffrn_id</a>
+
+save_<a name="_diffrn_scan_axis.diffrn_id" >_diffrn_scan_axis.diffrn_id</a>
     _item_description.description
-;             This data item is a pointer to _diffrn.id in
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in
               the DIFFRN category.
 ;
-    _item.name                  '<a href="#_diffrn_scan_axis.diffrn_id">_diffrn_scan_axis.diffrn_id</a>'
+    _item.name                  '<a href="#_diffrn_scan_axis.diffrn_id" >_diffrn_scan_axis.diffrn_id</a>'
     _item.category_id             diffrn_scan_axis
     _item.mandatory_code          yes
     _item_type.code               code
@@ -10522,13 +10532,13 @@ save_<a name="_diffrn_scan_collection.details" >_diffrn_scan_collection.details<
     _item_type.code               text
      save_
 
- 
-save_<a name="diffrn_scan_collection.diffrn_id" >_diffrn_scan_collection.diffrn_id</a>
+
+save_<a name="_diffrn_scan_collection.diffrn_id" >_diffrn_scan_collection.diffrn_id</a>
     _item_description.description
-;             This data item is a pointer to _diffrn.id in
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in
               the DIFFRN category.
 ;
-    _item.name                  '<a href="#_diffrn_scan_collection.diffrn_id">_diffrn_scan_collection.diffrn_id</a>'
+    _item.name                  '<a href="#_diffrn_scan_collection.diffrn_id" >_diffrn_scan_collection.diffrn_id</a>'
     _item.category_id             diffrn_scan_collection
     _item.mandatory_code          implicit
     _item_type.code               code
@@ -10670,12 +10680,12 @@ save_<a name="_diffrn_scan_frame.date">_diffrn_scan_frame.date</a>
      save_
 
 
-save_<a name="_diffrn_scan_frame.diffrn_id" >_diffrn_scan_frame.diffrn_id</a>
+save_<a name="_diffrn_scan_frame.diffrn_id" >_diffrn_scan_frame.diffrn_id
     _item_description.description
-;             This data item is a pointer to _diffrn.id in
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in
               the DIFFRN category.
 ;
-    _item.name                  '<a href=#_diffrn_scan_frame.diffrn_id>_diffrn_scan_frame.diffrn_id</a>'
+    _item.name                  '<a name="#_diffrn_scan_frame.diffrn_id" >_diffrn_scan_frame.diffrn_id</a>'
     _item.category_id             diffrn_scan_frame
     _item.mandatory_code          implicit
     _item_type.code               code
@@ -11227,6 +11237,18 @@ save_<a name="_diffrn_scan_frame_axis.angle_rstrt_incr">_diffrn_scan_frame_axis.
      save_
 
 
+save_<a name="_diffrn_scan_frame_axis.diffrn_id" >_diffrn_scan_frame_axis.diffrn_id</a>
+    _item_description.description
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in
+              the DIFFRN category.
+;
+    _item.name                  '<a href="#_diffrn_scan_frame_axis.diffrn_id" >_diffrn_scan_frame_axis.diffrn_id</a>'
+    _item.category_id             diffrn_scan_frame_axis
+    _item.mandatory_code          implicit
+    _item_type.code               code
+     save_
+
+
 save_<a name="_diffrn_scan_frame_axis.displacement" >_diffrn_scan_frame_axis.displacement</a>
     _item_description.description
 ;             The setting of the specified axis in millimetres for this
@@ -11605,15 +11627,14 @@ save_<a name="_diffrn_scan_frame_monitor.detector_id" >_diffrn_scan_frame_monito
 
 save_<a name="_diffrn_scan_frame_monitor.diffrn_id" >_diffrn_scan_frame_monitor.diffrn_id</a>
     _item_description.description
-;             This data item is a pointer to _diffrn.id in
+;             This data item is a pointer to '<a href="#_diffrn.id">_diffrn.id</a>' in
               the DIFFRN category.
 ;
-    _item.name                  '<a href="#_diffrn_scan_frame_monitor.diffrn_id">_diffrn_scan_frame_monitor.diffrn_id</a>'
+    _item.name                  '<a href="#_diffrn_scan_frame_monitor.diffrn_id" >_diffrn_scan_frame_monitor.diffrn_id</a>'
     _item.category_id             diffrn_scan_frame_monitor
     _item.mandatory_code          implicit
     _item_type.code               code
      save_
-
 
 
 save_<a name="_diffrn_scan_frame_monitor.frame_id" >_diffrn_scan_frame_monitor.frame_id</a>
@@ -11776,8 +11797,11 @@ save_<a name="#_diffrn_source.source">_diffrn_source.source</a>
      synchrotron
  
    _pdbx_item_description.name         "_diffrn_source.source"
-   _pdbx_item_description.description  "If an X-ray generator was used, please specify the name and mod
-el of the generator.  If your particular model is not found, use other."
+   _pdbx_item_description.description
+;
+If an X-ray generator was used, please specify the name and model
+of the generator.  If your particular model is not found, use other.
+;
 
    loop_
    _pdbx_item_enumeration.name
@@ -12242,7 +12266,7 @@ save_<a name="_map.entry_id" >_map.entry_id</a>
 save_<a name="_map.id" >_map.id</a>
     _item_description.description
 ;             The value of <a href="#_map.id" >_map.id</a> must uniquely identify
-              each map for the given diffrn.id or entry.id.
+              each map for the given '<a href="#_diffrn.id">_diffrn.id</a>' or entry.id.
 ;
      loop_
     _item.name
@@ -13419,19 +13443,24 @@ save_<a name="_diffrn_frame_data.details" >_diffrn_frame_data.details</a>
     _dictionary_history.update
     _dictionary_history.revision
 
-    1.8.9    2025-05-27
+    1.8.9 2025-06-10
+  
+;   Addition of missing diffrn.id pointers
 
-;   Fill in missing diffrn_id tags (JRH); modified to be implicit rather than
-    mandatory to avoid invalidating existing datasets (HJB)
-
-    + Add <a href="#_diffrn_data_frame.diffrn_id" >_diffrn_data_frame.diffrn_id</a> 
-    + Add <a href="#_diffrn_detector_axis.diffrn_id" >_diffrn_detector_axis.diffrn_id</a>
+    + Add <a href="#_diffrn_detector_element.diffrn_id" >_diffrn_detector_element.diffrn_id</a>
+    + Add <a href="#_diffrn_measurement_axis.diffrn_id" >_diffrn_measurement_axis.diffrn_id</a>
     + Add <a href="#_diffrn_scan.diffrn_id" >_diffrn_scan.diffrn_id</a>
     + Add <a href="#_diffrn_scan_axis.diffrn_id" >_diffrn_scan_axis.diffrn_id</a>
     + Add <a href="#_diffrn_scan_collection.diffrn_id" >_diffrn_scan_collection.diffrn_id</a>
     + Add <a href="#_diffrn_scan_frame.diffrn_id" >_diffrn_scan_frame.diffrn_id</a>
+    + Add <a href="#_diffrn_scan_frame_axis.diffrn_id" >_diffrn_scan_frame_axis.diffrn_id</a>
+    + Add <a href="#_diffrn_scan_frame_axis.diffrn_id" >_diffrn_scan_frame_axis.diffrn_id</a>
     + Add <a href="#_diffrn_scan_frame_monitor.diffrn_id" >_diffrn_scan_frame_monitor.diffrn_id</a>
+;
 
+    1.8.8.2  2025-06-10
+
+;   Pick up minor type corrections from 1.8.9 dcitionary
 ;
 
     1.8.8.1  2025-05-25

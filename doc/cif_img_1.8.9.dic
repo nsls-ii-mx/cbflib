@@ -13,7 +13,7 @@ data_cif_img.dic
 #            Extending the Macromolecular CIF Dictionary (mmCIF)             #
 #                                                                            #
 #                              Version 1.8.9                                 #
-#                              of 2025-05-27                                 #
+#                              of 2025-06-10                                 #
 #    ###################################################################     #
 #    # *** WARNING *** THIS IS A DRAFT FOR DISCUSSION *** WARNING ***  #     #
 #    #                 SUBJECT TO CHANGE WITHOUT NOTICE                #     #
@@ -6193,7 +6193,7 @@ save__diffrn_detector_element.detector_id
      save_
 
 
-save_diffrn_detector_element.diffrn_id
+save__diffrn_detector_element.diffrn_id
     _item_description.description
 ;             This item is a pointer to _diffrn.id
               in the DIFFRN category.
@@ -9618,7 +9618,7 @@ save__diffrn_scan_frame.polarizn_Stokes_U_esd
 
 save__diffrn_scan_frame.polarizn_Stokes_V
     _item_description.description
-;             The quantity2*sqrt(IpIn), with a + sign for right-handed
+;             The quantity +/-2*sqrt(IpIn), with a + sign for right-handed
               circular polarization, where Ip is the intensity
               (amplitude squared) of the electric vector in the plane of
               polarization and In is the intensity (amplitude squared) of
@@ -9657,7 +9657,7 @@ save__diffrn_scan_frame.polarizn_Stokes_V_esd
     _item_description.description
 ;             The standard uncertainty (estimated standard deviation, e.s.d.)
               of _diffrn_scan_frame.polarizn_Stokes_V,
-             2*sqrt(IpIn), with a + sign for right-handed circular
+             +/-2*sqrt(IpIn), with a + sign for right-handed circular
               polarization, where Ip is the intensity
               (amplitude squared) of the electric vector in the plane of
               polarization and In is the intensity (amplitude squared) of
@@ -10445,7 +10445,7 @@ save_
 save__diffrn_source.source
    _item_description.description  "              The general class of the radiation source."
 
-   _item.name            "_diffrn_source.source"
+   _item.name            '_diffrn_source.source'
    _item.category_id     diffrn_source
    _item.mandatory_code  no
   
@@ -10493,7 +10493,7 @@ save_
 save__diffrn_source.type
    _item_description.description  "              The make, model or name of the source of radiation."
 
-   _item.name            "_diffrn_source.type"
+   _item.name            '_diffrn_source.type'
    _item.category_id     diffrn_source
    _item.mandatory_code  no
 
@@ -12115,27 +12115,27 @@ save__diffrn_frame_data.details
     _dictionary_history.version
     _dictionary_history.update
     _dictionary_history.revision
+    
+  1.8.9 2025-06-10
+  
+;  Addition of missing diffrn.id pointers
 
-    1.8.9    2025-05-27
- 
-;   Fill in missing diffrn_id tags (JRH); modified to be implicit rather than
-    mandatory to avoid invalidating existing datasets (HJB)
- 
-    + Add _diffrn_data_frame.diffrn_id
-    + Add _diffrn_detector_axis.diffrn_id
-    + Add _diffrn_scan.diffrn_id
-    + Add _diffrn_scan_axis.diffrn_id
-    + Add _diffrn_scan_collection.diffrn_id
-    + Add _diffrn_scan_frame.diffrn_id
-    + Add _diffrn_scan_frame_monitor.diffrn_id
- 
+   + Add _diffrn_detector_element.diffrn_id
+   + Add _diffrn_measurement_axis.diffrn_id
+   + Add _diffrn_scan.diffrn_id
+   + Add _diffrn_scan_axis.diffrn_id
+   + Add _diffrn_scan_collection.diffrn_id
+   + Add _diffrn_scan_frame.diffrn_id
+   + Add _diffrn_scan_frame_axis.diffrn_id
+   + Add _diffrn_scan_frame_axis.diffrn_id
+   + Add _diffrn_scan_frame_monitor.diffrn_id
 ;
- 
+
     1.8.8.1  2025-05-25
- 
+
 ;   Minor corrections to 1.8.8 found while working on 1.8.9
 ;
- 
+
     1.8.8    2024-01-20
 
 ;   Additional flux tags and change to ddl2 version being the master
